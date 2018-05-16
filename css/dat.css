@@ -1,0 +1,98 @@
+ 
+    
+
+body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-display: fallback;
+    font-size: 20px;
+    background-image: linear-gradient(azure,magenta,yellow);
+}
+.header {
+    padding: 33px;
+    background-color: #333;
+        text-align: center;
+    color: white;
+}
+.header h1 {
+    font-size: 50px;
+}
+.header p {
+    font-size: 25px;
+}
+.meme {
+    
+}
+.fav {
+    overflow: hidden;
+    background-color: rgb(0,0,51);
+}
+.fav a {
+    float:left;
+    color: aliceblue;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px 22px;
+    display: grid;
+}
+.fav a:hover {
+    color: whitesmoke;
+    background-color: black;
+}
+.thatL {
+    float: right;
+    width: 100%;
+}
+img {
+    width: 350px;
+        height: 300px;
+    float: left;
+    
+}
+.ass img {
+    width: 400px;
+    height: 300px;
+}
+.pip img{
+    width: 950px;
+        height: 300px;
+}
+.me img{
+    width: 400px;
+    height: 200px;
+}
+.thatR {
+    float: right;
+    width: 100%;
+    padding-left: 15px;
+}
+.those {
+    background-color: white;
+    padding: 20px;
+    margin-top: 15px;
+}
+.them {
+    content: "";
+        display:table;
+clear:both;
+}
+.footer{
+    padding; 20px;
+    text-align: center;
+    background-color: #ddd;
+    margin-top: 20px;
+    background-color: rgb(10,10,10);
+    font-size: 40px;
+    color: white
+}
+@media screen and(max width 800px) {
+    thatL, thatR{
+        width: 100%;
+        padding: none;
+    }
+}
+@media screen and(max width 400px) {
+    fav a {
+        width: 100%;
+        float: none;s
+    }
+}
