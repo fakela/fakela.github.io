@@ -12,4 +12,5 @@ company: 'Articles around tech'
 showInProjects: true
 ---
 
-I’m also passionate about writing and sharing what I’ve learned both with my teammates and the broader web community
+I’m also passionate about writing and sharing what I’ve learned, both with teammates and the broader community.
+

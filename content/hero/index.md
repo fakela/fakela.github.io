@@ -5,4 +5,4 @@ subtitle: 'I am a Software Developer.'
 contactText: 'Get In Touch'
 ---
 
-I'm a software engineer specializing in developing quality applications and websites. I’m currently a Google code-in mentor.
+I'm a software engineer specializing in developing quality applications and websites. 
