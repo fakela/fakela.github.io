@@ -31,7 +31,7 @@ const mixins = {
     &:hover,
     &:active,
     &:focus {
-      color: ${colors.green};
+      color: ${colors.yellow};
       outline: 0;
     }
   `,
@@ -43,17 +43,17 @@ const mixins = {
     position: relative;
     transition: ${theme.transition};
     cursor: pointer;
-    color: ${colors.green};
+    color: ${colors.red};
     &:hover,
     &:focus,
     &:active {
-      color: ${colors.green};
+      color: ${colors.red};
       outline: 0;
       &:after {
         width: 100%;
       }
       & > * {
-        color: ${colors.green} !important;
+        color: ${colors.yellow} !important;
         transition: ${theme.transition};
       }
     }
@@ -64,16 +64,16 @@ const mixins = {
       height: 1px;
       position: relative;
       bottom: 0.37em;
-      background-color: ${colors.green};
+      background-color: ${colors.yellow};
       transition: ${theme.transition};
       opacity: 0.5;
     }
   `,
 
   smallButton: css`
-    color: black;
-    background-color: #ffc464;
-    border: 1px solid ${colors.green};
+    color: ${colors.yellow};
+    background-color: ${colors.red};
+    border: 1px solid ${colors.yellow};
     border-radius: ${theme.borderRadius};
     padding: 0.75rem 1rem;
     font-size: ${fontSizes.smish};
@@ -85,7 +85,7 @@ const mixins = {
     &:hover,
     &:focus,
     &:active {
-      background-color: ${colors.transGreen};
+      background-color: ${colors.transyellow};
     }
     &:after {
       display: none !important;
@@ -93,9 +93,9 @@ const mixins = {
   `,
 
   bigButton: css`
-    color: black;
-    background-color: #ffc464;
-    border: 1px solid ${colors.green};
+    color: ${colors.yellow};
+    background-color: ${colors.red};
+    border: 1px solid ${colors.yellow};
     border-radius: ${theme.borderRadius};
     padding: 1.25rem 1.75rem;
     font-weight: 800;
@@ -108,7 +108,7 @@ const mixins = {
     &:hover,
     &:focus,
     &:active {
-      background-color: ${colors.transGreen};
+      background-color: ${colors.transyellow};
     }
     &:after {
       display: none !important;
@@ -145,7 +145,7 @@ const mixins = {
         content: '▹';
         position: absolute;
         left: 0;
-        color: ${colors.green};
+        color: ${colors.yellow};
       }
     }
   `,

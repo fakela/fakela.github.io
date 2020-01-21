@@ -80,7 +80,7 @@ const StyledTabButton = styled.button`
   white-space: nowrap;
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smish};
-  color: ${props => (props.isActive ? colors.green : colors.white)};
+  color: ${props => (props.isActive ? colors.yellow : colors.white)};
   ${media.tablet`padding: 0 15px 2px;`};
   ${media.thone`
     ${mixins.flexCenter};
@@ -92,12 +92,12 @@ const StyledTabButton = styled.button`
   `};
   &:hover,
   &:focus {
-    background-color: ${colors.lightNavy};
+    background-color: ${colors.purple};
   }
 `;
 const StyledHighlight = styled.span`
   display: block;
-  background: ${colors.green};
+  background: ${colors.yellow};
   width: 2px;
   height: ${theme.tabHeight}px;
   border-radius: ${theme.borderRadius};
@@ -148,7 +148,7 @@ const StyledJobTitle = styled.h4`
   margin-bottom: 5px;
 `;
 const StyledCompany = styled.span`
-  color: ${colors.green};
+  color: ${colors.yellow};
 `;
 const StyledJobDetails = styled.h5`
   font-family: ${fonts.SFMono};
@@ -210,6 +210,7 @@ const Jobs = ({ data }) => {
               const { company } = node.frontmatter;
               return (
                 <li key={i}>
+
                   <StyledTabButton
                     isActive={activeTabId === i}
                     onClick={() => setActiveTabId(i)}
@@ -221,6 +222,7 @@ const Jobs = ({ data }) => {
                     tabIndex={activeTabId === i ? '0' : '-1'}>
                     <span>{company}</span>
                   </StyledTabButton>
+                  
                 </li>
               );
             })}

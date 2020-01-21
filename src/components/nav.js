@@ -66,7 +66,7 @@ const StyledHamburgerBox = styled.div`
 `;
 
 const StyledHamburgerInner = styled.div`
-  background-color: ${colors.green};
+  background-color: ${colors.yellow};
   position: absolute;
   width: ${theme.hamburgerWidth}px;
   height: 2px;
@@ -85,7 +85,7 @@ const StyledHamburgerInner = styled.div`
   &:after {
     content: '';
     display: block;
-    background-color: ${colors.green};
+    background-color: ${colors.yellow};
     position: absolute;
     left: auto;
     right: 0;
@@ -129,7 +129,7 @@ const StyledListItem = styled.li`
   counter-increment: item 1;
   &:before {
     text-align: right;
-    color: ${colors.green};
+    color: ${colors.yellow};
     font-size: ${fontSizes.xs};
   }
 `;
@@ -142,7 +142,9 @@ const StyledListLink = styled(Link)`
 const StyledResumeButton = styled.a`
   ${mixins.smallButton};
   margin-left: 10px;
-  font-size: ${fontSizes.smish};
+  background-color: ${colors.red};
+  font-size: ${fontSizes.xl};
+  font-weight: 700;
 `;
 
 const DELTA = 5;

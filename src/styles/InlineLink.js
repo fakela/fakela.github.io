@@ -13,7 +13,7 @@ const InlineLink = styled.a`
   &:hover,
   &:focus,
   &:active {
-    color: ${colors.green};
+    color: ${colors.yellow};
     outline: 0;
     &:after {
       width: 100%;
@@ -26,7 +26,7 @@ const InlineLink = styled.a`
     height: 1px;
     position: relative;
     bottom: 0.37em;
-    background-color: ${colors.green};
+    background-color: ${colors.yellow};
     transition: ${theme.transition};
   }
 `;

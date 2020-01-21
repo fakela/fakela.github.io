@@ -13,6 +13,7 @@ const StyledContainer = styled(Section)`
   ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
+  margin: 0 138px;
 `;
 const StyledTitle = styled.h4`
   margin: 0 auto;
@@ -34,7 +35,6 @@ const StyledArchiveLink = styled(Link)`
 `;
 const StyledGrid = styled.div`
   margin-top: 50px;
-
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -46,30 +46,18 @@ const StyledGrid = styled.div`
 const StyledProjectInner = styled.div`
   ${mixins.boxShadow};
   ${mixins.flexBetween};
-
-  text-decoration: none !important;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 20px;
-  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.075), 0px 4px 30px 0px rgba(0, 0, 0, 0.025);
-  grid-template-areas: 'image text';
-  grid-gap: 80px;
-  padding: 30px 30px 30px 0px;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-
+  background-color: ${colors.yellow};
+  border-radius: ${theme.borderRadius};
+  transition: ${theme.transition};
+`;
+const StyledProject = styled.div`
+flex-direction: column;
   align-items: flex-start;
   position: relative;
   padding: 2rem 1.75rem;
   height: 100%;
   transition: ${theme.transition};
-  background-color: ${colors.lightNavy};
-`;
-const StyledProject = styled.div`
-  transition: ${theme.transition};
+  background-color: #9a002a;
   cursor: default;
   &:hover,
   &:focus {
@@ -85,8 +73,12 @@ const StyledProjectHeader = styled.div`
 `;
 
 const StyledProjectLinks = styled.div`
-  margin-right: -10px;
-  color: black;
+  color: ${colors.black};
+  &:hover {
+    outline: 0;
+    color: ${colors.black};
+    }
+  }
 `;
 const StyledIconLink = styled.a`
   position: relative;
@@ -98,13 +90,14 @@ const StyledIconLink = styled.a`
   }
 `;
 const StyledProjectName = styled.h5`
-  margin: 0 0 10px;
+  margin: 20px 3px 16px 21px;
   font-size: ${fontSizes.xxl};
-  color: black;
+  color: ${colors.black};
 `;
 const StyledProjectDescription = styled.div`
   font-size: 17px;
-  color: black;
+  margin: 20px 3px 16px 21px;
+  color: ${colors.black};
   a {
     ${mixins.inlineLink};
   }
@@ -114,14 +107,14 @@ const StyledTechList = styled.ul`
   align-items: flex-end;
   flex-grow: 1;
   flex-wrap: wrap;
+  text-align : center;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 20px 3px 16px 21px;
   list-style: none;
-
   li {
     font-family: ${fonts.SFMono};
     font-size: ${fontSizes.xs};
-    color: black;
+    color: ${colors.black};
     line-height: 1.75;
     margin-right: 15px;
     &:last-of-type {
@@ -131,7 +124,9 @@ const StyledTechList = styled.ul`
 `;
 const StyledMoreButton = styled(Button)`
   margin: 100px auto 0;
-  color: black;
+  color: ${colors.yellow};
+  background-color: ${colors.red}
+  font-weight: 800;
 `;
 
 const Projects = ({ data }) => {
@@ -153,7 +148,7 @@ const Projects = ({ data }) => {
 
   return (
     <StyledContainer>
-      <StyledTitle ref={revealTitle}>Projects</StyledTitle>
+      <StyledTitle ref={revealTitle}>Other Noteworthy Projects</StyledTitle>
       <StyledArchiveLink to="/archive" ref={revealArchiveLink}>
         View More
       </StyledArchiveLink>
@@ -180,7 +175,19 @@ const Projects = ({ data }) => {
                     <StyledProjectInner>
                       <header>
                         <StyledProjectHeader>
-                          <StyledProjectLinks>
+                         
+                          
+                        </StyledProjectHeader>
+                        <StyledProjectName>{title}</StyledProjectName>
+                        <StyledProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
+                        <StyledTechList>
+                          {tech.map((tech, i) => (
+                            <li key={i}>{tech}</li>
+                          ))}
+                        </StyledTechList>
+                      </header>
+                      <footer>
+                        <StyledProjectLinks>
                             {github && (
                               <StyledIconLink
                                 href={github}
@@ -200,16 +207,6 @@ const Projects = ({ data }) => {
                               </StyledIconLink>
                             )}
                           </StyledProjectLinks>
-                        </StyledProjectHeader>
-                        <StyledProjectName>{title}</StyledProjectName>
-                        <StyledProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
-                      </header>
-                      <footer>
-                        <StyledTechList>
-                          {tech.map((tech, i) => (
-                            <li key={i}>{tech}</li>
-                          ))}
-                        </StyledTechList>
                       </footer>
                     </StyledProjectInner>
                   </StyledProject>

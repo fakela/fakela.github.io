@@ -32,7 +32,7 @@ const StyledTable = styled.table`
 
     &:hover,
     &:focus {
-      background-color: ${colors.lightNavy};
+      background-color: ${colors.purple};
     }
   }
   th,

@@ -115,7 +115,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: ${colors.green};
+      color: ${colors.yellow};
     }
   }
 
@@ -155,7 +155,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     & > code {
-      background-color: ${colors.lightNavy};
+      background-color: ${colors.purple};
       color: ${colors.offWhite};
       font-size: ${fontSizes.sm};
       border-radius: ${theme.borderRadius};
@@ -177,14 +177,14 @@ const GlobalStyle = createGlobalStyle`
           content: '▹';
           position: absolute;
           left: 0;
-          color: ${colors.green};
+          color: ${colors.yellow};
         }
       }
     }
   }
 
   blockquote {
-    border-left-color: ${colors.green};
+    border-left-color: ${colors.yellow};
     border-left-style: solid;
     border-left-width: 1px;
     margin-left: 0px;
@@ -213,14 +213,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .overline {
-    color: ${colors.green};
+    color: ${colors.yellow};
     font-family: ${fonts.SFMono};
     font-size: ${fontSizes.md};
     font-weight: normal;
   }
 
   .subtitle {
-    color: ${colors.green};
+    color: ${colors.yellow};
     margin: 0 0 20px 0;
     font-size: ${fontSizes.md};
     font-family: ${fonts.SFMono};
@@ -239,7 +239,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    color: ${colors.green};
+    color: ${colors.yellow};
 
     .arrow {
       display: block;

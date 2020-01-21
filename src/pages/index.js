@@ -103,6 +103,8 @@ export const pageQuery = graphql`
           frontmatter {
             title
             github
+            twitter
+            linkedin
           }
           html
         }

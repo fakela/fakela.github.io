@@ -1,7 +1,7 @@
 ---
 date: '2018-05-01'
 title: 'Team Member OSCA'
-company: 'Open Source Community Africa'
+company: 'OSCA'
 location: 'US'
 range: 'May - Present '
 url: ''

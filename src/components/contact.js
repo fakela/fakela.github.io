@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import sr from '@utils/sr';
 import { srConfig } from '@config';
+import { socialMedia } from '@config';
 import styled from 'styled-components';
 import { IconGitHub, IconLinkedin, IconTwitter } from '@components/icons';
 import { theme, mixins, media, Section, Heading } from '@styles';
@@ -17,7 +18,7 @@ const StyledContainer = styled(Section)`
 `;
 const StyledHeading = styled(Heading)`
   display: block;
-  color: ${colors.green};
+  color: ${colors.yellow};
   font-size: ${fontSizes.md};
   font-family: ${fonts.SFMono};
   font-weight: normal;
@@ -40,34 +41,61 @@ const StyledTitle = styled.h4`
   ${media.tablet`font-size: 40px;`};
 `;
 
-const StyledIconLink = styled.a`
-  position: relative;
-  top: -10px;
-  padding: 23px;
+
+const StyledSocial = styled.div`
+  color: ${colors.white};
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto 10px;
+  display: block;
+  ${media.tablet`display: none;`};
+`;
+const StyledSocialList = styled.ul`
+  ${mixins.flexBetween};
+  padding: 0;
+  margin: 0;
+  list-style: none;
+`;
+const StyledSocialLink = styled.a`
+  padding: 10px;
   svg {
-    width: 56px;
+    width: 20px;
     height: 20px;
   }
 `;
-
 const Contact = ({ data }) => {
-  const { frontmatter, html } = data[0].node;
+  const { frontmatter } = data[0].node;
   const { title } = frontmatter;
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
 
   return (
     <StyledContainer id="contact" ref={revealContainer}>
-      <StyledHeading>Contact</StyledHeading>
-
       <StyledTitle>{title}</StyledTitle>
-
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-      <StyledIconLink>
-        <IconGitHub></IconGitHub>
-        <IconLinkedin></IconLinkedin>
-        <IconTwitter></IconTwitter>
-      </StyledIconLink>
+      <StyledSocial>
+        <StyledSocialList>
+          {socialMedia &&
+            socialMedia.map(({ name, url }, i) => (
+              <li key={i}>
+                <StyledSocialLink
+                  href={url}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label={name}>
+                  {name === 'GitHub' ? (
+                    <IconGitHub />
+                  ) : name === 'Linkedin' ? (
+                    <IconLinkedin />
+                  ) : name === 'Twitter' ? (
+                    <IconTwitter />
+                  ) : (
+                    <IconGitHub />
+                  )}
+                </StyledSocialLink>
+              </li>
+            ))}
+        </StyledSocialList>
+      </StyledSocial>
     </StyledContainer>
   );
 };

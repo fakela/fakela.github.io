@@ -13,4 +13,4 @@ import Jobs from './jobs';
 import Projects from './projects';
 import Contact from './contact';
 
-export { Head, Layout, Nav, Menu, Side, Social, Hero, About, Jobs, Projects, Contact, Footer };
+export { Head, Layout, Nav, Menu, Social,Side, Hero, About, Jobs, Projects, Contact, Footer };

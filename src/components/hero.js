@@ -15,7 +15,7 @@ const StyledContainer = styled(Section)`
   }
 `;
 const StyledOverline = styled.h1`
-  color: ${colors.green};
+  color: ${colors.yellow};
   margin: 0 0 20px 3px;
   font-size: ${fontSizes.md};
   font-family: ${fonts.SFMono};
@@ -54,6 +54,7 @@ const StyledDescription = styled.div`
 const StyledEmailLink = styled.a`
   ${mixins.bigButton};
   margin-top: 50px;
+  font-weight: 700;
 `;
 
 const Hero = ({ data }) => {
@@ -83,7 +84,7 @@ const Hero = ({ data }) => {
   );
   const five = () => (
     <div style={{ transitionDelay: '500ms' }}>
-      <StyledEmailLink href={`mailto:${email}`}>Get In Touch</StyledEmailLink>
+      <StyledEmailLink href={`mailto:${email}`}>Contact</StyledEmailLink>
     </div>
   );
 

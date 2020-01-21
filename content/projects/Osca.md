@@ -1,6 +1,6 @@
 ---
 date: '2018-7-27'
-title: 'Open Source Community Africa'
+title: 'OSCA'
 github: 'https://github.com/oscommunityafrica/oscommunityafrica.github.io'
 external: 'http://www.oscafrica.org'
 tech:

@@ -13,8 +13,8 @@ const StyledContainer = styled.div`
   right: ${props => (props.orientation === 'left' ? 'auto' : '40px')};
   z-index: 10;
   color: ${colors.lightSlate};
-  ${media.desktop`right: 25px;`};
   ${media.tablet`display: none;`};
+  ${media.desktop`display: none;`};
 `;
 
 const Side = ({ children, isHome, orientation }) => {

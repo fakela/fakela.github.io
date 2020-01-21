@@ -8,7 +8,7 @@ import { theme } from '@styles';
 const { colors } = theme;
 
 const StyledList = styled.ul`
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   padding: 0;
