@@ -5,8 +5,8 @@ import { srConfig } from '@config';
 import { socialMedia } from '@config';
 import styled from 'styled-components';
 import { IconGitHub, IconLinkedin, IconTwitter } from '@components/icons';
-import { theme, mixins, media, Section, Heading } from '@styles';
-const { colors, fontSizes, fonts } = theme;
+import { theme, mixins, media, Section } from '@styles';
+const { colors} = theme;
 
 const StyledContainer = styled(Section)`
   text-align: center;
@@ -16,24 +16,7 @@ const StyledContainer = styled(Section)`
     ${mixins.inlineLink};
   }
 `;
-const StyledHeading = styled(Heading)`
-  display: block;
-  color: ${colors.yellow};
-  font-size: ${fontSizes.md};
-  font-family: ${fonts.SFMono};
-  font-weight: normal;
-  margin-bottom: 20px;
-  justify-content: center;
-  ${media.desktop`font-size: ${fontSizes.sm};`};
-  &:before {
-    bottom: 0;
-    font-size: ${fontSizes.sm};
-    ${media.desktop`font-size: ${fontSizes.smish};`};
-  }
-  &:after {
-    display: none;
-  }
-`;
+
 const StyledTitle = styled.h4`
   margin: 0 0 20px;
   font-size: 60px;
