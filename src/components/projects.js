@@ -57,7 +57,7 @@ flex-direction: column;
   padding: 2rem 1.75rem;
   height: 100%;
   transition: ${theme.transition};
-  background-color: #9a002a;
+  background-color: #2c001e;
   cursor: default;
   &:hover,
   &:focus {
@@ -148,9 +148,9 @@ const Projects = ({ data }) => {
 
   return (
     <StyledContainer>
-      <StyledTitle ref={revealTitle}>Other Noteworthy Projects</StyledTitle>
+      <StyledTitle ref={revealTitle}>Projects</StyledTitle>
       <StyledArchiveLink to="/archive" ref={revealArchiveLink}>
-        View More
+         See More
       </StyledArchiveLink>
 
       <StyledGrid>

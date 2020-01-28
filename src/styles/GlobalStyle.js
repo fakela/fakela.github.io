@@ -28,8 +28,14 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: #0a0002;
-    color: ${colors.slate};
+    background-color: #2c001e;
+    background-blend-mode: multiply, multiply, multiply, multiply, normal;
+    background-image: linear-gradient(to bottom left, rgba(225,225,225,0.3) 0%, rgba(225,225,225,0.3) 49.9%, rgba(225,225,225,0) 50%, rgba(225,225,225,0) 100%),linear-gradient(to bottom right, rgba(225,225,225,0.3) 0%, rgba(225,225,225,0.3) 49.9%, rgba(225,225,225,0) 50%, rgba(225,225,225,0) 100%),linear-gradient(to top right, rgba(225,225,225,0.3) 0%, rgba(225,225,225,0.3) 49.9%, rgba(225,225,225,0) 50%, rgba(225,225,225,0) 100%),linear-gradient(to top left, rgba(225,225,225,0.3) 0%, rgba(225,225,225,0.3) 49.9%, rgba(225,225,225,0) 50%, rgba(225,225,225,0) 100%),linear-gradient(199deg, #8b3236 -20%, #5E2750 25%, #2C001E 50%);
+    background-position: top right, top left, bottom left, bottom right, 100%;
+    background-repeat: no-repeat;
+    background-size: 70% 25%, 70% 45%, 70% 25%, 110% 85%, 100%;
+    color: #fff;
+    position:relative;
     line-height: 1.3;
     font-family: ${fonts.Calibre};
     font-size: ${fontSizes.xl};
