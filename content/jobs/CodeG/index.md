@@ -7,7 +7,7 @@ range: 'May - Sept 2018'
 url: ''
 ---
 
-- Taught kids how to design interactive user experiences using modern tools.
-- Mentored students on how to make intuitive decisions on design
-- Taught kids on how to design interactive prototypes for user testing before product development
-- Taught kids on how to showcase their creative work using platforms like dribble, Behance.
+- Worked with a team of designers in mentoring kids in how to make intuitive decisions on design
+- Taught kids on how to design interactive users experiences using modern tools
+- The kids’ confidence in design was increased from relatively low to 100% and were more comfortable
+  showcasing their work on the various accounts

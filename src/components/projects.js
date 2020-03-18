@@ -51,7 +51,7 @@ const StyledProjectInner = styled.div`
   transition: ${theme.transition};
 `;
 const StyledProject = styled.div`
-flex-direction: column;
+  flex-direction: column;
   align-items: flex-start;
   position: relative;
   padding: 2rem 1.75rem;
@@ -107,7 +107,7 @@ const StyledTechList = styled.ul`
   align-items: flex-end;
   flex-grow: 1;
   flex-wrap: wrap;
-  text-align : center;
+  text-align: center;
   padding: 0;
   margin: 20px 3px 16px 21px;
   list-style: none;
@@ -124,7 +124,7 @@ const StyledTechList = styled.ul`
 `;
 const StyledMoreButton = styled(Button)`
   margin: 100px auto 0;
-  color: ${colors.yellow};
+  color: ${colors.black};
   background-color: ${colors.red}
   font-weight: 800;
 `;
@@ -150,7 +150,7 @@ const Projects = ({ data }) => {
     <StyledContainer>
       <StyledTitle ref={revealTitle}>Projects</StyledTitle>
       <StyledArchiveLink to="/archive" ref={revealArchiveLink}>
-         See More
+        See More
       </StyledArchiveLink>
 
       <StyledGrid>
@@ -174,10 +174,7 @@ const Projects = ({ data }) => {
                     }}>
                     <StyledProjectInner>
                       <header>
-                        <StyledProjectHeader>
-                         
-                          
-                        </StyledProjectHeader>
+                        <StyledProjectHeader></StyledProjectHeader>
                         <StyledProjectName>{title}</StyledProjectName>
                         <StyledProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
                         <StyledTechList>
@@ -188,25 +185,25 @@ const Projects = ({ data }) => {
                       </header>
                       <footer>
                         <StyledProjectLinks>
-                            {github && (
-                              <StyledIconLink
-                                href={github}
-                                target="_blank"
-                                rel="nofollow noopener noreferrer"
-                                aria-label="GitHub Link">
-                                <IconGitHub />
-                              </StyledIconLink>
-                            )}
-                            {external && (
-                              <StyledIconLink
-                                href={external}
-                                target="_blank"
-                                rel="nofollow noopener noreferrer"
-                                aria-label="External Link">
-                                <IconExternal />
-                              </StyledIconLink>
-                            )}
-                          </StyledProjectLinks>
+                          {github && (
+                            <StyledIconLink
+                              href={github}
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label="GitHub Link">
+                              <IconGitHub />
+                            </StyledIconLink>
+                          )}
+                          {external && (
+                            <StyledIconLink
+                              href={external}
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label="External Link">
+                              <IconExternal />
+                            </StyledIconLink>
+                          )}
+                        </StyledProjectLinks>
                       </footer>
                     </StyledProjectInner>
                   </StyledProject>

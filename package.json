@@ -28,7 +28,6 @@
       "git add"
     ],
     "*.js": [
-      "eslint --fix",
       "git add"
     ]
   },
