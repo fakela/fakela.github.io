@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>REST API on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/rest-api/</link>
+    <description>Recent content in REST API on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/rest-api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical specifications and API documentation</title>
+      <link>https://swapnilogale.github.io/projects/creations/techspecs/</link>
+      <pubDate>Sun, 26 Apr 2020 22:33:28 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/creations/techspecs/</guid>
+      <description>Context The role of Australian Energy Market Operator (AEMO) is to manage the electricity and gas systems and markets across Australia, helping to ensure Australians have access to affordable, secure and reliable energy.
+I was part of AEMO&amp;rsquo;s distributed energy initiatives and a market trial project, working with multiple teams to document a range of content for different audiences.
+Opportunity I was assigned to manage the entire suite of documentation, for two Australia-wide distributed energy initiatives documenting technical specifications, API design, user guides, and reference documentation.</description>
+    </item>
+    
+    <item>
+      <title>How API docs became my silver lining</title>
+      <link>https://swapnilogale.github.io/publications/apipost/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/apipost/</guid>
+      <description>I was invited by KnowledgeOwl to write a guest post for their blog.
+I wrote about my experiences with starting with API documentation, growing my skills in this area and how API documentation offers an exciting and challenging space for technical writers.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>documentation on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/documentation/</link>
+    <description>Recent content in documentation on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jan 2022 21:57:42 +1000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product marketing blogs</title>
+      <link>https://swapnilogale.github.io/projects/creations/productblogs/</link>
+      <pubDate>Sat, 01 Jan 2022 21:57:42 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/creations/productblogs/</guid>
+      <description>Context Providing Redocly customers with a monthly update on new features been rolled out across its products.
+Problem When I started at Redocly, a lot of customers were sometimes unaware of various features been rolled out across our products. The only way they could find this out was by contacting technical support.
+It was essential to let customers know frequently what we were working on and how it would enhance their developer experience.</description>
+    </item>
+    
+    <item>
+      <title>The secret sauce behind successful APIs</title>
+      <link>https://swapnilogale.github.io/publications/apidays/</link>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/apidays/</guid>
+      <description>In this talk, I spoke about the secret sauce behind successful APIs - documentation. This talk covered:
+ Problem areas with API projects from experience, An API&amp;rsquo;s journey from a producer as well as the consumer perspectives, and How to use documentation along each step of the API lifecycle.  </description>
+    </item>
+    
+    <item>
+      <title>What&#39;s the deal with Release notes?</title>
+      <link>https://swapnilogale.github.io/publications/releasenotes/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/releasenotes/</guid>
+      <description>Product managers swear by them, development managers are keen on producing them and quite so often your developers or engineers will help (grudgingly) craft them.
+Release notes are everywhere, be it a product or a process. They are quite often your first point of communication with customers eager to know what’s new or fixed in your product or process. In some instances, they also become the most frequently or commonly accessed content on your documentation site.</description>
+    </item>
+    
+    <item>
+      <title>When bad screenshots happen to good writers</title>
+      <link>https://swapnilogale.github.io/publications/screenshots/</link>
+      <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/screenshots/</guid>
+      <description>&amp;ldquo;You have your content moving at a swift pace, your documents are getting reviewed in a timely fashion (surprise!) and you are nicely heading towards your release milestone.
+The only thing missing are some key screenshots that you need to put in before you publish your documentation. What you get instead are some hideous images posing as screenshots, that were captured randomly, bears no resemblance to your instructions and would make no sense whatsoever to the end user.</description>
+    </item>
+    
+    <item>
+      <title>The Art of the Review</title>
+      <link>https://swapnilogale.github.io/publications/reviewpost/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/reviewpost/</guid>
+      <description>I was invited by KnowledgeOwl to write a guest post for their blog.
+I wrote about why proper reviews are vital to the documentation process, how to plan for them, various kinds of reviews, and how to provide to feedback (if you are the one reviewing someone else&amp;rsquo;s docs!).</description>
+    </item>
+    
+    <item>
+      <title>Write the Docs Australia</title>
+      <link>https://swapnilogale.github.io/projects/contributions/wtd/</link>
+      <pubDate>Sun, 03 May 2020 12:25:06 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/contributions/wtd/</guid>
+      <description>Context Write the Docs is a global community of people who care about documentation. We consider everyone who cares about communication, documentation, and their users to be a member of our community. This can be programmers, tech writers, developer advocates, customer support, marketers, and anyone else who wants people to have great experiences with software.
+Contribution While we have had other communities in Australia that covered technical documentation sporadically, there was no community for like minded people to get together and talk about documentation issues.</description>
+    </item>
+    
+  </channel>
+</rss>

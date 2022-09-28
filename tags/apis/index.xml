@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>APIs on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/apis/</link>
+    <description>Recent content in APIs on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/apis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The secret sauce behind successful APIs</title>
+      <link>https://swapnilogale.github.io/publications/apidays/</link>
+      <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/apidays/</guid>
+      <description>In this talk, I spoke about the secret sauce behind successful APIs - documentation. This talk covered:
+ Problem areas with API projects from experience, An API&amp;rsquo;s journey from a producer as well as the consumer perspectives, and How to use documentation along each step of the API lifecycle.  </description>
+    </item>
+    
+  </channel>
+</rss>

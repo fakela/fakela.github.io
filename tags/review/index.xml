@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Review on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/review/</link>
+    <description>Recent content in Review on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Art of the Review</title>
+      <link>https://swapnilogale.github.io/publications/reviewpost/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/reviewpost/</guid>
+      <description>I was invited by KnowledgeOwl to write a guest post for their blog.
+I wrote about why proper reviews are vital to the documentation process, how to plan for them, various kinds of reviews, and how to provide to feedback (if you are the one reviewing someone else&amp;rsquo;s docs!).</description>
+    </item>
+    
+  </channel>
+</rss>

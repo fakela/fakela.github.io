@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developer Portal on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/developer-portal/</link>
+    <description>Recent content in Developer Portal on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Aug 2021 21:57:42 +1000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/developer-portal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product documentation, Information architecture, Content strategy</title>
+      <link>https://swapnilogale.github.io/projects/creations/productdocs/</link>
+      <pubDate>Tue, 17 Aug 2021 21:57:42 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/creations/productdocs/</guid>
+      <description>Context As Redocly&amp;rsquo;s first Technical Writer Advocate, the goal of this role is to help the community of technical writers by advocating for a docs-like-code approach and offering them the skills and know-how for how to make it happen.
+Problem Redocly makes API design and documentation software with the goal to improve the writer and developer experience.
+As part of this goal, they required a Technical Writer Advocate to not only assist with writing technical content, but also needed someone to</description>
+    </item>
+    
+    <item>
+      <title>Developer Portals</title>
+      <link>https://swapnilogale.github.io/projects/creations/apidocs/</link>
+      <pubDate>Mon, 30 Mar 2020 21:57:42 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/creations/apidocs/</guid>
+      <description>Context SEEK was refreshing its API integration products for partners and hirers.
+Problem The various SEEK teams were working on building and delivering a single API built using GraphQL, OAuth 2.0 and optional webhooks. The Partner Integration team was working on refreshing the onboarding experience for partners and hirers, to improve process efficiencies and streamline the self-serving nature of the process.
+As part of this project, they required a Technical Writer to assist with redesigning the onboarding portal and review the developer portal content for consistency and accuracy.</description>
+    </item>
+    
+    <item>
+      <title>SDK documentation</title>
+      <link>https://swapnilogale.github.io/projects/creations/sdkdocs/</link>
+      <pubDate>Thu, 30 Apr 2020 21:57:42 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/creations/sdkdocs/</guid>
+      <description>Context Zip simplifies how you pay everywhere and save every day by offering fast, fair and seamless payment solutions online and in-store.
+Problem I was contacted by one of the Zip development teams to assist with editing and creating content for their Zip SDK developer documentation hub.
+Contribution I collaborated with the Zip team to review their existing SDK documentation for iOS and Android devices, and make recommendations on style, voice and tone, to make it clearer to understand.</description>
+    </item>
+    
+    <item>
+      <title>Technical specifications and API documentation</title>
+      <link>https://swapnilogale.github.io/projects/creations/techspecs/</link>
+      <pubDate>Sun, 26 Apr 2020 22:33:28 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/creations/techspecs/</guid>
+      <description>Context The role of Australian Energy Market Operator (AEMO) is to manage the electricity and gas systems and markets across Australia, helping to ensure Australians have access to affordable, secure and reliable energy.
+I was part of AEMO&amp;rsquo;s distributed energy initiatives and a market trial project, working with multiple teams to document a range of content for different audiences.
+Opportunity I was assigned to manage the entire suite of documentation, for two Australia-wide distributed energy initiatives documenting technical specifications, API design, user guides, and reference documentation.</description>
+    </item>
+    
+    <item>
+      <title>How API docs became my silver lining</title>
+      <link>https://swapnilogale.github.io/publications/apipost/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/apipost/</guid>
+      <description>I was invited by KnowledgeOwl to write a guest post for their blog.
+I wrote about my experiences with starting with API documentation, growing my skills in this area and how API documentation offers an exciting and challenging space for technical writers.</description>
+    </item>
+    
+  </channel>
+</rss>

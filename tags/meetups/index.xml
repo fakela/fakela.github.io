@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>meetups on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/meetups/</link>
+    <description>Recent content in meetups on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 May 2020 12:25:06 +1000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/meetups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Write the Docs Australia</title>
+      <link>https://swapnilogale.github.io/projects/contributions/wtd/</link>
+      <pubDate>Sun, 03 May 2020 12:25:06 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/contributions/wtd/</guid>
+      <description>Context Write the Docs is a global community of people who care about documentation. We consider everyone who cares about communication, documentation, and their users to be a member of our community. This can be programmers, tech writers, developer advocates, customer support, marketers, and anyone else who wants people to have great experiences with software.
+Contribution While we have had other communities in Australia that covered technical documentation sporadically, there was no community for like minded people to get together and talk about documentation issues.</description>
+    </item>
+    
+  </channel>
+</rss>

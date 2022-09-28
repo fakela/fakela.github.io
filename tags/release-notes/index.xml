@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Release Notes on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/release-notes/</link>
+    <description>Recent content in Release Notes on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Apr 2020 21:57:42 +1000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Online Help</title>
+      <link>https://swapnilogale.github.io/projects/creations/onlinehelp/</link>
+      <pubDate>Thu, 02 Apr 2020 21:57:42 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/creations/onlinehelp/</guid>
+      <description>Context Planifi helps lean organisations do more with less: increase productivity, decrease wasted resource hours, and deliver visibility into project performance across your entire firm.
+Problem A niche startup, Planifi develops and delivers a suite of products to architecture and engineering firms to manage their projects, schedules, resources and forecasting. While they were developing their product, they needed a Technical Writer to create end user documentation that could be used by Training and Support teams.</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s the deal with Release notes?</title>
+      <link>https://swapnilogale.github.io/publications/releasenotes/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/releasenotes/</guid>
+      <description>Product managers swear by them, development managers are keen on producing them and quite so often your developers or engineers will help (grudgingly) craft them.
+Release notes are everywhere, be it a product or a process. They are quite often your first point of communication with customers eager to know what’s new or fixed in your product or process. In some instances, they also become the most frequently or commonly accessed content on your documentation site.</description>
+    </item>
+    
+  </channel>
+</rss>

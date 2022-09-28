@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advocacy on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/advocacy/</link>
+    <description>Recent content in Advocacy on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/advocacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech Writer Advocacy and Managing Write the Docs Australia</title>
+      <link>https://swapnilogale.github.io/publications/techcommpodcast/</link>
+      <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/techcommpodcast/</guid>
+      <description>I chatted with the host of The Not Boring Tech Writer about:
+ The Write the Docs Australia community Organising meetups and conference for the Write the Docs Australia community Why it is necessary to advocate for good documentation practices What my role as a Technical Writer Advocate is all about  </description>
+    </item>
+    
+  </channel>
+</rss>

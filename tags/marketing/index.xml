@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>marketing on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/marketing/</link>
+    <description>Recent content in marketing on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jan 2022 21:57:42 +1000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/marketing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product marketing blogs</title>
+      <link>https://swapnilogale.github.io/projects/creations/productblogs/</link>
+      <pubDate>Sat, 01 Jan 2022 21:57:42 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/creations/productblogs/</guid>
+      <description>Context Providing Redocly customers with a monthly update on new features been rolled out across its products.
+Problem When I started at Redocly, a lot of customers were sometimes unaware of various features been rolled out across our products. The only way they could find this out was by contacting technical support.
+It was essential to let customers know frequently what we were working on and how it would enhance their developer experience.</description>
+    </item>
+    
+  </channel>
+</rss>

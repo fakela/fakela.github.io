@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical writer on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/technical-writer/</link>
+    <description>Recent content in Technical writer on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/technical-writer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Putting the tech in technical writer</title>
+      <link>https://swapnilogale.github.io/publications/techwriter/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/techwriter/</guid>
+      <description>I take the audience through a few ideas and examples (both personal and community sourced) for:
+ Looking under the hood (of WYSIWYG tools), Learning just enough Git, Thinking in plain text, Templates, toolchain and processes, and Automation.</description>
+    </item>
+    
+  </channel>
+</rss>

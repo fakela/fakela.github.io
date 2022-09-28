@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech Specs on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/tech-specs/</link>
+    <description>Recent content in Tech Specs on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Apr 2020 22:33:28 +1000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/tech-specs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical specifications and API documentation</title>
+      <link>https://swapnilogale.github.io/projects/creations/techspecs/</link>
+      <pubDate>Sun, 26 Apr 2020 22:33:28 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/creations/techspecs/</guid>
+      <description>Context The role of Australian Energy Market Operator (AEMO) is to manage the electricity and gas systems and markets across Australia, helping to ensure Australians have access to affordable, secure and reliable energy.
+I was part of AEMO&amp;rsquo;s distributed energy initiatives and a market trial project, working with multiple teams to document a range of content for different audiences.
+Opportunity I was assigned to manage the entire suite of documentation, for two Australia-wide distributed energy initiatives documenting technical specifications, API design, user guides, and reference documentation.</description>
+    </item>
+    
+  </channel>
+</rss>

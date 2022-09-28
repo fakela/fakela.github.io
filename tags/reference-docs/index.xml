@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reference docs on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/reference-docs/</link>
+    <description>Recent content in Reference docs on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Aug 2021 21:57:42 +1000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/reference-docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Product documentation, Information architecture, Content strategy</title>
+      <link>https://swapnilogale.github.io/projects/creations/productdocs/</link>
+      <pubDate>Tue, 17 Aug 2021 21:57:42 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/creations/productdocs/</guid>
+      <description>Context As Redocly&amp;rsquo;s first Technical Writer Advocate, the goal of this role is to help the community of technical writers by advocating for a docs-like-code approach and offering them the skills and know-how for how to make it happen.
+Problem Redocly makes API design and documentation software with the goal to improve the writer and developer experience.
+As part of this goal, they required a Technical Writer Advocate to not only assist with writing technical content, but also needed someone to</description>
+    </item>
+    
+  </channel>
+</rss>

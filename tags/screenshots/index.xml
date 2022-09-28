@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Screenshots on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/screenshots/</link>
+    <description>Recent content in Screenshots on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/screenshots/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When bad screenshots happen to good writers</title>
+      <link>https://swapnilogale.github.io/publications/screenshots/</link>
+      <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/publications/screenshots/</guid>
+      <description>&amp;ldquo;You have your content moving at a swift pace, your documents are getting reviewed in a timely fashion (surprise!) and you are nicely heading towards your release milestone.
+The only thing missing are some key screenshots that you need to put in before you publish your documentation. What you get instead are some hideous images posing as screenshots, that were captured randomly, bears no resemblance to your instructions and would make no sense whatsoever to the end user.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SEEK on Swapnil Portfolio</title>
+    <link>https://swapnilogale.github.io/tags/seek/</link>
+    <description>Recent content in SEEK on Swapnil Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Mar 2020 21:57:42 +1000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/seek/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developer Portals</title>
+      <link>https://swapnilogale.github.io/projects/creations/apidocs/</link>
+      <pubDate>Mon, 30 Mar 2020 21:57:42 +1000</pubDate>
+      
+      <guid>https://swapnilogale.github.io/projects/creations/apidocs/</guid>
+      <description>Context SEEK was refreshing its API integration products for partners and hirers.
+Problem The various SEEK teams were working on building and delivering a single API built using GraphQL, OAuth 2.0 and optional webhooks. The Partner Integration team was working on refreshing the onboarding experience for partners and hirers, to improve process efficiencies and streamline the self-serving nature of the process.
+As part of this project, they required a Technical Writer to assist with redesigning the onboarding portal and review the developer portal content for consistency and accuracy.</description>
+    </item>
+    
+  </channel>
+</rss>
