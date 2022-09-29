@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technical Communication on Swapnil Portfolio</title>
-    <link>https://swapnilogale.github.io/tags/technical-communication/</link>
+    <link>https://fakela.github.io/tags/technical-communication/</link>
     <description>Recent content in Technical Communication on Swapnil Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/technical-communication/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fakela.github.io/tags/technical-communication/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The secret sauce behind successful APIs</title>
-      <link>https://swapnilogale.github.io/publications/apidays/</link>
+      <link>https://fakela.github.io/publications/apidays/</link>
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://swapnilogale.github.io/publications/apidays/</guid>
+      <guid>https://fakela.github.io/publications/apidays/</guid>
       <description>In this talk, I spoke about the secret sauce behind successful APIs - documentation. This talk covered:
  Problem areas with API projects from experience, An API&amp;rsquo;s journey from a producer as well as the consumer perspectives, and How to use documentation along each step of the API lifecycle.  </description>
     </item>
     
     <item>
       <title>Making content sustainable</title>
-      <link>https://swapnilogale.github.io/publications/makedocssustainable/</link>
+      <link>https://fakela.github.io/publications/makedocssustainable/</link>
       <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://swapnilogale.github.io/publications/makedocssustainable/</guid>
+      <guid>https://fakela.github.io/publications/makedocssustainable/</guid>
       <description>In this talk, I question how to make our content sustainable, especially now when our content is growing at an unprecedented rate. Just when we thought we had a handle on user needs, that seems to be changing every minute. What does it really mean to create sustainable content and how do we achieve this?
  Docs and processes are a mess, but they don’t have to be. Reuse. Reduce. Recycle.</description>
     </item>
     
     <item>
       <title>What&#39;s the deal with Release notes?</title>
-      <link>https://swapnilogale.github.io/publications/releasenotes/</link>
+      <link>https://fakela.github.io/publications/releasenotes/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://swapnilogale.github.io/publications/releasenotes/</guid>
+      <guid>https://fakela.github.io/publications/releasenotes/</guid>
       <description>Product managers swear by them, development managers are keen on producing them and quite so often your developers or engineers will help (grudgingly) craft them.
 Release notes are everywhere, be it a product or a process. They are quite often your first point of communication with customers eager to know what’s new or fixed in your product or process. In some instances, they also become the most frequently or commonly accessed content on your documentation site.</description>
     </item>
     
     <item>
       <title>When bad screenshots happen to good writers</title>
-      <link>https://swapnilogale.github.io/publications/screenshots/</link>
+      <link>https://fakela.github.io/publications/screenshots/</link>
       <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://swapnilogale.github.io/publications/screenshots/</guid>
+      <guid>https://fakela.github.io/publications/screenshots/</guid>
       <description>&amp;ldquo;You have your content moving at a swift pace, your documents are getting reviewed in a timely fashion (surprise!) and you are nicely heading towards your release milestone.
 The only thing missing are some key screenshots that you need to put in before you publish your documentation. What you get instead are some hideous images posing as screenshots, that were captured randomly, bears no resemblance to your instructions and would make no sense whatsoever to the end user.</description>
     </item>
     
     <item>
       <title>Justifying the use of Single Sourcing</title>
-      <link>https://swapnilogale.github.io/publications/madcapflare/</link>
+      <link>https://fakela.github.io/publications/madcapflare/</link>
       <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://swapnilogale.github.io/publications/madcapflare/</guid>
+      <guid>https://fakela.github.io/publications/madcapflare/</guid>
       <description>I was invited by Madcap Software to write a guest post for their blog. I wrote about a case study where I had to justify the use of single sourcing at the organisation I was working at the time.
 To summarise how the single sourcing strategy worked at the organisation was:
  Avoided issues with duplication of content. All my content resided in one location, reducing inconsistencies. Set a consistent look and feel across all the documentation projects.</description>

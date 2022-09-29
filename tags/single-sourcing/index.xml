@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Single Sourcing on Swapnil Portfolio</title>
-    <link>https://swapnilogale.github.io/tags/single-sourcing/</link>
+    <link>https://fakela.github.io/tags/single-sourcing/</link>
     <description>Recent content in Single Sourcing on Swapnil Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://swapnilogale.github.io/tags/single-sourcing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://fakela.github.io/tags/single-sourcing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Justifying the use of Single Sourcing</title>
-      <link>https://swapnilogale.github.io/publications/madcapflare/</link>
+      <link>https://fakela.github.io/publications/madcapflare/</link>
       <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://swapnilogale.github.io/publications/madcapflare/</guid>
+      <guid>https://fakela.github.io/publications/madcapflare/</guid>
       <description>I was invited by Madcap Software to write a guest post for their blog. I wrote about a case study where I had to justify the use of single sourcing at the organisation I was working at the time.
 To summarise how the single sourcing strategy worked at the organisation was:
  Avoided issues with duplication of content. All my content resided in one location, reducing inconsistencies. Set a consistent look and feel across all the documentation projects.</description>
