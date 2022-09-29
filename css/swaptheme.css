@@ -4,6 +4,12 @@ body {
   /*color: #868e96;*/
 }
 
+#page-top {
+  color: #17212e;
+  background-color: #c3cbdc;
+  background-image: linear-gradient(147deg,#c3cbdc 0,#edf1f4 74%);
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 0;
