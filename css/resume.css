@@ -140,12 +140,18 @@ section.resume-section .resume-item .resume-date {
 
 @media (min-width: 768px) {
   section.resume-section {
-     min-height: 85vh;
+     min-height: 45vh;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
+  .hello {
+    margin-bottom: -27px;
+    margin-top: 34px;
+    bottom: 40px;
+  }
 }
+
  
 
 @media (min-width: 992px) {
@@ -193,7 +199,7 @@ img {
     box-shadow: 6px 11px 13px rgb(7 33 66 / 16%);
     border-radius: 10px;
     position: relative;
-    top: 220px;
+    top: 165px;
     left: -18px;
 
 }
@@ -201,13 +207,13 @@ img {
 .mb1 {
   margin-bottom: -4rem;
 }
-
+/*
 .hello {
   margin-bottom: -27px;
   margin-top: 34px;
   bottom: 40px;
 }
-
+*/
 .rounded-circle {
   border-radius: 0%!important;
 }
@@ -224,7 +230,7 @@ img {
 
 
 .new {
-  min-height: 60vh !important;
+  min-height: 60vh;
   
 }
 
@@ -235,3 +241,18 @@ img {
 .mb-5{
   padding-top: 20px;
 }
+
+
+@media ( min-width: 320px ) and ( max-width: 480px ) {  
+
+  .image1 {
+    max-width: 16%;
+    box-shadow: 6px 11px 13px rgb(7 33 66 / 16%);
+    border-radius: 10px;
+    position: relative;
+    top: -90px;
+    left: 295px;
+  
+}
+}
+
