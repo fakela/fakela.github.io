@@ -1,7 +1,9 @@
+<!--
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Swapnil Portfolio</title>
+    <title>Home on Favour Kelvin Portfolio</title>
     <link>https://fakela.github.io/</link>
     <description>Recent content in Home on Swapnil Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
@@ -228,3 +230,4 @@ To summarise how the single sourcing strategy worked at the organisation was:
     
   </channel>
 </rss>
+--->
