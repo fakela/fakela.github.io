@@ -4,13 +4,14 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "👋 Hi there, I'm Favour Kelvin!🚀 ",
-  "tagline": "Technical Writer, Developer Advocate and Software developer",
+  "title": "My Site",
+  "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
-  "url": "https://your-docusaurus-test-site.com",
+  "url": "https://fakela.github.io",
   "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "organizationName": "fakela",
+  "projectName": "fakela.github.io",
+  "deploymentBranch": "gh-pages",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
