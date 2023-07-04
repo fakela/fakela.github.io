@@ -1,0 +1,1805 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An introduction, writing guide, and docs testing sandbox.">
+      
+      
+        <meta name="author" content="Joe Wojak">
+      
+      
+      
+        <link rel="prev" href="../style_italics/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.2">
+    
+    
+      
+        <title>Lists - Demonstration and Testing Workplace</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f56500e0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lists" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Demonstration and Testing Workplace" class="md-header__button md-logo" aria-label="Demonstration and Testing Workplace" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Demonstration and Testing Workplace
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lists
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Demonstration and Testing Workplace" class="md-nav__button md-logo" aria-label="Demonstration and Testing Workplace" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Demonstration and Testing Workplace
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../resume/resume/" class="md-nav__link">
+        Work Experience
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Writing Samples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Writing Samples" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Writing Samples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/samples-intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          API Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API Documentation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          API Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/api-intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_2" type="checkbox" id="__nav_3_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_2">
+          User Methods
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="User Methods" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          User Methods
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/create-user/" class="md-nav__link">
+        Create a User
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/update-user/" class="md-nav__link">
+        Update a User
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/delete-user/" class="md-nav__link">
+        Delete a User
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/delete-bulk/" class="md-nav__link">
+        Bulk Delete Users
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_3" type="checkbox" id="__nav_3_2_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_3">
+          Group Methods
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Group Methods" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Group Methods
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/create-group/" class="md-nav__link">
+        Create a Group
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/update-group/" class="md-nav__link">
+        Update a Group
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/list-groups/" class="md-nav__link">
+        List Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/list-group-permissions/" class="md-nav__link">
+        List Group Permissions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/delete-group/" class="md-nav__link">
+        Delete a Group
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/delete-groups-bulk/" class="md-nav__link">
+        Bulk Delete Groups
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          Budgets, Spending, and Pacing Delays
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Budgets, Spending, and Pacing Delays" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Budgets, Spending, and Pacing Delays
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/budget-spend-intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/update-cycle/" class="md-nav__link">
+        Understanding Budget Distribution and Update Cycles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/budget-data-center/" class="md-nav__link">
+        Budget Distribution Among and Within Data Centers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/budget-update/" class="md-nav__link">
+        Budget Updates Can Delay Tactic Delivery
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/force-budget/" class="md-nav__link">
+        Force a Budget Update
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Data Engineering Tutorial
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Engineering Tutorial" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Data Engineering Tutorial
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorial/welcome/" class="md-nav__link">
+        Introduction and Welcome
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorial/endpoints/" class="md-nav__link">
+        Understanding Data Endpoints and Workflows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4_3" type="checkbox" id="__nav_3_4_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4_3">
+          Configuring Your Development Environment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Configuring Your Development Environment" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Configuring Your Development Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/setup-intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/setup-scala/" class="md-nav__link">
+        Installing Scala
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/setup-java/" class="md-nav__link">
+        Installing Java
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/setup-sbt/" class="md-nav__link">
+        Installing SBT
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorial/create-workflow/" class="md-nav__link">
+        Create a Data Workflow Component
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorial/annotate/" class="md-nav__link">
+        Annotating Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorial/summary/" class="md-nav__link">
+        Summary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5">
+          Device Graph Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Device Graph Overview" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Device Graph Overview
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/graph-basics/" class="md-nav__link">
+        Device Graph Basics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/household-scores/" class="md-nav__link">
+        Household Scores
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/individual-scores/" class="md-nav__link">
+        Individual Scores
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Writing Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Writing Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Writing Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          Documentation Types
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation Types" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation Types
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/types_intro/" class="md-nav__link">
+        Topic-Based Writing and Documentation Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/concepts/" class="md-nav__link">
+        Concept Documentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tasks_simple/" class="md-nav__link">
+        Documentation for Simple Procedures
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tasks_complex/" class="md-nav__link">
+        Documentation for Complex Procedures
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/reference/" class="md-nav__link">
+        Reference Documentation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          Organizing Sections and Pages
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Organizing Sections and Pages" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Organizing Sections and Pages
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organization/org_intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organization/org_outline/" class="md-nav__link">
+        Section Outline
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_3" type="checkbox" id="__nav_4_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3_3">
+          Homepage
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Homepage" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Homepage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organization/home_theory/" class="md-nav__link">
+        Homepage Theory and Purpose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organization/home_outline/" class="md-nav__link">
+        Homepage Outline and Section Summaries
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organization/home_reference/" class="md-nav__link">
+        Homepage Quick Reference
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organization/home_code/" class="md-nav__link">
+        Homepage Code Template
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organization/org_overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organization/org_getting_started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organization/org_other/" class="md-nav__link">
+        Other Content Sections
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organization/org_faqs/" class="md-nav__link">
+        FAQs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../organization/org_adr/" class="md-nav__link">
+        ADRs
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/api_intro/" class="md-nav__link">
+        API Documentation Style Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cli/cli/" class="md-nav__link">
+        Command Line Documentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          Styling Pages and Text
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Styling Pages and Text" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_6">
+          <span class="md-nav__icon md-icon"></span>
+          Styling Pages and Text
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../style_intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../style_bold/" class="md-nav__link">
+        Bold Text
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../style_code/" class="md-nav__link">
+        Code Snippets and Blocks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../style_italics/" class="md-nav__link">
+        Italics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Lists
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Lists
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bullet-lists" class="md-nav__link">
+    Bullet lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numbered-lists" class="md-nav__link">
+    Numbered lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatting-list-text" class="md-nav__link">
+    Formatting list text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-or-single-item-lists" class="md-nav__link">
+    Simple or single-item lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists-with-complete-sentences" class="md-nav__link">
+    Lists with complete sentences
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-lists" class="md-nav__link">
+    Nested lists
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formatting-nested-lists" class="md-nav__link">
+    Formatting nested lists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keep-lists-simple" class="md-nav__link">
+    Keep lists simple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternatives-to-nested-lists" class="md-nav__link">
+    Alternatives to nested lists
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bullet-lists" class="md-nav__link">
+    Bullet lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numbered-lists" class="md-nav__link">
+    Numbered lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatting-list-text" class="md-nav__link">
+    Formatting list text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-or-single-item-lists" class="md-nav__link">
+    Simple or single-item lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists-with-complete-sentences" class="md-nav__link">
+    Lists with complete sentences
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-lists" class="md-nav__link">
+    Nested lists
+  </a>
+  
+    <nav class="md-nav" aria-label="Nested lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formatting-nested-lists" class="md-nav__link">
+    Formatting nested lists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keep-lists-simple" class="md-nav__link">
+    Keep lists simple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternatives-to-nested-lists" class="md-nav__link">
+    Alternatives to nested lists
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="lists">Lists</h1>
+<p>Recommendations on formatting and using lists in your documentation.</p>
+<h2 id="bullet-lists">Bullet lists</h2>
+<p>Use a bullet list when the item order or sequence is not important or required to complete a process. You can also arrange bullet list items in:</p>
+<ul>
+<li>Alphabetical order if there's no specific importance or relationship among the listed items.</li>
+<li>A specific order if you want to imply relative importance or a relationship among the listed items.</li>
+<li>Ascending order by word count. This imparts a visually pleasing shape to a list block that makes it look clean and neat.</li>
+</ul>
+<h2 id="numbered-lists">Numbered lists</h2>
+<p>Use a numbered list when the item order or sequence is important or required to complete a process.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When using a numbered list to describe steps, you don't need to indicate sequence in your text. For example, avoid writing lists like this:</p>
+<blockquote>
+<ol>
+<li>First, complete process A.</li>
+<li>Next, activate process B.</li>
+<li>Third, click button C.</li>
+</ol>
+</blockquote>
+<p>Text that tells readers a step is "first," "second," "third," or "last," is unnecessary in an ordered list. Eliminate a word and let the numbers do that work for you.</p>
+</div>
+<h2 id="formatting-list-text">Formatting list text</h2>
+<p>When you want to use a list:</p>
+<ul>
+<li>
+<p>Place a colon at the end of the text or sentence fragment that introduces a list. Here's an example:</p>
+<blockquote>
+<p>The following reports are available:</p>
+<ul>
+<li>Report 1</li>
+<li>Report 2</li>
+<li>Report 3</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>Start each list item with a capital letter. Use a lower case letter if that's the formal name of an item (e.g., iPad, eMail) or as required to maintain accuracy.</p>
+</li>
+<li>
+<p>Avoid creating a list that includes sentence fragments and complete sentences. It is OK to do this if there's no other way. Sometimes you just have to, but try not to.</p>
+</li>
+<li>
+<p>Do not create a list that has one bullet or numbered item only. If you're doing this to highlight something important, consider putting that text in a <a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types">note, tip, or warning call-out</a> or an <a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/?h=expand#collapsible-blocks">expand/collapse block</a>. In technical writing, there's no such thing as a list with one bullet or numbered item. Lists <em>must</em> include 2, or more, items.</p>
+</li>
+</ul>
+<h2 id="simple-or-single-item-lists">Simple or single-item lists</h2>
+<p>If your list is a simple enumeration of items that would normally create a single sentence, capitalize each list item and omit the punctuation. Here's an example:</p>
+<blockquote>
+<p>The pop-up window contains 3 buttons:</p>
+<ul>
+<li>Save</li>
+<li>Save all</li>
+<li>Cancel</li>
+</ul>
+</blockquote>
+<p><em>Do not</em> punctuate enumerated list items as if they're part of a sentence. Here's an example:</p>
+<blockquote>
+<p>The pop-up window contains 3 buttons:</p>
+<ul>
+<li>Save,</li>
+<li>Save all, and</li>
+<li>Cancel.</li>
+</ul>
+</blockquote>
+<h2 id="lists-with-complete-sentences">Lists with complete sentences</h2>
+<p>If your list items are complete sentences, follow the rules of capitalization, punctuation, and grammar. Here's an example:</p>
+<blockquote>
+<p>Before you activate a campaign:</p>
+<ul>
+<li>Make sure that the creatives, line items, and insertion order are all active.</li>
+<li>Verify that pixels are active and associated with the correct line items.</li>
+<li>Add start and end dates to the line item.</li>
+</ul>
+</blockquote>
+<h2 id="nested-lists">Nested lists</h2>
+<p>Nested lists are lists that contain bulleted or numbered sub-lists. In technical writing, nested lists are acceptable and often necessary. For example, as shown in <a href="../../types/tasks_simple/">Task Documentation for Simple Procedures</a>, sometimes you need a nested list to describe the options in a set of instructions like this:</p>
+<blockquote>
+<ol>
+<li>Click <strong>New Widget</strong>. This opens the New Widget Window.</li>
+<li>In the New Widget window:<ul>
+<li>Name your widget.</li>
+<li>Identify the widget owner.</li>
+<li>Choose an application type.</li>
+<li>Write a brief description.</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+</blockquote>
+<p>The bulleted items in step 2 are in an unordered, nested list. They're essential and helpful in this case.</p>
+<h3 id="formatting-nested-lists">Formatting nested lists</h3>
+<p>TechDocs is built on <a href="https://pypi.org/project/Markdown/">pymarkdown</a>, which closely follows the <a href="https://www.markdownguide.org/basic-syntax/#lists-1">Markdown syntax for lists</a>.</p>
+<p>To create a nested ordered or unordered list, just indent 4-spaces under a list item as shown in the following examples.</p>
+<div class="highlight"><pre><span></span><code>&lt;!--- Ordered list with unordered, nested bullets ---&gt;
+
+<span class="k">1.</span> Numbered item
+<span class="k">1.</span> Numbered item
+<span class="w">    </span><span class="k">-</span><span class="w"> </span>Bulleted item
+<span class="w">    </span><span class="k">-</span><span class="w"> </span>Bulleted item
+<span class="k">1.</span> Numbered item
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>&lt;!--- Unordered list with ordered, nested numbers ---&gt;
+
+<span class="k">-</span><span class="w"> </span>Bulleted item
+<span class="k">-</span><span class="w"> </span>Bulleted item
+<span class="w">    </span><span class="k">1.</span> Numbered item
+<span class="w">    </span><span class="k">1.</span> Numbered item
+<span class="k">-</span><span class="w"> </span>Bulleted item
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Indent paragraphs, images, and call-out boxes when you need to keep these objects aligned with your list items and text.</p>
+</div>
+<h3 id="keep-lists-simple">Keep lists simple</h3>
+<p>Nested lists become awkward and difficult to read when they go beyond 2 or 3 levels deep. For example, this list is a clumsy way to convey information:</p>
+<blockquote>
+<ol>
+<li>Do this.</li>
+<li>Do that with some options:<ul>
+<li>Option 1</li>
+<li>Option 2<ul>
+<li>Something else here.</li>
+<li>And one more thing.</li>
+<li>Don't forget this either.<ul>
+<li>Hey, we're here too.</li>
+<li>Going even deeper.</li>
+<li>This is getting awkward.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Option 3</li>
+</ul>
+</li>
+<li>Final item.</li>
+</ol>
+</blockquote>
+<h3 id="alternatives-to-nested-lists">Alternatives to nested lists</h3>
+<p>When you start to create deeply nested lists, stop for a moment and think about how you're trying to convey information. Lists with 3<sup>rd</sup>, 4<sup>th</sup>, or <em>N</em><sup>th</sup> level nesting might not be an effective way to explain something or describe a procedure. Instead of a sub-list, try putting that information:</p>
+<ul>
+<li>
+<p>In another H2 or H3 titled section on the the same page. You might even want to add an anchor link to connect the list item to the new section.</p>
+</li>
+<li>
+<p>On a new, separate page that you link to from the main list.</p>
+</li>
+<li>
+<p>In a call-out box or expand/collapse block under a list item.</p>
+</li>
+</ul>
+<p>These options give you room to write and eliminate the need to stuff text into an awkward set of nested lists.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Joe Wojak
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight"], "search": "../../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.5cf534bf.min.js"></script>
+      
+    
+  </body>
+</html>
