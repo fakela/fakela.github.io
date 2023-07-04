@@ -1,6 +1,6 @@
 ## About
 
-Hi. My name is Joe. I'm a technical writer based in NYC. 
+Hi. My name is Favour Kelvin. I'm a Technical Writer and Developer Advocate
 
 ## Purpose
 This is a test space. I'm using it to:
