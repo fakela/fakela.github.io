@@ -1,0 +1,226 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "Work Experience",
+        "href": "/docs/intro",
+        "docId": "intro"
+      },
+      {
+        "type": "category",
+        "label": "Writing Samples",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Blogs and Articles",
+            "href": "/docs/tutorial-basics/blogs",
+            "docId": "tutorial-basics/blogs"
+          },
+          {
+            "type": "link",
+            "label": "FAQs",
+            "href": "/docs/tutorial-basics/faqs",
+            "docId": "tutorial-basics/faqs"
+          },
+          {
+            "type": "link",
+            "label": "Glossaries and Terminology Lists",
+            "href": "/docs/tutorial-basics/glossary",
+            "docId": "tutorial-basics/glossary"
+          },
+          {
+            "type": "link",
+            "label": "Internal Documentation",
+            "href": "/docs/tutorial-basics/internal-docs",
+            "docId": "tutorial-basics/internal-docs"
+          },
+          {
+            "type": "link",
+            "label": "Newsletter Contributions",
+            "href": "/docs/tutorial-basics/newsletter",
+            "docId": "tutorial-basics/newsletter"
+          },
+          {
+            "type": "link",
+            "label": "Release Notes",
+            "href": "/docs/tutorial-basics/release-notes",
+            "docId": "tutorial-basics/release-notes"
+          },
+          {
+            "type": "link",
+            "label": "Style Guides",
+            "href": "/docs/tutorial-basics/style-guide",
+            "docId": "tutorial-basics/style-guide"
+          },
+          {
+            "type": "link",
+            "label": "Troubleshooting Guides",
+            "href": "/docs/tutorial-basics/troubleshooting",
+            "docId": "tutorial-basics/troubleshooting"
+          },
+          {
+            "type": "link",
+            "label": "User Manuals and Guides",
+            "href": "/docs/tutorial-basics/user-manual",
+            "docId": "tutorial-basics/user-manual"
+          },
+          {
+            "type": "link",
+            "label": "Tutorial",
+            "href": "/docs/tutorial-basics/tutorial",
+            "docId": "tutorial-basics/tutorial"
+          },
+          {
+            "type": "link",
+            "label": "Markdown Features",
+            "href": "/docs/tutorial-basics/markdown-features",
+            "docId": "tutorial-basics/markdown-features"
+          },
+          {
+            "type": "link",
+            "label": "How-to Guides",
+            "href": "/docs/tutorial-basics/how-to-guide",
+            "docId": "tutorial-basics/how-to-guide"
+          },
+          {
+            "type": "link",
+            "label": "API Documentation",
+            "href": "/docs/tutorial-basics/api",
+            "docId": "tutorial-basics/api"
+          }
+        ],
+        "href": "/docs/category/writing-samples"
+      },
+      {
+        "type": "category",
+        "label": "Tutorial - Extras",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Manage Docs Versions",
+            "href": "/docs/tutorial-extras/manage-docs-versions",
+            "docId": "tutorial-extras/manage-docs-versions"
+          },
+          {
+            "type": "link",
+            "label": "Translate your site",
+            "href": "/docs/tutorial-extras/translate-your-site",
+            "docId": "tutorial-extras/translate-your-site"
+          }
+        ],
+        "href": "/docs/category/tutorial---extras"
+      }
+    ]
+  },
+  "docs": {
+    "intro": {
+      "id": "intro",
+      "title": "Favour Kelvin",
+      "description": "I’m a technical writer with experience in creating documentation for external customers and internal engineering teams. I’ve managed large, established documentation libraries and created original documentation for new systems and services. My writing philosophy is to treat documentation like code. This means writing with open-source systems that accommodate community input and help reduce the documentation burden on developers.",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/api": {
+      "id": "tutorial-basics/api",
+      "title": "API Documentation",
+      "description": "Welcome to the API Documentation section of my portfolio! As a dedicated technical writer, I excel in creating clear, detailed, and user-friendly API documentation that facilitates seamless integration and interaction with software systems. Below, you'll find a sample of my work in this realm:",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/blogs": {
+      "id": "tutorial-basics/blogs",
+      "title": "blogs",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/faqs": {
+      "id": "tutorial-basics/faqs",
+      "title": "faqs",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/glossary": {
+      "id": "tutorial-basics/glossary",
+      "title": "glossary",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/how-to-guide": {
+      "id": "tutorial-basics/how-to-guide",
+      "title": "Deploy your site",
+      "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/internal-docs": {
+      "id": "tutorial-basics/internal-docs",
+      "title": "internal-docs",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/markdown-features": {
+      "id": "tutorial-basics/markdown-features",
+      "title": "Markdown Features",
+      "description": "Docusaurus supports Markdown and a few additional features.",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/newsletter": {
+      "id": "tutorial-basics/newsletter",
+      "title": "newsletter",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/release-notes": {
+      "id": "tutorial-basics/release-notes",
+      "title": "release-notes",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/style-guide": {
+      "id": "tutorial-basics/style-guide",
+      "title": "style-guide",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/troubleshooting": {
+      "id": "tutorial-basics/troubleshooting",
+      "title": "troubleshooting",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/tutorial": {
+      "id": "tutorial-basics/tutorial",
+      "title": "Create a Document",
+      "description": "Documents are groups of pages connected through:",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/user-manual": {
+      "id": "tutorial-basics/user-manual",
+      "title": "User Manuals and Guides",
+      "description": "Welcome to my User Manuals and Guides portfolio section! As a technical writer, I specialize in crafting clear and comprehensive user documentation that helps users navigate and utilize products effectively. Below are some examples of my work in this domain:",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-extras/manage-docs-versions": {
+      "id": "tutorial-extras/manage-docs-versions",
+      "title": "Manage Docs Versions",
+      "description": "Docusaurus can manage multiple versions of your docs.",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-extras/translate-your-site": {
+      "id": "tutorial-extras/translate-your-site",
+      "title": "Translate your site",
+      "description": "Let's translate docs/intro.md to French.",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/api",
+              "path": "/docs/tutorial-basics/api",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/blogs",
+              "path": "/docs/tutorial-basics/blogs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/faqs",
+              "path": "/docs/tutorial-basics/faqs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/glossary",
+              "path": "/docs/tutorial-basics/glossary",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/how-to-guide",
+              "path": "/docs/tutorial-basics/how-to-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/internal-docs",
+              "path": "/docs/tutorial-basics/internal-docs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "path": "/docs/tutorial-basics/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/newsletter",
+              "path": "/docs/tutorial-basics/newsletter",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/release-notes",
+              "path": "/docs/tutorial-basics/release-notes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/style-guide",
+              "path": "/docs/tutorial-basics/style-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/troubleshooting",
+              "path": "/docs/tutorial-basics/troubleshooting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/tutorial",
+              "path": "/docs/tutorial-basics/tutorial",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/user-manual",
+              "path": "/docs/tutorial-basics/user-manual",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/manage-docs-versions",
+              "path": "/docs/tutorial-extras/manage-docs-versions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/translate-your-site",
+              "path": "/docs/tutorial-extras/translate-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/writing-samples",
+              "path": "/docs/category/writing-samples",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---extras",
+              "path": "/docs/category/tutorial---extras",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "Work Experience"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

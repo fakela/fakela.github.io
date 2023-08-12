@@ -1,0 +1,16 @@
+{
+  "title": "Tutorial - Basics",
+  "description": "This section provides examples of my technical writing. I wrote this documentation for product knowledge base, internal engineering teams, and customer-facing, support teams, etc. The pages in each section are not the full documentation for a product or service.",
+  "slug": "/category/tutorial---basics",
+  "permalink": "/docs/category/tutorial---basics",
+  "navigation": {
+    "previous": {
+      "title": "Work Experience",
+      "permalink": "/docs/intro"
+    },
+    "next": {
+      "title": "Create a Page",
+      "permalink": "/docs/tutorial-basics/create-a-page"
+    }
+  }
+}

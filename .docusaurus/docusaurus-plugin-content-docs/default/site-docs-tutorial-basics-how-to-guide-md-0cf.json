@@ -1,0 +1,28 @@
+{
+  "unversionedId": "tutorial-basics/how-to-guide",
+  "id": "tutorial-basics/how-to-guide",
+  "title": "Deploy your site",
+  "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+  "source": "@site/docs/tutorial-basics/how-to-guide.md",
+  "sourceDirName": "tutorial-basics",
+  "slug": "/tutorial-basics/how-to-guide",
+  "permalink": "/docs/tutorial-basics/how-to-guide",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/how-to-guide.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "sidebar_label": "How-to Guides"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Markdown Features",
+    "permalink": "/docs/tutorial-basics/markdown-features"
+  },
+  "next": {
+    "title": "API Documentation",
+    "permalink": "/docs/tutorial-basics/api"
+  }
+}

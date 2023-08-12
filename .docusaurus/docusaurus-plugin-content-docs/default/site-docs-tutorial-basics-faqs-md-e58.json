@@ -1,0 +1,28 @@
+{
+  "unversionedId": "tutorial-basics/faqs",
+  "id": "tutorial-basics/faqs",
+  "title": "faqs",
+  "description": "",
+  "source": "@site/docs/tutorial-basics/faqs.md",
+  "sourceDirName": "tutorial-basics",
+  "slug": "/tutorial-basics/faqs",
+  "permalink": "/docs/tutorial-basics/faqs",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/faqs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "sidebar_label": "FAQs"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Blogs and Articles",
+    "permalink": "/docs/tutorial-basics/blogs"
+  },
+  "next": {
+    "title": "Glossaries and Terminology Lists",
+    "permalink": "/docs/tutorial-basics/glossary"
+  }
+}
