@@ -57,7 +57,7 @@ Welcome to the API Documentation section of my portfolio! As a dedicated technic
 
 This API documentation equips developers with the knowledge and guidance to seamlessly integrate the Mindee REST API into their applications, leveraging its advanced document parsing capabilities.
 
-[Mindee REST API Documentation](/static/img/pdf/Mindee_REST_API_Docs.pdf)
+
 
 If you're interested in exploring more of my API documentation work or would like to discuss potential collaboration opportunities, please feel free to [contact me](mailto:favourkelvin17@gmail.com). I am excited about contributing to your API documentation needs and enhancing the Mindee REST API experience!
 As before, ensure that you adjust the file path and name in the link (/static/img/pdf/Mindee_REST_API_Docs.pdf) to match the actual location and name of your API documentation PDF file.

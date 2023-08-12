@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Hi and welcome. My name is Favour Wojak. A technical writer and developer advocate Blog</title>
+        <title>My name is Favour Kelvin. Blog</title>
         <link>https://fakela.github.io/blog</link>
-        <description>Hi and welcome. My name is Favour Wojak. A technical writer and developer advocate Blog</description>
+        <description>My name is Favour Kelvin. Blog</description>
         <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
