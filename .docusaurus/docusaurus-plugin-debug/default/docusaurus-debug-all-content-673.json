@@ -67,15 +67,15 @@
                 "permalink": "/docs/tutorial-basics/markdown-features"
               },
               "next": {
-                "title": "How-to Guides",
-                "permalink": "/docs/tutorial-basics/how-to-guide"
+                "title": "Blogs and Articles",
+                "permalink": "/docs/tutorial-basics/blogs"
               }
             },
             {
               "unversionedId": "tutorial-basics/blogs",
               "id": "tutorial-basics/blogs",
-              "title": "blogs",
-              "description": "",
+              "title": "Blogs and Articles Writing Sample",
+              "description": "Welcome to my Blogs and Articles writing sample section! As a proficient writer, I enjoy creating engaging and informative blog posts and articles on a wide range of topics. Below are some examples of my work in this domain:",
               "source": "@site/docs/tutorial-basics/blogs.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/blogs",
@@ -84,19 +84,19 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/blogs.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 1,
+              "sidebarPosition": 7,
               "frontMatter": {
-                "sidebar_position": 1,
+                "sidebar_position": 7,
                 "sidebar_label": "Blogs and Articles"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Writing Samples",
-                "permalink": "/docs/category/writing-samples"
+                "title": "API Documentation",
+                "permalink": "/docs/tutorial-basics/api"
               },
               "next": {
-                "title": "FAQs",
-                "permalink": "/docs/tutorial-basics/faqs"
+                "title": "How-to Guides",
+                "permalink": "/docs/tutorial-basics/how-to-guide"
               }
             },
             {
@@ -119,8 +119,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Blogs and Articles",
-                "permalink": "/docs/tutorial-basics/blogs"
+                "title": "Writing Samples",
+                "permalink": "/docs/category/writing-samples"
               },
               "next": {
                 "title": "Glossaries and Terminology Lists",
@@ -175,8 +175,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "API Documentation",
-                "permalink": "/docs/tutorial-basics/api"
+                "title": "Blogs and Articles",
+                "permalink": "/docs/tutorial-basics/blogs"
               },
               "next": {
                 "title": "Tutorials Documentation",
@@ -473,11 +473,6 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "tutorial-basics/blogs",
-                    "label": "Blogs and Articles"
-                  },
-                  {
-                    "type": "doc",
                     "id": "tutorial-basics/faqs",
                     "label": "FAQs"
                   },
@@ -524,6 +519,11 @@
                     "type": "doc",
                     "id": "tutorial-basics/api",
                     "label": "API Documentation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/blogs",
+                    "label": "Blogs and Articles"
                   },
                   {
                     "type": "doc",

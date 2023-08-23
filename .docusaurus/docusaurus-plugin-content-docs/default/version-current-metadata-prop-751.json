@@ -23,12 +23,6 @@
         "items": [
           {
             "type": "link",
-            "label": "Blogs and Articles",
-            "href": "/docs/tutorial-basics/blogs",
-            "docId": "tutorial-basics/blogs"
-          },
-          {
-            "type": "link",
             "label": "FAQs",
             "href": "/docs/tutorial-basics/faqs",
             "docId": "tutorial-basics/faqs"
@@ -89,6 +83,12 @@
           },
           {
             "type": "link",
+            "label": "Blogs and Articles",
+            "href": "/docs/tutorial-basics/blogs",
+            "docId": "tutorial-basics/blogs"
+          },
+          {
+            "type": "link",
             "label": "How-to Guides",
             "href": "/docs/tutorial-basics/how-to-guide",
             "docId": "tutorial-basics/how-to-guide"
@@ -140,8 +140,8 @@
     },
     "tutorial-basics/blogs": {
       "id": "tutorial-basics/blogs",
-      "title": "blogs",
-      "description": "",
+      "title": "Blogs and Articles Writing Sample",
+      "description": "Welcome to my Blogs and Articles writing sample section! As a proficient writer, I enjoy creating engaging and informative blog posts and articles on a wide range of topics. Below are some examples of my work in this domain:",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/faqs": {
