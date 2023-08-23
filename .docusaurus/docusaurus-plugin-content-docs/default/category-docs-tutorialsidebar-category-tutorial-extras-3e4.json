@@ -4,8 +4,8 @@
   "permalink": "/docs/category/tutorial---extras",
   "navigation": {
     "previous": {
-      "title": "API Documentation",
-      "permalink": "/docs/tutorial-basics/api"
+      "title": "Tutorials Documentation",
+      "permalink": "/docs/tutorial-basics/tutorial"
     },
     "next": {
       "title": "Manage Docs Versions",

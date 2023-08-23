@@ -18,11 +18,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "How-to Guides",
-    "permalink": "/docs/tutorial-basics/how-to-guide"
+    "title": "Markdown Features",
+    "permalink": "/docs/tutorial-basics/markdown-features"
   },
   "next": {
-    "title": "Tutorial - Extras",
-    "permalink": "/docs/category/tutorial---extras"
+    "title": "How-to Guides",
+    "permalink": "/docs/tutorial-basics/how-to-guide"
   }
 }

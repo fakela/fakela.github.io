@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Tutorial",
-    "permalink": "/docs/tutorial-basics/tutorial"
+    "title": "User Manuals and Guides",
+    "permalink": "/docs/tutorial-basics/user-manual"
   },
   "next": {
-    "title": "How-to Guides",
-    "permalink": "/docs/tutorial-basics/how-to-guide"
+    "title": "API Documentation",
+    "permalink": "/docs/tutorial-basics/api"
   }
 }

@@ -1,8 +1,8 @@
 {
   "unversionedId": "tutorial-basics/how-to-guide",
   "id": "tutorial-basics/how-to-guide",
-  "title": "Deploy your site",
-  "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+  "title": "How-to Guide Documentation Sample",
+  "description": "Welcome to my How-to Guide Documentation portfolio section! As a technical writer, I specialize in creating clear and concise step-by-step guides that assist users in performing specific tasks. Below is an example of my work in this category:",
   "source": "@site/docs/tutorial-basics/how-to-guide.md",
   "sourceDirName": "tutorial-basics",
   "slug": "/tutorial-basics/how-to-guide",
@@ -11,18 +11,18 @@
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/how-to-guide.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 5,
+  "sidebarPosition": 7,
   "frontMatter": {
-    "sidebar_position": 5,
+    "sidebar_position": 7,
     "sidebar_label": "How-to Guides"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Markdown Features",
-    "permalink": "/docs/tutorial-basics/markdown-features"
-  },
-  "next": {
     "title": "API Documentation",
     "permalink": "/docs/tutorial-basics/api"
+  },
+  "next": {
+    "title": "Tutorials Documentation",
+    "permalink": "/docs/tutorial-basics/tutorial"
   }
 }

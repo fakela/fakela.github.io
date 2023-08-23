@@ -77,15 +77,15 @@
           },
           {
             "type": "link",
-            "label": "Tutorial",
-            "href": "/docs/tutorial-basics/tutorial",
-            "docId": "tutorial-basics/tutorial"
-          },
-          {
-            "type": "link",
             "label": "Markdown Features",
             "href": "/docs/tutorial-basics/markdown-features",
             "docId": "tutorial-basics/markdown-features"
+          },
+          {
+            "type": "link",
+            "label": "API Documentation",
+            "href": "/docs/tutorial-basics/api",
+            "docId": "tutorial-basics/api"
           },
           {
             "type": "link",
@@ -95,9 +95,9 @@
           },
           {
             "type": "link",
-            "label": "API Documentation",
-            "href": "/docs/tutorial-basics/api",
-            "docId": "tutorial-basics/api"
+            "label": "Tutorials Documentation",
+            "href": "/docs/tutorial-basics/tutorial",
+            "docId": "tutorial-basics/tutorial"
           }
         ],
         "href": "/docs/category/writing-samples"
@@ -158,8 +158,8 @@
     },
     "tutorial-basics/how-to-guide": {
       "id": "tutorial-basics/how-to-guide",
-      "title": "Deploy your site",
-      "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+      "title": "How-to Guide Documentation Sample",
+      "description": "Welcome to my How-to Guide Documentation portfolio section! As a technical writer, I specialize in creating clear and concise step-by-step guides that assist users in performing specific tasks. Below is an example of my work in this category:",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/internal-docs": {
@@ -200,8 +200,8 @@
     },
     "tutorial-basics/tutorial": {
       "id": "tutorial-basics/tutorial",
-      "title": "Create a Document",
-      "description": "Documents are groups of pages connected through:",
+      "title": "Tutorials Documentation Sample",
+      "description": "Welcome to my Tutorials Documentation portfolio section! As a technical writer, I specialize in creating comprehensive and easy-to-follow tutorials that guide users through complex processes step by step. Below, you'll find an example of my work in this domain:",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/user-manual": {
