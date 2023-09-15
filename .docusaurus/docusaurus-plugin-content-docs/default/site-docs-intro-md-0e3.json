@@ -14,11 +14,11 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "sidebar_position": 1,
-    "sidebar_label": "Work Experience"
+    "sidebar_label": "About Me"
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Experience",
+    "title": "Work Experience",
     "permalink": "/docs/new"
   }
 }

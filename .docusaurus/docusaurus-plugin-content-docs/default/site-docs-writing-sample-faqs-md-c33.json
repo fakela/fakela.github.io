@@ -1,0 +1,28 @@
+{
+  "unversionedId": "writing-sample/faqs",
+  "id": "writing-sample/faqs",
+  "title": "Troubleshooting and FAQ Writing Portfolio Sample",
+  "description": "Welcome to my Troubleshooting and FAQ Writing portfolio section! As a technical writer, I excel in creating comprehensive troubleshooting guides and FAQ documents that provide users with clear solutions to common issues. Below is an example of my work in this category:",
+  "source": "@site/docs/writing-sample/faqs.md",
+  "sourceDirName": "writing-sample",
+  "slug": "/writing-sample/faqs",
+  "permalink": "/docs/writing-sample/faqs",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/faqs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "sidebar_label": "Troubleshooting & FAQ"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Newsletter Writing",
+    "permalink": "/docs/writing-sample/newsletter"
+  },
+  "next": {
+    "title": "Release Notes",
+    "permalink": "/docs/writing-sample/release-notes"
+  }
+}

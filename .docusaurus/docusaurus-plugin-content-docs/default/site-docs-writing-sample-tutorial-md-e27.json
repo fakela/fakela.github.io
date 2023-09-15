@@ -1,0 +1,28 @@
+{
+  "unversionedId": "writing-sample/tutorial",
+  "id": "writing-sample/tutorial",
+  "title": "Tutorials Sample",
+  "description": "Welcome to my Tutorials portfolio section! As a technical writer, I specialize in creating comprehensive and easy-to-follow tutorials that guide users through complex processes step by step. Below, you'll find an example of my work in this domain:",
+  "source": "@site/docs/writing-sample/tutorial.md",
+  "sourceDirName": "writing-sample",
+  "slug": "/writing-sample/tutorial",
+  "permalink": "/docs/writing-sample/tutorial",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/tutorial.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "sidebar_label": "Tutorials"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "User Manuals and Guides",
+    "permalink": "/docs/writing-sample/user-manual"
+  },
+  "next": {
+    "title": "How-to Guides",
+    "permalink": "/docs/writing-sample/how-to-guide"
+  }
+}

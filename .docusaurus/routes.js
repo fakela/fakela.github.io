@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '89e'),
+    component: ComponentCreator('/docs', 'd95'),
     routes: [
       {
         path: '/docs/category/writing-samples',
@@ -120,50 +120,50 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/tutorial-basics/api',
-        component: ComponentCreator('/docs/tutorial-basics/api', 'c1d'),
+        path: '/docs/writing-sample/api',
+        component: ComponentCreator('/docs/writing-sample/api', '6ca'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/tutorial-basics/blogs',
-        component: ComponentCreator('/docs/tutorial-basics/blogs', 'c19'),
+        path: '/docs/writing-sample/blogs',
+        component: ComponentCreator('/docs/writing-sample/blogs', '4a0'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/tutorial-basics/faqs',
-        component: ComponentCreator('/docs/tutorial-basics/faqs', '0c1'),
+        path: '/docs/writing-sample/faqs',
+        component: ComponentCreator('/docs/writing-sample/faqs', 'ccd'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/tutorial-basics/how-to-guide',
-        component: ComponentCreator('/docs/tutorial-basics/how-to-guide', '0e8'),
+        path: '/docs/writing-sample/how-to-guide',
+        component: ComponentCreator('/docs/writing-sample/how-to-guide', '304'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/tutorial-basics/newsletter',
-        component: ComponentCreator('/docs/tutorial-basics/newsletter', '322'),
+        path: '/docs/writing-sample/newsletter',
+        component: ComponentCreator('/docs/writing-sample/newsletter', '597'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/tutorial-basics/release-notes',
-        component: ComponentCreator('/docs/tutorial-basics/release-notes', 'd8c'),
+        path: '/docs/writing-sample/release-notes',
+        component: ComponentCreator('/docs/writing-sample/release-notes', 'ae0'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/tutorial-basics/tutorial',
-        component: ComponentCreator('/docs/tutorial-basics/tutorial', 'f67'),
+        path: '/docs/writing-sample/tutorial',
+        component: ComponentCreator('/docs/writing-sample/tutorial', '268'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/tutorial-basics/user-manual',
-        component: ComponentCreator('/docs/tutorial-basics/user-manual', '214'),
+        path: '/docs/writing-sample/user-manual',
+        component: ComponentCreator('/docs/writing-sample/user-manual', '4fc'),
         exact: true,
         sidebar: "tutorialSidebar"
       }

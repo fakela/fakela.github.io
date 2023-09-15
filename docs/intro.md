@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
-sidebar_label: Work Experience
+sidebar_label: About Me
+
 ---
 
 

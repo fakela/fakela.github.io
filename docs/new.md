@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: Experience
+sidebar_label: Work Experience
 ---
 
 # Experience

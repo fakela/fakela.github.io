@@ -1,0 +1,28 @@
+{
+  "unversionedId": "writing-sample/user-manual",
+  "id": "writing-sample/user-manual",
+  "title": "User Manuals and Guides",
+  "description": "Welcome to my User Manuals and Guides portfolio section! As a technical writer, I specialize in crafting clear and comprehensive user documentation that helps users navigate and utilize products effectively. Below are some examples of my work in this domain:",
+  "source": "@site/docs/writing-sample/user-manual.md",
+  "sourceDirName": "writing-sample",
+  "slug": "/writing-sample/user-manual",
+  "permalink": "/docs/writing-sample/user-manual",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/user-manual.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "sidebar_label": "User Manuals and Guides"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Writing Samples",
+    "permalink": "/docs/category/writing-samples"
+  },
+  "next": {
+    "title": "Tutorials",
+    "permalink": "/docs/writing-sample/tutorial"
+  }
+}

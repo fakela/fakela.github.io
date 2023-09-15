@@ -21,43 +21,43 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/api",
-              "path": "/docs/tutorial-basics/api",
+              "id": "writing-sample/api",
+              "path": "/docs/writing-sample/api",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/blogs",
-              "path": "/docs/tutorial-basics/blogs",
+              "id": "writing-sample/blogs",
+              "path": "/docs/writing-sample/blogs",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/faqs",
-              "path": "/docs/tutorial-basics/faqs",
+              "id": "writing-sample/faqs",
+              "path": "/docs/writing-sample/faqs",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/how-to-guide",
-              "path": "/docs/tutorial-basics/how-to-guide",
+              "id": "writing-sample/how-to-guide",
+              "path": "/docs/writing-sample/how-to-guide",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/newsletter",
-              "path": "/docs/tutorial-basics/newsletter",
+              "id": "writing-sample/newsletter",
+              "path": "/docs/writing-sample/newsletter",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/release-notes",
-              "path": "/docs/tutorial-basics/release-notes",
+              "id": "writing-sample/release-notes",
+              "path": "/docs/writing-sample/release-notes",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/tutorial",
-              "path": "/docs/tutorial-basics/tutorial",
+              "id": "writing-sample/tutorial",
+              "path": "/docs/writing-sample/tutorial",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/user-manual",
-              "path": "/docs/tutorial-basics/user-manual",
+              "id": "writing-sample/user-manual",
+              "path": "/docs/writing-sample/user-manual",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -71,7 +71,7 @@
             "tutorialSidebar": {
               "link": {
                 "path": "/docs/intro",
-                "label": "Work Experience"
+                "label": "About Me"
               }
             }
           }

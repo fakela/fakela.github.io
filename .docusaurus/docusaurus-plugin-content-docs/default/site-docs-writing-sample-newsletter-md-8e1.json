@@ -1,0 +1,28 @@
+{
+  "unversionedId": "writing-sample/newsletter",
+  "id": "writing-sample/newsletter",
+  "title": "Welcome to my Newsletter Writing Portfolio",
+  "description": "Welcome to my Newsletter Writing portfolio section! As a technical writer with a knack for effective communication, I specialize in crafting engaging and informative newsletters that captivate your audience. Below is an example of my work in this category:",
+  "source": "@site/docs/writing-sample/newsletter.md",
+  "sourceDirName": "writing-sample",
+  "slug": "/writing-sample/newsletter",
+  "permalink": "/docs/writing-sample/newsletter",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/newsletter.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "sidebar_label": "Newsletter Writing"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "API Documentation",
+    "permalink": "/docs/writing-sample/api"
+  },
+  "next": {
+    "title": "Troubleshooting & FAQ",
+    "permalink": "/docs/writing-sample/faqs"
+  }
+}

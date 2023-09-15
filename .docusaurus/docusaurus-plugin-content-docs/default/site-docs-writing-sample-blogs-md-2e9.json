@@ -1,0 +1,28 @@
+{
+  "unversionedId": "writing-sample/blogs",
+  "id": "writing-sample/blogs",
+  "title": "Blogs and Articles Writing Sample",
+  "description": "Welcome to my Blogs and Articles writing sample section! As a proficient writer, I enjoy creating engaging and informative blog posts and articles on a wide range of topics. Below are some examples of my work in this domain:",
+  "source": "@site/docs/writing-sample/blogs.md",
+  "sourceDirName": "writing-sample",
+  "slug": "/writing-sample/blogs",
+  "permalink": "/docs/writing-sample/blogs",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/blogs.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "sidebar_label": "Blogs and Articles"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How-to Guides",
+    "permalink": "/docs/writing-sample/how-to-guide"
+  },
+  "next": {
+    "title": "API Documentation",
+    "permalink": "/docs/writing-sample/api"
+  }
+}

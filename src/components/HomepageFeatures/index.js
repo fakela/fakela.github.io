@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Work Experience',
-    link: '/docs/intro',
+    link: '/docs/new',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Writing Samples',
-    link: '/docs/writing-samples',
+    link: '/docs/category/writing-samples',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
@@ -24,12 +24,12 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Writing Guide',
-    link: '/docs/writing-guide',
+    title: 'Articles Written',
+    link: 'https://docs.google.com/spreadsheets/d/1bgPWg-X8ON2ugT5Eg2DR4boXtrEIvMxsSNq3uuaJb1U/edit#gid=0',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        For my ideas about writing, styling, and organizing technical documentation.
+        List of articles written
       </>
     ),
   },
