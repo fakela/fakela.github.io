@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '5c6'),
+    component: ComponentCreator('/docs', '0ed'),
     routes: [
       {
         path: '/docs/category/tutorial---extras',
@@ -140,6 +140,12 @@ export default [
       {
         path: '/docs/tutorial-basics/how-to-guide',
         component: ComponentCreator('/docs/tutorial-basics/how-to-guide', '0e8'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/tutorial-basics/new',
+        component: ComponentCreator('/docs/tutorial-basics/new', 'fe2'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

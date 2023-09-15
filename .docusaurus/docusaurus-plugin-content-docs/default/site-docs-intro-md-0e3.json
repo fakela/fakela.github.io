@@ -1,8 +1,8 @@
 {
   "unversionedId": "intro",
   "id": "intro",
-  "title": "Favour Kelvin",
-  "description": "I’m a technical writer with experience in creating documentation for external customers and internal engineering teams. I’ve managed large, established documentation libraries and created original documentation for new systems and services. My writing philosophy is to treat documentation like code. This means writing with open-source systems that accommodate community input and help reduce the documentation burden on developers.",
+  "title": "About Me: Favour Kelvin",
+  "description": "Hey there, I'm Favour Kelvin, and I'm really excited to share a bit about myself with you. I'm not your average tech enthusiast; I'm a Technical Writer and Developer Advocate, and I've been on this incredible journey for the past 5 years, exploring the vast world of technology.",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",

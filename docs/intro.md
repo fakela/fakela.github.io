@@ -3,114 +3,80 @@ sidebar_position: 1
 sidebar_label: Work Experience
 ---
 
-# Favour Kelvin
 
-# About
+# About Me: Favour Kelvin
 
-I’m a technical writer with experience in creating documentation for external customers and internal engineering teams. I’ve managed large, established documentation libraries and created original documentation for new systems and services. My writing philosophy is to treat documentation like code. This means writing with open-source systems that accommodate community input and help reduce the documentation burden on developers.
+Hey there, I'm Favour Kelvin, and I'm really excited to share a bit about myself with you. I'm not your average tech enthusiast; I'm a Technical Writer and Developer Advocate, and I've been on this incredible journey for the past 5 years, exploring the vast world of technology. 
+
+## My Journey
+
+It all started when I ventured into the realm of software development, and I quickly found my passion for open source projects. In fact, I've been a part of three Google Open Source programs:
+
+- Google Summer of Code (I wore the hats of both a student and a mentor)
+- Google Code-In (I played the role of a mentor)
+- Google Season of Docs (I participated as a contributor and also as a mentor)
+
+But my journey doesn't stop there. I've donned multiple hats over the years, working as a freelancer, a full-time tech enthusiast, and also taking on various contract roles in different tech domains. During this time, I've had the pleasure of delving into a multitude of areas, from DevOps and Cloud computing to Web development, IOT, Data Science, Blockchain, Web 3, Software development, Version control & Git, Data automation, and Database management, all on a global scale.
+
+## Notable Achievements
+
+Here are some exciting highlights from my journey:
+
+- I've authored over 70 articles in just a few years.
+- I've had the privilege of participating in and mentoring participants in three Google Open Source Programs.
+- I've taken on the challenge of crafting and scaling documentation from scratch for projects like Gleuops and Extrimian.
+- I've improved existing content and conducted documentation audits for esteemed organizations like Bacalhau (Protocol labs), Mindee, Document Write, and Calimero.
+- I've implemented documentation analytics to track user engagement, resulting in an impressive 25% increase in documentation user satisfaction.
+- I led a team that revamped a 500-page software documentation within 6 months, leading to a remarkable 40% reduction in customer support tickets.
+- I've enhanced user manuals, leading to a significant 20% increase in user satisfaction scores.
+- I've documented more than 10 API integrations in the first quarter of 2023, ensuring timely releases and offering clear guidance for third-party developers.
+- I've developed and delivered training materials, reducing the average training period by a valuable two weeks.
+- I implemented a new documentation platform, reducing content publishing times by an impressive 50%.
+- I introduced a unified content standard across different product lines, fostering consistency in voice, tone, and terminology, ultimately increasing brand cohesion and reducing user confusion.
+- I've worked collaboratively with cross-functional teams to create a streamlined feedback loop for documentation updates, resulting in a remarkable 60% reduction in response times to user-reported errors.
+- I successfully integrated technical writing into the Agile development process of a company, ensuring that documentation remains up-to-date with every sprint release.
+- I've contributed to various technical content for projects such as Coupler.io, Giskard, Cedalo, Bacalhau, PeeringDB, Nerd for Tech, Mautic, and Calimero.
+- I've played a pivotal role in building and nurturing a community of open-source enthusiasts through my involvement with Open Source Community Africa.
+
+## Why Choose Me
+
+Now, you might be wondering, "Why should I consider Favour Kelvin?" Well, here are a few compelling reasons:
+
+- I have an unwavering commitment to delivering my absolute best in every task I undertake.
+- I'm passionate about sharing knowledge, making me a force to be reckoned with in the realms of technical writing and developer relations.
+- I possess the flexibility to adapt to changing conditions, company goals, and the evolving tech landscape.
+- Honesty is my guiding principle; I'll never oversell your product, but I will diligently convey its strengths and value to developers.
+- I excel at building and leading developer communities, fostering a sense of camaraderie and collaboration.
+- My colleagues often describe me as someone who injects humor into work, making collaboration not just productive but also enjoyable.
+
+## My Strengths
+
+In a nutshell, here's what I bring to the table:
+
+- Proficiency in JavaScript, TypeScript, and Python for web and embedded systems.
+- Expertise in crafting comprehensive API documentation.
+- A knack for creating engaging and informative technical content.
+- Skills in community and program management.
+- Experience in organizing and executing successful developer events.
+- Expertise in educational program management and curriculum development.
+- An uncanny ability to curate and distribute memes (because we all need a bit of humor in our tech-filled lives).
+
+## What I'll Bring to Your Team
+
+If you decide to bring me on board as your next Technical Writer or Developer Advocate, here's what I'll contribute:
+If you hire me as your next Technical Writer or Developer Advocate, here's what I'll do:
+
+- Act as a bridge between your product and developers, ensuring their success.
+- Engage with technical and non-technical customers to convey your product's value.
+- Create tools, code demos, integrations, content, and educational materials.
+- Collaborate with strategic partners for creative integration ideas.
+- Educate developers through various channels.
+- Foster a thriving developer community.
+- Work closely with internal teams to enhance your product's developer experience.
+- Provide valuable feedback on new product features.
+- Measure and demonstrate the business value of Developer Relations.
 
 
-## EXPERIENCE
-Download my resume for a PDF version of this information.
+## Let's Connect!
 
-
-### Protocol Labs (Bacalhau) — Senior Technical Writer
-Dec. 2022 - Present
-- Position Bacalhau as the leader in serverless computing through storytelling across platforms
-- Devise a plan to document all aspects of Bacalhau, including usage examples, conceptual documentation, and specification writing.
-- Affect the lives of countless people you help bring into this community.
-- Work directly with Software Engineers to understand the abstractions and interfaces that Bacalhau offers to programmers and document them in a way that helps programmers go from zero to expert in a step-by-step fashion.
-- Assist the DevRel team in creating other resources, including blogs, user guides, FAQs, tutorials, and white papers.
-- Edit and review content created by others for technical accuracy and clarity.
-- Proactively identify gaps in the documentation or knowledge base articles.
-
-### Mindee — Senior Technical Writer
-Nov. 2021 - Aug. 2022
-- Understood the product space and ensured high levels of accuracy in documentation.
-- Accurately captured all relevant content and resources, establishing visibility for users.
-- Understood the writing style guide and refined it.
-- Performed PR reviews for their peers that considered flow and the audience, as well as the goals of the product.
-- Listened to the priorities and concerns of others, and acknowledged different perspectives.
-- Reflected on user feedback and turned it into something actionable.
-- Participated in meetings, and created cross-team collaboration was necessary to address business goals.
-
-### PeeringDB — Technical Writer
-July 2021 - Jan 2022
-- Worked with me on a documentation architecture project for PeeringDB
-- Worked on creating educative articles to help Peering DB users understand the product better
-- Conducted user analysis while creating documentation that describes the documentation needs of PeeringDB users.
-- Mapped out the product features and the different kinds of users who interact with them.
-- Single-handedly created a content documentation structure showing where documentation is needed to empower users to make the best use of the services offered by PeeringDB.
-- Created document templates that can be used by future document authors to create consistently formatted documents.
-
-### Mautic— Team Education Lead
-Jan. 2021 - Present (open source)
-- Led a team of technical writers in creating the Mautic user guide
-- Created a content development strategy for the education team
-- Analyzed documentation needs and make recommendations regarding documentation priorities.
-
-### DocumentWrite — Technical Writer
-Jun. 2021 - Nov 2021
-- Collaborated with the teams to create a documentation structure and understand user needs
-- Built how-to-guide documentation from the ground up
-- Co-authored the company's first official style guide to maintain a reliable, consistent document lifecycle.
-- Managed and updated the existing document content with current information on releases
-- Worked together with the customer success, marketing, and product management teams to achieve project success.
-
-### Extrimian — Technical Writer
-Feb 2021 - May 2021
-- Wrote documentation on blockchain technology and decentralization.
-- Developed the company's first official technical documentation in an agile environment while meeting 100% of the team deadline
-- Worked with the developers, designers and marketing team to create documentation from the ground up
-
-### Google Season of Docs — Technical Writer
-Aug. 2020 - Dec. 2020
-- Wrote technical related articles for Mautic Knowledge Base during the Google season of Docs program
-- Wrote API and reference documentation for developers.
-- Created user guides and tutorials to enable users to get started with Mautic
-
-### Open Source Community Africa — Volunteer
-May 2018 - Present (open source)
-- Worked with a team of designers and developers to build the official organization website
-- Ensured compatibility by cross-testing in various browsers and platforms
-- Worked with a variety of different frameworks, languages javascript, React, Gatsby, Html, CSS, etc
-- Assisted in community building and organizing meetups with other teammates to enable the community to know more about open source.
-
-### Google Code-In|Sugarlabs — Mentor
-Dec 2019 - Jan 2020
-- Worked with a team of developers in setting out tasks and providing guidance to students through code reviews and constructive feedback.
-- Collaborated with other developers and the community to facilitate the acceptance of students' work.
-- Worked in collaboration with the student contributors in adding features that have improved the app and users' experience by 100%.
-
-### Google Summer Of Code|Sugarlabs — Software Developer
-May 2019 - Aug. 2019
-- Implemented the use of continuous integration and deployment using Travis CI
-- Worked closely with mentors and other developers in developing and writing modern, performant, and robust code for the project which helped to increase the app performance and users' experience tremendously
-- Added some major features to the applications, such as the use of service worker, a bundler(webpack, gulp) which increased the performance of the app by 90%.
-- Added unit test cases using karma, jasmine which had an impact on the overall performance of the app.
-
-## VOLUNTEER/MENTORSHIP/EXPERIENCE
-
-### GoogleCSFirst|TeensCanCode: Lagos — Facilitator
-Aug. 2019 - Oct 2019
-- Organized and Trained people and students on scratch using the Google CSFirst curriculum
-
-### Google Code-In — Mentor certificate
-Jan 2020
-- Certificate for the successful completion of the program.
-
-### Google Summer Of Code - Mentor
-June - Aug. 2020
-
-### Google Season Of Docs - Mentor
-May - Dec. 2022
-- Certificate for the successful completion of the program.
-
-Skills
-------
-- Writing Categories: User manuals and guides, API documentation, Technical specifications, Whitepapers, Tutorials, How-to guides, Blogs
-- Domain: DevOps, Cloud computing, Web development, IOT, Data Science, Blockchain and Web 3, Software development, Version control & Git, Data automation, Database management
-- Tools & Platforms: Swagger(OpenAPI), Medium. Zendesk, Adobe RoboHelp, MadCap Flare, Gitbook, Markdown, Docusarus
-- Design: Figma, Sketch, Photoshop, Canva, Illustrator
-- Languages: English.
-
+If you have any exciting opportunities or if you simply need some tech expertise, please don't hesitate to reach out. I'm open to both full-time positions and short-term contracts that align with my skills and interests. You can reach me via email at [Your Email Address], or connect with me on LinkedIn or Twitter. I'm looking forward to connecting with you! ❤️

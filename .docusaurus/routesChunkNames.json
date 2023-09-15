@@ -186,7 +186,7 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-5c6": {
+  "/docs-0ed": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-84-a-a9f"
@@ -220,6 +220,10 @@
   "/docs/tutorial-basics/how-to-guide-0e8": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-how-to-guide-0-cf-0fb"
+  },
+  "/docs/tutorial-basics/new-fe2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-new-72-f-d8c"
   },
   "/docs/tutorial-basics/newsletter-322": {
     "__comp": "__comp---theme-doc-item-178-a40",

@@ -68,6 +68,12 @@
             "label": "Troubleshooting & FAQ",
             "href": "/docs/tutorial-basics/faqs",
             "docId": "tutorial-basics/faqs"
+          },
+          {
+            "type": "link",
+            "label": "new",
+            "href": "/docs/tutorial-basics/new",
+            "docId": "tutorial-basics/new"
           }
         ],
         "href": "/docs/category/writing-samples"
@@ -98,8 +104,8 @@
   "docs": {
     "intro": {
       "id": "intro",
-      "title": "Favour Kelvin",
-      "description": "I’m a technical writer with experience in creating documentation for external customers and internal engineering teams. I’ve managed large, established documentation libraries and created original documentation for new systems and services. My writing philosophy is to treat documentation like code. This means writing with open-source systems that accommodate community input and help reduce the documentation burden on developers.",
+      "title": "About Me: Favour Kelvin",
+      "description": "Hey there, I'm Favour Kelvin, and I'm really excited to share a bit about myself with you. I'm not your average tech enthusiast; I'm a Technical Writer and Developer Advocate, and I've been on this incredible journey for the past 5 years, exploring the vast world of technology.",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/api": {
@@ -124,6 +130,12 @@
       "id": "tutorial-basics/how-to-guide",
       "title": "How-to Guide Documentation Sample",
       "description": "Welcome to my How-to Guide Documentation portfolio section! As a technical writer, I specialize in creating clear and concise step-by-step guides that assist users in performing specific tasks. Below is an example of my work in this category:",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/new": {
+      "id": "tutorial-basics/new",
+      "title": "new",
+      "description": "EXPERIENCE",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/newsletter": {

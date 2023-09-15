@@ -22,8 +22,8 @@
             {
               "unversionedId": "intro",
               "id": "intro",
-              "title": "Favour Kelvin",
-              "description": "I’m a technical writer with experience in creating documentation for external customers and internal engineering teams. I’ve managed large, established documentation libraries and created original documentation for new systems and services. My writing philosophy is to treat documentation like code. This means writing with open-source systems that accommodate community input and help reduce the documentation burden on developers.",
+              "title": "About Me: Favour Kelvin",
+              "description": "Hey there, I'm Favour Kelvin, and I'm really excited to share a bit about myself with you. I'm not your average tech enthusiast; I'm a Technical Writer and Developer Advocate, and I've been on this incredible journey for the past 5 years, exploring the vast world of technology.",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
               "slug": "/intro",
@@ -123,8 +123,8 @@
                 "permalink": "/docs/tutorial-basics/tutorial"
               },
               "next": {
-                "title": "Tutorial - Extras",
-                "permalink": "/docs/category/tutorial---extras"
+                "title": "new",
+                "permalink": "/docs/tutorial-basics/new"
               }
             },
             {
@@ -153,6 +153,30 @@
               "next": {
                 "title": "Tutorials Documentation",
                 "permalink": "/docs/tutorial-basics/tutorial"
+              }
+            },
+            {
+              "unversionedId": "tutorial-basics/new",
+              "id": "tutorial-basics/new",
+              "title": "new",
+              "description": "EXPERIENCE",
+              "source": "@site/docs/tutorial-basics/new.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/new",
+              "permalink": "/docs/tutorial-basics/new",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/new.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Troubleshooting & FAQ",
+                "permalink": "/docs/tutorial-basics/faqs"
+              },
+              "next": {
+                "title": "Tutorial - Extras",
+                "permalink": "/docs/category/tutorial---extras"
               }
             },
             {
@@ -371,6 +395,10 @@
                     "type": "doc",
                     "id": "tutorial-basics/faqs",
                     "label": "Troubleshooting & FAQ"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/new"
                   }
                 ],
                 "link": {
