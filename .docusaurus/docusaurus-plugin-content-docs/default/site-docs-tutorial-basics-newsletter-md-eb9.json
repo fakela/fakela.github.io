@@ -11,18 +11,18 @@
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/newsletter.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 1,
+  "sidebarPosition": 7,
   "frontMatter": {
-    "sidebar_position": 1,
+    "sidebar_position": 7,
     "sidebar_label": "Newsletter Writing"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Writing Samples",
-    "permalink": "/docs/category/writing-samples"
+    "title": "API Documentation",
+    "permalink": "/docs/tutorial-basics/api"
   },
   "next": {
-    "title": "Release Notes",
-    "permalink": "/docs/tutorial-basics/release-notes"
+    "title": "Troubleshooting & FAQ",
+    "permalink": "/docs/tutorial-basics/faqs"
   }
 }

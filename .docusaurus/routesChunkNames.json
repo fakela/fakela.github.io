@@ -186,16 +186,12 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-0ed": {
+  "/docs-89e": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-84-a-a9f"
     },
     "versionMetadata": "versionMetadata---docs-935-398"
-  },
-  "/docs/category/tutorial---extras-f09": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-tutorial-extrasc-84-abc"
   },
   "/docs/category/writing-samples-ec6": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -204,6 +200,10 @@
   "/docs/intro-aed": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-intro-0-e-3-be1"
+  },
+  "/docs/new-03c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-newe-72-43f"
   },
   "/docs/tutorial-basics/api-c1d": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -221,10 +221,6 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-how-to-guide-0-cf-0fb"
   },
-  "/docs/tutorial-basics/new-fe2": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-new-72-f-d8c"
-  },
   "/docs/tutorial-basics/newsletter-322": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-newslettereb-9-fe1"
@@ -240,14 +236,6 @@
   "/docs/tutorial-basics/user-manual-214": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-user-manual-415-135"
-  },
-  "/docs/tutorial-extras/manage-docs-versions-fdd": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-manage-docs-versionsdff-6d4"
-  },
-  "/docs/tutorial-extras/translate-your-site-2d7": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-translate-your-sitee-44-ddf"
   },
   "/-ce6": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",

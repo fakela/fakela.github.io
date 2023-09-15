@@ -4,8 +4,8 @@
   "permalink": "/docs/category/tutorial---extras",
   "navigation": {
     "previous": {
-      "title": "new",
-      "permalink": "/docs/tutorial-basics/new"
+      "title": "Release Notes",
+      "permalink": "/docs/tutorial-basics/release-notes"
     },
     "next": {
       "title": "Manage Docs Versions",

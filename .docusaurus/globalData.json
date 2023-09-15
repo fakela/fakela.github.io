@@ -16,6 +16,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "new",
+              "path": "/docs/new",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "tutorial-basics/api",
               "path": "/docs/tutorial-basics/api",
               "sidebar": "tutorialSidebar"
@@ -33,11 +38,6 @@
             {
               "id": "tutorial-basics/how-to-guide",
               "path": "/docs/tutorial-basics/how-to-guide",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/new",
-              "path": "/docs/tutorial-basics/new",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -61,23 +61,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "/category/writing-samples",
               "path": "/docs/category/writing-samples",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
               "sidebar": "tutorialSidebar"
             }
           ],

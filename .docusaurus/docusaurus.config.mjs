@@ -4,7 +4,7 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My name is Favour Kelvin.",
+  "title": "Favour Kelvin Portfolio",
   "tagline": " A technical writer and developer advocate",
   "favicon": "img/favicon.ico",
   "url": "https://fakela.github.io",
@@ -53,7 +53,7 @@ export default {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "Tutorial"
+          "label": "About Me"
         },
         {
           "to": "/blog",

@@ -1,11 +1,11 @@
 ---
-sidebar_position: 7
-sidebar_label: Tutorials Documentation
+sidebar_position: 2
+sidebar_label: Tutorials 
 ---
 
-# Tutorials Documentation Sample
+# Tutorials Sample
 
-Welcome to my Tutorials Documentation portfolio section! As a technical writer, I specialize in creating comprehensive and easy-to-follow tutorials that guide users through complex processes step by step. Below, you'll find an example of my work in this domain:
+Welcome to my Tutorials portfolio section! As a technical writer, I specialize in creating comprehensive and easy-to-follow tutorials that guide users through complex processes step by step. Below, you'll find an example of my work in this domain:
 
 ### Project: Reading Data from Multiple S3 Buckets using Bacalhau
 

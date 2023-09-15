@@ -11,18 +11,14 @@
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/release-notes.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 1,
+  "sidebarPosition": 8,
   "frontMatter": {
-    "sidebar_position": 1,
+    "sidebar_position": 8,
     "sidebar_label": "Release Notes"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Newsletter Writing",
-    "permalink": "/docs/tutorial-basics/newsletter"
-  },
-  "next": {
-    "title": "User Manuals and Guides",
-    "permalink": "/docs/tutorial-basics/user-manual"
+    "title": "Troubleshooting & FAQ",
+    "permalink": "/docs/tutorial-basics/faqs"
   }
 }

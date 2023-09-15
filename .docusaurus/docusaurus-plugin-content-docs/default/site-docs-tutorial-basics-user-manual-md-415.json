@@ -18,11 +18,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Release Notes",
-    "permalink": "/docs/tutorial-basics/release-notes"
+    "title": "Writing Samples",
+    "permalink": "/docs/category/writing-samples"
   },
   "next": {
-    "title": "API Documentation",
-    "permalink": "/docs/tutorial-basics/api"
+    "title": "Tutorials",
+    "permalink": "/docs/tutorial-basics/tutorial"
   }
 }

@@ -11,18 +11,18 @@
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/blogs.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 7,
+  "sidebarPosition": 4,
   "frontMatter": {
-    "sidebar_position": 7,
+    "sidebar_position": 4,
     "sidebar_label": "Blogs and Articles"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "API Documentation",
-    "permalink": "/docs/tutorial-basics/api"
-  },
-  "next": {
     "title": "How-to Guides",
     "permalink": "/docs/tutorial-basics/how-to-guide"
+  },
+  "next": {
+    "title": "API Documentation",
+    "permalink": "/docs/tutorial-basics/api"
   }
 }

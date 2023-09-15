@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My name is Favour Kelvin.',
+  title: 'Favour Kelvin Portfolio',
   tagline: ' A technical writer and developer advocate',
   favicon: 'img/favicon.ico',
 
@@ -74,7 +74,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'About Me',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {

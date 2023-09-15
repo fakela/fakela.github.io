@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="">
-            Helping you go from clueless to confident through meticulously crafted documentation.
+            Click here to view my portfolio 🧐
           </Link>
         </div>
       </div>
