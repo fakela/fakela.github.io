@@ -41,7 +41,7 @@
           },
           {
             "type": "link",
-            "label": "Newsletter Contributions",
+            "label": "Newsletter Writing",
             "href": "/docs/tutorial-basics/newsletter",
             "docId": "tutorial-basics/newsletter"
           },
@@ -176,8 +176,8 @@
     },
     "tutorial-basics/newsletter": {
       "id": "tutorial-basics/newsletter",
-      "title": "newsletter",
-      "description": "",
+      "title": "Welcome to my Newsletter Writing Portfolio",
+      "description": "Welcome to my Newsletter Writing portfolio section! As a technical writer with a knack for effective communication, I specialize in crafting engaging and informative newsletters that captivate your audience. Below is an example of my work in this category:",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/release-notes": {

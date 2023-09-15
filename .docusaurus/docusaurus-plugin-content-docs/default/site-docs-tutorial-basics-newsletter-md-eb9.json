@@ -1,8 +1,8 @@
 {
   "unversionedId": "tutorial-basics/newsletter",
   "id": "tutorial-basics/newsletter",
-  "title": "newsletter",
-  "description": "",
+  "title": "Welcome to my Newsletter Writing Portfolio",
+  "description": "Welcome to my Newsletter Writing portfolio section! As a technical writer with a knack for effective communication, I specialize in crafting engaging and informative newsletters that captivate your audience. Below is an example of my work in this category:",
   "source": "@site/docs/tutorial-basics/newsletter.md",
   "sourceDirName": "tutorial-basics",
   "slug": "/tutorial-basics/newsletter",
@@ -14,7 +14,7 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "sidebar_position": 1,
-    "sidebar_label": "Newsletter Contributions"
+    "sidebar_label": "Newsletter Writing"
   },
   "sidebar": "tutorialSidebar",
   "previous": {

@@ -7,14 +7,6 @@ sidebar_label: How-to Guides
 
 Welcome to my How-to Guide Documentation portfolio section! As a technical writer, I specialize in creating clear and concise step-by-step guides that assist users in performing specific tasks. Below is an example of my work in this category:
 
----
-sidebar_position: 7
-sidebar_label: How-to Guides
----
-
-# How-to Guide Documentation Sample
-
-Welcome to my How-to Guide Documentation portfolio section! As a technical writer, I specialize in creating clear and concise step-by-step guides that assist users in performing specific tasks. Below is an example of my work in this category:
 
 ### Project: Setting Up a Widget with WidgetPro
 

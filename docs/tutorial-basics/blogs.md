@@ -11,7 +11,7 @@ Welcome to my Blogs and Articles writing sample section! As a proficient writer,
 
 **Description:** This article takes you through the process of uploading a PyTorch model to Giskard, a tool designed to identify potential errors and biases. It addresses the challenges of training and testing PyTorch models and demonstrates how Giskard can help ensure model quality.
 
-**Platform:** Personal Blog
+**Platform:** [Giskard](https://www.giskard.ai/)
 
 **Key Points:**
 
@@ -32,7 +32,7 @@ This article showcases my ability to explain complex concepts clearly and guide 
 
 **Date:** July 14, 2022
 
-**Platform:** Mailchimp Blog
+**Platform:** [Coupler.io][https://www.coupler.io/]
 
 **Key Points:**
 
@@ -49,5 +49,10 @@ This article showcases my ability to explain complex concepts clearly and guide 
 
 [Read Full Article](https://blog.coupler.io/mailchimp-database-integration/)
 
+## List of articles written by Me
+
+<iframe width="100%" height="800" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSsLD0sxbbF10tnQdE0458OaW8bGE6QdopYTGI8HGSzbsryIEkpy78-bg2jHwLAKTc2cpuPzRRouolE/pubhtml?gid=0&single=true"/>
+
+[View on Gsheets](https://docs.google.com/spreadsheets/d/1bgPWg-X8ON2ugT5Eg2DR4boXtrEIvMxsSNq3uuaJb1U/edit?usp=sharing)
 
 This showcase my ability to deliver insightful and engaging content on various subjects. If you're interested in collaborating on similar projects or would like more details, please feel free to [contact me](mailto:favourkelvin17@gmail.com). I'm excited to contribute to your content needs!
