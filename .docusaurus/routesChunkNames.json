@@ -186,7 +186,7 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-0d1": {
+  "/docs-5c6": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-84-a-a9f"
@@ -217,21 +217,9 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-faqse-58-d92"
   },
-  "/docs/tutorial-basics/glossary-549": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-glossary-4-db-c89"
-  },
   "/docs/tutorial-basics/how-to-guide-0e8": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-how-to-guide-0-cf-0fb"
-  },
-  "/docs/tutorial-basics/internal-docs-b1e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-internal-docs-3-ef-1e1"
-  },
-  "/docs/tutorial-basics/markdown-features-4b7": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-markdown-features-18-c-a79"
   },
   "/docs/tutorial-basics/newsletter-322": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -240,14 +228,6 @@
   "/docs/tutorial-basics/release-notes-d8c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-release-notesd-53-6a4"
-  },
-  "/docs/tutorial-basics/style-guide-42a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-style-guide-0-c-6-11d"
-  },
-  "/docs/tutorial-basics/troubleshooting-40a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-troubleshooting-18-f-988"
   },
   "/docs/tutorial-basics/tutorial-f67": {
     "__comp": "__comp---theme-doc-item-178-a40",

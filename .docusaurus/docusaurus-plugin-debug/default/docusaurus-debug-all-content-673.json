@@ -63,8 +63,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Markdown Features",
-                "permalink": "/docs/tutorial-basics/markdown-features"
+                "title": "User Manuals and Guides",
+                "permalink": "/docs/tutorial-basics/user-manual"
               },
               "next": {
                 "title": "Blogs and Articles",
@@ -102,8 +102,8 @@
             {
               "unversionedId": "tutorial-basics/faqs",
               "id": "tutorial-basics/faqs",
-              "title": "faqs",
-              "description": "",
+              "title": "Troubleshooting and FAQ Writing Portfolio Sample",
+              "description": "Welcome to my Troubleshooting and FAQ Writing portfolio section! As a technical writer, I excel in creating comprehensive troubleshooting guides and FAQ documents that provide users with clear solutions to common issues. Below is an example of my work in this category:",
               "source": "@site/docs/tutorial-basics/faqs.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/faqs",
@@ -112,47 +112,19 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/faqs.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 1,
+              "sidebarPosition": 8,
               "frontMatter": {
-                "sidebar_position": 1,
-                "sidebar_label": "FAQs"
+                "sidebar_position": 8,
+                "sidebar_label": "Troubleshooting & FAQ"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Writing Samples",
-                "permalink": "/docs/category/writing-samples"
+                "title": "Tutorials Documentation",
+                "permalink": "/docs/tutorial-basics/tutorial"
               },
               "next": {
-                "title": "Glossaries and Terminology Lists",
-                "permalink": "/docs/tutorial-basics/glossary"
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/glossary",
-              "id": "tutorial-basics/glossary",
-              "title": "glossary",
-              "description": "",
-              "source": "@site/docs/tutorial-basics/glossary.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/glossary",
-              "permalink": "/docs/tutorial-basics/glossary",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/glossary.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1,
-                "sidebar_label": "Glossaries and Terminology Lists"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "FAQs",
-                "permalink": "/docs/tutorial-basics/faqs"
-              },
-              "next": {
-                "title": "Internal Documentation",
-                "permalink": "/docs/tutorial-basics/internal-docs"
+                "title": "Tutorial - Extras",
+                "permalink": "/docs/category/tutorial---extras"
               }
             },
             {
@@ -184,61 +156,6 @@
               }
             },
             {
-              "unversionedId": "tutorial-basics/internal-docs",
-              "id": "tutorial-basics/internal-docs",
-              "title": "internal-docs",
-              "description": "",
-              "source": "@site/docs/tutorial-basics/internal-docs.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/internal-docs",
-              "permalink": "/docs/tutorial-basics/internal-docs",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/internal-docs.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1,
-                "sidebar_label": "Internal Documentation"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Glossaries and Terminology Lists",
-                "permalink": "/docs/tutorial-basics/glossary"
-              },
-              "next": {
-                "title": "Newsletter Writing",
-                "permalink": "/docs/tutorial-basics/newsletter"
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/markdown-features",
-              "id": "tutorial-basics/markdown-features",
-              "title": "Markdown Features",
-              "description": "Docusaurus supports Markdown and a few additional features.",
-              "source": "@site/docs/tutorial-basics/markdown-features.mdx",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/markdown-features",
-              "permalink": "/docs/tutorial-basics/markdown-features",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/markdown-features.mdx",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "sidebar_position": 4
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "User Manuals and Guides",
-                "permalink": "/docs/tutorial-basics/user-manual"
-              },
-              "next": {
-                "title": "API Documentation",
-                "permalink": "/docs/tutorial-basics/api"
-              }
-            },
-            {
               "unversionedId": "tutorial-basics/newsletter",
               "id": "tutorial-basics/newsletter",
               "title": "Welcome to my Newsletter Writing Portfolio",
@@ -258,8 +175,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Internal Documentation",
-                "permalink": "/docs/tutorial-basics/internal-docs"
+                "title": "Writing Samples",
+                "permalink": "/docs/category/writing-samples"
               },
               "next": {
                 "title": "Release Notes",
@@ -269,8 +186,8 @@
             {
               "unversionedId": "tutorial-basics/release-notes",
               "id": "tutorial-basics/release-notes",
-              "title": "release-notes",
-              "description": "",
+              "title": "Welcome to my Release Note Writing Portfolio Section",
+              "description": "Greetings! As a dedicated technical writer, I excel in creating meticulous and informative release notes that serve as essential communication tools between your product development team and your valued users. Below, you will find an illustrative example of my proficiency in this specialized field:",
               "source": "@site/docs/tutorial-basics/release-notes.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/release-notes",
@@ -288,62 +205,6 @@
               "previous": {
                 "title": "Newsletter Writing",
                 "permalink": "/docs/tutorial-basics/newsletter"
-              },
-              "next": {
-                "title": "Style Guides",
-                "permalink": "/docs/tutorial-basics/style-guide"
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/style-guide",
-              "id": "tutorial-basics/style-guide",
-              "title": "style-guide",
-              "description": "",
-              "source": "@site/docs/tutorial-basics/style-guide.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/style-guide",
-              "permalink": "/docs/tutorial-basics/style-guide",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/style-guide.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1,
-                "sidebar_label": "Style Guides"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Release Notes",
-                "permalink": "/docs/tutorial-basics/release-notes"
-              },
-              "next": {
-                "title": "Troubleshooting Guides",
-                "permalink": "/docs/tutorial-basics/troubleshooting"
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/troubleshooting",
-              "id": "tutorial-basics/troubleshooting",
-              "title": "troubleshooting",
-              "description": "",
-              "source": "@site/docs/tutorial-basics/troubleshooting.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/troubleshooting",
-              "permalink": "/docs/tutorial-basics/troubleshooting",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/troubleshooting.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1,
-                "sidebar_label": "Troubleshooting Guides"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Style Guides",
-                "permalink": "/docs/tutorial-basics/style-guide"
               },
               "next": {
                 "title": "User Manuals and Guides",
@@ -374,8 +235,8 @@
                 "permalink": "/docs/tutorial-basics/how-to-guide"
               },
               "next": {
-                "title": "Tutorial - Extras",
-                "permalink": "/docs/category/tutorial---extras"
+                "title": "Troubleshooting & FAQ",
+                "permalink": "/docs/tutorial-basics/faqs"
               }
             },
             {
@@ -398,12 +259,12 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Troubleshooting Guides",
-                "permalink": "/docs/tutorial-basics/troubleshooting"
+                "title": "Release Notes",
+                "permalink": "/docs/tutorial-basics/release-notes"
               },
               "next": {
-                "title": "Markdown Features",
-                "permalink": "/docs/tutorial-basics/markdown-features"
+                "title": "API Documentation",
+                "permalink": "/docs/tutorial-basics/api"
               }
             },
             {
@@ -473,21 +334,6 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "tutorial-basics/faqs",
-                    "label": "FAQs"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "tutorial-basics/glossary",
-                    "label": "Glossaries and Terminology Lists"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "tutorial-basics/internal-docs",
-                    "label": "Internal Documentation"
-                  },
-                  {
-                    "type": "doc",
                     "id": "tutorial-basics/newsletter",
                     "label": "Newsletter Writing"
                   },
@@ -498,22 +344,8 @@
                   },
                   {
                     "type": "doc",
-                    "id": "tutorial-basics/style-guide",
-                    "label": "Style Guides"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "tutorial-basics/troubleshooting",
-                    "label": "Troubleshooting Guides"
-                  },
-                  {
-                    "type": "doc",
                     "id": "tutorial-basics/user-manual",
                     "label": "User Manuals and Guides"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "tutorial-basics/markdown-features"
                   },
                   {
                     "type": "doc",
@@ -534,6 +366,11 @@
                     "type": "doc",
                     "id": "tutorial-basics/tutorial",
                     "label": "Tutorials Documentation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/faqs",
+                    "label": "Troubleshooting & FAQ"
                   }
                 ],
                 "link": {

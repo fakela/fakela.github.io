@@ -18,11 +18,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Troubleshooting Guides",
-    "permalink": "/docs/tutorial-basics/troubleshooting"
+    "title": "Release Notes",
+    "permalink": "/docs/tutorial-basics/release-notes"
   },
   "next": {
-    "title": "Markdown Features",
-    "permalink": "/docs/tutorial-basics/markdown-features"
+    "title": "API Documentation",
+    "permalink": "/docs/tutorial-basics/api"
   }
 }

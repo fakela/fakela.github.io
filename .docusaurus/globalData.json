@@ -31,23 +31,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/glossary",
-              "path": "/docs/tutorial-basics/glossary",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "tutorial-basics/how-to-guide",
               "path": "/docs/tutorial-basics/how-to-guide",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/internal-docs",
-              "path": "/docs/tutorial-basics/internal-docs",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/markdown-features",
-              "path": "/docs/tutorial-basics/markdown-features",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -58,16 +43,6 @@
             {
               "id": "tutorial-basics/release-notes",
               "path": "/docs/tutorial-basics/release-notes",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/style-guide",
-              "path": "/docs/tutorial-basics/style-guide",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/troubleshooting",
-              "path": "/docs/tutorial-basics/troubleshooting",
               "sidebar": "tutorialSidebar"
             },
             {

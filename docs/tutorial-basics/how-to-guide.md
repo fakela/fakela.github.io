@@ -7,43 +7,46 @@ sidebar_label: How-to Guides
 
 Welcome to my How-to Guide Documentation portfolio section! As a technical writer, I specialize in creating clear and concise step-by-step guides that assist users in performing specific tasks. Below is an example of my work in this category:
 
+### Project: Deploying a Voting Smart Contract Dapp on Calimero
 
-### Project: Setting Up a Widget with WidgetPro
-
-**Description:** Crafted a comprehensive how-to guide to help users set up and configure their first widget using WidgetPro, a versatile widget creation tool.
+**Description:** Crafted a comprehensive how-to guide to walk users through the process of deploying a voting smart contract Dapp on the Calimero network.
 
 **Role:** Lead Technical Writer
 
-**Approach:** Prioritized user-friendliness and clarity in presenting the steps. The guide is designed to enable even novice users to set up a widget seamlessly.
+**Approach:** Prioritized user-friendliness and clarity in presenting the steps. The guide is designed to enable even novice users to deploy a voting Dapp successfully on the Calimero network.
 
 **Key Sections:**
 
-1. **Introduction to WidgetPro:**
-   - Provided a brief overview of WidgetPro's purpose and benefits.
-   
-2. **Prerequisites:**
-   - Listed the requirements before beginning the setup process.
-   
-3. **Step-by-Step Setup:**
-   - Detailed each step, including setting up an account, accessing the widget builder, and configuring basic settings.
-   
-4. **Customizing Your Widget:**
-   - Walked users through customizing the widget's appearance, layout, and functionality.
-   
-5. **Integration with a Website:**
-   - Explained how to embed the widget on a website using HTML code.
-   
-6. **Testing and Troubleshooting:**
-   - Included a section on how to test the widget on a live website and troubleshoot common issues.
-   
-7. **Advanced Features (Optional):**
-   - Provided optional steps for users interested in exploring advanced features.
-   
-8. **Conclusion:**
-   - Summarized the process and encouraged users to explore further.
+1. **Prerequisites:**
+   - Listed the requirements before beginning the deployment process, including setting up a Calimero private shard and installing necessary tools.
 
-## How-to-Guide Documentation sample docs
+2. **Step 1: Build the Smart Contract:**
+   - Explained how to clone the Calimero examples repository, navigate to the private directory, and compile the Rust smart contract to WASM.
 
-<iframe width="100%" height="800" src="/img/pdf/how-to-voting"/>
+3. **Step 2: Generate an Auth Token:**
+   - Guided users in generating a Calimero auth token to authenticate and authorize external applications.
 
-If you're interested in collaborating on similar projects or would like more details, feel free to [contact me](mailto:favourkelvin17@gmail.com). I'm excited to discuss how I can assist in creating effective how-to guides for your products!
+4. **Step 3: Set Up the NEAR CLI:**
+   - Provided instructions on how to set up the NEAR CLI for interaction with the Calimero shard.
+
+5. **Step 4: Create a Keypair:**
+   - Detailed the process of creating a keypair for the shard account and locating the generated keypair file.
+
+6. **Step 5: Create a Sub Account:**
+   - Guided users in creating a sub account from the Custodial account in the Calimero Console and adding a public key.
+
+7. **Step 6: Deploy Your NEAR Contract:**
+   - Explained the deployment process, including setting variables, running the deployment command, and checking the deployed contract.
+
+8. **Step 7: Update the Config File and Start the Dapp Frontend:**
+   - Provided instructions for configuring the Dapp frontend, including connection settings and starting the localhost server.
+
+9. **Conclusion:**
+   - Summarized the deployment process and congratulated users on successfully deploying a voting application on the Calimero Network.
+
+## How-to-Guide Documentation Sample Docs
+
+<iframe width="100%" height="800" src="/img/pdf/voting-tutorial"/>
+
+If you're interested in collaborating on similar projects or would like more details, feel free to [contact me](mailto:favourkelvin17@gmail.com). I'm excited to discuss how I can assist in creating effective how-to guides for your technical endeavors!
+

@@ -4,8 +4,8 @@
   "permalink": "/docs/category/tutorial---extras",
   "navigation": {
     "previous": {
-      "title": "Tutorials Documentation",
-      "permalink": "/docs/tutorial-basics/tutorial"
+      "title": "Troubleshooting & FAQ",
+      "permalink": "/docs/tutorial-basics/faqs"
     },
     "next": {
       "title": "Manage Docs Versions",

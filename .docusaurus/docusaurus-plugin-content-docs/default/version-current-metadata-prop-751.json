@@ -23,24 +23,6 @@
         "items": [
           {
             "type": "link",
-            "label": "FAQs",
-            "href": "/docs/tutorial-basics/faqs",
-            "docId": "tutorial-basics/faqs"
-          },
-          {
-            "type": "link",
-            "label": "Glossaries and Terminology Lists",
-            "href": "/docs/tutorial-basics/glossary",
-            "docId": "tutorial-basics/glossary"
-          },
-          {
-            "type": "link",
-            "label": "Internal Documentation",
-            "href": "/docs/tutorial-basics/internal-docs",
-            "docId": "tutorial-basics/internal-docs"
-          },
-          {
-            "type": "link",
             "label": "Newsletter Writing",
             "href": "/docs/tutorial-basics/newsletter",
             "docId": "tutorial-basics/newsletter"
@@ -53,27 +35,9 @@
           },
           {
             "type": "link",
-            "label": "Style Guides",
-            "href": "/docs/tutorial-basics/style-guide",
-            "docId": "tutorial-basics/style-guide"
-          },
-          {
-            "type": "link",
-            "label": "Troubleshooting Guides",
-            "href": "/docs/tutorial-basics/troubleshooting",
-            "docId": "tutorial-basics/troubleshooting"
-          },
-          {
-            "type": "link",
             "label": "User Manuals and Guides",
             "href": "/docs/tutorial-basics/user-manual",
             "docId": "tutorial-basics/user-manual"
-          },
-          {
-            "type": "link",
-            "label": "Markdown Features",
-            "href": "/docs/tutorial-basics/markdown-features",
-            "docId": "tutorial-basics/markdown-features"
           },
           {
             "type": "link",
@@ -98,6 +62,12 @@
             "label": "Tutorials Documentation",
             "href": "/docs/tutorial-basics/tutorial",
             "docId": "tutorial-basics/tutorial"
+          },
+          {
+            "type": "link",
+            "label": "Troubleshooting & FAQ",
+            "href": "/docs/tutorial-basics/faqs",
+            "docId": "tutorial-basics/faqs"
           }
         ],
         "href": "/docs/category/writing-samples"
@@ -146,32 +116,14 @@
     },
     "tutorial-basics/faqs": {
       "id": "tutorial-basics/faqs",
-      "title": "faqs",
-      "description": "",
-      "sidebar": "tutorialSidebar"
-    },
-    "tutorial-basics/glossary": {
-      "id": "tutorial-basics/glossary",
-      "title": "glossary",
-      "description": "",
+      "title": "Troubleshooting and FAQ Writing Portfolio Sample",
+      "description": "Welcome to my Troubleshooting and FAQ Writing portfolio section! As a technical writer, I excel in creating comprehensive troubleshooting guides and FAQ documents that provide users with clear solutions to common issues. Below is an example of my work in this category:",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/how-to-guide": {
       "id": "tutorial-basics/how-to-guide",
       "title": "How-to Guide Documentation Sample",
       "description": "Welcome to my How-to Guide Documentation portfolio section! As a technical writer, I specialize in creating clear and concise step-by-step guides that assist users in performing specific tasks. Below is an example of my work in this category:",
-      "sidebar": "tutorialSidebar"
-    },
-    "tutorial-basics/internal-docs": {
-      "id": "tutorial-basics/internal-docs",
-      "title": "internal-docs",
-      "description": "",
-      "sidebar": "tutorialSidebar"
-    },
-    "tutorial-basics/markdown-features": {
-      "id": "tutorial-basics/markdown-features",
-      "title": "Markdown Features",
-      "description": "Docusaurus supports Markdown and a few additional features.",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/newsletter": {
@@ -182,20 +134,8 @@
     },
     "tutorial-basics/release-notes": {
       "id": "tutorial-basics/release-notes",
-      "title": "release-notes",
-      "description": "",
-      "sidebar": "tutorialSidebar"
-    },
-    "tutorial-basics/style-guide": {
-      "id": "tutorial-basics/style-guide",
-      "title": "style-guide",
-      "description": "",
-      "sidebar": "tutorialSidebar"
-    },
-    "tutorial-basics/troubleshooting": {
-      "id": "tutorial-basics/troubleshooting",
-      "title": "troubleshooting",
-      "description": "",
+      "title": "Welcome to my Release Note Writing Portfolio Section",
+      "description": "Greetings! As a dedicated technical writer, I excel in creating meticulous and informative release notes that serve as essential communication tools between your product development team and your valued users. Below, you will find an illustrative example of my proficiency in this specialized field:",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/tutorial": {

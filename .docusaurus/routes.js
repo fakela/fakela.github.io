@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '0d1'),
+    component: ComponentCreator('/docs', '5c6'),
     routes: [
       {
         path: '/docs/category/tutorial---extras',
@@ -138,26 +138,8 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/tutorial-basics/glossary',
-        component: ComponentCreator('/docs/tutorial-basics/glossary', '549'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
         path: '/docs/tutorial-basics/how-to-guide',
         component: ComponentCreator('/docs/tutorial-basics/how-to-guide', '0e8'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-basics/internal-docs',
-        component: ComponentCreator('/docs/tutorial-basics/internal-docs', 'b1e'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-basics/markdown-features',
-        component: ComponentCreator('/docs/tutorial-basics/markdown-features', '4b7'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
@@ -170,18 +152,6 @@ export default [
       {
         path: '/docs/tutorial-basics/release-notes',
         component: ComponentCreator('/docs/tutorial-basics/release-notes', 'd8c'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-basics/style-guide',
-        component: ComponentCreator('/docs/tutorial-basics/style-guide', '42a'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-basics/troubleshooting',
-        component: ComponentCreator('/docs/tutorial-basics/troubleshooting', '40a'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

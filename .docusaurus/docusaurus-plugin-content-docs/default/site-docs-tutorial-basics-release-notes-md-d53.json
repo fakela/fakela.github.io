@@ -1,8 +1,8 @@
 {
   "unversionedId": "tutorial-basics/release-notes",
   "id": "tutorial-basics/release-notes",
-  "title": "release-notes",
-  "description": "",
+  "title": "Welcome to my Release Note Writing Portfolio Section",
+  "description": "Greetings! As a dedicated technical writer, I excel in creating meticulous and informative release notes that serve as essential communication tools between your product development team and your valued users. Below, you will find an illustrative example of my proficiency in this specialized field:",
   "source": "@site/docs/tutorial-basics/release-notes.md",
   "sourceDirName": "tutorial-basics",
   "slug": "/tutorial-basics/release-notes",
@@ -22,7 +22,7 @@
     "permalink": "/docs/tutorial-basics/newsletter"
   },
   "next": {
-    "title": "Style Guides",
-    "permalink": "/docs/tutorial-basics/style-guide"
+    "title": "User Manuals and Guides",
+    "permalink": "/docs/tutorial-basics/user-manual"
   }
 }
