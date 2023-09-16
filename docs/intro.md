@@ -1,43 +1,38 @@
 ---
 sidebar_position: 1
 sidebar_label: About Me
-
 ---
 
+# Welcome to Favour Kelvin Porfolio
 
-# About Me: Favour Kelvin
-
-Hey there, I'm Favour Kelvin, and I'm really excited to share a bit about myself with you. I'm not your average tech enthusiast; I'm a Technical Writer and Developer Advocate, and I've been on this incredible journey for the past 5 years, exploring the vast world of technology. 
-
-## My Journey
-
-It all started when I ventured into the realm of software development, and I quickly found my passion for open source projects. In fact, I've been a part of three Google Open Source programs:
+Hey there, I'm Favour Kelvin, and I'm really excited to share a bit about myself with you 😃. I’m a Technical Writer, Software Engineer (focusing on JavaScript/Python web engineering, devops), Content Creator, Teacher, and Developer Advocate with 5 years of professional working experience. I first started my career as a software developer, and even in that time, I found my passion for open source projects. I've been a part of three Google Open Source programs:
 
 - Google Summer of Code (I wore the hats of both a student and a mentor)
 - Google Code-In (I played the role of a mentor)
-- Google Season of Docs (I participated as a contributor and also as a mentor)
+- Google Season of Docs (hired as a technical writer and also as a mentor)
 
-But my journey doesn't stop there. I've donned multiple hats over the years, working as a freelancer, a full-time tech enthusiast, and also taking on various contract roles in different tech domains. During this time, I've had the pleasure of delving into a multitude of areas, from DevOps and Cloud computing to Web development, IOT, Data Science, Blockchain, Web 3, Software development, Version control & Git, Data automation, and Database management, all on a global scale.
+I’m very passionate about sharing knowledge, educating people about technology, and helping them become better at what they do. I do this by writing technical articles, contributing to open-source projects, writing documentations, and organizing/speaking at meetups/conferences.  
+
+I have collaborated with a people, establish and lead teams, professionally develop support, enhance operations, and manage information systems, communities, and solutions.
+
+As a technical writer, I've spent the last years working with outstanding teams writing clear and comprehensive technical contents (documentation, user guide, blogs). I've had the pleasure of delving into a multitude of areas, from DevOps and Cloud computing to Web development, IOT, Data Science, Blockchain, Web 3, Software development, Version control & Git, Data automation, and Database management.
 
 ## Notable Achievements
 
 Here are some exciting highlights from my journey:
 
-- I've authored over 70 articles in just a few years.
-- I've had the privilege of participating in and mentoring participants in three Google Open Source Programs.
-- I've taken on the challenge of crafting and scaling documentation from scratch for projects like Gleuops and Extrimian.
-- I've improved existing content and conducted documentation audits for esteemed organizations like Bacalhau (Protocol labs), Mindee, Document Write, and Calimero.
-- I've implemented documentation analytics to track user engagement, resulting in an impressive 25% increase in documentation user satisfaction.
-- I led a team that revamped a 500-page software documentation within 6 months, leading to a remarkable 40% reduction in customer support tickets.
-- I've enhanced user manuals, leading to a significant 20% increase in user satisfaction scores.
-- I've documented more than 10 API integrations in the first quarter of 2023, ensuring timely releases and offering clear guidance for third-party developers.
-- I've developed and delivered training materials, reducing the average training period by a valuable two weeks.
-- I implemented a new documentation platform, reducing content publishing times by an impressive 50%.
-- I introduced a unified content standard across different product lines, fostering consistency in voice, tone, and terminology, ultimately increasing brand cohesion and reducing user confusion.
-- I've worked collaboratively with cross-functional teams to create a streamlined feedback loop for documentation updates, resulting in a remarkable 60% reduction in response times to user-reported errors.
-- I successfully integrated technical writing into the Agile development process of a company, ensuring that documentation remains up-to-date with every sprint release.
-- I've contributed to various technical content for projects such as Coupler.io, Giskard, Cedalo, Bacalhau, PeeringDB, Nerd for Tech, Mautic, and Calimero.
-- I've played a pivotal role in building and nurturing a community of open-source enthusiasts through my involvement with Open Source Community Africa.
+- Authored over 70+ articles in just a few years, sharing valuable insights and knowledge with a wide audience.
+- Participated in and mentored participants in three prestigious Google Open Source Programs, fostering the growth of open-source initiatives.
+- Crafted and scaled documentation from the ground up for [Glueops](https://glueops.dev/) and [Extrimian](https://extrimian.io/), ensuring that users have access to clear and comprehensive resources.
+- Elevated the quality of existing content and conducted meticulous documentation audits for esteemed organizations like [Bacalhau (Protocol labs)](https://docs.bacalhau.org/), [Mindee](https://developers.mindee.com/docs), [Document Write](https://documentwrite.dev/), and [Calimero](https://docs.calimero.network/), enhancing user experiences.
+- Implemented advanced documentation analytics, resulting in an impressive 25% increase in documentation user satisfaction for [Bacalhau (Protocol labs)](https://docs.bacalhau.org/), providing valuable insights into user engagement.
+- Led a significant overhaul of software documentation within a span of 6 months, achieving a remarkable 40% reduction in customer support tickets for [Bacalhau (Protocol labs)](https://docs.bacalhau.org/), [Mindee](https://developers.mindee.com/docs), [Document Write](https://documentwrite.dev/), and [Calimero](https://docs.calimero.network/), enhancing user experiences.
+- Spearheaded the implementation of a cutting-edge documentation platform, reducing content publishing times by an impressive 50% for [Glueops](https://glueops.dev/) and [Document Write](https://documentwrite.dev/), streamlining the content creation process.
+- Introduced a unified content standard across diverse product lines, ensuring a consistent voice, tone, and terminology. This effort increased brand cohesion and significantly reduced user confusion for [Bacalhau (Protocol labs)](https://docs.bacalhau.org/), [Mindee](https://developers.mindee.com/docs), [Document Write](https://documentwrite.dev/), and [Calimero](https://docs.calimero.network/).
+- Collaborated seamlessly with cross-functional teams to establish a streamlined feedback loop for documentation updates, resulting in a remarkable 60% reduction in response times to user-reported errors for [Calimero](https://docs.calimero.network/), enhancing user satisfaction.
+- Successfully integrated technical writing into the Agile development process of a company, ensuring that documentation remains up-to-date with every sprint release for [Calimero](https://docs.calimero.network/), contributing to a seamless user experience.
+- Contributed to various technical content for projects such as [Coupler.io](https://www.coupler.io/), [Giskard](https://www.giskard.ai/), [Cedalo](https://cedalo.com/), [Bacalhau (Protocol labs)](https://docs.bacalhau.org/), [PeeringDB](https://www.peeringdb.com/), [Nerd for Tech](https://medium.com/nerd-for-tech), [Mautic](https://www.mautic.org/), and [Calimero](https://docs.calimero.network/), showcasing versatility and expertise.
+- Played a pivotal role in building and nurturing a thriving community of open-source enthusiasts through my involvement with [Open Source Community Africa](https://oscafrica.org/), fostering collaboration and innovation in the open-source world.
 
 ## Why Choose Me
 
@@ -74,7 +69,9 @@ If you hire me as your next Technical Writer or Developer Advocate, here's what 
 - Educate developers through various channels.
 - Foster a thriving developer community.
 - Work closely with internal teams to enhance your product's developer experience.
-- Provide valuable feedback on new product features.
+- Provide valuable feedback
+
+ on new product features.
 - Measure and demonstrate the business value of Developer Relations.
 
 

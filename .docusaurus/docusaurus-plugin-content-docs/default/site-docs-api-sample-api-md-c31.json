@@ -1,0 +1,24 @@
+{
+  "unversionedId": "api-sample/api",
+  "id": "api-sample/api",
+  "title": "API Documentation",
+  "description": "Welcome to the API Documentation section of my portfolio! As a dedicated technical writer, I excel in creating clear, detailed, and user-friendly API documentation that facilitates seamless integration and interaction with software systems. Below, you'll find a sample of my work in this realm:",
+  "source": "@site/docs/api-sample/api.md",
+  "sourceDirName": "api-sample",
+  "slug": "/api-sample/api",
+  "permalink": "/docs/api-sample/api",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/api-sample/api.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "sidebar_label": "API Documentation"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Release Notes",
+    "permalink": "/docs/writing-sample/release-notes"
+  }
+}

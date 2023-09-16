@@ -1,8 +1,8 @@
 {
   "unversionedId": "intro",
   "id": "intro",
-  "title": "About Me: Favour Kelvin",
-  "description": "Hey there, I'm Favour Kelvin, and I'm really excited to share a bit about myself with you. I'm not your average tech enthusiast; I'm a Technical Writer and Developer Advocate, and I've been on this incredible journey for the past 5 years, exploring the vast world of technology.",
+  "title": "Welcome to Favour Kelvin Porfolio",
+  "description": "Hey there, I'm Favour Kelvin, and I'm really excited to share a bit about myself with you 😃. I’m a Technical Writer, Software Engineer (focusing on JavaScript/Python web engineering, devops), Content Creator, Teacher, and Developer Advocate with 5 years of professional working experience. I first started my career as a software developer, and even in that time, I found my passion for open source projects. I've been a part of three Google Open Source programs:",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",

@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Favour Kelvin Portfolio',
-  tagline: ' A technical writer and developer advocate',
+  title: 'Hi, I am Favour Kelvin',
+  tagline: 'A technical writer and developer advocate',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

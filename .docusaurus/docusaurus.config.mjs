@@ -4,8 +4,8 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Favour Kelvin Portfolio",
-  "tagline": " A technical writer and developer advocate",
+  "title": "Hi, I am Favour Kelvin",
+  "tagline": "A technical writer and developer advocate",
   "favicon": "img/favicon.ico",
   "url": "https://fakela.github.io",
   "baseUrl": "/",
