@@ -3,78 +3,120 @@ sidebar_position: 1
 sidebar_label: About Me
 ---
 
-# Welcome to Favour Kelvin Porfolio
+# Welcome to Favour Kelvin's Portfolio
 
-Hey there, I'm Favour Kelvin, and I'm really excited to share a bit about myself with you 😃. I’m a Technical Writer, Software Engineer (focusing on JavaScript/Python web engineering, devops), Content Creator, Teacher, and Developer Advocate with 5 years of professional working experience. I first started my career as a software developer, and even in that time, I found my passion for open source projects. I've been a part of three Google Open Source programs:
+Hello! I'm Favour Kelvin, and I'm thrilled to share a glimpse of my journey with you 😃. I am a Technical Writer with a strong background in Software Engineering. My career began as a software developer, where I discovered my passion for open-source projects. I have had the privilege of participating in three Google Open Source programs: Google Summer of Code, Google Code-In, and Google Season of Docs.
 
-- Google Summer of Code (I wore the hats of both a student and a mentor)
-- Google Code-In (I played the role of a mentor)
-- Google Season of Docs (hired as a technical writer and also as a mentor)
+I’m very passionate about sharing knowledge, educating people about technology and helping them become better at what they do.  do this by writing technical articles, contributing to open-source initiatives, creating documentation, and organizing/speaking at meetups and conferences.
 
-I’m very passionate about sharing knowledge, educating people about technology, and helping them become better at what they do. I do this by writing technical articles, contributing to open-source projects, writing documentations, and organizing/speaking at meetups/conferences.  
+Throughout my professional journey, I have collaborated with diverse individuals, led teams, improved support systems, optimized operations, managed information systems, communities, etc.
 
-I have collaborated with a people, establish and lead teams, professionally develop support, enhance operations, and manage information systems, communities, and solutions.
-
-As a technical writer, I've spent the last years working with outstanding teams writing clear and comprehensive technical contents (documentation, user guide, blogs). I've had the pleasure of delving into a multitude of areas, from DevOps and Cloud computing to Web development, IOT, Data Science, Blockchain, Web 3, Software development, Version control & Git, Data automation, and Database management.
+As a Technical Writer, I have dedicated years to working with exceptional teams and producing clear and comprehensive technical content, including documentation, user guides, and blogs. My areas of expertise span from DevOps and Cloud Computing to Web Development, IoT, Data Science, Web3, Data Automation, Database Management, and more.
 
 ## Notable Achievements
 
-Here are some exciting highlights from my journey:
+Here are some highlights from my journey:
 
-- Authored over 70+ articles in just a few years, sharing valuable insights and knowledge with a wide audience.
-- Participated in and mentored participants in three prestigious Google Open Source Programs, fostering the growth of open-source initiatives.
-- Crafted and scaled documentation from the ground up for [Glueops](https://glueops.dev/) and [Extrimian](https://extrimian.io/), ensuring that users have access to clear and comprehensive resources.
-- Elevated the quality of existing content and conducted meticulous documentation audits for esteemed organizations like [Bacalhau (Protocol labs)](https://docs.bacalhau.org/), [Mindee](https://developers.mindee.com/docs), [Document Write](https://documentwrite.dev/), and [Calimero](https://docs.calimero.network/), enhancing user experiences.
-- Implemented advanced documentation analytics, resulting in an impressive 25% increase in documentation user satisfaction for [Bacalhau (Protocol labs)](https://docs.bacalhau.org/), providing valuable insights into user engagement.
-- Led a significant overhaul of software documentation within a span of 6 months, achieving a remarkable 40% reduction in customer support tickets for [Bacalhau (Protocol labs)](https://docs.bacalhau.org/), [Mindee](https://developers.mindee.com/docs), [Document Write](https://documentwrite.dev/), and [Calimero](https://docs.calimero.network/), enhancing user experiences.
-- Spearheaded the implementation of a cutting-edge documentation platform, reducing content publishing times by an impressive 50% for [Glueops](https://glueops.dev/) and [Document Write](https://documentwrite.dev/), streamlining the content creation process.
-- Introduced a unified content standard across diverse product lines, ensuring a consistent voice, tone, and terminology. This effort increased brand cohesion and significantly reduced user confusion for [Bacalhau (Protocol labs)](https://docs.bacalhau.org/), [Mindee](https://developers.mindee.com/docs), [Document Write](https://documentwrite.dev/), and [Calimero](https://docs.calimero.network/).
-- Collaborated seamlessly with cross-functional teams to establish a streamlined feedback loop for documentation updates, resulting in a remarkable 60% reduction in response times to user-reported errors for [Calimero](https://docs.calimero.network/), enhancing user satisfaction.
-- Successfully integrated technical writing into the Agile development process of a company, ensuring that documentation remains up-to-date with every sprint release for [Calimero](https://docs.calimero.network/), contributing to a seamless user experience.
-- Contributed to various technical content for projects such as [Coupler.io](https://www.coupler.io/), [Giskard](https://www.giskard.ai/), [Cedalo](https://cedalo.com/), [Bacalhau (Protocol labs)](https://docs.bacalhau.org/), [PeeringDB](https://www.peeringdb.com/), [Nerd for Tech](https://medium.com/nerd-for-tech), [Mautic](https://www.mautic.org/), and [Calimero](https://docs.calimero.network/), showcasing versatility and expertise.
+- Authored over [70+ articles](https://docs.google.com/spreadsheets/d/1bgPWg-X8ON2ugT5Eg2DR4boXtrEIvMxsSNq3uuaJb1U/edit#gid=0) within a short span, sharing valuable insights and knowledge with a wide audience.
+
+- Implemented content calendars and streamlined content creation processes, elevating content quality and publication efficiency.
+
+- Actively participated in and mentored participants in three prestigious Google Open Source Programs, nurturing the growth of open-source initiatives.
+
+- Pioneered and scaled documentation from scratch to ensure users have access to clear and comprehensive resources.
+
+- Elevated the quality of existing content and conducted meticulous documentation audits for organizations, enhancing user experiences.
+
+- Introduced documentation analytics, leading to a significant increase in user satisfaction by providing valuable insights into user engagement.
+
+- Established a documentation platform, streamlining the content creation process.
+
+- Implemented style guides to ensure a consistent voice, tone, and terminology.
+
+- Collaborated with cross-functional teams to establish a seamless feedback loop for documentation updates, enhancing user satisfaction.
+
+- Integrated technical writing into the Agile development process of a company, ensuring documentation remains up-to-date with every sprint release.
+
 - Played a pivotal role in building and nurturing a thriving community of open-source enthusiasts through my involvement with [Open Source Community Africa](https://oscafrica.org/), fostering collaboration and innovation in the open-source world.
 
-## Why Choose Me
+## Why Choose Me?
 
-Now, you might be wondering, "Why should I consider Favour Kelvin?" Well, here are a few compelling reasons:
+Now, you might be wondering, "Why should I consider Favour Kelvin?" Here are a few compelling reasons:
 
-- I have an unwavering commitment to delivering my absolute best in every task I undertake.
-- I'm passionate about sharing knowledge, making me a force to be reckoned with in the realms of technical writing and developer relations.
-- I possess the flexibility to adapt to changing conditions, company goals, and the evolving tech landscape.
+- I am committed to delivering my absolute best in every task I undertake.
+
+- I am passionate about teaching and sharing knowledge, which forms the foundation of my developer relations and education strengths.
+
+- I can adapt to new conditions, align with company goals and visions, and cater to the evolving needs of your developer product.
+
 - Honesty is my guiding principle; I'll never oversell your product, but I will diligently convey its strengths and value to developers.
-- I excel at building and leading developer communities, fostering a sense of camaraderie and collaboration.
-- My colleagues often describe me as someone who injects humor into work, making collaboration not just productive but also enjoyable.
 
-## My Strengths
+- I excel at building and leading developer communities, fostering camaraderie and collaboration.
 
-In a nutshell, here's what I bring to the table:
+## My Key Strengths
 
-- Proficiency in JavaScript, TypeScript, and Python for web and embedded systems.
-- Expertise in crafting comprehensive API documentation.
-- A knack for creating engaging and informative technical content.
-- Skills in community and program management.
-- Experience in organizing and executing successful developer events.
-- Expertise in educational program management and curriculum development.
-- An uncanny ability to curate and distribute memes (because we all need a bit of humor in our tech-filled lives).
+- Proficient in writing code when necessary using JavaScript, TypeScript, and Python programming languages.
+
+- Expertise in Web3 content creation.
+
+- API documentation.
+
+- Technical content creation.
+
+- Content production and marketing.
+
+- Community and programs management.
+
+- Organizing developer events.
+
+- Memes collection and efficient distribution :).
 
 ## What I'll Bring to Your Team
 
-If you decide to bring me on board as your next Technical Writer or Developer Advocate, here's what I'll contribute:
-If you hire me as your next Technical Writer or Developer Advocate, here's what I'll do:
+As your next Technical Writer or Developer Advocate, I will leverage my software engineering and developer relations experience to:
 
-- Act as a bridge between your product and developers, ensuring their success.
-- Engage with technical and non-technical customers to convey your product's value.
-- Create tools, code demos, integrations, content, and educational materials.
-- Collaborate with strategic partners for creative integration ideas.
-- Educate developers through various channels.
-- Foster a thriving developer community.
-- Work closely with internal teams to enhance your product's developer experience.
-- Provide valuable feedback
+- Serve as a bridge between your product and developers, helping them succeed with your product offerings.
 
- on new product features.
-- Measure and demonstrate the business value of Developer Relations.
+- Engage with technical and non-technical customers across different engineering teams to articulate the value of your product.
 
+- Develop tools, code demos, integrations, content, educational materials, and documentation to empower developers to fully utilize your products.
+
+- Collaborate with strategic partners to showcase the potential of your product when combined with other tools and services loved by developers.
+
+- Educate developers about your product through open-source contributions, public speaking, technical workshops at conferences, local developer meetups, documentation, and published tutorials/videos.
+
+- Lead discussions on the latest technological advancements and best practices within and beyond your product's scope in the developer community, through in-person events, online forums, and social media.
+
+- Cultivate and nurture a thriving community of developers who use your product.
+
+- Collaborate closely with your engineering, product, marketing, sales, and customer success teams to enhance the developer experience of your product.
+
+- Test new product features and provide early feedback for continuous improvement.
+
+- Collect feedback from the developer community on existing and upcoming product features for informed planning, prioritization, and implementation.
+
+- Monitor and measure the success and impact of the activities and responsibilities entrusted to me, demonstrating the value of Developer Relations at your company.
+
+## Companies I Have Worked With
+
+Here are some of the companies I've had the pleasure of collaborating with, in various capacities, including full-time, part-time, contract, fixed basis, and one-time projects:
+
+- Protocol Labs: A research, development, and deployment laboratory known for projects like IPFS, Filecoin, and libp2p, aiming to enhance human existence through technology.
+
+- Calimero: A web3 customizable sidechain built on top of the NEAR protocol.
+
+- Mindee: An OCR API for developers.
+
+- Coupler.io: A data analytics and automation platform.
+
+- Mautic: An open-source marketing automation tool.
+
+- PeeringDB: A user-maintained database of networks, serving as the go-to resource for interconnection data.
+
+- GlueOps: A platform that streamlines and maximizes DevOps and DataOps for efficient management and growth.
+
+- SugarLabs: A community-driven software project focused on producing, distributing, and supporting Sugar, an open-source desktop environment and learning platform.
 
 ## Let's Connect!
 
-If you have any exciting opportunities or if you simply need some tech expertise, please don't hesitate to reach out. I'm open to both full-time positions and short-term contracts that align with my skills and interests. You can reach me via email at [Your Email Address], or connect with me on LinkedIn or Twitter. I'm looking forward to connecting with you! ❤️
+If you have exciting opportunities or need tech expertise, please reach out. I am open to both full-time positions and short-term contracts that align with my skills and interests. You can contact me via email at [Your Email Address], or connect with me on LinkedIn or Twitter. I'm looking forward to connecting with you! ❤️
