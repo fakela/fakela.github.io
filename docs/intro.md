@@ -85,7 +85,7 @@ As your next Technical Writer or Developer Advocate, I will leverage my software
 
 - Educate developers about your product through open-source contributions, public speaking, technical workshops at conferences, local developer meetups, documentation, and published tutorials/videos.
 
-- Lead discussions on the latest technological advancements and best practices within and beyond your product's scope in the developer community, through in-person events, online forums, and social media.
+- Led discussions on the latest technological advancements and best practices within and beyond your product's scope in the developer community, through in-person events, online forums, and social media.
 
 - Cultivate and nurture a thriving community of developers who use your product.
 
