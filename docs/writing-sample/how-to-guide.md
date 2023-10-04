@@ -46,7 +46,7 @@ Welcome to my How-to Guide Documentation portfolio section! As a technical write
 
 ## How-to-Guide Documentation Sample Docs
 
-<iframe width="100%" height="800" src="/img/pdf/voting-tutorial"/>
+<iframe width="100%" height="800" src="/img/pdf/voting-tutorial.pdf"/>
 
 If you're interested in collaborating on similar projects or would like more details, feel free to [contact me](mailto:favourkelvin17@gmail.com). I'm excited to discuss how I can assist in creating effective how-to guides for your technical endeavors!
 

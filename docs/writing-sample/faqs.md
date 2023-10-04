@@ -55,7 +55,7 @@ Welcome to my Troubleshooting and FAQ Writing portfolio section! As a technical 
 
 ## Troubleshooting & FAQ Writing sample docs
 
-<iframe width="100%" height="800" src="/img/pdf/faq"/>
+<iframe width="100%" height="800" src="/img/pdf/faq.pdf"/>
 
 If you're interested in collaborating on similar projects or would like more details, please don't hesitate to [contact me](mailto:favourkelvin17@gmail.com). I'm enthusiastic about helping you create effective troubleshooting guides and FAQs for your products!
 

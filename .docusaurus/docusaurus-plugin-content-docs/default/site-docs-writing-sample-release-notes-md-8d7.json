@@ -2,7 +2,7 @@
   "unversionedId": "writing-sample/release-notes",
   "id": "writing-sample/release-notes",
   "title": "Welcome to my Release Note Writing Portfolio Section",
-  "description": "Greetings! As a dedicated technical writer, I excel in creating meticulous and informative release notes that serve as essential communication tools between your product development team and your valued users. Below, you will find an illustrative example of my proficiency in this specialized field:",
+  "description": "As a dedicated technical writer, I excel in creating meticulous and informative release notes that serve as essential communication tools between your product development team and your valued users.",
   "source": "@site/docs/writing-sample/release-notes.md",
   "sourceDirName": "writing-sample",
   "slug": "/writing-sample/release-notes",
