@@ -22,7 +22,6 @@ Welcome to my User Manuals and Guides portfolio section! As a technical writer, 
 <iframe width="100%" height="800" src="/img/pdf/Getting Started with Bacalhau.pdf"/>
 
 
-
 ### Project: GlueOps Platform Overview
 
 **Description:** Developed an overview of what Glueops is all about.
