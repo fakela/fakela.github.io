@@ -11,7 +11,7 @@ Welcome to my How-to Guide Documentation portfolio section! As a technical write
 
 **Description:** Crafted a comprehensive how-to guide to walk users through the process of deploying a voting smart contract Dapp on the Calimero network.
 
-**Role:** Lead Technical Writer
+**Role:** Technical Writer
 
 **Approach:** Prioritized user-friendliness and clarity in presenting the steps. The guide is designed to enable even novice users to deploy a voting Dapp successfully on the Calimero network.
 

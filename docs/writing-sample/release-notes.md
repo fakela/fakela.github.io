@@ -11,7 +11,7 @@ As a dedicated technical writer, I excel in creating meticulous and informative 
 
 **Description:** Crafted comprehensive release notes to accompany the launch of WidgetPro Version 2.0, a significant update to our versatile widget creation tool.
 
-**Role:** Lead Technical Writer
+**Role:** Technical Writer
 
 **Approach:** My approach prioritizes clarity and conciseness in presenting complex technical changes, ensuring that users and stakeholders understand the impact of each update.
 
