@@ -27,7 +27,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/workspace/fakela.github.io/sidebars.js",
+          "sidebarPath": "/workspaces/fakela.github.io/sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "blog": {
@@ -35,7 +35,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/workspace/fakela.github.io/src/css/custom.css"
+          "customCss": "/workspaces/fakela.github.io/src/css/custom.css"
         }
       }
     ]
