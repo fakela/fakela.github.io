@@ -28,7 +28,7 @@ Welcome to the API Documentation section of my portfolio! As a dedicated technic
 
 **Tools Used:** Markdown
 
-**Approach:** Collaborated closely with Mautic's development team to gain in-depth insights into the REST API's functionalities and intended use cases. The documentation emphasizes clarity, practical examples, and adherence to best practices for API integration.
+**Approach:** Collaborated closely with Mindee's development team to gain in-depth insights into the REST API's functionalities and intended use cases. The documentation emphasizes clarity, practical examples, and adherence to best practices for API integration.
 
 <iframe width="100%" height="800" src="/img/pdf/api-mautic.pdf"/>
 
