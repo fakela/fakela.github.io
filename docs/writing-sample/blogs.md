@@ -26,7 +26,7 @@ This article showcases my ability to explain complex concepts clearly and guide 
 
 **Date:** July 14, 2022
 
-**Platform:** [Coupler.io][https://www.coupler.io/]
+**Platform:** [Coupler.io](https://www.coupler.io/)
 
 <iframe width="100%" height="800" src="/img/pdf/coupler-pipedrive.pdf"/>
 
