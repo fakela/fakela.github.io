@@ -17,7 +17,7 @@ As a Technical Writer, I have dedicated years to working with exceptional teams 
 
 Here are some highlights from my journey:
 
-- Authored over [70+ articles](https://docs.google.com/spreadsheets/d/1bgPWg-X8ON2ugT5Eg2DR4boXtrEIvMxsSNq3uuaJb1U/edit#gid=0) within a short span, sharing valuable insights and knowledge with a wide audience.
+- Authored over [80+ articles](https://docs.google.com/spreadsheets/d/1bgPWg-X8ON2ugT5Eg2DR4boXtrEIvMxsSNq3uuaJb1U/edit#gid=0) within a short span, sharing valuable insights and knowledge with a wide audience.
 
 - Implemented content calendars and streamlined content creation processes, elevating content quality and publication efficiency.
 
