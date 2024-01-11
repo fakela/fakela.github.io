@@ -9,15 +9,10 @@ Welcome to my Troubleshooting and FAQ Writing portfolio section! As a technical 
 
 ### Project: Bacalhau FAQs
 
-**Description:** Developed detailed troubleshooting and frequently asked questions (FAQ) documentation for Bacalhau, a versatile computing platform, to assist users in resolving common problems and queries.
+**Description:** Detailed troubleshooting and frequently asked questions (FAQ) documentation for Bacalhau, a versatile computing platform, to assist users in resolving common problems and queries.
 
-**Role:** Technical Writer
+**Tools Used:** Docusaurus, Markdown
 
-**Approach:** My approach prioritized user-centricity, aiming to simplify complex technical issues and provide step-by-step solutions that users of all levels could follow effortlessly.
-
+**Approach:** My approach in developing this guide was to first identify the most common challenges and questions users face while interacting with Bacalhau. I then structured the information in a clear, easy-to-navigate format, making sure to provide straightforward, actionable solutions. My focus was on clarity and accessibility, ensuring that both new and experienced users could find the help they need without unnecessary complexity.
 
 <iframe width="100%" height="800" src="/img/pdf/faq.pdf"/>
-
-If you're interested in collaborating on similar projects or would like more details, please don't hesitate to [contact me](mailto:favourkelvin17@gmail.com). I'm enthusiastic about helping you create effective troubleshooting guides and FAQs for your products!
-
-You can expect the same level of professionalism and user-focused approach in all my troubleshooting and FAQ writing projects.

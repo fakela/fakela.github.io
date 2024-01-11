@@ -2,7 +2,7 @@
   "unversionedId": "writing-sample/blogs",
   "id": "writing-sample/blogs",
   "title": "Blogs and Articles Writing Sample",
-  "description": "Welcome to my Blogs and Articles writing sample section! As a proficient writer, I enjoy creating engaging and informative blog posts and articles on a wide range of topics. Below are some examples of my work in this domain:",
+  "description": "Welcome to my Blogs and Articles writing sample section! As a technical writer, I enjoy creating engaging and informative blog posts and articles on a wide range of topics. Below are some examples of my work in this domain:",
   "source": "@site/docs/writing-sample/blogs.md",
   "sourceDirName": "writing-sample",
   "slug": "/writing-sample/blogs",

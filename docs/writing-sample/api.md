@@ -11,26 +11,19 @@ Welcome to the API Documentation section of my portfolio! As a dedicated technic
 
 **Description:** Crafted a comprehensive API documentation guide for the Mindee REST API, enabling developers to effectively utilize its powerful document parsing capabilities. The documentation covers various aspects, including authentication, document inputs, working with images and PDFs, making API calls, handling predictions, error management, and technical limitations.
 
-**Role:** Technical Writer
+**Tools Used:** Readme.io
 
-**Tools Used:** Markdown
-
-**Approach:** Collaborated closely with Mindee's development team to gain in-depth insights into the REST API's functionalities and intended use cases. The documentation emphasizes clarity, practical examples, and adherence to best practices for API integration.
+**Approach:** My approach focused on delivering clear, concise, and easily navigable documentation. I aimed to address both high-level concepts and detailed technical steps, ensuring that developers of varying experience levels find the guide intuitive and informative.
 
 
 <iframe width="100%" height="800" src="/img/pdf/Prediction.pdf"/>
 
-### Project: Mindee REST API Guide
+### Project: Mautic REST API Guide
 
 **Description:** Crafted a comprehensive API documentation guide for the Mindee REST API, enabling developers to effectively utilize its powerful document parsing capabilities. The documentation covers various aspects, including authentication, document inputs, working with images and PDFs, making API calls, handling predictions, error management, and technical limitations.
 
-**Role:** Technical Writer 
-
 **Tools Used:** Markdown
 
-**Approach:** Collaborated closely with Mindee's development team to gain in-depth insights into the REST API's functionalities and intended use cases. The documentation emphasizes clarity, practical examples, and adherence to best practices for API integration.
+**Approach:** The focus was on accuracy and comprehensiveness, ensuring that the documentation serves as a practical reference for developers. I emphasized clarity in explaining API functionalities, and included real-world examples to demonstrate various API interactions.
 
 <iframe width="100%" height="800" src="/img/pdf/api-mautic.pdf"/>
-
-
-If you're interested in exploring more of my API documentation work or would like to discuss potential collaboration opportunities, please feel free to [contact me](mailto:favourkelvin17@gmail.com).

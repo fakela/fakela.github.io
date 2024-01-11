@@ -11,13 +11,9 @@ As a dedicated technical writer, I excel in creating meticulous and informative 
 
 **Description:** Crafted comprehensive release notes to accompany the launch of WidgetPro Version 2.0, a significant update to our versatile widget creation tool.
 
-**Role:** Technical Writer
+**Tools Used:** Readme.io
 
-**Approach:** My approach prioritizes clarity and conciseness in presenting complex technical changes, ensuring that users and stakeholders understand the impact of each update.
-
-## Release Note Writing Sample Docs
+**Approach:** My approach was to provide a clear, concise summary of the new features, enhancements, and bug fixes in Mindee. I focused on making the release notes easily understandable for users of all technical levels, ensuring they can grasp the value and implications of the new update at a glance.
 
 <iframe width="100%" height="800" src="/img/pdf/release.pdf"/>
-
-If you're interested in collaborating on similar projects or require more information, please [reach out](mailto:favourkelvin17@gmail.com). I'm enthusiastic about discussing how I can contribute to creating informative and engaging release notes for your products!
 
