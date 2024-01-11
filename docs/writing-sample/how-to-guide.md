@@ -7,27 +7,35 @@ sidebar_label: How-to Guides
 
 Welcome to my How-to Guide Documentation portfolio section! As a technical writer, I specialize in creating clear and concise step-by-step guides that assist users in performing specific tasks. Below is an example of my work in this category:
 
-### Project: Deploying a Voting Smart Contract Dapp on Calimero
+### Project 1: How to deploy a voting smart contract Dapp on Calimero
 
-**Description:** In this project, I've meticulously crafted a comprehensive how-to guide designed to take users through the entire process of deploying a voting smart contract Dapp on the Calimero network. 
+**Description:** This guide provides users with a detailed, step-by-step process for deploying a voting smart contract Dapp on the Calimero network. It's designed for both beginners and experienced users, ensuring a smooth deployment experience.
 
-**Role:** Technical Writer
+**Tools Used:** Docusaurus, Markdown
 
-**Approach:** My approach focused on prioritizing user-friendliness and clarity. The guide is expertly designed to be accessible, ensuring that both novices and experienced users can successfully deploy a voting Dapp on the Calimero network. Every step is presented in a logical and straightforward manner to guarantee a smooth and hassle-free user experience.
+**Approach:** My focus was on clarity and precision. I aimed to create a guide that is both informative and easy to follow, breaking down complex concepts into manageable steps. The guide includes practical tips and best practices to ensure successful deployment.
 
 <iframe width="100%" height="800" src="/img/pdf/voting-tutorial.pdf"/>
 
 
-### Project: Setting Up Your Repository
+### Project 2: How to add users to your Calimero organization
 
-**Description:** In this project, I've developed an in-depth how-to guide that comprehensively walks users through the process of setting up their repository for Glueops. The guide includes a detailed explanation of the repository's structure and how to customize it to meet the unique needs of your organization.
+**Description:**: This how-to guide walks users through the process of adding new members to their Calimero organization. It covers everything from accessing the organization dashboard to assigning roles and permissions.
 
-**Role:** Technical Writer
+**Tools Used:** Zendesk
 
-**Approach:** My approach here mirrors my commitment to user-friendliness and clarity. The guide is meticulously designed to be understandable even for those new to the process. I've broken down each step and provided detailed explanations, ensuring that users can effortlessly set up their repository for Glueops.
+**Approach**: The guide is structured to provide a seamless user experience. It combines clear instructions with visual aids to make the process of adding users straightforward and error-free.
+
+<iframe width="100%" height="800" src="/img/pdf/how-to-add-users-org.pdf"/>
 
 
-<iframe width="100%" height="800" src="/img/pdf/deploy-glueops.pdf"/>
+### Project 3: How to use Open AI Whisper with Bacalhau to process audio files
 
-If you're interested in collaborating on similar projects or would like more details, feel free to [contact me](mailto:favourkelvin17@gmail.com). I'm excited to discuss how I can assist in creating effective how-to guides for your technical endeavors!
+**Description:** This guide demonstrates how to use OpenAI Whisper with Bacalhau for audio file processing. It is a practical resource for users looking to leverage these technologies for advanced speech recognition tasks.
+
+**Tools Used:** Docusaurus, Markdown
+
+**Approach:**  I emphasized simplicity and user-friendliness, ensuring the guide is accessible to users with varying levels of technical expertise. The content is laid out in a logical sequence, supported by relevant examples and necessary command-line instructions.
+
+<iframe width="100%" height="800" src="/img/pdf/how-to-open-ai-whisper.pdf"/>
 

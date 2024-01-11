@@ -1,71 +1,51 @@
 ---
 sidebar_position: 2
-sidebar_label: Tutorials 
+sidebar_label: Documentation Samples
 ---
 
-# Tutorials Sample
+# Documentation Tutorial Guide Sample
 
-Welcome to my Tutorials portfolio section! As a technical writer, I specialize in creating comprehensive and easy-to-follow tutorials that guide users through complex processes step by step. Below, you'll find an example of my work in this domain:
+Welcome to my **Documentation Tutorials portfolio section**! I am a technical writer dedicated to creating comprehensive, yet easy-to-follow tutorials. My focus is on guiding users through complex processes with clarity and simplicity. Below is a showcase of my expertise:
 
-### Project: Reading Data from Multiple S3 Buckets using Bacalhau
+### Project 1: Running Jupyter Notebooks on Bacalhau
 
-**Description:**  I developed an in-depth tutorial on how to efficiently read data from multiple Amazon S3 buckets using Bacalhau, a powerful data processing platform. The tutorial focuses on converting TIFF images to JPEG format while leveraging the advantages of Bacalhau's S3 integration.
+**Description:** This tutorial teaches how to run Jupyter Notebooks on Bacalhau, starting with a simple "Hello, World!" notebook for beginners, and advancing to executing a notebook for training a machine-learning model on the MNIST dataset. It's a practical guide to using Bacalhau's containerized environment for various data science projects.
 
-**Role:** Technical Writer
+**Tools Used:** Markdown, Docusarus
 
-**Tools Used:** Markdown
+**Approach:** My approach was centered around providing a clear, accessible path for users of different skill levels. The tutorial begins with the basics of installing the Bacalhau client and progresses to more intricate operations like running notebooks for machine learning. Each step is detailed with code snippets and explanations, ensuring users can confidently execute notebooks in Bacalhau’s containerized setting.
 
-**Approach:** I 
-
-
-<iframe width="100%" height="800" src="/img/pdf/Reading Data from Multiple S3 Buckets using Bacalhau _ Bacalhau Docs.pdf"/>
+<iframe width="100%" height="800" src="/img/pdf/running-jupyter-notebook.pdf"/>
 
 
-### Project: Deploy a "Hello World" Application
+### Project 2: Deploy a Hello World Application to the GlueOps Platform
 
-**Description:**  I create
+**Description**:  I created a straightforward guide to deploy a "Hello World" application on the GlueOps platform. The guide starts from the basics and covers each step in detail, ensuring a smooth deployment process.
 
-**Role:** Technical Writer
+**Tools Used**: Docusaurus, Markdown
 
-**Tools Used:** Markdown
+**Approach**: My goal was to simplify the deployment process for beginners. I broke down the steps into clear, easy-to-follow instructions, using a demo project for practical understanding. This approach makes it easier for users to grasp the concepts and apply them to their own projects.
 
----
-sidebar_position: 2
-sidebar_label: Tutorials
----
-
-# Tutorials Sample
-
-Welcome to my Tutorials portfolio section! As a technical writer, I specialize in creating comprehensive and easy-to-follow tutorials that guide users through complex processes step by step. Below, you'll find an example of my work in this domain:
-
-### Project: Reading Data from Multiple S3 Buckets using Bacalhau
-
-**Description:** In this project, I crafted an in-depth tutorial to empower users with the ability to efficiently extract and manipulate data from multiple Amazon S3 buckets using Bacalhau, a robust data processing platform. The tutorial is specifically designed to assist users in converting TIFF images to JPEG format while harnessing the full potential of Bacalhau's S3 integration.
-
-**Role:** Technical Writer
-
-**Tools Used:** Markdown
-
-**Approach:** My approach prioritized user-friendliness and simplicity, offering step-by-step instructions, real-world examples, and best practices to ensure that users can confidently navigate the complex world of data processing with Bacalhau.
-
-[View PDF](/img/pdf/Reading%20Data%20from%20Multiple%20S3%20Buckets%20using%20Bacalhau%20_%20Bacalhau%20Docs.pdf)
-
-### Project: Deploy a "Hello World" Application
-
-**Description:** This project is all about guiding users through the process of deploying a "Hello World" application on the GlueOps platform. I started from scratch, providing a detailed, user-friendly guide to ensure a seamless deployment experience. 
-
-**Role:** Technical Writer
-
-**Tools Used:** Markdown
-
-**Approach:** In creating this tutorial, my approach was to ensure that users have a crystal-clear and comprehensive guide to deploying a "Hello World" application on the GlueOps platform. The tutorial is enriched with all the necessary steps, code examples, and detailed explanations to guarantee a successful deployment experience.
-
-[View PDF](/img/pdf/hello-glueops.pdf)
-
-If you're interested in collaborating on similar projects or would like more details, feel free to [contact me](mailto:favourkelvin17@gmail.com). I'm excited to explore opportunities to contribute to your tutorials documentation needs!
+<iframe width="100%" height="800" src="/img/pdf/glueops-deploy-helloworld.pdf"/>
 
 
-<iframe width="100%" height="800" src="/img/pdf/hello-glueops.pdf"/>
+### Project 3: Set up Cloud Connect for your Cluster
+
+**Description:** This tutorial guides users through the setup of Cloud Connect within Calimero, enabling the management of decentralized, secure infrastructure. It focuses on integrating private chains and workspaces with Kubernetes clusters using personal AWS/GCP credentials, ensuring data sovereignty for users.
+
+**Tools Used:** Docusaurus, Markdown
+
+**Approach:** My method for creating this tutorial was focused and straightforward. I aimed to simplify the complex process of setting up Cloud Connect, presenting each step in an easy-to-understand manner. The guide combines clear instructions with practical examples and screenshots, ensuring accessibility for users of all skill levels. My goal was to empower users to confidently navigate and complete the setup process.
+
+<iframe width="100%" height="800" src="/img/pdf/bacalhau-getting-started.pdf"/>
 
 
-If you're interested in collaborating on similar projects or would like more details, feel free to [contact me](mailto:favourkelvin17@gmail.com). I'm excited to explore opportunities to contribute to your tutorials documentation needs!
+### Project 4: Getting Started with Bacalhau
+
+**Description:** In this project, I developed a comprehensive tutorial aimed at helping users get started with Bacalhau. The tutorial covers the installation process and how to run jobs using the Bacalhau client. It provides guidance on utilizing both the Bacalhau CLI and Docker for various tasks.
+
+**Tools Used:** Docusaurus, Markdown
+
+**Approach:** The old guide was a bit complicated and hard for some users. So, I researched what users really needed and where they were getting stuck. Then, I rewrote the guide to make it simpler. I included easy steps and clear instructions so that anyone can start using Bacalhau without getting confused or overwhelmed.
+
+<iframe width="100%" height="800" src="/img/pdf/bacalhau-getting-started.pdf"/>

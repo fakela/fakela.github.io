@@ -29,13 +29,7 @@
         "items": [
           {
             "type": "link",
-            "label": "User Manuals and Guides",
-            "href": "/docs/writing-sample/user-manual",
-            "docId": "writing-sample/user-manual"
-          },
-          {
-            "type": "link",
-            "label": "Tutorials",
+            "label": "Documentation Samples",
             "href": "/docs/writing-sample/tutorial",
             "docId": "writing-sample/tutorial"
           },
@@ -131,14 +125,8 @@
     },
     "writing-sample/tutorial": {
       "id": "writing-sample/tutorial",
-      "title": "Tutorials Sample",
-      "description": "Welcome to my Tutorials portfolio section! As a technical writer, I specialize in creating comprehensive and easy-to-follow tutorials that guide users through complex processes step by step. Below, you'll find an example of my work in this domain:",
-      "sidebar": "tutorialSidebar"
-    },
-    "writing-sample/user-manual": {
-      "id": "writing-sample/user-manual",
-      "title": "User Manuals and Guides",
-      "description": "Welcome to my User Manuals and Guides portfolio section! As a technical writer, I specialize in crafting clear and comprehensive user documentation that helps users navigate and utilize products effectively. Below are some examples of my work in this domain:",
+      "title": "Documentation Tutorial Guide Sample",
+      "description": "Welcome to my Documentation Tutorials portfolio section! I am a technical writer dedicated to creating comprehensive, yet easy-to-follow tutorials. My focus is on guiding users through complex processes with clarity and simplicity. Below is a showcase of my expertise:",
       "sidebar": "tutorialSidebar"
     }
   }

@@ -56,11 +56,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "writing-sample/user-manual",
-              "path": "/docs/writing-sample/user-manual",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "/category/writing-samples",
               "path": "/docs/category/writing-samples",
               "sidebar": "tutorialSidebar"
