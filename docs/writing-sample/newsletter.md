@@ -15,7 +15,6 @@ Welcome to my Newsletter Writing portfolio section! As a technical writer with a
 
 **Approach:** My approach to this newsletter was to blend technical depth with reader-friendly language. I aimed to ensure that even non-technical readers could grasp the valuable insights presented about Bacalhau's developments.
 
-
 Here is the list of newsletter I have written for Bacalhau
 
 <iframe width="100%" height="800" src="/img/pdf/newsletter-bac.pdf"/>
@@ -24,3 +23,5 @@ Here is the list of newsletter I have written for Bacalhau
 ## Sample Newsletter content
 
 <iframe width="100%" height="800" src="/img/pdf/newsletter.pdf"/>
+
+**Link:** https://blog.bacalhau.org/s/bacalhau-updates

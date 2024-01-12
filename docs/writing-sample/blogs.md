@@ -23,7 +23,6 @@ This showcase my ability to deliver insightful and engaging content on various s
 
 <iframe width="100%" height="800" src="/img/pdf/giskard-blog.pdf"/>
 
-
 ### Article 2: PipeDrive data Backup Explained
 
 **Description:** In this article Explored the process of integrating Mailchimp with various applications and databases, enabling users to harness the power of data synchronization for enhanced marketing and outreach.

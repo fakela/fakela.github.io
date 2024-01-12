@@ -55,9 +55,7 @@ Now, you might be wondering, "Why should I consider Favour Kelvin?" Here are a f
 
 ## My Key Strengths
 
-- Proficient in writing code when necessary using JavaScript, TypeScript, and Python programming languages.
-
-- Expertise in Web3 content creation.
+- Proficient in writing code when necessary using JavaScript, TypeScript, Python etc.
 
 - API documentation.
 
@@ -69,11 +67,11 @@ Now, you might be wondering, "Why should I consider Favour Kelvin?" Here are a f
 
 - Organizing developer events.
 
-- Memes collection and efficient distribution :).
+- Expertise in Web3 content creation.
 
 ## What I'll Bring to Your Team
 
-As your next Technical Writer or Developer Advocate, I will leverage my software engineering and developer relations experience to:
+As your next Technical Writer, I will leverage my software engineering and technical weriting experience to:
 
 - Serve as a bridge between your product and developers, helping them succeed with your product offerings.
 
@@ -101,21 +99,21 @@ As your next Technical Writer or Developer Advocate, I will leverage my software
 
 Here are some of the companies I've had the pleasure of collaborating with, in various capacities, including full-time, part-time, contract, fixed basis, and one-time projects:
 
-- Protocol Labs: A research, development, and deployment laboratory known for projects like IPFS, Filecoin, and libp2p, aiming to enhance human existence through technology.
+- [Protocol Labs (Bacalhau)](https://docs.bacalhau.org/): A research, development, and deployment laboratory known for projects like IPFS, Filecoin, and libp2p, aiming to enhance human existence through technology.
 
-- Calimero: A web3 customizable sidechain built on top of the NEAR protocol.
+- [Calimero](https://www.calimero.network/): A web3 customizable sidechain built on top of the NEAR protocol.
 
-- Mindee: An OCR API for developers.
+- [Mindee](https://mindee.com/): An OCR API for developers.
 
-- Coupler.io: A data analytics and automation platform.
+- [Coupler.io](https://www.coupler.io/): A data analytics and automation platform.
 
-- Mautic: An open-source marketing automation tool.
+- [Mautic](https://www.mautic.org/): An open-source marketing automation tool.
 
-- PeeringDB: A user-maintained database of networks, serving as the go-to resource for interconnection data.
+- [PeeringDB](https://www.peeringdb.com/): A user-maintained database of networks, serving as the go-to resource for interconnection data.
 
-- GlueOps: A platform that streamlines and maximizes DevOps and DataOps for efficient management and growth.
+- [GlueOps](https://glueops.dev/): A platform that streamlines and maximizes DevOps and DataOps for efficient management and growth.
 
-- SugarLabs: A community-driven software project focused on producing, distributing, and supporting Sugar, an open-source desktop environment and learning platform.
+- [SugarLabs](https://sugarlabs.org/): A community-driven software project focused on producing, distributing, and supporting Sugar, an open-source desktop environment and learning platform.
 
 ## Let's Connect!
 

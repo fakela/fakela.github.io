@@ -15,8 +15,9 @@ Welcome to the API Documentation section of my portfolio! As a dedicated technic
 
 **Approach:** My approach focused on delivering clear, concise, and easily navigable documentation. I aimed to address both high-level concepts and detailed technical steps, ensuring that developers of varying experience levels find the guide intuitive and informative.
 
-
 <iframe width="100%" height="800" src="/img/pdf/Prediction.pdf"/>
+
+**Link:** https://developers.mindee.com/docs/prediction
 
 ### Project: Mautic REST API Guide
 
@@ -27,3 +28,5 @@ Welcome to the API Documentation section of my portfolio! As a dedicated technic
 **Approach:** The focus was on accuracy and comprehensiveness, ensuring that the documentation serves as a practical reference for developers. I emphasized clarity in explaining API functionalities, and included real-world examples to demonstrate various API interactions.
 
 <iframe width="100%" height="800" src="/img/pdf/api-mautic.pdf"/>
+
+**Link:** https://developer.mautic.org/#rest-api

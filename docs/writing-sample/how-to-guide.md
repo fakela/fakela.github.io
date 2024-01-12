@@ -17,6 +17,7 @@ Welcome to my How-to Guide Documentation portfolio section! As a technical write
 
 <iframe width="100%" height="800" src="/img/pdf/voting-tutorial.pdf"/>
 
+**Link:** https://docs.calimero.network/tutorial/voting-tutoral
 
 ### Project 2: How to add users to your Calimero organization
 
@@ -28,6 +29,7 @@ Welcome to my How-to Guide Documentation portfolio section! As a technical write
 
 <iframe width="100%" height="800" src="/img/pdf/how-to-add-users-org.pdf"/>
 
+**Link:** https://calimeronetwork.zendesk.com/hc/en-us/articles/17824418591505-Add-users-to-your-organization
 
 ### Project 3: How to use Open AI Whisper with Bacalhau to process audio files
 
@@ -39,3 +41,4 @@ Welcome to my How-to Guide Documentation portfolio section! As a technical write
 
 <iframe width="100%" height="800" src="/img/pdf/how-to-open-ai-whisper.pdf"/>
 
+**Link:** https://docs.bacalhau.org/examples/model-inference/Openai-Whisper/

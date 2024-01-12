@@ -16,3 +16,5 @@ Welcome to my Troubleshooting and FAQ Writing portfolio section! As a technical 
 **Approach:** My approach in developing this guide was to first identify the most common challenges and questions users face while interacting with Bacalhau. I then structured the information in a clear, easy-to-navigate format, making sure to provide straightforward, actionable solutions. My focus was on clarity and accessibility, ensuring that both new and experienced users could find the help they need without unnecessary complexity.
 
 <iframe width="100%" height="800" src="/img/pdf/faq.pdf"/>
+
+**Link:** https://docs.bacalhau.org/troubleshooting/debugging

@@ -17,6 +17,7 @@ Welcome to my **Documentation Tutorials portfolio section**! I am a technical wr
 
 <iframe width="100%" height="800" src="/img/pdf/running-jupyter-notebook.pdf"/>
 
+**Link**: https://docs.bacalhau.org/examples/workload-onboarding/Running-Jupyter-Notebook/
 
 ### Project 2: Deploy a Hello World Application to the GlueOps Platform
 
@@ -28,6 +29,7 @@ Welcome to my **Documentation Tutorials portfolio section**! I am a technical wr
 
 <iframe width="100%" height="800" src="/img/pdf/glueops-deploy-helloworld.pdf"/>
 
+**Link:** https://www.glueops.dev/docs/deploy-applications/deploy-hello-world-to-glueops
 
 ### Project 3: Set up Cloud Connect for your Cluster
 
@@ -39,6 +41,7 @@ Welcome to my **Documentation Tutorials portfolio section**! I am a technical wr
 
 <iframe width="100%" height="800" src="/img/pdf/bacalhau-getting-started.pdf"/>
 
+**Link:** https://docs.calimero.network/getting-started/cloud-connect
 
 ### Project 4: Getting Started with Bacalhau
 
@@ -46,6 +49,8 @@ Welcome to my **Documentation Tutorials portfolio section**! I am a technical wr
 
 **Tools Used:** Docusaurus, Markdown
 
-**Approach:** The old guide was a bit complicated and hard for some users. So, I researched what users really needed and where they were getting stuck. Then, I rewrote the guide to make it simpler. I included easy steps and clear instructions so that anyone can start using Bacalhau without getting confused or overwhelmed.
+**Approach:** The previous guide was a bit complicated and hard for some users. So, I researched what users really needed and where they were getting stuck. Then, I rewrote the guide to make it simpler. I included easy steps and clear instructions so that anyone can start using Bacalhau without getting confused or overwhelmed.
 
 <iframe width="100%" height="800" src="/img/pdf/bacalhau-getting-started.pdf"/>
+
+**Link:** https://docs.bacalhau.org/getting-started/installation
