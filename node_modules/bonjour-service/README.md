@@ -8,6 +8,8 @@ multicast DNS.
 
 This is a rewrite of the project Bonjour (https://github.com/watson/bonjour) into modern TypeScript.
 
+bonjour-service is supported by [ON LX Limited](https://onlx.ltd/?src=bonjour-service). Check out our projects such as [Ctrl Suite](https://onlx.ltd/ctrl-suite?src=bonjour-service) and [Ctrl for iPad](https://onlx.ltd/ctrl-for-ipad?src=bonjour-service).
+
 
 
 ## Installation
@@ -69,6 +71,7 @@ Options are:
 - `protocol` (string, optional) - `udp` or `tcp` (default)
 - `txt` (object, optional) - a key/value object to broadcast as the TXT
   record
+- `disableIPv6` (boolean, optional) disble IPv6 addresses
 
 IANA maintains a [list of official service types and port
 numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml).
@@ -115,6 +118,10 @@ Emitted every time a new service is found that matches the browser.
 #### `Event: down`
 
 Emitted every time an existing service emmits a goodbye message.
+
+#### `Event: txt-update`
+
+Emitted every time an existing service does a new announcement with an updated TXT record.
 
 #### `browser.services()`
 

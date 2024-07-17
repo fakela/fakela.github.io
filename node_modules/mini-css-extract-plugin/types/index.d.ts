@@ -13,6 +13,14 @@ declare class MiniCssExtractPlugin {
     webpack: Compiler["webpack"]
   ): CssDependencyConstructor;
   /**
+   * Returns all hooks for the given compilation
+   * @param {Compilation} compilation the compilation
+   * @returns {MiniCssExtractPluginCompilationHooks} hooks
+   */
+  static getCompilationHooks(
+    compilation: Compilation
+  ): MiniCssExtractPluginCompilationHooks;
+  /**
    * @param {PluginOptions} [options]
    */
   constructor(options?: PluginOptions | undefined);
@@ -94,6 +102,8 @@ declare namespace MiniCssExtractPlugin {
     CssDependency,
     CssDependencyOptions,
     CssDependencyConstructor,
+    VarNames,
+    MiniCssExtractPluginCompilationHooks,
   };
 }
 type Compiler = import("webpack").Compiler;
@@ -103,6 +113,15 @@ type CssDependencyConstructor = new (
   context: string | null,
   identifierIndex: number
 ) => CssDependency;
+type Compilation = import("webpack").Compilation;
+type MiniCssExtractPluginCompilationHooks = {
+  beforeTagInsert: import("tapable").SyncWaterfallHook<
+    [string, VarNames],
+    string
+  >;
+  linkPreload: SyncWaterfallHook<[string, Chunk]>;
+  linkPrefetch: SyncWaterfallHook<[string, Chunk]>;
+};
 type PluginOptions = {
   filename?: Required<Configuration>["output"]["filename"];
   chunkFilename?: Required<Configuration>["output"]["chunkFilename"];
@@ -132,6 +151,7 @@ type PluginOptions = {
  * @property {boolean} [emit]
  * @property {boolean} [esModule]
  * @property {string} [layer]
+ * @property {boolean} [defaultExport]
  */
 /**
  * @typedef {Object} PluginOptions
@@ -166,7 +186,6 @@ declare const pluginName: "mini-css-extract-plugin";
 declare const pluginSymbol: unique symbol;
 declare var loader: string;
 type Schema = import("schema-utils/declarations/validate").Schema;
-type Compilation = import("webpack").Compilation;
 type ChunkGraph = import("webpack").ChunkGraph;
 type Chunk = import("webpack").Chunk;
 type ChunkGroup = Parameters<import("webpack").Chunk["isInGroup"]>[0];
@@ -185,6 +204,7 @@ type LoaderOptions = {
   emit?: boolean | undefined;
   esModule?: boolean | undefined;
   layer?: string | undefined;
+  defaultExport?: boolean | undefined;
 };
 type NormalizedPluginOptions = {
   filename: Required<Configuration>["output"]["filename"];
@@ -233,3 +253,11 @@ type CssModuleDependency = {
 };
 type CssDependency = Dependency & CssModuleDependency;
 type CssDependencyOptions = Omit<LoaderDependency, "context">;
+type VarNames = {
+  tag: string;
+  chunkId: string;
+  href: string;
+  resolve: string;
+  reject: string;
+};
+import { SyncWaterfallHook } from "tapable";

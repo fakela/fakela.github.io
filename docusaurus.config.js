@@ -42,14 +42,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/fakela/fakela.github.io',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/fakela/fakela.github.io',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -77,7 +77,7 @@ const config = {
             label: 'About Me',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/fakela/fakela.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -87,28 +87,28 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Experience',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'About me',
+                to: 'http://localhost:3000/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'More about me',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Medium',
+                href: 'https://medium.com/@favourkelvin17',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/favour-kelvin/',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/fakela6',
               },
             ],
           },
@@ -116,20 +116,25 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Articles written by me',
+                to: 'https://docs.google.com/spreadsheets/d/1bgPWg-X8ON2ugT5Eg2DR4boXtrEIvMxsSNq3uuaJb1U/edit?gid=0#gid=0',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/fakela',
               },
             ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       prism: {
-        theme: lightCodeTheme,
+        theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),

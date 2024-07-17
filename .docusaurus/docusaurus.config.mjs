@@ -27,15 +27,15 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/workspace/fakela.github.io/sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "sidebarPath": "/Users/favourkelvin/Documents/fakela.github.io/sidebars.js",
+          "editUrl": "https://github.com/fakela/fakela.github.io"
         },
         "blog": {
           "showReadingTime": true,
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/fakela/fakela.github.io"
         },
         "theme": {
-          "customCss": "/workspace/fakela.github.io/src/css/custom.css"
+          "customCss": "/Users/favourkelvin/Documents/fakela.github.io/src/css/custom.css"
         }
       }
     ]
@@ -56,7 +56,7 @@ export default {
           "label": "About Me"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/fakela/fakela.github.io",
           "label": "GitHub",
           "position": "right"
         }
@@ -67,28 +67,28 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Docs",
+          "title": "Experience",
           "items": [
             {
-              "label": "Tutorial",
-              "to": "/docs/intro"
+              "label": "About me",
+              "to": "http://localhost:3000/docs/intro"
             }
           ]
         },
         {
-          "title": "Community",
+          "title": "More about me",
           "items": [
             {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+              "label": "Medium",
+              "href": "https://medium.com/@favourkelvin17"
             },
             {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
+              "label": "LinkedIn",
+              "href": "https://www.linkedin.com/in/favour-kelvin/"
             },
             {
               "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
+              "href": "https://twitter.com/fakela6"
             }
           ]
         },
@@ -96,117 +96,109 @@ export default {
           "title": "More",
           "items": [
             {
-              "label": "Blog",
-              "to": "/blog"
+              "label": "Articles written by me",
+              "to": "https://docs.google.com/spreadsheets/d/1bgPWg-X8ON2ugT5Eg2DR4boXtrEIvMxsSNq3uuaJb1U/edit?gid=0#gid=0"
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/fakela"
             }
           ]
         }
       ],
       "copyright": "Copyright © 2024 My Project, Inc. Built with Docusaurus."
     },
+    "colorMode": {
+      "defaultMode": "dark",
+      "disableSwitch": false,
+      "respectPrefersColorScheme": false
+    },
     "prism": {
       "theme": {
         "plain": {
-          "color": "#393A34",
-          "backgroundColor": "#f6f8fa"
+          "color": "#F8F8F2",
+          "backgroundColor": "#282A36"
         },
         "styles": [
           {
             "types": [
-              "comment",
               "prolog",
-              "doctype",
-              "cdata"
+              "constant",
+              "builtin"
             ],
             "style": {
-              "color": "#999988",
-              "fontStyle": "italic"
+              "color": "rgb(189, 147, 249)"
             }
           },
           {
             "types": [
-              "namespace"
+              "inserted",
+              "function"
             ],
             "style": {
-              "opacity": 0.7
+              "color": "rgb(80, 250, 123)"
             }
           },
           {
             "types": [
-              "string",
-              "attr-value"
+              "deleted"
             ],
             "style": {
-              "color": "#e3116c"
+              "color": "rgb(255, 85, 85)"
+            }
+          },
+          {
+            "types": [
+              "changed"
+            ],
+            "style": {
+              "color": "rgb(255, 184, 108)"
             }
           },
           {
             "types": [
               "punctuation",
-              "operator"
+              "symbol"
             ],
             "style": {
-              "color": "#393A34"
+              "color": "rgb(248, 248, 242)"
             }
           },
           {
             "types": [
-              "entity",
-              "url",
-              "symbol",
-              "number",
-              "boolean",
-              "variable",
-              "constant",
-              "property",
-              "regex",
-              "inserted"
-            ],
-            "style": {
-              "color": "#36acaa"
-            }
-          },
-          {
-            "types": [
-              "atrule",
-              "keyword",
-              "attr-name",
+              "string",
+              "char",
+              "tag",
               "selector"
             ],
             "style": {
-              "color": "#00a4db"
+              "color": "rgb(255, 121, 198)"
             }
           },
           {
             "types": [
-              "function",
-              "deleted",
-              "tag"
+              "keyword",
+              "variable"
             ],
             "style": {
-              "color": "#d73a49"
+              "color": "rgb(189, 147, 249)",
+              "fontStyle": "italic"
             }
           },
           {
             "types": [
-              "function-variable"
+              "comment"
             ],
             "style": {
-              "color": "#6f42c1"
+              "color": "rgb(98, 114, 164)"
             }
           },
           {
             "types": [
-              "tag",
-              "selector",
-              "keyword"
+              "attr-name"
             ],
             "style": {
-              "color": "#00009f"
+              "color": "rgb(241, 250, 140)"
             }
           }
         ]
@@ -311,11 +303,6 @@ export default {
           }
         }
       ]
-    },
-    "colorMode": {
-      "defaultMode": "light",
-      "disableSwitch": false,
-      "respectPrefersColorScheme": false
     },
     "docs": {
       "versionPersistence": "localStorage",

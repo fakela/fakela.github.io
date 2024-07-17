@@ -11,6 +11,7 @@ const { SyncHook, MultiHook } = require("tapable");
 const ConcurrentCompilationError = require("./ConcurrentCompilationError");
 const MultiStats = require("./MultiStats");
 const MultiWatching = require("./MultiWatching");
+const WebpackError = require("./WebpackError");
 const ArrayQueue = require("./util/ArrayQueue");
 
 /** @template T @typedef {import("tapable").AsyncSeriesHook<T>} AsyncSeriesHook<T> */
@@ -19,6 +20,7 @@ const ArrayQueue = require("./util/ArrayQueue");
 /** @typedef {import("./Compiler")} Compiler */
 /** @typedef {import("./Stats")} Stats */
 /** @typedef {import("./Watching")} Watching */
+/** @typedef {import("./logging/Logger").Logger} Logger */
 /** @typedef {import("./util/fs").InputFileSystem} InputFileSystem */
 /** @typedef {import("./util/fs").IntermediateFileSystem} IntermediateFileSystem */
 /** @typedef {import("./util/fs").OutputFileSystem} OutputFileSystem */
@@ -27,7 +29,7 @@ const ArrayQueue = require("./util/ArrayQueue");
 /**
  * @template T
  * @callback Callback
- * @param {(Error | null)=} err
+ * @param {Error | null} err
  * @param {T=} result
  */
 
@@ -38,7 +40,7 @@ const ArrayQueue = require("./util/ArrayQueue");
  */
 
 /**
- * @typedef {Object} MultiCompilerOptions
+ * @typedef {object} MultiCompilerOptions
  * @property {number=} parallelism how many Compilers are allows to run at the same time in parallel
  */
 
@@ -49,9 +51,11 @@ module.exports = class MultiCompiler {
 	 */
 	constructor(compilers, options) {
 		if (!Array.isArray(compilers)) {
+			/** @type {Compiler[]} */
 			compilers = Object.keys(compilers).map(name => {
-				compilers[name].name = name;
-				return compilers[name];
+				/** @type {Record<string, Compiler>} */
+				(compilers)[name].name = name;
+				return /** @type {Record<string, Compiler>} */ (compilers)[name];
 			});
 		}
 
@@ -80,7 +84,7 @@ module.exports = class MultiCompiler {
 		this.dependencies = new WeakMap();
 		this.running = false;
 
-		/** @type {Stats[]} */
+		/** @type {(Stats | null)[]} */
 		const compilerStats = this.compilers.map(() => null);
 		let doneCompilers = 0;
 		for (let index = 0; index < this.compilers.length; index++) {
@@ -94,7 +98,9 @@ module.exports = class MultiCompiler {
 				}
 				compilerStats[compilerIndex] = stats;
 				if (doneCompilers === this.compilers.length) {
-					this.hooks.done.call(new MultiStats(compilerStats));
+					this.hooks.done.call(
+						new MultiStats(/** @type {Stats[]} */ (compilerStats))
+					);
 				}
 			});
 			compiler.hooks.invalid.tap("MultiCompiler", () => {
@@ -103,6 +109,40 @@ module.exports = class MultiCompiler {
 					doneCompilers--;
 				}
 			});
+		}
+		this._validateCompilersOptions();
+	}
+
+	_validateCompilersOptions() {
+		if (this.compilers.length < 2) return;
+		/**
+		 * @param {Compiler} compiler compiler
+		 * @param {WebpackError} warning warning
+		 */
+		const addWarning = (compiler, warning) => {
+			compiler.hooks.thisCompilation.tap("MultiCompiler", compilation => {
+				compilation.warnings.push(warning);
+			});
+		};
+		const cacheNames = new Set();
+		for (const compiler of this.compilers) {
+			if (compiler.options.cache && "name" in compiler.options.cache) {
+				const name = compiler.options.cache.name;
+				if (cacheNames.has(name)) {
+					addWarning(
+						compiler,
+						new WebpackError(
+							`${
+								compiler.name
+									? `Compiler with name "${compiler.name}" doesn't use unique cache name. `
+									: ""
+							}Please set unique "cache.name" option. Name "${name}" already used.`
+						)
+					);
+				} else {
+					cacheNames.add(name);
+				}
+			}
 		}
 	}
 
@@ -180,6 +220,10 @@ module.exports = class MultiCompiler {
 		}
 	}
 
+	/**
+	 * @param {string | (function(): string)} name name of the logger, or function called once to get the logger name
+	 * @returns {Logger} a logger with that name
+	 */
 	getInfrastructureLogger(name) {
 		return this.compilers[0].getInfrastructureLogger(name);
 	}
@@ -202,6 +246,10 @@ module.exports = class MultiCompiler {
 		const edges = new Set();
 		/** @type {string[]} */
 		const missing = [];
+		/**
+		 * @param {Compiler} compiler compiler
+		 * @returns {boolean} target was found
+		 */
 		const targetFound = compiler => {
 			for (const edge of edges) {
 				if (edge.target === compiler) {
@@ -210,10 +258,19 @@ module.exports = class MultiCompiler {
 			}
 			return false;
 		};
+		/**
+		 * @param {{source: Compiler, target: Compiler}} e1 edge 1
+		 * @param {{source: Compiler, target: Compiler}} e2 edge 2
+		 * @returns {number} result
+		 */
 		const sortEdges = (e1, e2) => {
 			return (
-				e1.source.name.localeCompare(e2.source.name) ||
-				e1.target.name.localeCompare(e2.target.name)
+				/** @type {string} */
+				(e1.source.name).localeCompare(
+					/** @type {string} */ (e2.source.name)
+				) ||
+				/** @type {string} */
+				(e1.target.name).localeCompare(/** @type {string} */ (e2.target.name))
 			);
 		};
 		for (const source of this.compilers) {
@@ -274,7 +331,14 @@ module.exports = class MultiCompiler {
 	runWithDependencies(compilers, fn, callback) {
 		const fulfilledNames = new Set();
 		let remainingCompilers = compilers;
+		/**
+		 * @param {string} d dependency
+		 * @returns {boolean} when dependency was fulfilled
+		 */
 		const isDependencyFulfilled = d => fulfilledNames.has(d);
+		/**
+		 * @returns {Compiler[]} compilers
+		 */
 		const getReadyCompilers = () => {
 			let readyCompilers = [];
 			let list = remainingCompilers;
@@ -291,8 +355,12 @@ module.exports = class MultiCompiler {
 			}
 			return readyCompilers;
 		};
+		/**
+		 * @param {Callback<MultiStats>} callback callback
+		 * @returns {void}
+		 */
 		const runCompilers = callback => {
-			if (remainingCompilers.length === 0) return callback();
+			if (remainingCompilers.length === 0) return callback(null);
 			asyncLib.map(
 				getReadyCompilers(),
 				(compiler, callback) => {
@@ -302,7 +370,9 @@ module.exports = class MultiCompiler {
 						runCompilers(callback);
 					});
 				},
-				callback
+				(err, results) => {
+					callback(err, /** @type {TODO} */ (results));
+				}
 			);
 		};
 		runCompilers(callback);
@@ -316,7 +386,7 @@ module.exports = class MultiCompiler {
 	 * @returns {SetupResult[]} result of setup
 	 */
 	_runGraph(setup, run, callback) {
-		/** @typedef {{ compiler: Compiler, setupResult: SetupResult, result: Stats, state: "pending" | "blocked" | "queued" | "starting" | "running" | "running-outdated" | "done", children: Node[], parents: Node[] }} Node */
+		/** @typedef {{ compiler: Compiler, setupResult: undefined | SetupResult, result: undefined | Stats, state: "pending" | "blocked" | "queued" | "starting" | "running" | "running-outdated" | "done", children: Node[], parents: Node[] }} Node */
 
 		// State transitions for nodes:
 		// -> blocked (initial)
@@ -341,12 +411,14 @@ module.exports = class MultiCompiler {
 		}));
 		/** @type {Map<string, Node>} */
 		const compilerToNode = new Map();
-		for (const node of nodes) compilerToNode.set(node.compiler.name, node);
+		for (const node of nodes) {
+			compilerToNode.set(/** @type {string} */ (node.compiler.name), node);
+		}
 		for (const node of nodes) {
 			const dependencies = this.dependencies.get(node.compiler);
 			if (!dependencies) continue;
 			for (const dep of dependencies) {
-				const parent = compilerToNode.get(dep);
+				const parent = /** @type {Node} */ (compilerToNode.get(dep));
 				node.parents.push(parent);
 				parent.children.push(node);
 			}
@@ -361,10 +433,10 @@ module.exports = class MultiCompiler {
 		}
 		let errored = false;
 		let running = 0;
-		const parallelism = this._options.parallelism;
+		const parallelism = /** @type {number} */ (this._options.parallelism);
 		/**
 		 * @param {Node} node node
-		 * @param {Error=} err error
+		 * @param {(Error | null)=} err error
 		 * @param {Stats=} stats result
 		 * @returns {void}
 		 */
@@ -440,6 +512,7 @@ module.exports = class MultiCompiler {
 			}
 		};
 
+		/** @type {SetupResult[]} */
 		const setupResults = [];
 		nodes.forEach((node, i) => {
 			setupResults.push(
@@ -461,7 +534,7 @@ module.exports = class MultiCompiler {
 		};
 		const processQueueWorker = () => {
 			while (running < parallelism && queue.length > 0 && !errored) {
-				const node = queue.dequeue();
+				const node = /** @type {Node} */ (queue.dequeue());
 				if (
 					node.state === "queued" ||
 					(node.state === "blocked" &&
@@ -469,7 +542,11 @@ module.exports = class MultiCompiler {
 				) {
 					running++;
 					node.state = "starting";
-					run(node.compiler, node.setupResult, nodeDone.bind(null, node));
+					run(
+						node.compiler,
+						/** @type {SetupResult} */ (node.setupResult),
+						nodeDone.bind(null, node)
+					);
 					node.state = "running";
 				}
 			}
@@ -576,7 +653,9 @@ module.exports = class MultiCompiler {
 			(compiler, callback) => {
 				compiler.close(callback);
 			},
-			callback
+			error => {
+				callback(error);
+			}
 		);
 	}
 };

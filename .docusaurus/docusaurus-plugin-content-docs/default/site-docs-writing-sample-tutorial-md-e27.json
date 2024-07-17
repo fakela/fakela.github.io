@@ -1,14 +1,14 @@
 {
   "unversionedId": "writing-sample/tutorial",
   "id": "writing-sample/tutorial",
-  "title": "Documentation Tutorial Guide Sample",
-  "description": "Welcome to my Documentation Tutorials portfolio section! I am a technical writer dedicated to creating comprehensive, yet easy-to-follow tutorials. My focus is on guiding users through complex processes with clarity and simplicity. Below is a showcase of my expertise:",
+  "title": "Documentation Samples",
+  "description": "I have prepared a collection of writing samples to showcase my expertise in user guides and tutorials. These samples highlight my ability to create clear, comprehensive, and user-friendly documentation.",
   "source": "@site/docs/writing-sample/tutorial.md",
   "sourceDirName": "writing-sample",
   "slug": "/writing-sample/tutorial",
   "permalink": "/docs/writing-sample/tutorial",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/tutorial.md",
+  "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/tutorial.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
@@ -22,7 +22,7 @@
     "permalink": "/docs/category/writing-samples"
   },
   "next": {
-    "title": "How-to Guides",
-    "permalink": "/docs/writing-sample/how-to-guide"
+    "title": "Blogs and Articles",
+    "permalink": "/docs/writing-sample/blogs"
   }
 }

@@ -21,33 +21,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "writing-sample/api",
-              "path": "/docs/writing-sample/api",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "writing-sample/blogs",
               "path": "/docs/writing-sample/blogs",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "writing-sample/faqs",
-              "path": "/docs/writing-sample/faqs",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "writing-sample/how-to-guide",
-              "path": "/docs/writing-sample/how-to-guide",
+              "id": "writing-sample/marketing",
+              "path": "/docs/writing-sample/marketing",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "writing-sample/newsletter",
               "path": "/docs/writing-sample/newsletter",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "writing-sample/release-notes",
-              "path": "/docs/writing-sample/release-notes",
               "sidebar": "tutorialSidebar"
             },
             {

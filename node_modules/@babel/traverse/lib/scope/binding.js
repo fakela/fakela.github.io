@@ -24,9 +24,7 @@ class Binding {
     this.scope = scope;
     this.path = path;
     this.kind = kind;
-    if ((kind === "var" || kind === "hoisted") && isDeclaredInLoop(path || (() => {
-      throw new Error("Internal Babel error: unreachable ");
-    })())) {
+    if ((kind === "var" || kind === "hoisted") && isDeclaredInLoop(path)) {
       this.reassign(path);
     }
     this.clearValue();
@@ -47,13 +45,13 @@ class Binding {
   }
   reassign(path) {
     this.constant = false;
-    if (this.constantViolations.indexOf(path) !== -1) {
+    if (this.constantViolations.includes(path)) {
       return;
     }
     this.constantViolations.push(path);
   }
   reference(path) {
-    if (this.referencePaths.indexOf(path) !== -1) {
+    if (this.referencePaths.includes(path)) {
       return;
     }
     this.referenced = true;

@@ -51,9 +51,10 @@ function interpolateName(loaderContext, name, options = {}) {
       directory = resourcePath.replace(/\\/g, "/").replace(/\.\.(\/)?/g, "_$1");
     }
 
-    if (directory.length === 1) {
+    if (directory.length <= 1) {
       directory = "";
-    } else if (directory.length > 1) {
+    } else {
+      // directory.length > 1
       folder = path.basename(directory);
     }
   }
@@ -76,7 +77,7 @@ function interpolateName(loaderContext, name, options = {}) {
       // `hash` and `contenthash` are same in `loader-utils` context
       // let's keep `hash` for backward compatibility
       .replace(
-        /\[(?:([^[:\]]+):)?(?:hash|contenthash)(?::([a-z]+\d*))?(?::(\d+))?\]/gi,
+        /\[(?:([^[:\]]+):)?(?:hash|contenthash)(?::([a-z]+\d*(?:safe)?))?(?::(\d+))?\]/gi,
         (all, hashType, digestType, maxLength) =>
           getHashDigest(content, hashType, digestType, parseInt(maxLength, 10))
       );

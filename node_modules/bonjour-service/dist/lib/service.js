@@ -31,6 +31,7 @@ class Service extends events_1.EventEmitter {
         this.fqdn = `${this.name}.${this.type}${TLD}`;
         this.txt = config.txt;
         this.subtypes = config.subtypes;
+        this.disableIPv6 = !!config.disableIPv6;
     }
     records() {
         var records = [this.RecordPTR(this), this.RecordSRV(this), this.RecordTXT(this)];
@@ -48,6 +49,8 @@ class Service extends events_1.EventEmitter {
                         records.push(this.RecordA(this, addr.address));
                         break;
                     case 'IPv6':
+                        if (this.disableIPv6)
+                            break;
                         records.push(this.RecordAAAA(this, addr.address));
                         break;
                 }

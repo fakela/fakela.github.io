@@ -11,25 +11,25 @@
           "className": "docs-version-current",
           "path": "/docs",
           "tagsPath": "/docs/tags",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
-          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
+          "editUrl": "https://github.com/fakela/fakela.github.io/docs",
+          "editUrlLocalized": "https://github.com/fakela/fakela.github.io/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/workspace/fakela.github.io/sidebars.js",
-          "contentPath": "/workspace/fakela.github.io/docs",
-          "contentPathLocalized": "/workspace/fakela.github.io/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/Users/favourkelvin/Documents/fakela.github.io/sidebars.js",
+          "contentPath": "/Users/favourkelvin/Documents/fakela.github.io/docs",
+          "contentPathLocalized": "/Users/favourkelvin/Documents/fakela.github.io/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "unversionedId": "intro",
               "id": "intro",
               "title": "Welcome to Favour Kelvin's Portfolio",
-              "description": "Hello! I'm Favour Kelvin, and I'm thrilled to share a glimpse of my journey with you 😃. I am a Technical Writer with a strong background in Software Engineering. My career began as a software developer, where I discovered my passion for open-source projects. I have had the privilege of participating in three Google Open Source programs: Google Summer of Code, Google Code-In, and Google Season of Docs.",
+              "description": "Hello! I'm Favour Kelvin, a Technical Writer with a strong background in Software Engineering. My journey began as a software developer, where I discovered my passion for open-source projects. I've participated in Google Open Source programs such as Google Summer of Code, Google Code-In, and Google Season of Docs. I love sharing knowledge and helping others excel through technical articles, documentation, and community events.",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
               "slug": "/intro",
               "permalink": "/docs/intro",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/intro.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -47,13 +47,13 @@
               "unversionedId": "new",
               "id": "new",
               "title": "Experience",
-              "description": "Download my resume for a PDF version of this information.",
+              "description": "- LinkedIn",
               "source": "@site/docs/new.md",
               "sourceDirName": ".",
               "slug": "/new",
               "permalink": "/docs/new",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/new.md",
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/new.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
@@ -72,34 +72,6 @@
               }
             },
             {
-              "unversionedId": "writing-sample/api",
-              "id": "writing-sample/api",
-              "title": "API Documentation",
-              "description": "Welcome to the API Documentation section of my portfolio! As a dedicated technical writer, I excel in creating clear, detailed, and user-friendly API documentation that facilitates seamless integration and interaction with software systems. Below, you'll find a sample of my work in this realm:",
-              "source": "@site/docs/writing-sample/api.md",
-              "sourceDirName": "writing-sample",
-              "slug": "/writing-sample/api",
-              "permalink": "/docs/writing-sample/api",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/api.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 5,
-              "frontMatter": {
-                "sidebar_position": 5,
-                "sidebar_label": "API Documentation"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Blogs and Articles",
-                "permalink": "/docs/writing-sample/blogs"
-              },
-              "next": {
-                "title": "Newsletter Writing",
-                "permalink": "/docs/writing-sample/newsletter"
-              }
-            },
-            {
               "unversionedId": "writing-sample/blogs",
               "id": "writing-sample/blogs",
               "title": "Blogs and Articles Writing Sample",
@@ -109,7 +81,7 @@
               "slug": "/writing-sample/blogs",
               "permalink": "/docs/writing-sample/blogs",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/blogs.md",
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/blogs.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 4,
@@ -119,68 +91,36 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "How-to Guides",
-                "permalink": "/docs/writing-sample/how-to-guide"
+                "title": "Documentation Samples",
+                "permalink": "/docs/writing-sample/tutorial"
               },
               "next": {
-                "title": "API Documentation",
-                "permalink": "/docs/writing-sample/api"
+                "title": "Newsletter Writing",
+                "permalink": "/docs/writing-sample/newsletter"
               }
             },
             {
-              "unversionedId": "writing-sample/faqs",
-              "id": "writing-sample/faqs",
-              "title": "Troubleshooting and FAQ Writing Portfolio Sample",
-              "description": "Welcome to my Troubleshooting and FAQ Writing portfolio section! As a technical writer, I excel in creating comprehensive troubleshooting guides and FAQ documents that provide users with clear solutions to common issues. Below is an example of my work in this category:",
-              "source": "@site/docs/writing-sample/faqs.md",
+              "unversionedId": "writing-sample/marketing",
+              "id": "writing-sample/marketing",
+              "title": "Marketing Portfolio",
+              "description": "Coupler.io Blog Freelance",
+              "source": "@site/docs/writing-sample/marketing.md",
               "sourceDirName": "writing-sample",
-              "slug": "/writing-sample/faqs",
-              "permalink": "/docs/writing-sample/faqs",
+              "slug": "/writing-sample/marketing",
+              "permalink": "/docs/writing-sample/marketing",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/faqs.md",
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/marketing.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 8,
+              "sidebarPosition": 5,
               "frontMatter": {
-                "sidebar_position": 8,
-                "sidebar_label": "Troubleshooting & FAQ"
+                "sidebar_position": 5,
+                "sidebar_label": "Marketing"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "Newsletter Writing",
                 "permalink": "/docs/writing-sample/newsletter"
-              },
-              "next": {
-                "title": "Release Notes",
-                "permalink": "/docs/writing-sample/release-notes"
-              }
-            },
-            {
-              "unversionedId": "writing-sample/how-to-guide",
-              "id": "writing-sample/how-to-guide",
-              "title": "How-to Guide Documentation Sample",
-              "description": "Welcome to my How-to Guide Documentation portfolio section! As a technical writer, I specialize in creating clear and concise step-by-step guides that assist users in performing specific tasks. Below is an example of my work in this category:",
-              "source": "@site/docs/writing-sample/how-to-guide.md",
-              "sourceDirName": "writing-sample",
-              "slug": "/writing-sample/how-to-guide",
-              "permalink": "/docs/writing-sample/how-to-guide",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/how-to-guide.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "sidebar_position": 3,
-                "sidebar_label": "How-to Guides"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Documentation Samples",
-                "permalink": "/docs/writing-sample/tutorial"
-              },
-              "next": {
-                "title": "Blogs and Articles",
-                "permalink": "/docs/writing-sample/blogs"
               }
             },
             {
@@ -193,59 +133,35 @@
               "slug": "/writing-sample/newsletter",
               "permalink": "/docs/writing-sample/newsletter",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/newsletter.md",
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/newsletter.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 7,
+              "sidebarPosition": 4,
               "frontMatter": {
-                "sidebar_position": 7,
+                "sidebar_position": 4,
                 "sidebar_label": "Newsletter Writing"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "API Documentation",
-                "permalink": "/docs/writing-sample/api"
+                "title": "Blogs and Articles",
+                "permalink": "/docs/writing-sample/blogs"
               },
               "next": {
-                "title": "Troubleshooting & FAQ",
-                "permalink": "/docs/writing-sample/faqs"
-              }
-            },
-            {
-              "unversionedId": "writing-sample/release-notes",
-              "id": "writing-sample/release-notes",
-              "title": "Welcome to my Release Note Writing Portfolio Section",
-              "description": "As a dedicated technical writer, I excel in creating meticulous and informative release notes that serve as essential communication tools between your product development team and your valued users.",
-              "source": "@site/docs/writing-sample/release-notes.md",
-              "sourceDirName": "writing-sample",
-              "slug": "/writing-sample/release-notes",
-              "permalink": "/docs/writing-sample/release-notes",
-              "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/release-notes.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 8,
-              "frontMatter": {
-                "sidebar_position": 8,
-                "sidebar_label": "Release Notes"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Troubleshooting & FAQ",
-                "permalink": "/docs/writing-sample/faqs"
+                "title": "Marketing",
+                "permalink": "/docs/writing-sample/marketing"
               }
             },
             {
               "unversionedId": "writing-sample/tutorial",
               "id": "writing-sample/tutorial",
-              "title": "Documentation Tutorial Guide Sample",
-              "description": "Welcome to my Documentation Tutorials portfolio section! I am a technical writer dedicated to creating comprehensive, yet easy-to-follow tutorials. My focus is on guiding users through complex processes with clarity and simplicity. Below is a showcase of my expertise:",
+              "title": "Documentation Samples",
+              "description": "I have prepared a collection of writing samples to showcase my expertise in user guides and tutorials. These samples highlight my ability to create clear, comprehensive, and user-friendly documentation.",
               "source": "@site/docs/writing-sample/tutorial.md",
               "sourceDirName": "writing-sample",
               "slug": "/writing-sample/tutorial",
               "permalink": "/docs/writing-sample/tutorial",
               "draft": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/writing-sample/tutorial.md",
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/tutorial.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
@@ -259,8 +175,8 @@
                 "permalink": "/docs/category/writing-samples"
               },
               "next": {
-                "title": "How-to Guides",
-                "permalink": "/docs/writing-sample/how-to-guide"
+                "title": "Blogs and Articles",
+                "permalink": "/docs/writing-sample/blogs"
               }
             }
           ],
@@ -290,18 +206,8 @@
                   },
                   {
                     "type": "doc",
-                    "id": "writing-sample/how-to-guide",
-                    "label": "How-to Guides"
-                  },
-                  {
-                    "type": "doc",
                     "id": "writing-sample/blogs",
                     "label": "Blogs and Articles"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "writing-sample/api",
-                    "label": "API Documentation"
                   },
                   {
                     "type": "doc",
@@ -310,13 +216,8 @@
                   },
                   {
                     "type": "doc",
-                    "id": "writing-sample/faqs",
-                    "label": "Troubleshooting & FAQ"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "writing-sample/release-notes",
-                    "label": "Release Notes"
+                    "id": "writing-sample/marketing",
+                    "label": "Marketing"
                   }
                 ],
                 "link": {
@@ -340,7 +241,7 @@
           "id": "welcome",
           "metadata": {
             "permalink": "/blog/welcome",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-26-welcome/index.md",
+            "editUrl": "https://github.com/fakela/fakela.github.io/blog/2021-08-26-welcome/index.md",
             "source": "@site/blog/2021-08-26-welcome/index.md",
             "title": "Welcome",
             "description": "Docusaurus blogging features are powered by the blog plugin.",
@@ -402,7 +303,7 @@
           "id": "mdx-blog-post",
           "metadata": {
             "permalink": "/blog/mdx-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-01-mdx-blog-post.mdx",
+            "editUrl": "https://github.com/fakela/fakela.github.io/blog/2021-08-01-mdx-blog-post.mdx",
             "source": "@site/blog/2021-08-01-mdx-blog-post.mdx",
             "title": "MDX Blog Post",
             "description": "Blog posts support Docusaurus Markdown features, such as MDX.",
@@ -450,7 +351,7 @@
           "id": "long-blog-post",
           "metadata": {
             "permalink": "/blog/long-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-29-long-blog-post.md",
+            "editUrl": "https://github.com/fakela/fakela.github.io/blog/2019-05-29-long-blog-post.md",
             "source": "@site/blog/2019-05-29-long-blog-post.md",
             "title": "Long Blog Post",
             "description": "This is the summary of a very long blog post,",
@@ -501,7 +402,7 @@
           "id": "first-blog-post",
           "metadata": {
             "permalink": "/blog/first-blog-post",
-            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2019-05-28-first-blog-post.md",
+            "editUrl": "https://github.com/fakela/fakela.github.io/blog/2019-05-28-first-blog-post.md",
             "source": "@site/blog/2019-05-28-first-blog-post.md",
             "title": "First Blog Post",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",

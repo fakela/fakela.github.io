@@ -5,116 +5,107 @@ sidebar_label: About Me
 
 # Welcome to Favour Kelvin's Portfolio
 
-Hello! I'm Favour Kelvin, and I'm thrilled to share a glimpse of my journey with you 😃. I am a Technical Writer with a strong background in Software Engineering. My career began as a software developer, where I discovered my passion for open-source projects. I have had the privilege of participating in three Google Open Source programs: Google Summer of Code, Google Code-In, and Google Season of Docs.
+Hello! I'm Favour Kelvin, a Technical Writer with a strong background in Software Engineering. My journey began as a software developer, where I discovered my passion for open-source projects. I've participated in Google Open Source programs such as Google Summer of Code, Google Code-In, and Google Season of Docs. I love sharing knowledge and helping others excel through technical articles, documentation, and community events.
 
-I’m very passionate about sharing knowledge, educating people about technology and helping them become better at what they do.  do this by writing technical articles, contributing to open-source initiatives, creating documentation, and organizing/speaking at meetups and conferences.
+Throughout my career, I have worked with diverse teams to create and improve technical documentation, user guides, and blogs. My expertise includes DevOps, Cloud Computing, Web Development, IoT, Data Science, Web3, Data Automation, and Database Management.
 
-Throughout my professional journey, I have collaborated with diverse individuals, led teams, improved support systems, optimized operations, managed information systems, communities, etc.
-
-As a Technical Writer, I have dedicated years to working with exceptional teams and producing clear and comprehensive technical content, including documentation, user guides, and blogs. My areas of expertise span from DevOps and Cloud Computing to Web Development, IoT, Data Science, Web3, Data Automation, Database Management, and more.
-
-## Notable Achievements
-
+### Notable Achievements
 Here are some highlights from my journey:
 
-- Authored over [80+ articles](https://docs.google.com/spreadsheets/d/1bgPWg-X8ON2ugT5Eg2DR4boXtrEIvMxsSNq3uuaJb1U/edit#gid=0) within a short span, sharing valuable insights and knowledge with a wide audience.
+✅ Pioneered and scaled documentation from scratch to ensure users have access to clear and comprehensive resources.
 
-- Implemented content calendars and streamlined content creation processes, elevating content quality and publication efficiency.
+✅ Elevated the quality of existing content and conducted detailed documentation audits for organizations, enhancing user experiences.
 
-- Actively participated in and mentored participants in three prestigious Google Open Source Programs, nurturing the growth of open-source initiatives.
+✅ Introduced documentation analytics, leading to a significant increase in user satisfaction by providing valuable insights into user engagement.
 
-- Pioneered and scaled documentation from scratch to ensure users have access to clear and comprehensive resources.
+✅ Established a documentation platform, streamlining the content creation process.
 
-- Elevated the quality of existing content and conducted meticulous documentation audits for organizations, enhancing user experiences.
+✅ Implemented style guides to ensure a consistent voice, tone, and terminology.
 
-- Introduced documentation analytics, leading to a significant increase in user satisfaction by providing valuable insights into user engagement.
+✅ Collaborated with cross-functional teams to establish a seamless feedback loop for documentation updates, enhancing user satisfaction.
 
-- Established a documentation platform, streamlining the content creation process.
+✅ Integrated technical writing into the Agile development process, ensuring documentation remains up-to-date with every sprint release.
 
-- Implemented style guides to ensure a consistent voice, tone, and terminology.
+✅ Authored over 120+ articles, sharing valuable insights and knowledge with a wide audience.
 
-- Collaborated with cross-functional teams to establish a seamless feedback loop for documentation updates, enhancing user satisfaction.
+✅ Implemented content calendars and streamlined content creation processes, elevating content quality and publication efficiency.
 
-- Integrated technical writing into the Agile development process of a company, ensuring documentation remains up-to-date with every sprint release.
+✅ Actively participated in and mentored participants in three prestigious Google Open Source Programs, nurturing the growth of open-source initiatives.
 
-- Played a pivotal role in building and nurturing a thriving community of open-source enthusiasts through my involvement with [Open Source Community Africa](https://oscafrica.org/), fostering collaboration and innovation in the open-source world.
+✅ Played a pivotal role in building and nurturing a thriving community of open-source enthusiasts through my involvement with Open Source Community Africa, fostering collaboration and innovation in open-source.
 
-## Why Choose Me?
-
-Now, you might be wondering, "Why should I consider Favour Kelvin?" Here are a few compelling reasons:
+### Why Choose Me?
+Here are a few compelling reasons:
 
 - I am committed to delivering my absolute best in every task I undertake.
-
 - I am passionate about teaching and sharing knowledge, which forms the foundation of my developer relations and education strengths.
-
-- I can adapt to new conditions, align with company goals and visions, and cater to the evolving needs of your developer product.
-
+- I adapt to new conditions, align with company goals and visions, and cater to the evolving needs of your developer product.
 - Honesty is my guiding principle; I'll never oversell your product, but I will diligently convey its strengths and value to developers.
-
 - I excel at building and leading developer communities, fostering camaraderie and collaboration.
 
-## My Key Strengths
+### What I'll Bring to Your Team
+As your next Technical Writer, I will use my software engineering and technical writing experience to:
 
-- Proficient in writing code when necessary using JavaScript, TypeScript, Python etc.
+- Develop and maintain comprehensive documentation for various technologies, including API documentation, user guides, technical manuals, and troubleshooting guides, ensuring clarity and ease of use for developers.
+- Produce and edit technical content that communicates complex information clearly and accurately.
+- Work closely with engineers, product managers, and other stakeholders to gather information and understand documentation needs.
+- Proofread and edit documentation for clarity, grammar, and style consistency.
+- Create user guides, tutorials, and other educational materials to help users get the most out of your products.
+- Continuously improve documentation based on user feedback and technological advancements.
+- Integrate technical writing into the Agile development process, ensuring documentation remains up-to-date with every sprint release.
+- Use tools and platforms like Markdown, Git, JIRA, Confluence, Docker, Docusaurus, Nextra, and other documentation tools to manage and streamline documentation projects.
+- Provide relevant and accurate documentation by using my familiarity with various technologies.
 
-- API documentation.
+### My Key Strengths
+- API documentation
+- User guides and tutorials
+- Technical manuals
+- Troubleshooting guides
+- Technical content creation
+- Content production and marketing
+- Community and programs management
+- Organizing developer events
+- Expertise in Web3 content creation
+- Proficient in writing code using JavaScript, TypeScript, Python, etc.
 
-- Technical content creation.
+### Tools I have used
 
-- Content production and marketing.
+- **GitHub**
+- **Docusaurus**
+- **Nextra**
+- **GitBook**
+- **Sphinx**
+- **Swagger**
+- **Markdown**
+- **Git**
+- **Postman**
+- **JIRA**
+- **Confluence**
+- **Docker**
 
-- Community and programs management.
+These tools have been essential in my technical writing and documentation projects, helping streamline processes and maintain high-quality standards.
 
-- Organizing developer events.
+### Companies I Have Worked With
+Here are some of the companies I've had the pleasure of collaborating with:
 
-- Expertise in Web3 content creation.
-
-## What I'll Bring to Your Team
-
-As your next Technical Writer, I will leverage my software engineering and technical weriting experience to:
-
-- Serve as a bridge between your product and developers, helping them succeed with your product offerings.
-
-- Engage with technical and non-technical customers across different engineering teams to articulate the value of your product.
-
-- Develop tools, code demos, integrations, content, educational materials, and documentation to empower developers to fully utilize your products.
-
-- Collaborate with strategic partners to showcase the potential of your product when combined with other tools and services loved by developers.
-
-- Educate developers about your product through open-source contributions, public speaking, technical workshops at conferences, local developer meetups, documentation, and published tutorials/videos.
-
-- Led discussions on the latest technological advancements and best practices within and beyond your product's scope in the developer community, through in-person events, online forums, and social media.
-
-- Cultivate and nurture a thriving community of developers who use your product.
-
-- Collaborate closely with your engineering, product, marketing, sales, and customer success teams to enhance the developer experience of your product.
-
-- Test new product features and provide early feedback for continuous improvement.
-
-- Collect feedback from the developer community on existing and upcoming product features for informed planning, prioritization, and implementation.
-
-- Monitor and measure the success and impact of the activities and responsibilities entrusted to me, demonstrating the value of Developer Relations at your company.
-
-## Companies I Have Worked With
-
-Here are some of the companies I've had the pleasure of collaborating with, in various capacities, including full-time, part-time, contract, fixed basis, and one-time projects:
-
-- [Protocol Labs (Bacalhau)](https://docs.bacalhau.org/): A research, development, and deployment laboratory known for projects like IPFS, Filecoin, and libp2p, aiming to enhance human existence through technology.
-
-- [Calimero](https://www.calimero.network/): A web3 customizable sidechain built on top of the NEAR protocol.
-
+- [Protocol Labs (Bacalhau)](https://protocol.ai/): Known for projects like IPFS, Filecoin, and libp2p.
+- [Calimero](https://calimero.network/): A Web3 customizable sidechain built on top of the NEAR protocol.
 - [Mindee](https://mindee.com/): An OCR API for developers.
+- [PeeringDB](https://www.peeringdb.com/): A user-maintained database of networks for interconnection data.
+- [GlueOps](https://glueops.com/): A platform for streamlining DevOps and DataOps.
 
-- [Coupler.io](https://www.coupler.io/): A data analytics and automation platform.
+### Freelance Projects
+In these freelance projects, I handled social media, content writing, and content strategy.
+These were moostly one time projects
+- [Coupler.io](https://www.coupler.io/)
+- [Paid Network](https://paidnetwork.com/)
+- [Suprabit](https://suprabit.io/)
+- [Codebooq](https://codebooq.com/)
 
+### Open Source Communities 
+I have actively participated in various open-source communities, contributing through Google Season of Docs (GSOD) and Google Summer of Code (GSOC).
+- ⁠[SugarLabs](https://www.sugarlabs.org/): Focused on producing and supporting Sugar, an open-source desktop environment and learning platform
 - [Mautic](https://www.mautic.org/): An open-source marketing automation tool.
 
-- [PeeringDB](https://www.peeringdb.com/): A user-maintained database of networks, serving as the go-to resource for interconnection data.
-
-- [GlueOps](https://glueops.dev/): A platform that streamlines and maximizes DevOps and DataOps for efficient management and growth.
-
-- [SugarLabs](https://sugarlabs.org/): A community-driven software project focused on producing, distributing, and supporting Sugar, an open-source desktop environment and learning platform.
-
-## Let's Connect!
-
-If you have exciting opportunities or need tech expertise, please reach out. I am open to both full-time positions and short-term contracts that align with my skills and interests. You can contact me via email at [Your Email Address], or connect with me on LinkedIn or Twitter. I'm looking forward to connecting with you! ❤️
+### Let's Connect!
+If you have exciting opportunities or need tech expertise, please reach out. I am open to both full-time positions and short-term contracts that align with my skills and interests. You can contact me via email at favourkelvin17@gmail.com, or connect with me on [LinkedIn](https://www.linkedin.com/in/favour-kelvin/) or [Twitter](https://twitter.com/fakela6). I'm looking forward to connecting with you! ❤️

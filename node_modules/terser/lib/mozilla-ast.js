@@ -166,17 +166,15 @@ import { is_basic_identifier_string } from "./parse.js";
 (function() {
 
     var normalize_directives = function(body) {
-        var in_directive = true;
-
         for (var i = 0; i < body.length; i++) {
-            if (in_directive && body[i] instanceof AST_Statement && body[i].body instanceof AST_String) {
+            if (body[i] instanceof AST_Statement && body[i].body instanceof AST_String) {
                 body[i] = new AST_Directive({
                     start: body[i].start,
                     end: body[i].end,
                     value: body[i].body.value
                 });
-            } else if (in_directive && !(body[i] instanceof AST_Statement && body[i].body instanceof AST_String)) {
-                in_directive = false;
+            } else {
+                return body;
             }
         }
 
@@ -620,9 +618,7 @@ import { is_basic_identifier_string } from "./parse.js";
                 start: my_start_token(M),
                 end: my_end_token(M),
                 exported_definition: from_moz(M.declaration),
-                exported_names: M.specifiers && M.specifiers.length ? M.specifiers.map(function (specifier) {
-                    return from_moz(specifier);
-                }) : null,
+                exported_names: M.specifiers && M.specifiers.length ? M.specifiers.map(from_moz) : null,
                 module_name: from_moz(M.source),
                 assert_clause: assert_clause_from_moz(M.assertions)
             });

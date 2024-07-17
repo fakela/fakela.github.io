@@ -3,54 +3,136 @@ sidebar_position: 2
 sidebar_label: Documentation Samples
 ---
 
-# Documentation Tutorial Guide Sample
+# Documentation Samples
 
-Welcome to my **Documentation Tutorials portfolio section**! I am a technical writer dedicated to creating comprehensive, yet easy-to-follow tutorials. My focus is on guiding users through complex processes with clarity and simplicity. Below is a showcase of my expertise:
+I have prepared a collection of writing samples to showcase my expertise in user guides and tutorials. These samples highlight my ability to create clear, comprehensive, and user-friendly documentation.
 
-### Project 1: Running Jupyter Notebooks on Bacalhau
+:::info
+You can preview these samples directly in the portfolio or download the full PDF versions for a more detailed view. I have also included the links to the pages as well.
+:::
 
-**Description:** This tutorial teaches how to run Jupyter Notebooks on Bacalhau, starting with a simple "Hello, World!" notebook for beginners, and advancing to executing a notebook for training a machine-learning model on the MNIST dataset. It's a practical guide to using Bacalhau's containerized environment for various data science projects.
+## User Guide: Docker Workload Onboarding
+**Project Description:** This user guide details the process of onboarding workloads using Docker. It covers setup instructions, configuration, and troubleshooting tips to ensure a smooth integration.
 
-**Tools Used:** Markdown, Docusarus
+**Tool Used:** GitBook, GitHub
 
-**Approach:** My approach was centered around providing a clear, accessible path for users of different skill levels. The tutorial begins with the basics of installing the Bacalhau client and progresses to more intricate operations like running notebooks for machine learning. Each step is detailed with code snippets and explanations, ensuring users can confidently execute notebooks in Bacalhau’s containerized setting.
+**Approach:** I aimed to make this guide as user-friendly as possible, focusing on clear, step-by-step instructions. By including detailed visuals and practical examples, I ensured that even users with limited technical background could follow along and complete the onboarding process successfully.
 
-<iframe width="100%" height="800" src="/img/pdf/running-jupyter-notebook.pdf"/>
+<iframe width="100%" height="500" src="/img/pdf/docker.pdf"></iframe>
 
-**Link**: https://docs.bacalhau.org/examples/workload-onboarding/Running-Jupyter-Notebook/
+:::tip
+**Link:** [Docker Workload Onboarding](https://docs.bacalhau.org/getting-started/workload-onboarding/docker-workload-onboarding)
+:::
 
-### Project 2: Deploy a Hello World Application to the GlueOps Platform
+## How-To Guide: AWS Cloud Setup for GlueOps Platform
+**Project Description:** This guide covers the pre-deployment steps for setting up AWS for the GlueOps Platform, including configuring the necessary cloud infrastructure.
 
-**Description**:  I created a straightforward guide to deploy a "Hello World" application on the GlueOps platform. The guide starts from the basics and covers each step in detail, ensuring a smooth deployment process.
+**Tool Used:** Docusaurus
 
-**Tools Used**: Docusaurus, Markdown
+**Approach:** I focused on providing detailed, step-by-step instructions, supported by screenshots and configuration examples. My aim was to make the setup process as smooth and accessible as possible for all users, ensuring that they could easily navigate through the setup and avoid common pitfalls.
 
-**Approach**: My goal was to simplify the deployment process for beginners. I broke down the steps into clear, easy-to-follow instructions, using a demo project for practical understanding. This approach makes it easier for users to grasp the concepts and apply them to their own projects.
+<iframe width="100%" height="500" src="/img/pdf/aws.pdf"></iframe>
 
-<iframe width="100%" height="800" src="/img/pdf/glueops-deploy-helloworld.pdf"/>
+:::tip
+**Link:** [AWS Cloud Setup for GlueOps Platform](https://www.glueops.dev/docs/glueops-platform-administrator/predeployment/clouds/aws/cloud-setup-aws)
+:::
 
-**Link:** https://www.glueops.dev/docs/deploy-applications/deploy-hello-world-to-glueops
+## API Docs: Mindee REST API Guide
+**Description:** This comprehensive API documentation guide for the Mindee REST API helps developers utilize its powerful document parsing capabilities, including authentication, document inputs, working with images and PDFs, making API calls, handling predictions, and managing errors.
 
-### Project 3: Set up Cloud Connect for your Cluster
+**Tools Used:** Readme.io
 
-**Description:** This tutorial guides users through the setup of Cloud Connect within Calimero, enabling the management of decentralized, secure infrastructure. It focuses on integrating private chains and workspaces with Kubernetes clusters using personal AWS/GCP credentials, ensuring data sovereignty for users.
+**Approach:** I focused on creating clear and concise documentation that addresses both high-level concepts and detailed technical steps. The guide includes real-world examples to help developers of varying experience levels understand and implement the API effectively.
+
+<iframe width="100%" height="500" src="/img/pdf/Prediction.pdf"></iframe>
+
+:::tip
+**Link:** [Mindee REST API Guide](https://developers.mindee.com/docs/prediction)
+:::
+
+## API Docs: Querying with the PeeringDB API
+**Description:** This tutorial explains how to use the PeeringDB API to query the database, retrieve information, and automate tasks.
+
+**Tools Used:** Markdown, GitHub
+
+**Approach:** I focused on delivering clear instructions and practical examples, ensuring users could easily follow along and implement API queries effectively.
+
+<iframe width="100%" height="500" src="/img/pdf/query-api.pdf"></iframe>
+
+:::tip
+**Link:** [Querying with the PeeringDB API](https://docs.peeringdb.com/howto/search/#querying-with-the-peeringdb-api)
+:::
+
+## Architecture Guide: Bacalhau Architecture
+**Project Description:** This documentation provides an in-depth look at the architecture of Bacalhau, explaining the components and their interactions within the system.
+
+**Tool Used:** GitBook
+
+**Approach:** The document is organized to offer a comprehensive understanding of Bacalhau's core components, interfaces, and the workflow of job submissions and executions.
+
+<iframe width="100%" height="500" src="/img/pdf/arch.pdf"></iframe>
+
+:::tip
+**Link:** [Bacalhau Architecture](https://docs.bacalhau.org/getting-started/architecture)
+:::
+
+## How-To Guide: Set up Cloud Connect for your Cluster
+**Project Description:** This guide covers the steps to set up Cloud Connect for the Calimero Platform, allowing users to manage their infrastructure in a decentralized and secure manner by connecting Kubernetes clusters to private chains and workspaces.
 
 **Tools Used:** Docusaurus, Markdown
 
-**Approach:** My method for creating this tutorial was focused and straightforward. I aimed to simplify the complex process of setting up Cloud Connect, presenting each step in an easy-to-understand manner. The guide combines clear instructions with practical examples and screenshots, ensuring accessibility for users of all skill levels. My goal was to empower users to confidently navigate and complete the setup process.
+**Approach:** The guide provides detailed, step-by-step instructions ensuring users can easily configure and connect their cloud environments. It focuses on integrating private chains and workspaces with Kubernetes clusters using personal AWS/GCP credentials, ensuring data sovereignty for users.
 
-<iframe width="100%" height="800" src="/img/pdf/bacalhau-getting-started.pdf"/>
+<iframe width="100%" height="500" src="/img/pdf/bacalhau-getting-started.pdf"></iframe>
 
-**Link:** https://docs.calimero.network/getting-started/cloud-connect
+:::tip
+**Link:** [Cloud Connect Setup for Calimero Platform](https://docs.calimero.network/getting-started/cloud-connect)
+:::
 
-### Project 4: Getting Started with Bacalhau
-
-**Description:** In this project, I developed a comprehensive tutorial aimed at helping users get started with Bacalhau. The tutorial covers the installation process and how to run jobs using the Bacalhau client. It provides guidance on utilizing both the Bacalhau CLI and Docker for various tasks.
+## FAQs: Bacalhau FAQs
+**Description:** Detailed troubleshooting and frequently asked questions (FAQ) documentation for Bacalhau, a versatile computing platform, to assist users in resolving common problems and queries.
 
 **Tools Used:** Docusaurus, Markdown
 
-**Approach:** The previous guide was a bit complicated and hard for some users. So, I researched what users really needed and where they were getting stuck. Then, I rewrote the guide to make it simpler. I included easy steps and clear instructions so that anyone can start using Bacalhau without getting confused or overwhelmed.
+**Approach:** I identified common challenges and structured the information in a clear, easy-to-navigate format, providing straightforward, actionable solutions.
 
-<iframe width="100%" height="800" src="/img/pdf/bacalhau-getting-started.pdf"/>
+<iframe width="100%" height="500" src="/img/pdf/faq.pdf"></iframe>
 
-**Link:** https://docs.bacalhau.org/getting-started/installation
+:::tip
+**Link:** [Bacalhau FAQs](https://docs.bacalhau.org/troubleshooting/debugging)
+:::
+
+## Release Notes: Mindee Invoice OCR Release Notes
+**Description:** Crafted comprehensive release notes to accompany the launch of the latest update for Mindee Invoice OCR, detailing new features, enhancements, and bug fixes.
+
+**Tools Used:** Readme.io
+
+**Approach:** I provided a clear, concise summary of the new features, enhancements, and bug fixes, making the release notes easily understandable for users of all technical levels.
+
+<iframe width="100%" height="500" src="/img/pdf/release.pdf"></iframe>
+
+## API Docs: Mautic REST API Guide
+**Description:** Crafted a comprehensive API documentation guide for the Mautic REST API, enabling developers to effectively utilize its powerful document parsing capabilities. The documentation covers various aspects, including authentication, document inputs, working with images and PDFs, making API calls, handling predictions, error management, and technical limitations.
+
+**Tools Used:** Markdown
+
+**Approach:** I focused on accuracy and comprehensiveness, ensuring that the documentation serves as a practical reference for developers.
+
+<iframe width="100%" height="500" src="/img/pdf/api-mautic.pdf"></iframe>
+
+:::tip
+**Link:** [Mautic REST API Guide](https://developer.mautic.org/#rest-api)
+:::
+
+## Tutorial: How to Deploy a Voting Smart Contract Dapp on Calimero
+**Description:** This guide provides users with a detailed, step-by-step process for deploying a voting smart contract Dapp on the Calimero network. It's designed for both beginners and experienced users, ensuring a smooth deployment experience.
+
+**Tools Used:** Docusaurus, Markdown
+
+**Approach:** My focus was on clarity and precision. I aimed to create a guide that is both informative and easy to follow, breaking down complex concepts into manageable steps. The guide includes practical tips and best practices to ensure successful deployment.
+
+<iframe width="100%" height="500" src="/img/pdf/voting-tutorial.pdf"></iframe>
+
+:::tip
+**Link:** [How to Deploy a Voting Smart Contract Dapp on Calimero](https://docs.calimero.network/tutorial/voting-tutorial)
+:::

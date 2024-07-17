@@ -29,7 +29,7 @@ const LoaderImportDependency = require("./LoaderImportDependency");
  */
 
 /**
- * @typedef {Object} ImportModuleOptions
+ * @typedef {object} ImportModuleOptions
  * @property {string=} layer the target layer
  * @property {string=} publicPath the target public path
  * @property {string=} baseUri target base uri
@@ -37,7 +37,7 @@ const LoaderImportDependency = require("./LoaderImportDependency");
 
 class LoaderPlugin {
 	/**
-	 * @param {Object} options options
+	 * @param {object} options options
 	 */
 	constructor(options = {}) {}
 
@@ -185,7 +185,8 @@ class LoaderPlugin {
 									issuerLayer: options.layer
 								},
 								context: loaderContext.context,
-								connectOrigin: false
+								connectOrigin: false,
+								checkCycle: true
 							},
 							err => {
 								compilation.buildQueue.decreaseParallelism();

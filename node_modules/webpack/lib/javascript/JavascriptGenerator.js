@@ -190,6 +190,8 @@ class JavascriptGenerator extends Generator {
 			);
 		}
 
+		let chunkInitFragments;
+
 		const templateContext = {
 			runtimeTemplate: generateContext.runtimeTemplate,
 			dependencyTemplates: generateContext.dependencyTemplates,
@@ -200,7 +202,19 @@ class JavascriptGenerator extends Generator {
 			runtimeRequirements: generateContext.runtimeRequirements,
 			concatenationScope: generateContext.concatenationScope,
 			codeGenerationResults: generateContext.codeGenerationResults,
-			initFragments
+			initFragments,
+			get chunkInitFragments() {
+				if (!chunkInitFragments) {
+					const data = generateContext.getData();
+					chunkInitFragments = data.get("chunkInitFragments");
+					if (!chunkInitFragments) {
+						chunkInitFragments = [];
+						data.set("chunkInitFragments", chunkInitFragments);
+					}
+				}
+
+				return chunkInitFragments;
+			}
 		};
 
 		template.apply(dependency, source, templateContext);
