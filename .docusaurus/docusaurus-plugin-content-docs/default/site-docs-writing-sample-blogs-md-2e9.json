@@ -11,15 +11,15 @@
   "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/blogs.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 4,
+  "sidebarPosition": 10,
   "frontMatter": {
-    "sidebar_position": 4,
+    "sidebar_position": 10,
     "sidebar_label": "Blogs and Articles"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Documentation Samples",
-    "permalink": "/docs/writing-sample/tutorial"
+    "title": "Release Notes",
+    "permalink": "/docs/writing-sample/release"
   },
   "next": {
     "title": "Newsletter Writing",

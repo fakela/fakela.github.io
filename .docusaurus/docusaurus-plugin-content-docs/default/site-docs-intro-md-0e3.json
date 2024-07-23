@@ -1,8 +1,8 @@
 {
   "unversionedId": "intro",
   "id": "intro",
-  "title": "Welcome to Favour Kelvin's Portfolio",
-  "description": "Hello! I'm Favour Kelvin, a Technical Writer with a strong background in Software Engineering. My journey began as a software developer, where I discovered my passion for open-source projects. I've participated in Google Open Source programs such as Google Summer of Code, Google Code-In, and Google Season of Docs. I love sharing knowledge and helping others excel through technical articles, documentation, and community events.",
+  "title": "🤗 Welcome to Favour Kelvin's Portfolio",
+  "description": "I’m passionate about writing and thrilled to help people through my work.",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",

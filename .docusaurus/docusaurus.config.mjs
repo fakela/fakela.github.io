@@ -110,7 +110,7 @@ export default {
     },
     "colorMode": {
       "defaultMode": "dark",
-      "disableSwitch": false,
+      "disableSwitch": true,
       "respectPrefersColorScheme": false
     },
     "prism": {

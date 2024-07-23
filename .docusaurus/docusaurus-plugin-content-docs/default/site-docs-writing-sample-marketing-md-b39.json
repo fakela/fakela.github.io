@@ -11,9 +11,9 @@
   "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/marketing.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 5,
+  "sidebarPosition": 11,
   "frontMatter": {
-    "sidebar_position": 5,
+    "sidebar_position": 11,
     "sidebar_label": "Marketing"
   },
   "sidebar": "tutorialSidebar",

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "writing-sample/release",
+  "id": "writing-sample/release",
+  "title": "Release Notes",
+  "description": "This section contains sample of release notes for various projects I've worked on. These release notes are intended to keep users informed about the latest features, improvements, and fixes.",
+  "source": "@site/docs/writing-sample/release.md",
+  "sourceDirName": "writing-sample",
+  "slug": "/writing-sample/release",
+  "permalink": "/docs/writing-sample/release",
+  "draft": false,
+  "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/release.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "sidebar_label": "Release Notes"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Architecture Guides",
+    "permalink": "/docs/writing-sample/architecture"
+  },
+  "next": {
+    "title": "Blogs and Articles",
+    "permalink": "/docs/writing-sample/blogs"
+  }
+}

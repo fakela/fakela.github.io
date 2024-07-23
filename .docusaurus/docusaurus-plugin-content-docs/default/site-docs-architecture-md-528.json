@@ -1,0 +1,28 @@
+{
+  "unversionedId": "architecture",
+  "id": "architecture",
+  "title": "Architecture Guides",
+  "description": "1. Bacalhau Architecture",
+  "source": "@site/docs/architecture.md",
+  "sourceDirName": ".",
+  "slug": "/architecture",
+  "permalink": "/docs/architecture",
+  "draft": false,
+  "editUrl": "https://github.com/fakela/fakela.github.io/docs/architecture.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "sidebar_label": "Architecture Guides"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "About Me",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Work Experience",
+    "permalink": "/docs/new"
+  }
+}

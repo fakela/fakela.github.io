@@ -1,0 +1,28 @@
+{
+  "unversionedId": "writing-sample/faq",
+  "id": "writing-sample/faq",
+  "title": "FAQs and Troubleshooting",
+  "description": "This section provides detailed documentation on FAQs and troubleshooting for various projects I have worked on. These documents aim to help users resolve common issues and understand the features better.",
+  "source": "@site/docs/writing-sample/faq.md",
+  "sourceDirName": "writing-sample",
+  "slug": "/writing-sample/faq",
+  "permalink": "/docs/writing-sample/faq",
+  "draft": false,
+  "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/faq.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "sidebar_label": "FAQs"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How-to Guides",
+    "permalink": "/docs/writing-sample/how-to"
+  },
+  "next": {
+    "title": "Architecture Guides",
+    "permalink": "/docs/writing-sample/architecture"
+  }
+}

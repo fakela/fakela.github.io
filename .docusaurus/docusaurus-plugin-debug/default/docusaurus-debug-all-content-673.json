@@ -22,8 +22,8 @@
             {
               "unversionedId": "intro",
               "id": "intro",
-              "title": "Welcome to Favour Kelvin's Portfolio",
-              "description": "Hello! I'm Favour Kelvin, a Technical Writer with a strong background in Software Engineering. My journey began as a software developer, where I discovered my passion for open-source projects. I've participated in Google Open Source programs such as Google Summer of Code, Google Code-In, and Google Season of Docs. I love sharing knowledge and helping others excel through technical articles, documentation, and community events.",
+              "title": "🤗 Welcome to Favour Kelvin's Portfolio",
+              "description": "I’m passionate about writing and thrilled to help people through my work.",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
               "slug": "/intro",
@@ -72,6 +72,62 @@
               }
             },
             {
+              "unversionedId": "writing-sample/api-documentation",
+              "id": "writing-sample/api-documentation",
+              "title": "API Documentation",
+              "description": "In this section, you'll find comprehensive API documentation for various projects I've worked on. These guides are designed to help developers understand and integrate with different APIs efficiently, providing detailed explanations, practical examples, and troubleshooting tips.",
+              "source": "@site/docs/writing-sample/api-documentation.md",
+              "sourceDirName": "writing-sample",
+              "slug": "/writing-sample/api-documentation",
+              "permalink": "/docs/writing-sample/api-documentation",
+              "draft": false,
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/api-documentation.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4,
+                "sidebar_label": "API Documentation"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tutorial",
+                "permalink": "/docs/writing-sample/tutorials"
+              },
+              "next": {
+                "title": "How-to Guides",
+                "permalink": "/docs/writing-sample/how-to"
+              }
+            },
+            {
+              "unversionedId": "writing-sample/architecture",
+              "id": "writing-sample/architecture",
+              "title": "Architecture Guides",
+              "description": "This section contains detailed architecture guides for various projects I've contributed to. These documents are designed to provide an in-depth understanding of the architecture, components, and interactions within these systems, helping developers and system architects to implement and troubleshoot effectively.",
+              "source": "@site/docs/writing-sample/architecture.md",
+              "sourceDirName": "writing-sample",
+              "slug": "/writing-sample/architecture",
+              "permalink": "/docs/writing-sample/architecture",
+              "draft": false,
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/architecture.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6,
+                "sidebar_label": "Architecture Guides"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "FAQs",
+                "permalink": "/docs/writing-sample/faq"
+              },
+              "next": {
+                "title": "Release Notes",
+                "permalink": "/docs/writing-sample/release"
+              }
+            },
+            {
               "unversionedId": "writing-sample/blogs",
               "id": "writing-sample/blogs",
               "title": "Blogs and Articles Writing Sample",
@@ -84,19 +140,75 @@
               "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/blogs.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 4,
+              "sidebarPosition": 10,
               "frontMatter": {
-                "sidebar_position": 4,
+                "sidebar_position": 10,
                 "sidebar_label": "Blogs and Articles"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Documentation Samples",
-                "permalink": "/docs/writing-sample/tutorial"
+                "title": "Release Notes",
+                "permalink": "/docs/writing-sample/release"
               },
               "next": {
                 "title": "Newsletter Writing",
                 "permalink": "/docs/writing-sample/newsletter"
+              }
+            },
+            {
+              "unversionedId": "writing-sample/faq",
+              "id": "writing-sample/faq",
+              "title": "FAQs and Troubleshooting",
+              "description": "This section provides detailed documentation on FAQs and troubleshooting for various projects I have worked on. These documents aim to help users resolve common issues and understand the features better.",
+              "source": "@site/docs/writing-sample/faq.md",
+              "sourceDirName": "writing-sample",
+              "slug": "/writing-sample/faq",
+              "permalink": "/docs/writing-sample/faq",
+              "draft": false,
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/faq.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5,
+                "sidebar_label": "FAQs"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "How-to Guides",
+                "permalink": "/docs/writing-sample/how-to"
+              },
+              "next": {
+                "title": "Architecture Guides",
+                "permalink": "/docs/writing-sample/architecture"
+              }
+            },
+            {
+              "unversionedId": "writing-sample/how-to",
+              "id": "writing-sample/how-to",
+              "title": "How-To Guides",
+              "description": "This section offers detailed how-to guides for various tasks and configurations, aimed at helping users achieve specific goals efficiently and effectively. Each guide provides step-by-step instructions, practical examples, and troubleshooting tips.",
+              "source": "@site/docs/writing-sample/how-to.md",
+              "sourceDirName": "writing-sample",
+              "slug": "/writing-sample/how-to",
+              "permalink": "/docs/writing-sample/how-to",
+              "draft": false,
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/how-to.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4,
+                "sidebar_label": "How-to Guides"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "API Documentation",
+                "permalink": "/docs/writing-sample/api-documentation"
+              },
+              "next": {
+                "title": "FAQs",
+                "permalink": "/docs/writing-sample/faq"
               }
             },
             {
@@ -112,9 +224,9 @@
               "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/marketing.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 5,
+              "sidebarPosition": 11,
               "frontMatter": {
-                "sidebar_position": 5,
+                "sidebar_position": 11,
                 "sidebar_label": "Marketing"
               },
               "sidebar": "tutorialSidebar",
@@ -136,9 +248,9 @@
               "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/newsletter.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 4,
+              "sidebarPosition": 10,
               "frontMatter": {
-                "sidebar_position": 4,
+                "sidebar_position": 10,
                 "sidebar_label": "Newsletter Writing"
               },
               "sidebar": "tutorialSidebar",
@@ -152,22 +264,78 @@
               }
             },
             {
-              "unversionedId": "writing-sample/tutorial",
-              "id": "writing-sample/tutorial",
-              "title": "Documentation Samples",
-              "description": "I have prepared a collection of writing samples to showcase my expertise in user guides and tutorials. These samples highlight my ability to create clear, comprehensive, and user-friendly documentation.",
-              "source": "@site/docs/writing-sample/tutorial.md",
+              "unversionedId": "writing-sample/release",
+              "id": "writing-sample/release",
+              "title": "Release Notes",
+              "description": "This section contains sample of release notes for various projects I've worked on. These release notes are intended to keep users informed about the latest features, improvements, and fixes.",
+              "source": "@site/docs/writing-sample/release.md",
               "sourceDirName": "writing-sample",
-              "slug": "/writing-sample/tutorial",
-              "permalink": "/docs/writing-sample/tutorial",
+              "slug": "/writing-sample/release",
+              "permalink": "/docs/writing-sample/release",
               "draft": false,
-              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/tutorial.md",
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/release.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 2,
+              "sidebarPosition": 7,
               "frontMatter": {
-                "sidebar_position": 2,
-                "sidebar_label": "Documentation Samples"
+                "sidebar_position": 7,
+                "sidebar_label": "Release Notes"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Architecture Guides",
+                "permalink": "/docs/writing-sample/architecture"
+              },
+              "next": {
+                "title": "Blogs and Articles",
+                "permalink": "/docs/writing-sample/blogs"
+              }
+            },
+            {
+              "unversionedId": "writing-sample/tutorials",
+              "id": "writing-sample/tutorials",
+              "title": "Tutorials",
+              "description": "In this section, you'll find detailed tutorials I've created to help users navigate and utilize various tools and platforms effectively.",
+              "source": "@site/docs/writing-sample/tutorials.md",
+              "sourceDirName": "writing-sample",
+              "slug": "/writing-sample/tutorials",
+              "permalink": "/docs/writing-sample/tutorials",
+              "draft": false,
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/tutorials.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3,
+                "sidebar_label": "Tutorial"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "User Guides",
+                "permalink": "/docs/writing-sample/user-guide"
+              },
+              "next": {
+                "title": "API Documentation",
+                "permalink": "/docs/writing-sample/api-documentation"
+              }
+            },
+            {
+              "unversionedId": "writing-sample/user-guide",
+              "id": "writing-sample/user-guide",
+              "title": "User Guides",
+              "description": "This section provides user guides for various projects I've worked on, aimed at helping users navigate and set up different platforms and tools effectively.",
+              "source": "@site/docs/writing-sample/user-guide.md",
+              "sourceDirName": "writing-sample",
+              "slug": "/writing-sample/user-guide",
+              "permalink": "/docs/writing-sample/user-guide",
+              "draft": false,
+              "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/user-guide.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "sidebar_label": "User Guides"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
@@ -175,8 +343,8 @@
                 "permalink": "/docs/category/writing-samples"
               },
               "next": {
-                "title": "Blogs and Articles",
-                "permalink": "/docs/writing-sample/blogs"
+                "title": "Tutorial",
+                "permalink": "/docs/writing-sample/tutorials"
               }
             }
           ],
@@ -201,8 +369,38 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "writing-sample/tutorial",
-                    "label": "Documentation Samples"
+                    "id": "writing-sample/user-guide",
+                    "label": "User Guides"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "writing-sample/tutorials",
+                    "label": "Tutorial"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "writing-sample/api-documentation",
+                    "label": "API Documentation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "writing-sample/how-to",
+                    "label": "How-to Guides"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "writing-sample/faq",
+                    "label": "FAQs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "writing-sample/architecture",
+                    "label": "Architecture Guides"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "writing-sample/release",
+                    "label": "Release Notes"
                   },
                   {
                     "type": "doc",

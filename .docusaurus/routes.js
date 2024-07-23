@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '590'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', '3c6'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', '6fd'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', '5af'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', 'ba4'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', 'e99'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', 'ed0'),
+    exact: true
+  },
+  {
     path: '/blog',
     component: ComponentCreator('/blog', 'ba2'),
     exact: true
@@ -64,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '0ea'),
+    component: ComponentCreator('/docs', '2be'),
     routes: [
       {
         path: '/docs/category/writing-samples',
@@ -85,8 +120,32 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
+        path: '/docs/writing-sample/api-documentation',
+        component: ComponentCreator('/docs/writing-sample/api-documentation', '87f'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/writing-sample/architecture',
+        component: ComponentCreator('/docs/writing-sample/architecture', 'de4'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
         path: '/docs/writing-sample/blogs',
         component: ComponentCreator('/docs/writing-sample/blogs', '4a0'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/writing-sample/faq',
+        component: ComponentCreator('/docs/writing-sample/faq', '466'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/writing-sample/how-to',
+        component: ComponentCreator('/docs/writing-sample/how-to', '226'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
@@ -103,8 +162,20 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/docs/writing-sample/tutorial',
-        component: ComponentCreator('/docs/writing-sample/tutorial', '268'),
+        path: '/docs/writing-sample/release',
+        component: ComponentCreator('/docs/writing-sample/release', '938'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/writing-sample/tutorials',
+        component: ComponentCreator('/docs/writing-sample/tutorials', 'a14'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/docs/writing-sample/user-guide',
+        component: ComponentCreator('/docs/writing-sample/user-guide', 'b3a'),
         exact: true,
         sidebar: "tutorialSidebar"
       }

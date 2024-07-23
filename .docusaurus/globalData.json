@@ -21,8 +21,28 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "writing-sample/api-documentation",
+              "path": "/docs/writing-sample/api-documentation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "writing-sample/architecture",
+              "path": "/docs/writing-sample/architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "writing-sample/blogs",
               "path": "/docs/writing-sample/blogs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "writing-sample/faq",
+              "path": "/docs/writing-sample/faq",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "writing-sample/how-to",
+              "path": "/docs/writing-sample/how-to",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -36,8 +56,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "writing-sample/tutorial",
-              "path": "/docs/writing-sample/tutorial",
+              "id": "writing-sample/release",
+              "path": "/docs/writing-sample/release",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "writing-sample/tutorials",
+              "path": "/docs/writing-sample/tutorials",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "writing-sample/user-guide",
+              "path": "/docs/writing-sample/user-guide",
               "sidebar": "tutorialSidebar"
             },
             {

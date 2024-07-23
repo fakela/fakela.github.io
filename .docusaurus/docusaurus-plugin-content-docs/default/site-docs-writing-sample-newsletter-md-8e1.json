@@ -11,9 +11,9 @@
   "editUrl": "https://github.com/fakela/fakela.github.io/docs/writing-sample/newsletter.md",
   "tags": [],
   "version": "current",
-  "sidebarPosition": 4,
+  "sidebarPosition": 10,
   "frontMatter": {
-    "sidebar_position": 4,
+    "sidebar_position": 10,
     "sidebar_label": "Newsletter Writing"
   },
   "sidebar": "tutorialSidebar",
