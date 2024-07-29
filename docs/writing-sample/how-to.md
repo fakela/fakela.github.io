@@ -29,7 +29,7 @@ This section offers detailed how-to guides for various tasks and configurations,
 [Installation for Bacalhau](https://docs.bacalhau.org/getting-started/installation)
 :::
 
-<iframe width="100%" height="500" src="/img/pdf/Installation _ Bacalhau Docs.html"></iframe>
+<iframe width="100%" height="500" src="/img/pdf/Installation _ Bacalhau Docs.pdf"></iframe>
 
 ## 3. **How to configure Glueops for deployment**
    - **Purpose**: Provide a guide for configuring deployments in GlueOps.

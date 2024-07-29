@@ -66,3 +66,7 @@ In this section, you'll find comprehensive API documentation for various project
 :::
 
 <iframe width="100%" height="500" src="/img/pdf/JSON-RPC API _ Detailed GenLayer Documentation.pdf"></iframe>
+
+## 6. **GenLayer JSON-RPC API Documentation - Spotlight Studio**
+
+<iframe width="100%" height="500" src="/img/pdf/GenLayer JSON-RPC Operations _ GenLayer JSON RPC.pdf"></iframe>

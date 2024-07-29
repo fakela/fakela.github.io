@@ -29,5 +29,5 @@ This section contains detailed architecture guides for various projects I've con
 [Optimistic Democracy on GenLayer](https://docs.genlayer.com/tutorial/optimistic-democracy)
 :::
 
-<iframe width="100%" height="500" src="/img/pdf/Optimistic_Democracy_Detailed_GenLayer_Documentation.pdf"></iframe>
+<iframe width="100%" height="500" src="/img/pdf/Optimistic Democracy _ Detailed GenLayer Documentation.pdf"></iframe>
 
