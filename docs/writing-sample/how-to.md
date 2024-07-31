@@ -7,14 +7,14 @@ sidebar_label: How-to Guides
 
 This section offers detailed how-to guides for various tasks and configurations, aimed at helping users achieve specific goals efficiently and effectively. Each guide provides step-by-step instructions, practical examples, and troubleshooting tips.
 
-## 1. **How to Install GenLayer**
-   - **Purpose**: Provide comprehensive instructions on installing GenLayer.
+## 1. **Installation Guide**
+   - **Purpose**: Provide comprehensive instructions on how to setup and use their product.
    - **Audience**: Developers and system administrators.
-   - **Tools**: GenLayer, Markdown.
+   - **Tools**: Markdown.
    - **My Role/Approach**: I developed this guide to ensure a smooth installation process, including detailed steps, screenshots, and configuration tips.
 
 :::tiplink
-[Install GenLayer](https://docs.genlayer.com/simulator/installation)
+[Installation Guide](https://docs.genlayer.com/simulator/installation)
 :::
 
 <iframe width="100%" height="500" src="/img/pdf/Install GenLayer _ Detailed GenLayer Documentation.pdf"></iframe>
@@ -22,7 +22,7 @@ This section offers detailed how-to guides for various tasks and configurations,
 ## 2. **How to Install Bacalhau**
    - **Purpose**: Provide comprehensive instructions on installing Bacalhau.
    - **Audience**: Developers and system administrators.
-   - **Tools**: Bacalhau, Markdown.
+   - **Tools**: Markdown.
    - **My Role/Approach**: I developed this guide to ensure a smooth installation process, including detailed steps, screenshots, and configuration tips.
 
 :::tiplink

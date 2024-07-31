@@ -55,18 +55,18 @@ In this section, you'll find comprehensive API documentation for various project
 
 <iframe width="100%" height="500" src="/img/pdf/Bacalhau API overview _ Bacalhau Docs.pdf"></iframe>
 
-## 5. **GenLayer JSON-RPC API Documentation**
+## 5. **JSON-RPC API Documentation**
    - **Purpose**: Offer detailed documentation for the JSON-RPC API used by GenLayer.
    - **Audience**: Developers and IT professionals.
    - **Tools**: JSON-RPC, GenLayer, Markdown.
    - **My Role/Approach**: I compiled the JSON-RPC API documentation, providing examples and detailed descriptions to assist developers in integrating with GenLayer.
 
 :::tiplink
-[GenLayer JSON-RPC API Documentation](https://docs.genlayer.com/api/json-rpc)
+[JSON-RPC API Documentation](https://docs.genlayer.com/api/json-rpc)
 :::
 
 <iframe width="100%" height="500" src="/img/pdf/JSON-RPC API _ Detailed GenLayer Documentation.pdf"></iframe>
 
-## 6. **GenLayer JSON-RPC API Documentation - Spotlight Studio**
+## 6. **JSON-RPC API Documentation - Spotlight Studio**
 
 <iframe width="100%" height="500" src="/img/pdf/GenLayer JSON-RPC Operations _ GenLayer JSON RPC.pdf"></iframe>

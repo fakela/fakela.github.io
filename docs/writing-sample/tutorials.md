@@ -31,14 +31,14 @@ In this section, you'll find detailed tutorials I've created to help users navig
 
 <iframe width="100%" height="500" src="/img/pdf/bacalhau-getting-started.pdf"></iframe>
 
-## 3. **Deploying Contracts on GenLayer**
+## 3. **Deploying Contracts**
    - **Purpose**: Provide a detailed guide on deploying contracts using the GenLayer platform.
    - **Audience**: Developers and IT professionals.
    - **Tools**: GenLayer, Markdown.
    - **My Role/Approach**: I developed a thorough tutorial that includes step-by-step instructions and screenshots to assist users in deploying contracts effectively.
 
 :::tiplink
-[Deploying Contracts on GenLayer](https://docs.genlayer.com/tutorial/deploying-contracts)
+[Deploying Contracts](https://docs.genlayer.com/tutorial/deploying-contracts)
 :::
 
 <iframe width="100%" height="500" src="/img/pdf/Deploy Contracts _ Detailed GenLayer Documentation.pdf"></iframe>
@@ -55,14 +55,14 @@ In this section, you'll find detailed tutorials I've created to help users navig
 
 <iframe width="100%" height="500" src="/img/pdf/Create GitHub App _ GlueOps.pdf"></iframe>
 
-## 5. **Prediction Market Contract on GenLayer**
-   - **Purpose**: Guide users on deploying a Prediction Market Contract on GenLayer.
+## 5. **Prediction Market Contract**
+   - **Purpose**: Guide users on deploying a Prediction Market Contract.
    - **Audience**: Blockchain developers and enthusiasts.
    - **Tools**: GenLayer, Solidity, Markdown.
    - **My Role/Approach**: I developed a step-by-step tutorial to help users deploy a Prediction Market Contract, including code examples and best practices.
 
 :::tiplink
-[Prediction Market Contract on GenLayer](https://docs.genlayer.com/tutorial/prediction-market-contract)
+[Prediction Market Contract](https://docs.genlayer.com/tutorial/prediction-market-contract)
 :::
 
 <iframe width="100%" height="500" src="/img/pdf/Prediction Market Contract _ Detailed GenLayer Documentation.pdf"></iframe>
