@@ -120,7 +120,6 @@ In these freelance projects, I handled social media, content writing, and conten
 - **[Suprabit](https://suprabit.eu/):** A provider of blockchain, IoT, and AI solutions, helping businesses to innovate and stay competitive through advanced technology.
 - **[Codebooq](https://codebooq.com/):** Enterprise software engineering services for large Web, Mobile, and Desktop applications focusing on Microsoft technology stack.
 
-Feel free to let me know if you need any further adjustments or additions!
 ### Open Source Communities 
 I have actively participated in various open-source communities, contributing through Google Season of Docs (GSOD) and Google Summer of Code (GSOC).
 - ⁠[SugarLabs](https://www.sugarlabs.org/): Focused on producing and supporting Sugar, an open-source desktop environment and learning platform
