@@ -15,7 +15,7 @@ In this section, you'll find comprehensive API documentation for various project
    - **My Role/Approach**: I authored detailed API documentation with practical examples to help developers efficiently use the API.
 
 :::tiplink
-[Mautic REST API Guide](https://docs.genlayer.com/references/json-rpc)
+[Mautic REST API Guide](https://developer.mautic.org/#authorization)
 :::
 
 <iframe width="100%" height="500" src="/img/pdf/api-mautic.pdf"></iframe>
@@ -27,7 +27,7 @@ In this section, you'll find comprehensive API documentation for various project
    - **My Role/Approach**: I compiled the JSON-RPC API documentation, providing examples and detailed descriptions to assist developers in integrating with GenLayer.
 
 :::tiplink
-[JSON-RPC API Documentation](https://docs.genlayer.com/api/json-rpc)
+[JSON-RPC API Documentation](https://docs.genlayer.com/references/json-rpc)
 :::
 
 <iframe width="100%" height="500" src="/img/pdf/JSON-RPC API _ Detailed GenLayer Documentation.pdf"></iframe>
@@ -51,7 +51,8 @@ In this section, you'll find comprehensive API documentation for various project
    - **My Role/Approach**: I created an extensive overview of the Bacalhau API, ensuring that users have all the necessary information to utilize the API effectively.
 
 :::tiplink
-[Bacalhau API Overview](https://docs.bacalhau.org/community/compute-landscape)
+[Bacalhau API Overview](https://docs.bacalhau.org/references/api/index)
+:::
 
 ## 4. **Querying with the PeeringDB API**
    - **Purpose**: Guide users on querying with the PeeringDB API.
@@ -64,42 +65,6 @@ In this section, you'll find comprehensive API documentation for various project
 :::
 
 <iframe width="100%" height="500" src="/img/pdf/query-api.pdf"></iframe>
-
-## 3. **Mautic REST API Guide**
-   - **Purpose**: Provide a reference for developers using the Mautic REST API.
-   - **Audience**: Developers integrating with Mautic.
-   - **Tools**: REST API, Markdown.
-   - **My Role/Approach**: I authored detailed API documentation with practical examples to help developers efficiently use the API.
-
-:::tiplink
-[Mautic REST API Guide](https://developer.mautic.org/#rest-api)
-:::
-
-<iframe width="100%" height="500" src="/img/pdf/api-mautic.pdf"></iframe>
-
-## 4. **Bacalhau API Overview**
-   - **Purpose**: Provide a comprehensive overview of the Bacalhau API.
-   - **Audience**: Developers and IT professionals.
-   - **Tools**: Bacalhau, Markdown.
-   - **My Role/Approach**: I created an extensive overview of the Bacalhau API, ensuring that users have all the necessary information to utilize the API effectively.
-
-:::tiplink
-[Bacalhau API Overview](https://docs.bacalhau.org/community/compute-landscape)
-:::
-
-<iframe width="100%" height="500" src="/img/pdf/Bacalhau API overview _ Bacalhau Docs.pdf"></iframe>
-
-## 5. **JSON-RPC API Documentation**
-   - **Purpose**: Offer detailed documentation for the JSON-RPC API used by GenLayer.
-   - **Audience**: Developers and IT professionals.
-   - **Tools**: JSON-RPC, GenLayer, Markdown.
-   - **My Role/Approach**: I compiled the JSON-RPC API documentation, providing examples and detailed descriptions to assist developers in integrating with GenLayer.
-
-:::tiplink
-[JSON-RPC API Documentation](https://docs.genlayer.com/api/json-rpc)
-:::
-
-<iframe width="100%" height="500" src="/img/pdf/JSON-RPC API _ Detailed GenLayer Documentation.pdf"></iframe>
 
 ## 6. **JSON-RPC API Documentation - Spotlight Studio**
 
