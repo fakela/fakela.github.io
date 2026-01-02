@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favour Kelvin | Technical Writer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111111;
+            --text: #e5e5e5;
+            --text-muted: #737373;
+            --accent: #22c55e;
+            --border: #262626;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sora', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            padding: 2rem 3rem;
+            display: flex;
+            justify-content: flex-end;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero {
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+        }
+
+        .role {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 3rem;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            font-weight: 300;
+            line-height: 1.6;
+            color: var(--text);
+            margin-bottom: 3.5rem;
+        }
+
+        .tagline span {
+            color: var(--text-muted);
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: var(--accent);
+            color: var(--bg);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            border-radius: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .cta:hover {
+            background-color: #16a34a;
+            transform: translateY(-1px);
+        }
+
+        footer {
+            padding: 2rem 3rem;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--text);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1.5rem;
+                gap: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+
+            main {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <h1>Favour Kelvin</h1>
+            <p class="role">Technical Writer</p>
+            <p class="tagline">
+                Yes, someone has to write the docs.<br>
+                <span>And that person might just be me.</span>
+            </p>
+            <a href="portfolio.html" class="cta">View My Portfolio</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="mailto:favourkelvin17@gmail.com">Email</a>
+            <a href="https://github.com/fakela" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/favour-kelvin" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>

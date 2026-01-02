@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Favour Kelvin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111111;
+            --surface-hover: #1a1a1a;
+            --text: #e5e5e5;
+            --text-muted: #737373;
+            --accent: #22c55e;
+            --border: #262626;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sora', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        nav {
+            padding: 2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            font-weight: 300;
+            line-height: 1.7;
+            color: var(--text-muted);
+            max-width: 700px;
+        }
+
+        .view-toggle {
+            display: flex;
+            gap: 0;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .view-toggle button {
+            font-family: 'Sora', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 400;
+            padding: 1rem 1.5rem;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        .view-toggle button:hover {
+            color: var(--text);
+        }
+
+        .view-toggle button.active {
+            color: var(--text);
+        }
+
+        .view-toggle button.active::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .view-content {
+            display: none;
+        }
+
+        .view-content.active {
+            display: block;
+        }
+
+        /* Company View */
+        .company {
+            margin-bottom: 4rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .company:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .company-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .company-logo {
+            width: 48px;
+            height: 48px;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .company-logo-img {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            object-fit: contain;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+        }
+
+        .company-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .company-description {
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+
+        .samples-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.75rem;
+        }
+
+        .samples-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .sample-link {
+            font-size: 0.9rem;
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .sample-link:hover {
+            background-color: var(--surface-hover);
+            border-color: var(--accent);
+        }
+
+        .sample-link .type {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-left: 0.5rem;
+        }
+
+        /* Doc Type View */
+        .doc-category {
+            margin-bottom: 3rem;
+        }
+
+        .doc-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .category-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-description {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .category-items {
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .category-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 1.25rem 1.5rem;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .category-item:hover {
+            background-color: var(--surface-hover);
+            border-color: var(--accent);
+        }
+
+        .item-info {
+            flex: 1;
+            margin-right: 1.5rem;
+        }
+
+        .item-title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text);
+            display: block;
+            margin-bottom: 0.35rem;
+        }
+
+        .item-desc {
+            font-size: 0.875rem;
+            font-weight: 300;
+            color: var(--text-muted);
+            line-height: 1.5;
+            display: block;
+        }
+
+        .item-company {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1.5rem;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 2rem 1.5rem 4rem;
+            }
+
+            .company-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .samples-list {
+                flex-direction: column;
+            }
+
+            .sample-link {
+                width: 100%;
+            }
+
+            .category-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+
+            .item-info {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html">Favour Kelvin</a>
+        </div>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+        </div>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Portfolio</h1>
+            <p class="intro">I've spent 6+ years writing API references, SDK guides, protocol specs, and developer documentation for blockchain and fintech companies. Below is a selection of my work.</p>
+        </header>
+
+        <div class="view-toggle">
+            <button class="active" data-view="company">By Company</button>
+            <button data-view="doctype">By Doc Type</button>
+        </div>
+
+        <!-- Company View -->
+        <div id="company-view" class="view-content active">
+            
+            <article class="company">
+                <div class="company-header">
+                    <img src="images/orbital.jpeg" alt="Orbital logo" class="company-logo-img">
+                    <h2 class="company-name">Orbital</h2>
+                </div>
+                <p class="company-description">Orbital is a global payments platform for receiving, exchanging, and settling stablecoins, traditional currencies, and 80+ exotic currencies through one unified system.<br><br>The API documentation had structural issues: endpoints in plain text, no proper formatting, code samples without syntax highlighting, some pages with images only. Navigation was scattered.<br><br>I audited the docs against standards like Stripe and Checkout.com, then built a remediation plan. I rewrote the Merchant Payments API in ReadMe with proper structure: request/response schemas, authentication flows, error handling, and syntax-highlighted code blocks. I grouped endpoints by payment flow so developers could follow integration paths without jumping between pages.<br><br>On the knowledge base side, I added context to image-heavy pages, introduced consistent markdown formatting, and restructured navigation. I built out the Client Portal section and redesigned the information architecture so developers, merchants, and compliance teams could self-serve.<br><br>To tie it together, I created a Documentation Hub landing page for easy access to all docs.</p>
+                <div class="samples-list">
+                    <a href="https://docs.getorbital.com/reference/post_invoice-deposit-1" class="sample-link" target="_blank">Generate Deposit Link (HPP)<span class="type">Live</span></a>
+                    <a href="https://docs.getorbital.com/reference/post_crypto-deposit-receiving-address-travel-rule-externalid" class="sample-link" target="_blank">Update Missing Travel Rule Information<span class="type">Live</span></a>
+                    <a href="https://docs.getorbital.com/reference/how-to-set-up-your-embedded-payment-page" class="sample-link" target="_blank">Embedded Payment Page <span class="type">Live</span></a>
+                    <a href="https://docs.getorbital.com/reference/createbinancepaywithdrawal" class="sample-link" target="_blank">Create Binance Pay Withdrawal <span class="type">Live</span></a>
+                    <a href="https://docs.getorbital.com/docs/how-to-create-a-beneficiary" class="sample-link" target="_blank">Client Portal Guides (Create Beneficiary) <span class="type">Live</span></a>
+                    <a href="https://docs.getorbital.com/reference/verifying-webhook-signatures" class="sample-link" target="_blank">Verify Webhook Signatures<span class="type">Live</span></a>
+                    <a href="https://docs.getorbital.com/" class="sample-link" target="_blank">Documentation Hub Landing Page<span class="type">Live</span></a>
+                    <a href="https://docs.getorbital.com/docs/woocommerce" class="sample-link" target="_blank">WooCommerce Integration <span class="type">Live</span></a>
+                    <a href="https://docs.getorbital.com/reference/post_invoice-widgets" class="sample-link" target="_blank">Generate EPP Signature <span class="type">Live</span></a>
+                    <a href="https://docs.getorbital.com/reference/get_crypto-payments" class="sample-link" target="_blank">Get Payments by Date<span class="type">Live</span></a>
+                </div>
+            </article>
+
+            <article class="company">
+                <div class="company-header">
+                    <img src="images/Ton.jpg" alt="Ton logo" class="company-logo-img">
+                    <h2 class="company-name">TON Foundation</h2>
+                </div>
+                <p class="company-description">TON is a third-generation proof-of-stake blockchain capable of handling millions of transactions per second. This was a 3-month contract.<br><br>The core architecture was documented across dense LaTeX whitepapers. Technically rigorous, but impossible to reference while working. No web version, no cross-linking, no navigation.<br><br>I converted multiple whitepapers into structured, web-native documentation using Mintlify: the TON Blockchain whitepaper, TVM specification, Catchain Consensus protocol, and TL-B serialization spec. I preserved mathematical notation while adding navigation and cross-references so developers could move between documents without losing context.<br><br>I also worked on the TVM specification project, building a TypeScript schema to replace the manual JSON spec, writing Python scripts to parse C++ source files and auto-populate implementation references, and defining a versioning and reverse-compatibility policy to keep instruction docs in sync with the codebase.<br><br>Additionally, I wrote a CEX integration guide covering node setup, wallet configuration, memo-less deposits, and withdrawal flows, giving exchange engineers a clear path from setup to production.</p>
+                <p class="samples-label">Samples</p>
+                <div class="samples-list">
+                    <a href="https://docs.ton.org/tvm/instructions" class="sample-link" target="_blank">TVM Instructions<span class="type">Live</span></a>
+                    <a href="https://docs.ton.org/foundations/whitepapers/tblkch" class="sample-link" target="_blank">TON Blockchain Specification <span class="type">Live</span></a>
+                    <a href="https://docs.ton.org/foundations/whitepapers/tvm" class="sample-link" target="_blank">TON Virtual Machine <span class="type">Live</span></a>
+                    <a href="https://docs.ton.org/foundations/whitepapers/catchain" class="sample-link" target="_blank">Catchain Consensus <span class="type">Live</span></a>
+                    <a href="https://docs.ton.org/foundations/whitepapers/ton" class="sample-link" target="_blank">The Open Network<span class="type">Live</span></a>
+                </div>
+            </article>
+
+            <article class="company">
+                <div class="company-header">
+                    <img src="images/protocol.jpg" alt="Protocol Labs logo" class="company-logo-img">
+                    <h2 class="company-name">Protocol Labs (Bacalhau)</h2>
+                </div>
+                <p class="company-description">Protocol Labs is a research and development company behind projects like IPFS and Filecoin. Bacalhau is their distributed compute platform for running jobs across a network of nodes.<br><br>The team was shipping new features fast, and documentation needed to keep up so users could actually understand and adopt them.<br><br>I used the Diátaxis framework to structure the docs: tutorials, how-to guides, conceptual explanations, and reference specs. I worked with engineers to get info and demos, documenting everything leading up to the release of Bacalhau version 1. This included examples, FAQs, user guides, and white papers. I also documented the REST API under /api/v1 for job submission, listing, and inspection, and wrote the Docker workload onboarding guide. I authored blogs covering new features, product updates, and how-to guides on Substack.<br><br>The documentation for Bacalhau v1 played a key role in the company's acquisition by Expanso, helping demonstrate product maturity and developer adoption to potential acquirers.</p>
+                <div class="samples-list">
+                    <a href="/pdf/SpecConfig.pdf" class="sample-link" target="_blank">Write a SpecConfig <span class="type">PDF</span></a>
+                    <a href="https://blog.bacalhau.org/p/reading-and-writing-from-any-s3-compatible" class="sample-link" target="_blank">Reading and Writing from Any S3-Compatible Data Store <span class="type">Live</span></a>
+                    <a href="/pdf/Observability.pdf" class="sample-link" target="_blank">Observability<span class="type">PDF</span></a>
+                    <a href="https://blog.bacalhau.org/p/streamline-data-projects-with-bacalhau" class="sample-link" target="_blank">Streamline Data Projects with Bacalhau Python SDK <span class="type">Live</span></a>
+                    <a href="https://blog.bacalhau.org/p/bacalhau-updates-june-2023" class="sample-link" target="_blank">Bacalhau Updates<span class="type">Live</span></a>
+                    <a href="/pdf/docker.pdf" class="sample-link" target="_blank">Docker Workload Onboarding <span class="type">PDF</span></a>
+                    <a href="/pdf/Getting-started.pdf" class="sample-link" target="_blank">Getting Started with Bacalhau<span class="type">PDF</span></a>
+                    <a href="/pdf/Installation.pdf" class="sample-link" target="_blank">Installing Bacalhau Client<span class="type">PDF</span></a>
+                </div>
+            </article>
+
+            <article class="company">
+                <div class="company-header">
+                    <img src="images/mindee.png" alt="Mindee logo" class="company-logo-img">
+                    <h2 class="company-name">Mindee</h2>
+                </div>
+                <p class="company-description">Mindee builds OCR and document parsing APIs that extract structured data from invoices, receipts, and IDs.<br><br>In my first month, I resolved over 20 documentation issues, updating content with new feature information and reorganizing for better usability.<br><br>I moved SDK documentation that was scattered across private GitHub repos into the main docs so developers could find everything in one place. I documented new features as they were released, like the Cropper utility for preprocessing images before OCR. I updated screenshots, steps, and flows, testing APIs on my end and through Mindee's live interface to make sure everything worked. I also created consistent release notes so developers could track API changes between versions without guessing what changed.<br><br>Beyond the docs, I authored blog posts on new feature releases and practical usage guides, and created content for the company newsletter covering product updates and announcements.</p>
+                <p class="samples-label">Samples</p>
+                <div class="samples-list">
+                    <a href="https://docs.mindee.com/v1/integration/python-sdk/python-getting-started" class="sample-link" target="_blank">Python SDK Getting Started <span class="type">Live</span></a>
+                    <a href="https://docs.mindee.com/v1/integration/error-management" class="sample-link" target="_blank">REST API Status and Error Codes<span class="type">Live</span></a>
+                    <a href="https://docs.mindee.com/v1/integration/limitations" class="sample-link" target="_blank">Technical Limitations<span class="type">Live</span></a>
+                    <a href="https://docs.mindee.com/v1/utilities/cropper" class="sample-link" target="_blank">Cropper Utility Guide <span class="type">Live</span></a>
+                    <a href="https://docs.mindee.com/v1/integration/nodejs-sdk/nodejs-getting-started" class="sample-link" target="_blank">Node SDK Getting Started <span class="type">Live</span></a>
+                    <a href="https://www.mindee.com/blog/tiff-heic-media-files-now-supported-in-mindee" class="sample-link" target="_blank">TIFF & HEIC Media Files Now Supported<span class="type">Blog</span></a>
+                    <a href="https://docs.mindee.com/v1/platform-ui-tour/api-hub" class="sample-link" target="_blank">Document Catalog<span class="type">Live</span></a>
+                    <a href="https://docs.mindee.com/v1/releases/releases-notes-invoice-ocr#features-and-changes-november-30-2022" class="sample-link" target="_blank">Invoice OCR Release Notes <span class="type">Live</span></a>
+                    <a href="https://docs.mindee.com/v1/get-started/create-api-key" class="sample-link" target="_blank">Create Your API Key <span class="type">Live</span></a>
+                </div>
+            </article>
+
+            <article class="company">
+                <div class="company-header">
+                    <img src="images/genlayer.png" alt="GenLayer logo" class="company-logo-img">
+                    <h2 class="company-name">GenLayer</h2>
+                </div>
+                <p class="company-description">GenLayer is the first AI-native blockchain built for AI-powered smart contracts, called Intelligent Contracts, capable of reasoning and adapting to real-world data.<br><br>There was no documentation when I started. I evaluated tools, chose Nextra over GitBook for its open-source flexibility, and built the entire documentation structure from scratch.<br><br>I started by converting the company's whitepaper into developer-friendly documentation, which became the foundation for everything else. From there, I wrote the core docs covering the protocol overview, installation guides, simulator walkthrough, intelligent contract syntax, CLI reference, and JSON-RPC docs. I kept iterating as the product evolved, updating use cases, adding FAQ sections, and improving screenshots and videos throughout.<br><br>I collaborated closely with developers and product teams to ensure accuracy, following docs-as-code methodology. I also wrote and edited blog posts geared towards the product.</p>
+                <div class="samples-list">
+                    <a href="https://docs.genlayer.com/understand-genlayer-protocol/what-are-intelligent-contracts" class="sample-link" target="_blank">Intelligent Contracts<span class="type">Live</span></a>
+                    <a href="https://docs.genlayer.com/understand-genlayer-protocol/core-concepts/optimistic-democracy" class="sample-link" target="_blank">Optimistic Democracy<span class="type">Live</span></a>
+                    <a href="https://docs.genlayer.com/api-references/genlayer-cli" class="sample-link" target="_blank">GenLayer CLI Reference<span class="type">Live</span></a>
+                    <a href="https://docs.genlayer.com/developers/intelligent-contracts/crafting-prompts" class="sample-link" target="_blank">Crafting Prompts for LLM Interactions<span class="type">Live</span></a>
+                    <a href="https://docs.genlayer.com/developers/intelligent-contracts/examples/wizard-of-coin" class="sample-link" target="_blank">Wizard of Coin Example<span class="type">Live</span></a>
+                    <a href="https://docs.genlayer.com/developers/intelligent-contracts/examples/prediction" class="sample-link" target="_blank">Prediction Market Contract<span class="type">Live</span></a>
+                    <a href="/pdf/Install GenLayer.pdf" class="sample-link" target="_blank">Installing GenLayer<span class="type">PDF</span></a>
+                </div>
+            </article>
+
+            <article class="company">
+                <div class="company-header">
+                    <img src="images/glueops.jpeg" alt="GlueOps logo" class="company-logo-img">
+                    <h2 class="company-name">GlueOps</h2>
+                </div>
+                <p class="company-description">GlueOps is a DevOps platform that simplifies deployments across cloud providers, helping teams manage infrastructure without the complexity.<br><br>This was a short contract to set up their documentation from scratch. Information was scattered across GitHub repos and internal notes, with no central source. Users couldn't onboard without jumping on calls or getting live walkthroughs.<br><br>I set up GlueOps' first documentation site using Docusaurus, centralizing everything into one place. I coordinated with developers to understand the platform, then wrote the initial user documentation. This included Getting Started guides for platform administrators and developers, and deployment documentation covering Docker Hub, GCP, GitHub, AWS, Azure, Terraform, and Quay. I also configured the Dockerfile and GitHub workflows so the team could maintain and update docs going forward.</p>
+                <p class="samples-label">Samples</p>
+                <div class="samples-list">
+                    <a href="https://docs.glueops.dev/glueops-platform-administrator/predeployment/create-github-app-for-glueops" class="sample-link" target="_blank">Creating your GitHub App<span class="type">Live</span></a>
+                    <a href="https://docs.glueops.dev/glueops-platform-administrator/predeployment/clouds/aws/cloud-setup-aws" class="sample-link" target="_blank">Creating your AWS Account<span class="type">Live</span></a>
+                    <a href="https://docs.glueops.dev/deploy-applications/adding-configurations-and-secrets-to-the-hello-world-app-glueops-platform" class="sample-link" target="_blank">Adding Application Configurations/Secrets<span class="type">Live</span></a>
+                    <a href="https://docs.glueops.dev/glueops-platform-administrator/configuration/glueops-deployment-configuration" class="sample-link" target="_blank">Setting Up Your Repository<span class="type">Live</span></a>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Doc Type View -->
+        <div id="doctype-view" class="view-content">
+
+            <section class="doc-category">
+                <h2 class="category-name">API References</h2>
+                <p class="category-description">Complete endpoint documentation with request/response schemas, authentication requirements, error handling, and integration examples.</p>
+                <div class="category-items">
+                    <a href="https://docs.getorbital.com/reference/post_invoice-deposit-1" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Generate Deposit Link (HPP)</span>
+                            <span class="item-desc">API endpoint for generating hosted payment page deposit links with proper request/response schemas and authentication flows.</span>
+                        </div>
+                        <span class="item-company">Orbital</span>
+                    </a>
+                    <a href="https://docs.getorbital.com/reference/createbinancepaywithdrawal" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Create Binance Pay Withdrawal</span>
+                            <span class="item-desc">Documented Binance Pay withdrawal endpoint with request parameters, response structure, and error handling.</span>
+                        </div>
+                        <span class="item-company">Orbital</span>
+                    </a>
+                    <a href="https://docs.getorbital.com/reference/get_crypto-payments" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Get Payments by Date</span>
+                            <span class="item-desc">API reference for retrieving payment records by date range with filtering options and pagination.</span>
+                        </div>
+                        <span class="item-company">Orbital</span>
+                    </a>
+                    <a href="https://docs.getorbital.com/reference/post_crypto-deposit-receiving-address-travel-rule-externalid" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Update Travel Rule Information</span>
+                            <span class="item-desc">Endpoint for updating missing Travel Rule compliance information for rapid deposit addresses.</span>
+                        </div>
+                        <span class="item-company">Orbital</span>
+                    </a>
+                    <a href="/pdf/SpecConfig.pdf" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Write a SpecConfig</span>
+                            <span class="item-desc">Documented job specification configuration for defining compute jobs, inputs, outputs, and execution parameters.</span>
+                        </div>
+                        <span class="item-company">Protocol Labs (Bacalhau)</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="doc-category">
+                <h2 class="category-name">SDK & CLI References</h2>
+                <p class="category-description">Language-specific SDK guides and command-line tool documentation covering installation, authentication, commands, and usage patterns.</p>
+                <div class="category-items">
+                    <a href="https://docs.mindee.com/v1/integration/python-sdk/python-getting-started" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Python SDK Getting Started</span>
+                            <span class="item-desc">Moved SDK docs from private GitHub repos into official documentation with installation, authentication, and response structure guides.</span>
+                        </div>
+                        <span class="item-company">Mindee</span>
+                    </a>
+                    <a href="https://docs.mindee.com/v1/integration/nodejs-sdk/nodejs-getting-started" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Node.js SDK Getting Started</span>
+                            <span class="item-desc">Complete Node.js SDK documentation covering setup, API calls, and parsing document responses.</span>
+                        </div>
+                        <span class="item-company">Mindee</span>
+                    </a>
+                    <a href="https://docs.genlayer.com/api-references/genlayer-cli" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">GenLayer CLI Reference</span>
+                            <span class="item-desc">Complete CLI documentation for project initialization, simulator management, contract deployment, and local development workflows.</span>
+                        </div>
+                        <span class="item-company">GenLayer</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="doc-category">
+                <h2 class="category-name">How-To Guides & Tutorials</h2>
+                <p class="category-description">Step-by-step tutorials that walk developers through setup, configuration, and common workflows from start to finish.</p>
+                <div class="category-items">
+                    <a href="https://docs.getorbital.com/reference/how-to-set-up-your-embedded-payment-page" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Embedded Payment Page Setup</span>
+                            <span class="item-desc">Step-by-step guide for embedding Orbital's payment widget, configuring options, and handling the payment flow.</span>
+                        </div>
+                        <span class="item-company">Orbital</span>
+                    </a>
+                    <a href="https://docs.getorbital.com/docs/how-to-create-a-beneficiary" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Create a Beneficiary</span>
+                            <span class="item-desc">Client Portal guide walking through beneficiary creation for payouts and transfers.</span>
+                        </div>
+                        <span class="item-company">Orbital</span>
+                    </a>
+                    <a href="https://docs.getorbital.com/reference/verifying-webhook-signatures" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Verify Webhook Signatures</span>
+                            <span class="item-desc">Security guide for validating webhook payloads to ensure requests originate from Orbital.</span>
+                        </div>
+                        <span class="item-company">Orbital</span>
+                    </a>
+                    <a href="https://docs.getorbital.com/docs/woocommerce" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">WooCommerce Integration</span>
+                            <span class="item-desc">End-to-end guide for integrating Orbital payments into WooCommerce stores.</span>
+                        </div>
+                        <span class="item-company">Orbital</span>
+                    </a>
+                    <a href="/pdf/docker.pdf" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Docker Workload Onboarding</span>
+                            <span class="item-desc">Guide explaining how Docker containers execute as Bacalhau jobs, including job specs, inputs, and data handling.</span>
+                        </div>
+                        <span class="item-company">Protocol Labs (Bacalhau)</span>
+                    </a>
+                    <a href="/pdf/Getting-started.pdf" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Getting Started with Bacalhau</span>
+                            <span class="item-desc">Quickstart guide for running your first distributed compute job on Bacalhau.</span>
+                        </div>
+                        <span class="item-company">Protocol Labs (Bacalhau)</span>
+                    </a>
+                    <a href="/pdf/Installation.pdf" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Installing Bacalhau Client</span>
+                            <span class="item-desc">Installation guide covering system requirements, setup steps, and verification.</span>
+                        </div>
+                        <span class="item-company">Protocol Labs (Bacalhau)</span>
+                    </a>
+                    <a href="https://docs.glueops.dev/glueops-platform-administrator/predeployment/clouds/aws/cloud-setup-aws" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">AWS Cloud Setup Guide</span>
+                            <span class="item-desc">Step-by-step guide for creating and configuring your AWS account for the GlueOps platform.</span>
+                        </div>
+                        <span class="item-company">GlueOps</span>
+                    </a>
+                    <a href="https://docs.glueops.dev/glueops-platform-administrator/predeployment/create-github-app-for-glueops" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Creating Your GitHub App</span>
+                            <span class="item-desc">Guide for setting up the GitHub App required for GlueOps platform integration.</span>
+                        </div>
+                        <span class="item-company">GlueOps</span>
+                    </a>
+                    <a href="https://docs.genlayer.com/developers/intelligent-contracts/examples/wizard-of-coin" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Wizard of Coin Example</span>
+                            <span class="item-desc">Tutorial showing how to build an AI-powered intelligent contract that makes decisions based on prompts.</span>
+                        </div>
+                        <span class="item-company">GenLayer</span>
+                    </a>
+                    <a href="/pdf/Install GenLayer.pdf" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Installing GenLayer</span>
+                            <span class="item-desc">Setup guide for installing the GenLayer simulator and development environment.</span>
+                        </div>
+                        <span class="item-company">GenLayer</span>
+                    </a>
+                    <a href="https://docs.mindee.com/v1/utilities/cropper" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Cropper Utility Guide</span>
+                            <span class="item-desc">How-to guide for using the Cropper utility to preprocess and crop documents before OCR parsing.</span>
+                        </div>
+                        <span class="item-company">Mindee</span>
+                    </a>
+                    <a href="https://docs.mindee.com/v1/get-started/create-api-key" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Create Your API Key</span>
+                            <span class="item-desc">Quick guide for generating and managing API keys in the Mindee platform.</span>
+                        </div>
+                        <span class="item-company">Mindee</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="doc-category">
+                <h2 class="category-name">Architecture & Whitepapers</h2>
+                <p class="category-description">Deep technical documentation covering system design, protocol specifications, and architectural decisions.</p>
+                <div class="category-items">
+                    <a href="https://docs.ton.org/foundations/whitepapers/tblkch" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">TON Blockchain Specification</span>
+                            <span class="item-desc">Converted dense LaTeX whitepaper into navigable web documentation covering sharding, masterchain, and workchain mechanics.</span>
+                        </div>
+                        <span class="item-company">TON Foundation</span>
+                    </a>
+                    <a href="https://docs.ton.org/foundations/whitepapers/tvm" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">TON Virtual Machine</span>
+                            <span class="item-desc">Documented TVM architecture, instruction set, and execution model with preserved mathematical notation.</span>
+                        </div>
+                        <span class="item-company">TON Foundation</span>
+                    </a>
+                    <a href="https://docs.ton.org/foundations/whitepapers/catchain" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Catchain Consensus</span>
+                            <span class="item-desc">Converted consensus protocol specification from LaTeX to structured, cross-referenced web documentation.</span>
+                        </div>
+                        <span class="item-company">TON Foundation</span>
+                    </a>
+                    <a href="https://docs.ton.org/foundations/whitepapers/ton" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">The Open Network</span>
+                            <span class="item-desc">Core whitepaper covering TON's architecture, design principles, and protocol overview.</span>
+                        </div>
+                        <span class="item-company">TON Foundation</span>
+                    </a>
+                    <a href="https://docs.ton.org/tvm/instructions" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">TVM Instructions</span>
+                            <span class="item-desc">Complete instruction reference for the TON Virtual Machine with auto-populated implementation references.</span>
+                        </div>
+                        <span class="item-company">TON Foundation</span>
+                    </a>
+                    <a href="https://docs.genlayer.com/understand-genlayer-protocol/core-concepts/optimistic-democracy" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Optimistic Democracy</span>
+                            <span class="item-desc">Conceptual documentation explaining GenLayer's consensus mechanism for AI-native smart contracts.</span>
+                        </div>
+                        <span class="item-company">GenLayer</span>
+                    </a>
+                    <a href="https://docs.genlayer.com/understand-genlayer-protocol/what-are-intelligent-contracts" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Intelligent Contracts</span>
+                            <span class="item-desc">Core concept documentation explaining AI-powered smart contracts and how they differ from traditional contracts.</span>
+                        </div>
+                        <span class="item-company">GenLayer</span>
+                    </a>
+                    <a href="https://docs.getorbital.com/" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Documentation Hub</span>
+                            <span class="item-desc">Redesigned information architecture with central landing page connecting API docs, knowledge base, and resources.</span>
+                        </div>
+                        <span class="item-company">Orbital</span>
+                    </a>
+                    <a href="https://docs.glueops.dev/" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Platform Documentation</span>
+                            <span class="item-desc">Built first docs site from scratch using Docusaurus, consolidating scattered GitHub repos into a single source.</span>
+                        </div>
+                        <span class="item-company">GlueOps</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="doc-category">
+                <h2 class="category-name">Release Notes</h2>
+                <p class="category-description">Version history documentation tracking new features, breaking changes, and migration guidance.</p>
+                <div class="category-items">
+                    <a href="https://docs.mindee.com/v1/releases/releases-notes-invoice-ocr#features-and-changes-november-30-2022" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Invoice OCR Release Notes</span>
+                            <span class="item-desc">Structured release notes documenting new fields, model updates, and breaking changes per version.</span>
+                        </div>
+                        <span class="item-company">Mindee</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="doc-category">
+                <h2 class="category-name">Blog & Technical Content</h2>
+                <p class="category-description">Technical articles, tutorials, and practical guides published on company blogs and developer platforms.</p>
+                <div class="category-items">
+                    <a href="https://blog.bacalhau.org/p/reading-and-writing-from-any-s3-compatible" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Reading and Writing from S3-Compatible Data Stores</span>
+                            <span class="item-desc">How-to guide for connecting Bacalhau jobs to S3-compatible storage for inputs and outputs.</span>
+                        </div>
+                        <span class="item-company">Protocol Labs (Bacalhau)</span>
+                    </a>
+                    <a href="https://blog.bacalhau.org/p/streamline-data-projects-with-bacalhau" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Streamline Data Projects with Bacalhau Python SDK</span>
+                            <span class="item-desc">Tutorial on using the Python SDK to submit and manage distributed compute jobs programmatically.</span>
+                        </div>
+                        <span class="item-company">Protocol Labs (Bacalhau)</span>
+                    </a>
+                    <a href="https://blog.bacalhau.org/p/bacalhau-updates-june-2023" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Bacalhau Updates</span>
+                            <span class="item-desc">Product update covering new features, improvements, and roadmap highlights.</span>
+                        </div>
+                        <span class="item-company">Protocol Labs (Bacalhau)</span>
+                    </a>
+                    <a href="https://www.mindee.com/blog/tiff-heic-media-files-now-supported-in-mindee" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">TIFF & HEIC Media Files Now Supported</span>
+                            <span class="item-desc">Feature announcement covering new image format support and how to use them with Mindee APIs.</span>
+                        </div>
+                        <span class="item-company">Mindee</span>
+                    </a>
+                    <a href="https://zenrows.com/blog/seleniumbase-proxy" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">SeleniumBase Proxy Configuration</span>
+                            <span class="item-desc">Practical guide on configuring proxies with SeleniumBase, including authentication and rotation.</span>
+                        </div>
+                        <span class="item-company">ZenRows</span>
+                    </a>
+                    <a href="https://zenrows.com/blog/scrape-amazon-reviews" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Scraping Amazon Reviews</span>
+                            <span class="item-desc">Hands-on tutorial covering pagination, data extraction, and handling dynamic content.</span>
+                        </div>
+                        <span class="item-company">ZenRows</span>
+                    </a>
+                    <a href="https://www.giskard.ai/knowledge/how-to-evaluate-llm-and-ml-models-with-pytorch" class="category-item" target="_blank">
+                        <div class="item-info">
+                            <span class="item-title">Evaluating PyTorch Models</span>
+                            <span class="item-desc">Technical article on loading, evaluating, and validating PyTorch models using Giskard's testing framework.</span>
+                        </div>
+                        <span class="item-company">Giskard</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script>
+        const toggleButtons = document.querySelectorAll('.view-toggle button');
+        const viewContents = document.querySelectorAll('.view-content');
+
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const view = button.dataset.view;
+
+                toggleButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                viewContents.forEach(content => {
+                    content.classList.remove('active');
+                    if (content.id === `${view}-view`) {
+                        content.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
