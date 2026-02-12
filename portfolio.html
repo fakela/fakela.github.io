@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Favour Kelvin</title>
+    <meta name="description" content="Portfolio of Favour Kelvin — API references, SDK guides, protocol specs, and developer documentation for blockchain and fintech companies.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fakela.github.io/portfolio.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portfolio | Favour Kelvin">
+    <meta property="og:description" content="API references, SDK guides, protocol specs, and developer documentation for blockchain and fintech companies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fakela.github.io/portfolio.html">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Portfolio | Favour Kelvin">
+    <meta name="twitter:description" content="API references, SDK guides, protocol specs, and developer documentation for blockchain and fintech companies.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
@@ -55,6 +67,25 @@
         .item-title { font-size: 1rem; font-weight: 500; color: var(--text); display: block; margin-bottom: 0.35rem; }
         .item-desc { font-size: 0.875rem; font-weight: 300; color: var(--text-muted); line-height: 1.5; display: block; }
         .item-company { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--text-muted); white-space: nowrap; }
+        .search-container { margin-bottom: 2rem; position: relative; }
+        .search-input { width: 100%; padding: 0.85rem 1.25rem 0.85rem 2.75rem; font-family: 'Sora', sans-serif; font-size: 0.95rem; font-weight: 300; background-color: var(--surface); border: 1px solid var(--border); border-radius: 2px; color: var(--text); outline: none; transition: border-color 0.2s ease; }
+        .search-input::placeholder { color: var(--text-muted); }
+        .search-input:focus { border-color: var(--accent); }
+        .search-icon { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
+        .search-icon svg { width: 16px; height: 16px; fill: currentColor; }
+        .search-results { margin-bottom: 2rem; display: none; }
+        .search-results.active { display: block; }
+        .search-results-header { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem; display: flex; justify-content: space-between; align-items: center; }
+        .search-clear { font-family: 'Sora', sans-serif; font-size: 0.8rem; color: var(--text-muted); background: none; border: 1px solid var(--border); border-radius: 2px; padding: 0.3rem 0.75rem; cursor: pointer; transition: all 0.2s ease; }
+        .search-clear:hover { border-color: var(--accent); color: var(--text); }
+        .search-results-list { display: grid; gap: 0.75rem; }
+        .search-result-item { display: flex; justify-content: space-between; align-items: flex-start; padding: 1.25rem 1.5rem; background-color: var(--surface); border: 1px solid var(--border); border-radius: 2px; text-decoration: none; transition: all 0.2s ease; }
+        .search-result-item:hover { background-color: var(--surface-hover); border-color: var(--accent); }
+        .result-info { flex: 1; margin-right: 1.5rem; }
+        .result-title { font-size: 1rem; font-weight: 500; color: var(--text); display: block; margin-bottom: 0.35rem; }
+        .result-desc { font-size: 0.875rem; font-weight: 300; color: var(--text-muted); line-height: 1.5; display: block; }
+        .result-company { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--text-muted); white-space: nowrap; }
+        .no-results { font-size: 0.95rem; font-weight: 300; color: var(--text-muted); padding: 2rem; text-align: center; background-color: var(--surface); border: 1px solid var(--border); border-radius: 2px; }
         @media (max-width: 768px) {
             nav { padding: 1.5rem; flex-direction: column; gap: 1.5rem; }
             .nav-links { gap: 1.5rem; }
@@ -81,6 +112,17 @@
             <h1>Portfolio</h1>
             <p class="intro">I've spent 6+ years writing API references, SDK guides, protocol specs, and developer documentation for blockchain and fintech companies. Below is a selection of my work.</p>
         </header>
+        <div class="search-container">
+            <span class="search-icon"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></span>
+            <input type="text" class="search-input" id="search-input" placeholder="Search portfolio..." aria-label="Search portfolio">
+        </div>
+        <div class="search-results" id="search-results">
+            <div class="search-results-header">
+                <span id="results-count"></span>
+                <button class="search-clear" id="search-clear">Clear</button>
+            </div>
+            <div class="search-results-list" id="search-results-list"></div>
+        </div>
         <div class="view-toggle">
             <button class="active" data-view="company">By Company</button>
             <button data-view="doctype">By Doc Type</button>
@@ -293,7 +335,9 @@
         </div>
     </main>
 
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
     <script>
+        // View toggle
         const toggleButtons = document.querySelectorAll('.view-toggle button');
         const viewContents = document.querySelectorAll('.view-content');
         toggleButtons.forEach(button => {
@@ -307,6 +351,144 @@
                 });
             });
         });
+
+        // Build search index from portfolio data
+        const portfolioData = [];
+
+        // Index company view items
+        document.querySelectorAll('#company-view .company').forEach(company => {
+            const companyName = company.querySelector('.company-name').textContent.trim();
+            const description = company.querySelector('.company-description').textContent.trim();
+            const platform = company.querySelector('.platform-badge') ? company.querySelector('.platform-badge').textContent.trim() : '';
+            company.querySelectorAll('.sample-link').forEach(link => {
+                const title = link.textContent.replace(link.querySelector('.type')?.textContent || '', '').trim();
+                const type = link.querySelector('.type')?.textContent.trim() || '';
+                const href = link.getAttribute('href');
+                portfolioData.push({
+                    id: portfolioData.length,
+                    title: title,
+                    company: companyName,
+                    description: description.substring(0, 200),
+                    type: type,
+                    platform: platform,
+                    href: href
+                });
+            });
+        });
+
+        // Index doc type view items
+        document.querySelectorAll('#doctype-view .category-item').forEach(item => {
+            const title = item.querySelector('.item-title')?.textContent.trim() || '';
+            const desc = item.querySelector('.item-desc')?.textContent.trim() || '';
+            const company = item.querySelector('.item-company')?.textContent.trim() || '';
+            const href = item.getAttribute('href');
+            // Avoid duplicates by checking href
+            if (!portfolioData.some(d => d.href === href)) {
+                portfolioData.push({
+                    id: portfolioData.length,
+                    title: title,
+                    company: company,
+                    description: desc,
+                    type: '',
+                    platform: '',
+                    href: href
+                });
+            }
+        });
+
+        // Build Lunr index
+        const idx = lunr(function () {
+            this.ref('id');
+            this.field('title', { boost: 10 });
+            this.field('company', { boost: 5 });
+            this.field('description');
+            this.field('type');
+            this.field('platform');
+            portfolioData.forEach(doc => this.add(doc));
+        });
+
+        // Search UI
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+        const searchResultsList = document.getElementById('search-results-list');
+        const resultsCount = document.getElementById('results-count');
+        const searchClear = document.getElementById('search-clear');
+        const viewToggle = document.querySelector('.view-toggle');
+        const companyView = document.getElementById('company-view');
+        const doctypeView = document.getElementById('doctype-view');
+
+        let debounceTimer;
+        searchInput.addEventListener('input', () => {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => performSearch(), 200);
+        });
+
+        searchClear.addEventListener('click', () => {
+            searchInput.value = '';
+            searchResults.classList.remove('active');
+            viewToggle.style.display = '';
+            // Restore the active view
+            const activeBtn = document.querySelector('.view-toggle button.active');
+            if (activeBtn) {
+                const view = activeBtn.dataset.view;
+                document.getElementById(`${view}-view`).style.display = '';
+            }
+        });
+
+        function performSearch() {
+            const query = searchInput.value.trim();
+            if (!query) {
+                searchResults.classList.remove('active');
+                viewToggle.style.display = '';
+                companyView.style.display = '';
+                doctypeView.style.display = '';
+                // Restore the active view
+                viewContents.forEach(content => {
+                    if (content.classList.contains('active')) {
+                        content.style.display = '';
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+                return;
+            }
+
+            let results;
+            try {
+                results = idx.search(query + '*');
+            } catch (e) {
+                // If Lunr query syntax error, try as plain term
+                try {
+                    results = idx.search(query);
+                } catch (e2) {
+                    results = [];
+                }
+            }
+
+            // Hide view toggle and views, show results
+            viewToggle.style.display = 'none';
+            companyView.style.display = 'none';
+            doctypeView.style.display = 'none';
+            searchResults.classList.add('active');
+
+            if (results.length === 0) {
+                resultsCount.textContent = 'No results';
+                searchResultsList.innerHTML = '<div class="no-results">No matching portfolio items found.</div>';
+                return;
+            }
+
+            resultsCount.textContent = results.length + ' result' + (results.length !== 1 ? 's' : '');
+            searchResultsList.innerHTML = results.map(result => {
+                const item = portfolioData[result.ref];
+                return `<a href="${item.href}" class="search-result-item" target="_blank">
+                    <div class="result-info">
+                        <span class="result-title">${item.title}</span>
+                        <span class="result-desc">${item.description}</span>
+                    </div>
+                    <span class="result-company">${item.company}</span>
+                </a>`;
+            }).join('');
+        }
     </script>
 </body>
 </html>
