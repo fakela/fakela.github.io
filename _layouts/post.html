@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Favour Kelvin</title>
+    <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ page.title }} | Favour Kelvin">
+    <meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.title }} | Favour Kelvin">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111111;
+            --text: #e5e5e5;
+            --text-muted: #737373;
+            --accent: #22c55e;
+            --border: #262626;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sora', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        nav {
+            padding: 2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text);
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+        }
+
+        .post-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 2.5rem;
+            line-height: 1.2;
+        }
+
+        .post-content h2 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .post-content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .post-content p {
+            font-size: 1.05rem;
+            font-weight: 300;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 1.25rem;
+        }
+
+        .post-content a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .post-content a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        .post-content li {
+            font-size: 1.05rem;
+            font-weight: 300;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .post-content blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1.25rem;
+            margin: 1.5rem 0;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .post-content code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9em;
+            background-color: var(--surface);
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            border: 1px solid var(--border);
+        }
+
+        .post-content pre {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 1.25rem;
+            overflow-x: auto;
+            margin-bottom: 1.25rem;
+        }
+
+        .post-content pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .post-content img {
+            max-width: 100%;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+
+        .post-content hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2.5rem 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1.5rem;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 2rem 1.5rem 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="/index.html">Favour Kelvin</a>
+        </div>
+        <div class="nav-links">
+            <a href="/about.html">About</a>
+            <a href="/portfolio.html">Portfolio</a>
+            <a href="/blog.html" class="active">Blog</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="post-meta">{{ page.date | date: "%B %d, %Y" }}</div>
+        <h1>{{ page.title }}</h1>
+        <div class="post-content">
+            {{ content }}
+        </div>
+        <a href="/blog.html" class="back-link">&larr; Back to blog</a>
+    </main>
+</body>
+</html>

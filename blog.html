@@ -1,0 +1,209 @@
+---
+layout: null
+title: Blog | Favour Kelvin
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Favour Kelvin</title>
+    <meta name="description" content="Blog posts by Favour Kelvin on technical writing, API documentation, developer tools, and the docs-as-code workflow.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fakela.github.io/blog.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blog | Favour Kelvin">
+    <meta property="og:description" content="Blog posts on technical writing, API documentation, developer tools, and the docs-as-code workflow.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fakela.github.io/blog.html">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Blog | Favour Kelvin">
+    <meta name="twitter:description" content="Blog posts on technical writing, API documentation, developer tools, and the docs-as-code workflow.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111111;
+            --text: #e5e5e5;
+            --text-muted: #737373;
+            --accent: #22c55e;
+            --border: #262626;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sora', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        nav {
+            padding: 2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text);
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 3rem;
+        }
+
+        .post-list {
+            list-style: none;
+        }
+
+        .post-list li {
+            border-bottom: 1px solid var(--border);
+            padding: 2rem 0;
+        }
+
+        .post-list li:first-child {
+            padding-top: 0;
+        }
+
+        .post-list li:last-child {
+            border-bottom: none;
+        }
+
+        .post-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .post-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+
+        .post-title a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .post-title a:hover {
+            color: var(--accent);
+        }
+
+        .post-excerpt {
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.7;
+            color: var(--text-muted);
+        }
+
+        .empty-state {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1.5rem;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 2rem 1.5rem 4rem;
+            }
+
+            .post-title {
+                font-size: 1.15rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html">Favour Kelvin</a>
+        </div>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html" class="active">Blog</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Blog</h1>
+
+        {% if site.posts.size > 0 %}
+        <ul class="post-list">
+            {% for post in site.posts %}
+            <li>
+                <div class="post-date">{{ post.date | date: "%B %d, %Y" }}</div>
+                <h2 class="post-title">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </h2>
+                <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="empty-state">No posts yet. Check back soon.</p>
+        {% endif %}
+    </main>
+</body>
+</html>

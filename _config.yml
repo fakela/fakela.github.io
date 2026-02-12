@@ -1,0 +1,12 @@
+title: Favour Kelvin
+description: Technical writer with 6+ years of experience documenting APIs, blockchain protocols, and developer tools.
+url: "https://fakela.github.io"
+baseurl: ""
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
