@@ -6,16 +6,11 @@
     <title>{{ page.title }} | Favour Kelvin</title>
     <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{{ page.url | absolute_url }}">
-    <!-- Open Graph -->
-    <meta property="og:title" content="{{ page.title }} | Favour Kelvin">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ page.title }} | Favour Kelvin">
-    <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
@@ -27,6 +22,7 @@
             --text-muted: #737373;
             --accent: #22c55e;
             --border: #262626;
+            --sidebar-width: 280px;
         }
 
         * {
@@ -47,6 +43,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid var(--border);
         }
 
         .nav-logo a {
@@ -75,15 +72,133 @@
             color: var(--text);
         }
 
-        main {
-            max-width: 720px;
+        .container {
+            display: flex;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 4rem 2rem 6rem;
         }
 
-        .post-meta {
+        .sidebar {
+            width: var(--sidebar-width);
+            padding: 3rem 2rem;
+            border-right: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar-section-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem 0;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.2s ease;
+        }
+
+        .sidebar-section-title:hover {
+            color: var(--text);
+        }
+
+        .sidebar-section-title .arrow {
+            font-size: 0.7rem;
+            transition: transform 0.2s ease;
+            display: inline-block;
+        }
+
+        .sidebar-section-title.collapsed .arrow {
+            transform: rotate(-90deg);
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            max-height: 1000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .sidebar-nav.collapsed {
+            max-height: 0;
+        }
+
+        .sidebar-nav.expanded {
+            max-height: 2000px;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .sidebar-nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 400;
+            line-height: 1.6;
+            transition: color 0.2s ease;
+            display: block;
+        }
+
+        .sidebar-nav a:hover {
+            color: var(--accent);
+        }
+
+        .sidebar-nav a.active {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        main {
+            flex: 1;
+            padding: 3rem 4rem;
+            max-width: 800px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: color 0.2s ease;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            color: var(--text);
+        }
+
+        .back-link::before {
+            content: "← ";
+        }
+
+        article {
+            margin-bottom: 4rem;
+        }
+
+        .post-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .post-date {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -94,26 +209,24 @@
             font-size: 2.5rem;
             font-weight: 600;
             letter-spacing: -0.03em;
-            margin-bottom: 2.5rem;
             line-height: 1.2;
+            margin-bottom: 0;
         }
 
         .post-content h2 {
-            font-family: 'Sora', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             font-weight: 600;
-            color: var(--text);
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
             letter-spacing: -0.02em;
+            margin-top: 3rem;
+            margin-bottom: 1.25rem;
         }
 
         .post-content h3 {
-            font-size: 1.2rem;
+            font-size: 1.35rem;
             font-weight: 600;
-            color: var(--text);
+            letter-spacing: -0.01em;
             margin-top: 2rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
         }
 
         .post-content p {
@@ -121,23 +234,12 @@
             font-weight: 300;
             line-height: 1.8;
             color: var(--text);
-            margin-bottom: 1.25rem;
-        }
-
-        .post-content a {
-            color: var(--accent);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s ease;
-        }
-
-        .post-content a:hover {
-            border-bottom-color: var(--accent);
+            margin-bottom: 1.5rem;
         }
 
         .post-content ul,
         .post-content ol {
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
             padding-left: 1.5rem;
         }
 
@@ -149,63 +251,61 @@
             margin-bottom: 0.5rem;
         }
 
-        .post-content blockquote {
-            border-left: 3px solid var(--accent);
-            padding-left: 1.25rem;
-            margin: 1.5rem 0;
-            color: var(--text-muted);
-            font-style: italic;
+        .post-content a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent);
+            transition: opacity 0.2s ease;
+        }
+
+        .post-content a:hover {
+            opacity: 0.7;
         }
 
         .post-content code {
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.9em;
             background-color: var(--surface);
-            padding: 0.15rem 0.4rem;
-            border-radius: 3px;
-            border: 1px solid var(--border);
+            padding: 0.2em 0.4em;
+            border-radius: 2px;
+            color: var(--accent);
         }
 
         .post-content pre {
             background-color: var(--surface);
             border: 1px solid var(--border);
-            border-radius: 4px;
-            padding: 1.25rem;
+            border-radius: 2px;
+            padding: 1.5rem;
             overflow-x: auto;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
         }
 
         .post-content pre code {
-            background: none;
-            border: none;
+            background-color: transparent;
             padding: 0;
-            font-size: 0.85rem;
-            line-height: 1.6;
+            color: var(--text);
         }
 
-        .post-content img {
-            max-width: 100%;
-            border-radius: 4px;
-            margin: 1.5rem 0;
-        }
-
-        .post-content hr {
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 2.5rem 0;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-top: 3rem;
+        .post-content blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
             color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.2s ease;
+            font-style: italic;
         }
 
-        .back-link:hover {
-            color: var(--accent);
+        @media (max-width: 1024px) {
+            .sidebar {
+                display: none;
+            }
+
+            main {
+                padding: 3rem 2rem;
+            }
+
+            .container {
+                display: block;
+            }
         }
 
         @media (max-width: 768px) {
@@ -223,31 +323,78 @@
                 font-size: 2rem;
             }
 
+            .post-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.2rem;
+            }
+
             main {
-                padding: 2rem 1.5rem 4rem;
+                padding: 2rem 1.5rem;
             }
         }
     </style>
+    <script>
+        function toggleSection(button) {
+            const nav = button.nextElementSibling;
+            button.classList.toggle('collapsed');
+            nav.classList.toggle('collapsed');
+            nav.classList.toggle('expanded');
+        }
+    </script>
 </head>
 <body>
     <nav>
         <div class="nav-logo">
-            <a href="/index.html">Favour Kelvin</a>
+            <a href="/">Favour Kelvin</a>
         </div>
         <div class="nav-links">
-            <a href="/about.html">About</a>
-            <a href="/portfolio.html">Portfolio</a>
-            <a href="/blog.html" class="active">Blog</a>
+            <a href="/about">About</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/blog" class="active">Blog</a>
         </div>
     </nav>
 
-    <main>
-        <div class="post-meta">{{ page.date | date: "%B %d, %Y" }}</div>
-        <h1>{{ page.title }}</h1>
-        <div class="post-content">
-            {{ content }}
-        </div>
-        <a href="/blog.html" class="back-link">&larr; Back to blog</a>
-    </main>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <ul class="sidebar-nav expanded" style="padding-left: 0;">
+                    <li style="padding-left: 0;"><a href="/blog">← All Posts</a></li>
+                </ul>
+            </div>
+
+            {% if site.posts.size > 1 %}
+            <div class="sidebar-section">
+                <button class="sidebar-section-title expandable" onclick="toggleSection(this)">
+                    <span class="arrow">▼</span> More Posts
+                </button>
+                <ul class="sidebar-nav expanded">
+                    {% for post in site.posts limit:15 %}
+                    {% if post.url != page.url %}
+                    <li><a href="{{ post.url }}" {% if post.url == page.url %}class="active"{% endif %}>{{ post.title }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </aside>
+
+        <main>
+            <a href="/blog" class="back-link">Back to blog</a>
+
+            <article>
+                <header class="post-header">
+                    <div class="post-date">{{ page.date | date: "%B %d, %Y" }}</div>
+                    <h1>{{ page.title }}</h1>
+                </header>
+
+                <div class="post-content">
+                    {{ content }}
+                </div>
+            </article>
+        </main>
+    </div>
 </body>
 </html>
