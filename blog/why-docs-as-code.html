@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Docs-as-Code Is the Only Way I Work Now | Favour Kelvin</title>
+    <meta name="description" content="After years of working in wikis, CMSes, and proprietary platforms, I switched to docs-as-code and never looked back. Here's what changed and why it matters.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fakela.github.io/blog/why-docs-as-code.html">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Why Docs-as-Code Is the Only Way I Work Now">
+    <meta property="og:description" content="After years of working in wikis, CMSes, and proprietary platforms, I switched to docs-as-code and never looked back.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://fakela.github.io/blog/why-docs-as-code.html">
+    <meta property="article:published_time" content="2026-02-12">
+    <meta property="article:author" content="Favour Kelvin">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Why Docs-as-Code Is the Only Way I Work Now">
+    <meta name="twitter:description" content="After years of working in wikis, CMSes, and proprietary platforms, I switched to docs-as-code and never looked back.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111111;
+            --text: #e5e5e5;
+            --text-muted: #737373;
+            --accent: #22c55e;
+            --border: #262626;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sora', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        nav {
+            padding: 2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text);
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 2.5rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: var(--text);
+        }
+
+        .post-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .post-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .post-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            padding: 0.3rem 0.6rem;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            color: var(--text-muted);
+        }
+
+        article h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-top: 3rem;
+            margin-bottom: 1.25rem;
+        }
+
+        article p {
+            font-size: 1.05rem;
+            font-weight: 300;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 1.25rem;
+        }
+
+        article ul {
+            list-style: none;
+            margin-bottom: 1.25rem;
+        }
+
+        article ul li {
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.8;
+            color: var(--text);
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        article ul li::before {
+            content: "\2192";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        article strong {
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        article code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85em;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            padding: 0.15rem 0.4rem;
+            border-radius: 2px;
+            color: var(--accent);
+        }
+
+        .post-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .post-footer p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .post-footer a {
+            color: var(--text);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            transition: all 0.2s ease;
+        }
+
+        .post-footer a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1.5rem;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            main {
+                padding: 2rem 1.5rem 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="../index.html">Favour Kelvin</a>
+        </div>
+        <div class="nav-links">
+            <a href="../about.html">About</a>
+            <a href="../portfolio.html">Portfolio</a>
+            <a href="../blog.html" class="active">Blog</a>
+        </div>
+    </nav>
+
+    <main>
+        <a href="../blog.html" class="back-link">&larr; All posts</a>
+
+        <p class="post-meta">Feb 12, 2026</p>
+        <h1>Why Docs-as-Code Is the Only Way I Work Now</h1>
+        <div class="post-tags">
+            <span class="post-tag">docs-as-code</span>
+            <span class="post-tag">workflow</span>
+            <span class="post-tag">technical writing</span>
+        </div>
+
+        <article>
+            <p>I've written documentation in Confluence, Google Docs, Notion, proprietary CMSes, and wikis that required three logins to access. Every time, the same problems showed up: version control was a mess, reviews were slow, and the docs drifted out of sync with the product within weeks.</p>
+
+            <p>Then I started working with teams that treated documentation the same way they treated code. Markdown files in a Git repo. Pull requests for reviews. CI/CD pipelines for publishing. Everything changed.</p>
+
+            <h2>What Docs-as-Code Actually Means</h2>
+
+            <p>Docs-as-code isn't just "write in Markdown." It's a workflow where documentation lives alongside the codebase and follows the same development practices:</p>
+
+            <ul>
+                <li><strong>Version control</strong> with Git, so every change is tracked and reversible</li>
+                <li><strong>Pull request reviews</strong>, so engineers and writers can collaborate before anything goes live</li>
+                <li><strong>Automated linting</strong> with tools like Vale to catch style issues, broken links, and inconsistencies</li>
+                <li><strong>CI/CD pipelines</strong> that build and deploy docs on merge, keeping everything in sync with releases</li>
+                <li><strong>Plain text formats</strong> like Markdown or MDX that work with any editor and don't lock you into a platform</li>
+            </ul>
+
+            <h2>Why It Works Better</h2>
+
+            <p>The biggest advantage is that docs live where the code lives. When a developer changes an API endpoint, the documentation for that endpoint is in the same repo. The PR that changes the code can also update the docs. No context-switching to a separate tool. No "I'll update the docs later" tickets that never get done.</p>
+
+            <p>Reviews are faster because engineers already know how pull requests work. They don't need to learn a new tool or figure out commenting in some wiki platform. They read the diff, leave comments, and approve. The same workflow they use for code.</p>
+
+            <p>Linting catches problems automatically. When I set up Vale with a custom style guide, every PR gets checked for passive voice, jargon, inconsistent terminology, and broken links before a human even looks at it. That means reviews can focus on accuracy and clarity instead of catching typos.</p>
+
+            <h2>The Tools I Use</h2>
+
+            <p>My typical setup looks like this:</p>
+
+            <ul>
+                <li><strong>Markdown or MDX</strong> for content</li>
+                <li><strong>Git + GitHub</strong> for version control and reviews</li>
+                <li><strong>Docusaurus, Mintlify, or Nextra</strong> for the documentation site</li>
+                <li><strong>Vale</strong> for style linting</li>
+                <li><strong>GitHub Actions</strong> for CI/CD</li>
+            </ul>
+
+            <p>The specific static site generator depends on the team's needs. Docusaurus works well for larger doc sites with versioning. Mintlify is great when you want something polished with minimal config. Nextra is a good choice if the team is already in the Next.js ecosystem.</p>
+
+            <h2>When It Doesn't Work</h2>
+
+            <p>I won't pretend docs-as-code is always the answer. If the people writing documentation aren't comfortable with Git, the learning curve can slow things down. Some teams have non-technical writers who are faster in a CMS. That's fine.</p>
+
+            <p>But for developer documentation specifically, where the audience is developers and the content needs to stay tightly coupled with a codebase that's changing fast, I haven't found anything better.</p>
+
+            <h2>The Real Win</h2>
+
+            <p>The real win isn't any single tool or practice. It's that documentation stops being an afterthought. When docs are in the same repo, reviewed in the same workflow, and deployed in the same pipeline, they become part of the product. Not something bolted on after the fact.</p>
+
+            <p>That's the shift. And once you've worked that way, it's hard to go back.</p>
+        </article>
+
+        <div class="post-footer">
+            <p>Want to chat about docs-as-code or technical writing? Reach out on <a href="https://linkedin.com/in/favour-kelvin" target="_blank">LinkedIn</a> or <a href="mailto:favourkelvin17@gmail.com">email me</a>.</p>
+        </div>
+    </main>
+</body>
+</html>
