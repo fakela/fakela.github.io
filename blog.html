@@ -2,25 +2,19 @@
 layout: null
 permalink: /blog/
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | Favour Kelvin</title>
-    <meta name="description" content="Blog posts by Favour Kelvin on technical writing, API documentation, developer tools, and the docs-as-code workflow.">
+    <meta name="description" content="Technical writing, API documentation, and developer experience insights from Favour Kelvin.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://fakela.github.io/blog">
-    <!-- Open Graph -->
+    <link rel="canonical" href="https://fakela.github.io/blog/">
     <meta property="og:title" content="Blog | Favour Kelvin">
-    <meta property="og:description" content="Blog posts on technical writing, API documentation, developer tools, and the docs-as-code workflow.">
+    <meta property="og:description" content="Technical writing, API documentation, and developer experience insights.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fakela.github.io/blog">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Blog | Favour Kelvin">
-    <meta name="twitter:description" content="Blog posts on technical writing, API documentation, developer tools, and the docs-as-code workflow.">
+    <meta property="og:url" content="https://fakela.github.io/blog/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
@@ -32,6 +26,7 @@ permalink: /blog/
             --text-muted: #737373;
             --accent: #22c55e;
             --border: #262626;
+            --sidebar-width: 280px;
         }
 
         * {
@@ -52,6 +47,7 @@ permalink: /blog/
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid var(--border);
         }
 
         .nav-logo a {
@@ -80,17 +76,162 @@ permalink: /blog/
             color: var(--text);
         }
 
-        main {
-            max-width: 720px;
+        .container {
+            display: flex;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 4rem 2rem 6rem;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            padding: 3rem 2rem;
+            border-right: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar-section-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem 0;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.2s ease;
+        }
+
+        .sidebar-section-title:hover {
+            color: var(--text);
+        }
+
+        .sidebar-section-title .arrow {
+            font-size: 0.7rem;
+            transition: transform 0.2s ease;
+            display: inline-block;
+        }
+
+        .sidebar-section-title.collapsed .arrow {
+            transform: rotate(-90deg);
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            max-height: 1000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .sidebar-nav.collapsed {
+            max-height: 0;
+        }
+
+        .sidebar-nav.expanded {
+            max-height: 2000px;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .sidebar-nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 400;
+            line-height: 1.6;
+            transition: color 0.2s ease;
+            display: block;
+        }
+
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            color: var(--accent);
+        }
+
+        main {
+            flex: 1;
+            padding: 3rem 4rem;
+            max-width: 900px;
+        }
+
+        .intro {
+            margin-bottom: 4rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border);
         }
 
         h1 {
             font-size: 2.5rem;
             font-weight: 600;
             letter-spacing: -0.03em;
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tagline {
+            font-size: 1.15rem;
+            font-weight: 300;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 2rem;
+        }
+
+        .topics {
+            margin-top: 2rem;
+        }
+
+        .topics h2 {
+            font-size: 0.8rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 500;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+        }
+
+        .topics-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .topic-item {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .topic-item strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .topic-item span {
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        .posts-section h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 2rem;
         }
 
         .post-list {
@@ -98,16 +239,15 @@ permalink: /blog/
         }
 
         .post-list li {
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
             border-bottom: 1px solid var(--border);
-            padding: 2rem 0;
-        }
-
-        .post-list li:first-child {
-            padding-top: 0;
         }
 
         .post-list li:last-child {
             border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         .post-date {
@@ -120,7 +260,7 @@ permalink: /blog/
         }
 
         .post-title {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 0.75rem;
             line-height: 1.3;
@@ -148,6 +288,25 @@ permalink: /blog/
             font-size: 1.05rem;
             font-weight: 300;
             line-height: 1.8;
+            padding: 3rem;
+            text-align: center;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                display: none;
+            }
+
+            main {
+                padding: 3rem 2rem;
+            }
+
+            .container {
+                display: block;
+            }
         }
 
         @media (max-width: 768px) {
@@ -166,14 +325,26 @@ permalink: /blog/
             }
 
             main {
-                padding: 2rem 1.5rem 4rem;
+                padding: 2rem 1.5rem;
+            }
+
+            .topics-list {
+                grid-template-columns: 1fr;
             }
 
             .post-title {
-                font-size: 1.15rem;
+                font-size: 1.25rem;
             }
         }
     </style>
+    <script>
+        function toggleSection(button) {
+            const nav = button.nextElementSibling;
+            button.classList.toggle('collapsed');
+            nav.classList.toggle('collapsed');
+            nav.classList.toggle('expanded');
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -181,30 +352,94 @@ permalink: /blog/
             <a href="/">Favour Kelvin</a>
         </div>
         <div class="nav-links">
-            <a href="/about.html">About</a>
+            <a href="/about">About</a>
             <a href="/portfolio">Portfolio</a>
             <a href="/blog" class="active">Blog</a>
         </div>
     </nav>
 
-    <main>
-        <h1>Blog</h1>
+    <div class="container">
+        <aside class="sidebar">
+            {% if site.posts.size > 0 %}
+            <div class="sidebar-section">
+                <button class="sidebar-section-title expandable" onclick="toggleSection(this)">
+                    <span class="arrow">▼</span> Blog Posts
+                </button>
+                <ul class="sidebar-nav expanded">
+                    {% for post in site.posts %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
 
-        {% if site.posts.size > 0 %}
-        <ul class="post-list">
-            {% for post in site.posts %}
-            <li>
-                <div class="post-date">{{ post.date | date: "%B %d, %Y" }}</div>
-                <h2 class="post-title">
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                </h2>
-                <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
-            </li>
-            {% endfor %}
-        </ul>
-        {% else %}
-        <p class="empty-state">No posts yet. Check back soon.</p>
-        {% endif %}
-    </main>
+            <div class="sidebar-section">
+                <button class="sidebar-section-title expandable" onclick="toggleSection(this)">
+                    <span class="arrow">▼</span> Topics
+                </button>
+                <ul class="sidebar-nav expanded">
+                    <li><a href="#documentation-strategy">Documentation Strategy</a></li>
+                    <li><a href="#api-documentation">API Documentation</a></li>
+                    <li><a href="#developer-experience">Developer Experience</a></li>
+                    <li><a href="#tools-workflows">Tools & Workflows</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main>
+            <section class="intro">
+                <h1>Blog</h1>
+                <p class="tagline">
+                    I write about <strong>technical writing</strong>, <strong>API documentation</strong>, and the <strong>developer experience</strong> that comes from good docs.
+                </p>
+                <p class="tagline">
+                    I've spent 6+ years documenting blockchain protocols, fintech APIs, and developer tools. The posts here cover lessons learned, best practices, and the kinds of problems you run into when turning complex systems into clear documentation.
+                </p>
+
+                <div class="topics">
+                    <h2>What You'll Find Here</h2>
+                    <div class="topics-list">
+                        <div class="topic-item" id="documentation-strategy">
+                            <strong>Documentation Strategy</strong><br>
+                            <span>How teams actually ship and maintain docs at scale</span>
+                        </div>
+                        <div class="topic-item" id="api-documentation">
+                            <strong>API Documentation</strong><br>
+                            <span>Real patterns from documenting REST APIs, SDKs, and blockchain protocols</span>
+                        </div>
+                        <div class="topic-item" id="developer-experience">
+                            <strong>Developer Experience</strong><br>
+                            <span>Why docs matter and how to measure if they're working</span>
+                        </div>
+                        <div class="topic-item" id="tools-workflows">
+                            <strong>Tools & Workflows</strong><br>
+                            <span>Docs-as-code, linters, automation, and staying in sync with releases</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="posts-section">
+                <h2>Recent Posts</h2>
+                {% if site.posts.size > 0 %}
+                <ul class="post-list">
+                    {% for post in site.posts %}
+                    <li>
+                        <div class="post-date">{{ post.date | date: "%B %d, %Y" }}</div>
+                        <h3 class="post-title">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h3>
+                        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <div class="empty-state">
+                    No posts yet. Check back soon for insights on API documentation, developer experience, and technical writing best practices.
+                </div>
+                {% endif %}
+            </section>
+        </main>
+    </div>
 </body>
 </html>
