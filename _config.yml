@@ -3,7 +3,16 @@ description: Technical writer with 6+ years of experience documenting APIs, bloc
 url: "https://fakela.github.io"
 baseurl: ""
 
-permalink: /blog/:year/:month/:day/:title/
+# Keep pages accessible as /about.html, /portfolio.html, /blog.html
+permalink: pretty
+
+# Only apply the /blog/... permalink structure to posts in _posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /blog/:year/:month/:day/:title/
 
 exclude:
   - Gemfile
