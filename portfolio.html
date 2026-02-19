@@ -117,7 +117,7 @@ permalink: /portfolio/
     <main>
         <header>
             <h1>Portfolio</h1>
-            <p class="intro">I've spent 6+ years writing API references, SDK guides, protocol specs, and developer documentation for blockchain and fintech companies. Below is a selection of my work.</p>
+            <p class="intro">A selection of my work across different writing formats, including API documentation, technical guides, knowledge base articles, and product documentation.</p>
         </header>
         <div class="search-container">
             <span class="search-icon"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></span>
@@ -138,7 +138,7 @@ permalink: /portfolio/
 
             <article class="company">
                 <div class="company-header">
-                    <img src="images/orbital.jpeg" alt="Orbital logo" class="company-logo-img">
+                    <img src="/images/orbital.jpeg" alt="Orbital logo" class="company-logo-img">
                     <h2 class="company-name">Orbital</h2>
                 </div>
                 <p class="company-description">Orbital is a global payments platform for receiving, exchanging, and settling stablecoins, traditional currencies, and 80+ exotic currencies through one unified system.<br><br>The API documentation had structural issues: endpoints in plain text, no proper formatting, code samples without syntax highlighting, some pages with images only. Navigation was scattered.<br><br>I audited the docs against standards like Stripe and Checkout.com, then built a remediation plan. I rewrote the Merchant Payments API in ReadMe with proper structure: request/response schemas, authentication flows, error handling, and syntax-highlighted code blocks. I grouped endpoints by payment flow so developers could follow integration paths without jumping between pages.<br><br>On the knowledge base side, I added context to image-heavy pages, introduced consistent markdown formatting, and restructured navigation. I built out the Client Portal section and redesigned the information architecture so developers, merchants, and compliance teams could self-serve.<br><br>To tie it together, I created a Documentation Hub landing page for easy access to all docs.</p>
@@ -160,7 +160,7 @@ permalink: /portfolio/
 
             <article class="company">
                 <div class="company-header">
-                    <img src="images/Ton.jpg" alt="Ton logo" class="company-logo-img">
+                    <img src="/images/ton.jpg" alt="Ton logo" class="company-logo-img">
                     <h2 class="company-name">TON Foundation</h2>
                 </div>
                 <p class="company-description">TON is a third-generation proof-of-stake blockchain capable of handling millions of transactions per second. This was a 3-month contract.<br><br>The core architecture was documented across dense LaTeX whitepapers. Technically rigorous, but impossible to reference while working. No web version, no cross-linking, no navigation.<br><br>I converted multiple whitepapers into structured, web-native documentation using Mintlify: the TON Blockchain whitepaper, TVM specification, Catchain Consensus protocol, and TL-B serialization spec. I preserved mathematical notation while adding navigation and cross-references so developers could move between documents without losing context.<br><br>I also worked on the TVM specification project, building a TypeScript schema to replace the manual JSON spec, writing Python scripts to parse C++ source files and auto-populate implementation references, and defining a versioning and reverse-compatibility policy to keep instruction docs in sync with the codebase.<br><br>Additionally, I wrote a CEX integration guide covering node setup, wallet configuration, memo-less deposits, and withdrawal flows, giving exchange engineers a clear path from setup to production.</p>
@@ -178,7 +178,7 @@ permalink: /portfolio/
 
             <article class="company">
                 <div class="company-header">
-                    <img src="images/protocol.jpg" alt="Protocol Labs logo" class="company-logo-img">
+                    <img src="/images/protocol.jpg" alt="Protocol Labs logo" class="company-logo-img">
                     <h2 class="company-name">Protocol Labs (Bacalhau)</h2>
                 </div>
                 <p class="company-description">Protocol Labs is a research and development company behind projects like IPFS and Filecoin. Bacalhau is their distributed compute platform for running jobs across a network of nodes.<br><br>The team was shipping new features fast, and documentation needed to keep up so users could actually understand and adopt them.<br><br>I used the Di&aacute;taxis framework to structure the docs: tutorials, how-to guides, conceptual explanations, and reference specs. I worked with engineers to get info and demos, documenting everything leading up to the release of Bacalhau version 1. This included examples, FAQs, user guides, and white papers. I also documented the REST API under /api/v1 for job submission, listing, and inspection, and wrote the Docker workload onboarding guide. I authored blogs covering new features, product updates, and how-to guides on Substack.<br><br>The documentation for Bacalhau v1 played a key role in the company's acquisition by Expanso, helping demonstrate product maturity and developer adoption to potential acquirers.</p>
@@ -199,7 +199,7 @@ permalink: /portfolio/
 
             <article class="company">
                 <div class="company-header">
-                    <img src="images/mindee.png" alt="Mindee logo" class="company-logo-img">
+                    <img src="/images/mindee.png" alt="Mindee logo" class="company-logo-img">
                     <h2 class="company-name">Mindee</h2>
                 </div>
                 <p class="company-description">Mindee builds OCR and document parsing APIs that extract structured data from invoices, receipts, and IDs.<br><br>In my first month, I resolved over 20 documentation issues, updating content with new feature information and reorganizing for better usability.<br><br>I moved SDK documentation that was scattered across private GitHub repos into the main docs so developers could find everything in one place. I documented new features as they were released, like the Cropper utility for preprocessing images before OCR. I updated screenshots, steps, and flows, testing APIs on my end and through Mindee's live interface to make sure everything worked. I also created consistent release notes so developers could track API changes between versions without guessing what changed.<br><br>Beyond the docs, I authored blog posts on new feature releases and practical usage guides, and created content for the company newsletter covering product updates and announcements.</p>
@@ -220,7 +220,7 @@ permalink: /portfolio/
 
             <article class="company">
                 <div class="company-header">
-                    <img src="images/genlayer.png" alt="GenLayer logo" class="company-logo-img">
+                    <img src="/images/genlayer.png" alt="GenLayer logo" class="company-logo-img">
                     <h2 class="company-name">GenLayer</h2>
                 </div>
                 <p class="company-description">GenLayer is the first AI-native blockchain built for AI-powered smart contracts, called Intelligent Contracts, capable of reasoning and adapting to real-world data.<br><br>There was no documentation when I started. I evaluated tools, chose Nextra over GitBook for its open-source flexibility, and built the entire documentation structure from scratch.<br><br>I started by converting the company's whitepaper into developer-friendly documentation, which became the foundation for everything else. From there, I wrote the core docs covering the protocol overview, installation guides, simulator walkthrough, intelligent contract syntax, CLI reference, and JSON-RPC docs. I kept iterating as the product evolved, updating use cases, adding FAQ sections, and improving screenshots and videos throughout.<br><br>I collaborated closely with developers and product teams to ensure accuracy, following docs-as-code methodology. I also wrote and edited blog posts geared towards the product.</p>
@@ -240,7 +240,7 @@ permalink: /portfolio/
 
             <article class="company">
                 <div class="company-header">
-                    <img src="images/glueops.jpeg" alt="GlueOps logo" class="company-logo-img">
+                    <img src="/images/glueops.jpeg" alt="GlueOps logo" class="company-logo-img">
                     <h2 class="company-name">GlueOps</h2>
                 </div>
                 <p class="company-description">GlueOps is a DevOps platform that simplifies deployments across cloud providers, helping teams manage infrastructure without the complexity.<br><br>This was a short contract to set up their documentation from scratch. Information was scattered across GitHub repos and internal notes, with no central source. Users couldn't onboard without jumping on calls or getting live walkthroughs.<br><br>I set up GlueOps' first documentation site using Docusaurus, centralizing everything into one place. I coordinated with developers to understand the platform, then wrote the initial user documentation. This included Getting Started guides for platform administrators and developers, and deployment documentation covering Docker Hub, GCP, GitHub, AWS, Azure, Terraform, and Quay. I also configured the Dockerfile and GitHub workflows so the team could maintain and update docs going forward.</p>
