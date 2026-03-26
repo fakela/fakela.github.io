@@ -1,271 +1,203 @@
----
-layout: null
----
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Favour Kelvin</title>
-    <meta name="description" content="About Favour Kelvin — technical writer with 6+ years of experience documenting APIs, blockchain protocols, and developer tools for companies like TON Foundation, Protocol Labs, and Orbital.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://fakela.github.io/about/">
-    <!-- Open Graph -->
-    <meta property="og:title" content="About | Favour Kelvin">
-    <meta property="og:description" content="Technical writer with 6+ years of experience documenting APIs, blockchain protocols, and developer tools.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fakela.github.io/about">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="About | Favour Kelvin">
-    <meta name="twitter:description" content="Technical writer with 6+ years of experience documenting APIs, blockchain protocols, and developer tools.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #0a0a0a;
-            --surface: #111111;
-            --text: #e5e5e5;
-            --text-muted: #737373;
-            --accent: #22c55e;
-            --border: #262626;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Favour Kelvin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #fafafa; --bg-secondary: #f2f2f0; --bg-card: #ffffff; --border: rgba(0,0,0,0.08); --border-hover: rgba(0,0,0,0.18); --text: #111111; --text-secondary: #555555; --text-tertiary: #999999; --accent: #00b87a; --accent-hover: #009e68; }
+[data-theme="dark"] { --bg: #111111; --bg-secondary: #181818; --bg-card: #1a1a1a; --border: rgba(255,255,255,0.07); --border-hover: rgba(255,255,255,0.16); --text: #f0f0ee; --text-secondary: #c8c8c4; --text-tertiary: #888888; --accent: #00ec97; --accent-hover: #00d488; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Geist', sans-serif; background: var(--bg); color: var(--text); font-size: 17px; line-height: 1.7; transition: background 0.3s, color 0.3s; -webkit-font-smoothing: antialiased; }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: 56px; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; background: var(--bg); border-bottom: 1px solid var(--border); transition: background 0.3s; }
+.nav-logo { font-family: 'DM Mono', monospace; font-size: 13px; color: var(--accent); text-decoration: none; letter-spacing: 0.04em; }
+.nav-right { display: flex; align-items: center; gap: 1.5rem; }
+.nav-link { font-size: 13px; color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+.nav-link:hover { color: var(--text); }
+.nav-link.active { color: var(--text); font-weight: 500; }
+.theme-btn { background: none; border: 1px solid var(--border); border-radius: 20px; padding: 4px 12px; font-size: 11px; font-family: 'DM Mono', monospace; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; }
+.theme-btn:hover { border-color: var(--border-hover); color: var(--text); }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+.page {
+  min-height: 100vh;
+  padding-top: 56px;
+}
 
-        body {
-            font-family: 'Sora', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            min-height: 100vh;
-        }
+.hero-block {
+  padding: 5rem 2rem 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
 
-        nav {
-            padding: 2rem 3rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.hero-block h1 {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
 
-        .nav-logo a {
-            color: var(--text);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
+.hero-block p {
+  font-size: 1.1rem;
+  color: var(--text);
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 2.5rem;
-        }
+.content-block {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+}
 
-        .nav-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 400;
-            letter-spacing: 0.02em;
-            transition: color 0.2s ease;
-        }
+.about-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
 
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: var(--text);
-        }
+.about-list li {
+  font-size: 17px;
+  color: var(--text);
+  line-height: 1.8;
+  padding-left: 24px;
+  position: relative;
+}
 
-        main {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 4rem 2rem 6rem;
-        }
+.about-list li::before {
+  content: '*';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-family: 'DM Mono', monospace;
+  font-size: 18px;
+  line-height: 1.6;
+}
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            letter-spacing: -0.03em;
-            margin-bottom: 3rem;
-        }
+.currently {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
 
-        section {
-            margin-bottom: 3.5rem;
-        }
+.currently-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--text);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
 
-        h2 {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-bottom: 1.25rem;
-        }
+.currently-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
 
-        p {
-            font-size: 1.05rem;
-            font-weight: 300;
-            line-height: 1.8;
-            color: var(--text);
-            margin-bottom: 1rem;
-        }
+.currently-item { display: flex; flex-direction: column; gap: 4px; }
+.currently-label { font-size: 11px; color: var(--text-secondary); font-family: 'DM Mono', monospace; }
+.currently-value { font-size: 15px; color: var(--text); }
 
-        p:last-child {
-            margin-bottom: 0;
-        }
+footer { border-top: 1px solid var(--border); padding: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.footer-copy { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-tertiary); }
+.footer-links { display: flex; gap: 1.5rem; }
+.footer-link { font-size: 13px; color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+.footer-link:hover { color: var(--accent); }
 
-        .tools-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-        }
-
-        .tool {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            padding: 0.5rem 1rem;
-            background-color: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 2px;
-            color: var(--text-muted);
-        }
-
-        .open-source {
-            list-style: none;
-        }
-
-        .open-source li {
-            font-size: 1rem;
-            font-weight: 300;
-            line-height: 1.8;
-            color: var(--text);
-            padding-left: 1.5rem;
-            position: relative;
-            margin-bottom: 0.5rem;
-        }
-
-        .open-source li::before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-        }
-
-        .contact-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .contact-links a {
-            color: var(--text);
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 400;
-            transition: color 0.2s ease;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 0.25rem;
-        }
-
-        .contact-links a:hover {
-            color: var(--accent);
-            border-color: var(--accent);
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                padding: 1.5rem;
-                flex-direction: column;
-                gap: 1.5rem;
-            }
-
-            .nav-links {
-                gap: 1.5rem;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            main {
-                padding: 2rem 1.5rem 4rem;
-            }
-
-            .contact-links {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-    </style>
+@media (max-width: 600px) {
+  nav { padding: 0 1rem; }
+  .hero-block { padding: 4rem 1.5rem 2.5rem; }
+  .content-block { padding: 2rem 1.5rem 4rem; }
+  .currently-grid { grid-template-columns: 1fr; }
+}
+</style>
 </head>
 <body>
-    <nav>
-        <div class="nav-logo">
-            <a href="/">Favour Kelvin</a>
+
+<nav>
+  <a class="nav-logo" href="index.html">fk.docs</a>
+  <div class="nav-right">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="work.html">My Work</a>
+    <a class="nav-link active" href="about.html">About</a>
+    <a class="nav-link" href="work.html#samples">Writing Samples</a>
+    <a class="nav-link" href="https://medium.com/@favourkelvin17" target="_blank">Blog</a>
+    <button class="theme-btn" id="themeToggle">light</button>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="hero-block">
+    <h1>About me</h1>
+    <p>I built this site to give hiring managers a clearer picture of who I am and the work I do, beyond what fits on a CV. The writing samples are real, the opinions are mine, and the about page is an attempt at honesty.</p>
+  </div>
+
+  <div class="content-block">
+    <ul class="about-list">
+      <li>I am currently learning DevOps and cloud computing because I think the best technical writers understand the systems they document. I have a long way to go and I am enjoying every bit of it.</li>
+      <li>I have a few AI side project ideas I want to build this year. I am not ready to share them yet but they exist as notes and I think about them more than I should.</li>
+      <li>I read novels and watch movies with strong opinions about both. I will share them if you give me the opportunity.</li>
+      <li>I spend a probably unreasonable amount of time on Reddit. I tell myself it is research. It is not always research.</li>
+    </ul>
+
+    <div class="currently">
+      <p class="currently-title">Currently</p>
+      <div class="currently-grid">
+        <div class="currently-item">
+          <span class="currently-label">Reading</span>
+          <span class="currently-value">Everything about agentic AI and docs</span>
         </div>
-        <div class="nav-links">
-            <a href="/about" class="active">About</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="/blog">Blog</a>
+        <div class="currently-item">
+          <span class="currently-label">Learning</span>
+          <span class="currently-value">Cloud and infrastructure</span>
         </div>
-    </nav>
+        <div class="currently-item">
+          <span class="currently-label">Building</span>
+          <span class="currently-value">AI side projects (details soon)</span>
+        </div>
+        <div class="currently-item">
+          <span class="currently-label">Looking for</span>
+          <span class="currently-value">A role where docs are taken seriously</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <main>
-        <h1>About</h1>
+</div>
 
-        <section>
-            <h2>Who I Am</h2>
-            <p>I'm a technical writer with 6+ years of experience documenting APIs, blockchain protocols, and developer tools for companies like TON Foundation, Protocol Labs, Orbital, and Calimero.</p>
-            <p>Based in London. Currently taking a cloud computing course because I like understanding how things work, not just documenting them. I learn something new every day. That's the point.</p>
-        </section>
+<footer>
+  <span class="footer-copy">© 2026 Favour Kelvin</span>
+  <div class="footer-links">
+    <a href="mailto:favourkelvin17@gmail.com" class="footer-link">Email</a>
+    <a href="https://github.com/fakela" target="_blank" class="footer-link">GitHub</a>
+    <a href="https://www.linkedin.com/in/favour-kelvin" target="_blank" class="footer-link">LinkedIn</a>
+    <a href="https://medium.com/@favourkelvin17" target="_blank" class="footer-link">Blog</a>
+  </div>
+</footer>
 
-        <section>
-            <h2>How I Work</h2>
-            <p>I work directly with engineering and product teams to understand systems from the inside. I sit in on sprint planning, walk through demos with developers, and test features before writing the documentation.</p>
-            <p>I use docs-as-code workflows with Git and Markdown to keep content synchronized and reviews fast. Linters like Vale and automated checks help catch issues early. I also set up CI/CD pipelines to keep documentation in sync with releases.</p>
-            <p>Depending on the team's setup, I work with platforms like Mintlify, Docusaurus, GitBook, ReadMe, Nextra, and Confluence.</p>
-            <p>I focus on what developers actually need: tested code samples, documented edge cases, clear navigation.</p>
-        </section>
-
-        <section>
-            <h2>Tools & Platforms</h2>
-            <div class="tools-list">
-                <span class="tool">Markdown</span>
-                <span class="tool">Git</span>
-                <span class="tool">GitHub</span>
-                <span class="tool">Docusaurus</span>
-                <span class="tool">Mintlify</span>
-                <span class="tool">ReadMe</span>
-                <span class="tool">GitBook</span>
-                <span class="tool">Nextra</span>
-                <span class="tool">Confluence</span>
-                <span class="tool">Postman</span>
-                <span class="tool">Swagger</span>
-                <span class="tool">Vale</span>
-                <span class="tool">VS Code</span>
-                <span class="tool">JIRA</span>
-            </div>
-        </section>
-
-        <section>
-            <h2>Open Source</h2>
-            <ul class="open-source">
-                <li>Google Season of Docs, Mautic (2020)</li>
-                <li>Google Summer of Code, Sugar Labs (2019)</li>
-                <li>Google Code-In, Sugar Labs (2019)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Contact</h2>
-            <div class="contact-links">
-                <a href="mailto:favourkelvin17@gmail.com">favourkelvin17@gmail.com</a>
-                <a href="https://github.com/fakela" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/favour-kelvin" target="_blank">LinkedIn</a>
-            </div>
-        </section>
-    </main>
+<script>
+const toggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+const saved = localStorage.getItem('theme');
+const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const initial = saved || system;
+html.setAttribute('data-theme', initial);
+toggle.textContent = initial === 'dark' ? 'light' : 'dark';
+toggle.addEventListener('click', () => {
+  const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  toggle.textContent = next === 'dark' ? 'light' : 'dark';
+});
+</script>
 </body>
 </html>

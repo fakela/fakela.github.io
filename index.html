@@ -1,199 +1,97 @@
----
-layout: null
----
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favour Kelvin | Technical Writer</title>
-    <meta name="description" content="Favour Kelvin is a technical writer with 6+ years of experience documenting APIs, blockchain protocols, and developer tools.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://fakela.github.io/">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Favour Kelvin | Technical Writer">
-    <meta property="og:description" content="Technical writer with 6+ years of experience documenting APIs, blockchain protocols, and developer tools.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fakela.github.io/">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Favour Kelvin | Technical Writer">
-    <meta name="twitter:description" content="Technical writer with 6+ years of experience documenting APIs, blockchain protocols, and developer tools.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #0a0a0a;
-            --surface: #111111;
-            --text: #e5e5e5;
-            --text-muted: #737373;
-            --accent: #22c55e;
-            --border: #262626;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Sora', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        nav {
-            padding: 2rem 3rem;
-            display: flex;
-            justify-content: flex-end;
-            gap: 2.5rem;
-        }
-
-        nav a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 400;
-            letter-spacing: 0.02em;
-            transition: color 0.2s ease;
-        }
-
-        nav a:hover {
-            color: var(--text);
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .hero {
-            max-width: 600px;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 600;
-            letter-spacing: -0.03em;
-            margin-bottom: 0.5rem;
-        }
-
-        .role {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-bottom: 3rem;
-        }
-
-        .tagline {
-            font-size: 1.25rem;
-            font-weight: 300;
-            line-height: 1.6;
-            color: var(--text);
-            margin-bottom: 3.5rem;
-        }
-
-        .tagline span {
-            color: var(--text-muted);
-        }
-
-        .cta {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            background-color: var(--accent);
-            color: var(--bg);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            letter-spacing: 0.02em;
-            border-radius: 2px;
-            transition: all 0.2s ease;
-        }
-
-        .cta:hover {
-            background-color: #16a34a;
-            transform: translateY(-1px);
-        }
-
-        footer {
-            padding: 2rem 3rem;
-            text-align: center;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-        }
-
-        .social-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: color 0.2s ease;
-        }
-
-        .social-links a:hover {
-            color: var(--text);
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                padding: 1.5rem;
-                gap: 1.5rem;
-            }
-
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            .tagline {
-                font-size: 1.1rem;
-            }
-
-            main {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favour Kelvin Technical Writer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #fafafa; --bg-secondary: #f2f2f0; --bg-card: #ffffff; --border: rgba(0,0,0,0.08); --border-hover: rgba(0,0,0,0.18); --text: #111111; --text-secondary: #555555; --text-tertiary: #999999; --accent: #00b87a; --accent-hover: #009e68; }
+[data-theme="dark"] { --bg: #111111; --bg-secondary: #181818; --bg-card: #1a1a1a; --border: rgba(255,255,255,0.07); --border-hover: rgba(255,255,255,0.16); --text: #f0f0ee; --text-secondary: #c8c8c4; --text-tertiary: #888888; --accent: #00ec97; --accent-hover: #00d488; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Geist', sans-serif; background: var(--bg); color: var(--text); font-size: 17px; line-height: 1.7; transition: background 0.3s, color 0.3s; -webkit-font-smoothing: antialiased; }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: 56px; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; background: var(--bg); border-bottom: 1px solid var(--border); transition: background 0.3s; }
+.nav-logo { font-family: 'DM Mono', monospace; font-size: 13px; color: var(--accent); text-decoration: none; letter-spacing: 0.04em; }
+.nav-right { display: flex; align-items: center; gap: 1.5rem; }
+.nav-link { font-size: 13px; color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+.nav-link:hover { color: var(--text); }
+.nav-link.active { color: var(--text); font-weight: 500; }
+.theme-btn { background: none; border: 1px solid var(--border); border-radius: 20px; padding: 4px 12px; font-size: 11px; font-family: 'DM Mono', monospace; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; }
+.theme-btn:hover { border-color: var(--border-hover); color: var(--text); }
+.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 56px 4rem 4rem; max-width: 900px; margin: 0 auto; }
+.hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--accent); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.6s ease forwards; }
+.hero-name { font-family: 'Instrument Serif', serif; font-size: clamp(3.2rem, 9vw, 6rem); line-height: 1.02; letter-spacing: -0.02em; margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.6s ease 0.1s forwards; }
+.hero-name em { font-style: italic; color: var(--accent); }
+.about-block { max-width: 620px; opacity: 0; animation: fadeUp 0.6s ease 0.2s forwards; }
+.about-block p { font-size: 17px; color: var(--text); line-height: 1.8; margin-bottom: 1rem; }
+.about-block p:first-child { font-size: 20px; color: var(--text); }
+.about-block a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+.about-block a:hover { border-bottom-color: var(--accent); }
+.hero-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 2.5rem; opacity: 0; animation: fadeUp 0.6s ease 0.3s forwards; }
+.btn-primary { background: var(--accent); color: #051a0e; border: none; border-radius: 6px; padding: 10px 20px; font-size: 13px; font-weight: 500; font-family: 'Geist', sans-serif; cursor: pointer; text-decoration: none; transition: background 0.2s, transform 0.15s; display: inline-flex; align-items: center; gap: 6px; }
+.btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+.btn-ghost { background: none; color: var(--text-secondary); border: 1px solid var(--border); border-radius: 6px; padding: 10px 18px; font-size: 13px; font-family: 'Geist', sans-serif; cursor: pointer; text-decoration: none; transition: all 0.2s; display: inline-flex; align-items: center; gap: 6px; }
+.btn-ghost:hover { border-color: var(--border-hover); color: var(--text); }
+footer { border-top: 1px solid var(--border); padding: 2rem; display: flex; align-items: center; justify-content: space-between; max-width: 1400px; margin: 0 auto; flex-wrap: wrap; gap: 1rem; }
+.footer-copy { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-tertiary); }
+.footer-links { display: flex; gap: 1.5rem; }
+.footer-link { font-size: 13px; color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+.footer-link:hover { color: var(--accent); }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 600px) { .hero-name { font-size: 3rem; } nav { padding: 0 1rem; } }
+</style>
 </head>
 <body>
-    <nav>
-        <a href="/about">About</a>
-        <a href="/portfolio">Portfolio</a>
-        <a href="/blog">Blog</a>
-    </nav>
-
-    <main>
-        <div class="hero">
-            <h1>Favour Kelvin</h1>
-            <p class="role">Technical Writer</p>
-            <p class="tagline">
-                Yes, someone has to write the docs.<br>
-                <span>And that person might just be me.</span>
-            </p>
-            <a href="/portfolio" class="cta">View My Portfolio</a>
-        </div>
-    </main>
-
-    <footer>
-        <div class="social-links">
-            <a href="mailto:favourkelvin17@gmail.com">Email</a>
-            <a href="https://github.com/fakela" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/favour-kelvin" target="_blank">LinkedIn</a>
-        </div>
-    </footer>
+<nav>
+  <a class="nav-logo" href="index.html">fk.docs</a>
+  <div class="nav-right">
+    <a class="nav-link active" href="index.html">Home</a>
+    <a class="nav-link" href="work.html">My Work</a>
+    <a class="nav-link" href="about.html">About</a>
+    <a class="nav-link" href="work.html#samples">Writing Samples</a>
+    <a class="nav-link" href="https://medium.com/@favourkelvin17" target="_blank">Blog</a>
+    <button class="theme-btn" id="themeToggle">light</button>
+  </div>
+</nav>
+<section class="hero">
+  <div class="about-block">
+    <p>Hiya, I'm Favour Kelvin (aka Fakela).</p>
+    <p>I'm a technical writer focused on developer tooling, documentation systems, and information architecture. My goal is helping developers and agents get from question to answer as quickly as possible.</p>
+    <p>I spend a lot of time working on API documentation, documentation tooling, and technical writing workflows. I'm also interested in how agentic AI is changing how documentation is written, structured, and consumed.</p>
+    <p>If you prefer a more structured version of me, you can check out my <a href="https://github.com/fakela" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/favour-kelvin" target="_blank">LinkedIn</a>. You can also <a href="https://medium.com/@favourkelvin17" target="_blank">read my blog</a> where I publish how-to guides around documentation tooling and developer workflows, along with documentation breakdowns and process write-ups.</p>
+  </div>
+  <div class="hero-links">
+    <a href="work.html" class="btn-primary">View my work ↓</a>
+    <a href="https://www.linkedin.com/in/favour-kelvin" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+    <a href="https://medium.com/@favourkelvin17" target="_blank" class="btn-ghost">Blog ↗</a>
+    <a href="mailto:favourkelvin17@gmail.com" class="btn-ghost">Get in touch</a>
+  </div>
+</section>
+<footer>
+  <span class="footer-copy">© 2026 Favour Kelvin</span>
+  <div class="footer-links">
+    <a href="mailto:favourkelvin17@gmail.com" class="footer-link">Email</a>
+    <a href="https://github.com/fakela" target="_blank" class="footer-link">GitHub</a>
+    <a href="https://www.linkedin.com/in/favour-kelvin" target="_blank" class="footer-link">LinkedIn</a>
+    <a href="https://medium.com/@favourkelvin17" target="_blank" class="footer-link">Blog</a>
+  </div>
+</footer>
+<script>
+const toggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+const saved = localStorage.getItem('theme');
+const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const initial = saved || system;
+html.setAttribute('data-theme', initial);
+toggle.textContent = initial === 'dark' ? 'light' : 'dark';
+toggle.addEventListener('click', () => {
+  const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  toggle.textContent = next === 'dark' ? 'light' : 'dark';
+});
+</script>
 </body>
 </html>
