@@ -1,0 +1,57 @@
+---
+title: What Actually Changes When You Add AI to a Documentation Workflow
+---
+
+<div className="posts-page">
+
+# What Actually Changes When You Add AI to a Documentation Workflow
+
+There's a lot of noise right now about AI and technical writing. Most of it stays vague. "AI will transform documentation." "Use AI to write faster." That kind of thing.
+
+I want to talk about what actually happened when I integrated AI tools into a real documentation workflow at a fintech company, what I built, what it changed, and where it didn't help at all.
+
+## The Setup
+
+I was the sole technical writer at Orbital, a payments company. The documentation had to cover three products (Merchant Payments API, Global Payments API, and Client Portal), 40+ API endpoints, and a growing knowledge base. I was rebuilding the entire thing on ReadMe while the product team kept shipping.
+
+The question wasn't "should I use AI?" It was "where in this process is AI actually useful, and where does it just get in the way?"
+
+## What I Actually Built
+
+### Markdown Instruction Files
+
+The first thing I did was create structured markdown files that gave AI assistants context about the documentation: `skills.md`, `agents.md`, `prompts.md`. These files described the tone, the architecture, the terminology, and the conventions. They were the documentation for the documentation.
+
+This meant that every time I started a session with Claude Code or Gemini, the AI wasn't guessing. It had a shared understanding of what "good" looked like for this specific project.
+
+### MCP Server Integration
+
+I connected MCP servers to give AI tools direct access to the live documentation. This was the real unlock. Instead of copying and pasting content into a chat window, the AI could read the actual published docs and generate content that was consistent with what was already there.
+
+When you're maintaining 75+ knowledge base pages, consistency is the hard part. Not the writing itself, but making sure page 47 doesn't contradict page 12.
+
+### CI/CD Pipeline with Automated Checks
+
+I set up GitHub Actions with automated linters, format checks, link checks, and spell checks. I also configured the pipeline to sync the OpenAPI spec with ReadMe, so the API reference regenerated automatically whenever the spec file changed.
+
+This was less about AI and more about infrastructure. But it removed the class of errors that AI is bad at catching: broken links, formatting drift, spec mismatches.
+
+## What It Changed
+
+The measurable thing: time to review-readiness dropped by an average of 3 days. A draft that used to take a week of back-and-forth was ready for review in half that time.
+
+The less measurable thing: I could cover more ground. One writer managing three products, 40+ endpoints, and a knowledge base that needed to exist before the company started onboarding merchants. Without AI handling the repetitive scaffolding, consistency checking, and first-draft acceleration, I would have been underwater.
+
+## Where AI Didn't Help
+
+AI was useless for anything that required judgment about what to document. It couldn't tell me which features merchants would struggle with, which onboarding steps needed a checklist versus a guide, or when a concept needed an explanation versus just a code sample.
+
+It also couldn't talk to the product team. A significant part of my job was sitting in roadmap meetings, presenting documentation strategies to leadership, and embedding docs into the development cycle through Jira. AI doesn't do any of that.
+
+## The Takeaway
+
+AI didn't make me a faster writer. It made me a writer who could operate at a wider scope without losing quality. The writing itself was still mine. The architecture was still mine. The decisions about what to build, what to cut, and what to prioritise were still mine.
+
+The AI handled the stuff that doesn't require taste. I handled the stuff that does.
+
+</div>
