@@ -1,9 +1,8 @@
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
-import { Head, Search } from 'nextra/components'
+import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import { PostHogProvider } from '../components/PostHogProvider'
 import { CookieBanner } from '../components/CookieBanner'
-import { ThemeToggle } from '../components/ThemeToggle'
 import 'nextra-theme-docs/style.css'
 import './globals.css'
 
@@ -23,9 +22,7 @@ const navbar = (
       </span>
     }
     projectLink="https://github.com/fakela"
-  >
-    <ThemeToggle />
-  </Navbar>
+  />
 )
 
 const footer = (
@@ -58,7 +55,7 @@ export default async function RootLayout({ children }) {
             navbar={navbar}
             footer={footer}
             pageMap={await getPageMap()}
-            search={<Search placeholder="Search portfolio..." />}
+            search={null}
           >
             {children}
           </Layout>
