@@ -48,6 +48,56 @@ code, pre {
   display: none !important;
 }
 
+/* Remove min-height that forces footer below the fold on short pages */
+.x\:min-h-\[calc\(100vh-var\(--nextra-navbar-height\)\)\] {
+  min-height: auto !important;
+}
+
+/* Remove empty spacer div when no last-updated date */
+.x\:mt-16:empty {
+  display: none !important;
+}
+
+/* Hide sidebar separators/dashes */
+.nextra-sidebar-container hr,
+.nextra-sidebar hr {
+  display: none !important;
+}
+
+/* Hide theme switch everywhere, then show only in navbar */
+[title="Change theme"] {
+  display: none !important;
+}
+.nextra-navbar [title="Change theme"] {
+  display: flex !important;
+}
+
+/* Hide the footer switchers row and its hr separator (removes empty scroll space) */
+.x\:bg-gray-100 > div:first-child,
+.x\:bg-gray-100 > hr.nextra-border {
+  display: none !important;
+}
+
+/* Ensure mobile nav overlay has solid background */
+.nextra-mobile-nav {
+  background-color: var(--bg, #fafafa) !important;
+}
+.dark .nextra-mobile-nav {
+  background-color: var(--bg-dark, #111) !important;
+}
+
+/* Mobile: ensure content takes full width and text wraps properly */
+@media (max-width: 767px) {
+  .nextra-content,
+  article,
+  main {
+    min-width: 0 !important;
+    width: 100% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}
+
 /* Hero Section */
 .hero-section {
   max-width: var(--content-width);
@@ -606,4 +656,81 @@ code, pre {
 
 .dark .resume-header {
   border-bottom-color: var(--border-dark);
+}
+
+/* Footer matches body background */
+.x\:bg-gray-100 {
+  background-color: var(--bg, #fafafa) !important;
+}
+.dark .x\:bg-gray-100 {
+  background-color: var(--bg-dark, #111) !important;
+}
+
+/* Cookie Banner - centered overlay */
+.cookie-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.cookie-banner {
+  max-width: 500px;
+  width: calc(100% - 2rem);
+  padding: 2rem;
+  background: var(--bg-card, #fff);
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: var(--radius, 8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: inherit;
+}
+
+.dark .cookie-banner {
+  background: var(--bg-card-dark, #1a1a1a);
+  border-color: var(--border-dark, #2a2a2a);
+}
+
+.cookie-banner-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+
+.cookie-banner p {
+  margin: 0 0 1.5rem;
+}
+
+.cookie-banner-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.cookie-btn {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.cookie-btn-decline {
+  background: transparent;
+  border: 1px solid var(--border, #e5e7eb);
+  color: inherit;
+}
+
+.dark .cookie-btn-decline {
+  border-color: var(--border-dark, #2a2a2a);
+}
+
+.cookie-btn-accept {
+  background: var(--accent, #2563eb);
+  border: none;
+  color: #fff;
 }

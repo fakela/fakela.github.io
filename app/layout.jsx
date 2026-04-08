@@ -1,4 +1,4 @@
-import { Footer, Layout, Navbar } from 'nextra-theme-docs'
+import { Footer, Layout, Navbar, ThemeSwitch } from 'nextra-theme-docs'
 import { Head, Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import { PostHogProvider } from '../components/PostHogProvider'
@@ -22,7 +22,9 @@ const navbar = (
       </span>
     }
     projectLink="https://github.com/fakela"
-  />
+  >
+    <ThemeSwitch lite />
+  </Navbar>
 )
 
 const footer = (

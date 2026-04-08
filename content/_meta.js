@@ -32,7 +32,7 @@ export default {
     title: 'Writing Samples',
     type: 'page',
     theme: {
-      sidebar: true,
+      sidebar: false,
       toc: false
     }
   },
