@@ -43,6 +43,10 @@ code, pre {
   font-family: var(--font-mono);
 }
 
+/* ========================================
+   NEXTRA OVERRIDES - Layout & Navigation
+   ======================================== */
+
 /* Hide last updated date */
 .x\:mt-12.x\:mb-8.x\:text-xs.x\:text-end {
   display: none !important;
@@ -82,6 +86,20 @@ code, pre {
   }
 }
 
+/* FIX: Hide Nextra's stray dash separators (–) in the navbar.
+   Nextra adds ::after pseudo-elements with "–" as separators
+   between nav sections. We hide them globally in the navbar
+   but preserve ::after on the hamburger (needed for animation). */
+.nextra-navbar nav > div::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* FIX: Ensure search bar sits inline in the navbar */
+.nextra-search {
+  position: relative !important;
+}
+
 /* Custom theme toggle button */
 .theme-toggle {
   display: flex;
@@ -108,20 +126,46 @@ code, pre {
 /* Ensure mobile nav overlay has solid background */
 .nextra-mobile-nav {
   background-color: var(--bg, #fafafa) !important;
+  z-index: 50;
 }
 .dark .nextra-mobile-nav {
   background-color: var(--bg-dark, #111) !important;
 }
 
-/* Mobile: ensure content takes full width and text wraps properly */
+/* FIX: Mobile menu overlay should cover content completely */
+@media (max-width: 767px) {
+  aside.nextra-mobile-nav {
+    position: fixed !important;
+    top: var(--nextra-navbar-height, 64px) !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    overflow-y: auto !important;
+    background-color: var(--bg, #fafafa) !important;
+  }
+  .dark aside.nextra-mobile-nav {
+    background-color: var(--bg-dark, #111) !important;
+  }
+}
+
+/* FIX: Mobile layout - prevent vertical text stacking */
 @media (max-width: 767px) {
   .nextra-content,
   article,
   main {
     min-width: 0 !important;
+    max-width: 100% !important;
     width: 100% !important;
     overflow-wrap: break-word;
     word-wrap: break-word;
+  }
+  /* Hide TOC sidebar on mobile to prevent content squeeze */
+  .nextra-toc {
+    display: none !important;
+  }
+  /* Prevent flex items from overflowing */
+  .x\:flex, .x\:grid {
+    min-width: 0;
   }
   /* Stack footer vertically on mobile */
   footer > div {
@@ -131,7 +175,18 @@ code, pre {
   }
 }
 
-/* Hero Section */
+/* Footer matches body background */
+.x\:bg-gray-100 {
+  background-color: var(--bg, #fafafa) !important;
+}
+.dark .x\:bg-gray-100 {
+  background-color: var(--bg-dark, #111) !important;
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
 .hero-section {
   max-width: var(--content-width);
   margin: 0 auto;
@@ -191,7 +246,10 @@ code, pre {
   opacity: 0.7;
 }
 
-/* Quick Nav Cards */
+/* ========================================
+   QUICK NAV CARDS
+   ======================================== */
+
 .quick-nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -227,7 +285,10 @@ code, pre {
   margin: 0;
 }
 
-/* Portfolio Feed */
+/* ========================================
+   PORTFOLIO
+   ======================================== */
+
 .portfolio-feed {
   max-width: var(--content-width);
   margin: 0 auto;
@@ -293,7 +354,28 @@ code, pre {
   text-decoration: underline;
 }
 
-/* Colored Tags */
+/* Portfolio post centralized */
+.portfolio-post {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.portfolio-post h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.portfolio-post .portfolio-card-tags {
+  margin-bottom: 2rem;
+}
+
+/* ========================================
+   TAGS
+   ======================================== */
+
 .tag {
   display: inline-block;
   padding: 0.15rem 0.5rem;
@@ -312,7 +394,10 @@ code, pre {
 .tag-yellow { background: var(--tag-yellow-bg); color: var(--tag-yellow-text); }
 .tag-red { background: var(--tag-red-bg); color: var(--tag-red-text); }
 
-/* Writing Samples */
+/* ========================================
+   WRITING SAMPLES
+   ======================================== */
+
 .samples-layout {
   display: flex;
   gap: 2rem;
@@ -496,7 +581,10 @@ code, pre {
   text-decoration: underline;
 }
 
-/* Toolkit Grid */
+/* ========================================
+   TOOLKIT GRID
+   ======================================== */
+
 .toolkit-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -536,14 +624,20 @@ code, pre {
   color: var(--text);
 }
 
-/* About page */
+/* ========================================
+   ABOUT PAGE
+   ======================================== */
+
 .about-content {
   max-width: var(--content-width);
   margin: 0 auto;
   line-height: 1.8;
 }
 
-/* Resume page */
+/* ========================================
+   RESUME PAGE
+   ======================================== */
+
 .resume-content {
   max-width: var(--content-width);
   margin: 0 auto;
@@ -579,25 +673,10 @@ code, pre {
   text-decoration: none;
 }
 
-/* Portfolio post centralized */
-.portfolio-post {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  line-height: 1.8;
-}
+/* ========================================
+   POSTS
+   ======================================== */
 
-.portfolio-post h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.25rem;
-  letter-spacing: -0.01em;
-}
-
-.portfolio-post .portfolio-card-tags {
-  margin-bottom: 2rem;
-}
-
-/* Posts */
 .posts-page {
   max-width: var(--content-width);
   margin: 0 auto;
@@ -650,7 +729,10 @@ code, pre {
   line-height: 1.6;
 }
 
-/* Dark mode overrides */
+/* ========================================
+   DARK MODE OVERRIDES
+   ======================================== */
+
 .dark .portfolio-card,
 .dark .sample-card,
 .dark .post-card,
@@ -691,15 +773,10 @@ code, pre {
   border-bottom-color: var(--border-dark);
 }
 
-/* Footer matches body background */
-.x\:bg-gray-100 {
-  background-color: var(--bg, #fafafa) !important;
-}
-.dark .x\:bg-gray-100 {
-  background-color: var(--bg-dark, #111) !important;
-}
+/* ========================================
+   COOKIE BANNER
+   ======================================== */
 
-/* Cookie Banner - centered overlay */
 .cookie-overlay {
   position: fixed;
   inset: 0;
