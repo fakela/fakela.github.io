@@ -1,6 +1,6 @@
 # Favour Kelvin — Portfolio Site
 
-Personal portfolio site built with [Nextra v4](https://nextra.site) (Next.js 14) and deployed to GitHub Pages.
+Personal portfolio site built with [Nextra v4](https://nextra.site) (Next.js 14) and deployed to Vercel.
 
 ## Prerequisites
 
