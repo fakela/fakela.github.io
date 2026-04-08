@@ -64,17 +64,44 @@ code, pre {
   display: none !important;
 }
 
-/* Hide theme switch everywhere, then show only in navbar */
+/* Hide ALL built-in nextra theme switches (we use our own ThemeToggle) */
 [title="Change theme"] {
   display: none !important;
 }
-.nextra-navbar [title="Change theme"] {
-  display: flex !important;
-}
 
-/* Hide the footer switchers row and its hr separator (removes empty scroll space) */
+/* Hide the footer switchers row and its hr separator */
 .x\:bg-gray-100 > div:first-child,
 .x\:bg-gray-100 > hr.nextra-border {
+  display: none !important;
+}
+
+/* Hide hamburger menu on desktop */
+@media (min-width: 768px) {
+  .nextra-hamburger {
+    display: none !important;
+  }
+}
+
+/* Custom theme toggle button */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: none;
+  color: currentColor;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+.theme-toggle:hover {
+  background: rgba(128, 128, 128, 0.15);
+}
+
+/* Hide nextra sidebar on pages that shouldn't have it */
+.nextra-sidebar {
   display: none !important;
 }
 
@@ -95,6 +122,12 @@ code, pre {
     width: 100% !important;
     overflow-wrap: break-word;
     word-wrap: break-word;
+  }
+  /* Stack footer vertically on mobile */
+  footer > div {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
   }
 }
 
