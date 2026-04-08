@@ -28,51 +28,20 @@ export function CookieBanner() {
   if (!visible) return null
 
   return (
-    <div style={{
-      position: 'fixed',
-      bottom: '1rem',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      maxWidth: '32rem',
-      width: 'calc(100% - 2rem)',
-      padding: '0.875rem 1.25rem',
-      background: 'var(--bg-card, #fff)',
-      border: '1px solid var(--border, #e5e7eb)',
-      borderRadius: '8px',
-      boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-      zIndex: 9999,
-      fontSize: '0.8rem',
-      lineHeight: 1.5,
-      color: 'inherit',
-    }}>
-      <p style={{ margin: '0 0 0.75rem' }}>
-        I use PostHog to track site analytics and monitor LLM activity on my work. Nothing is being done with your data. Accept the cookie?
-      </p>
-      <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'flex-end' }}>
-        <button onClick={decline} style={{
-          padding: '0.35rem 0.75rem',
-          border: '1px solid var(--border, #e5e7eb)',
-          borderRadius: '6px',
-          background: 'transparent',
-          cursor: 'pointer',
-          fontSize: '0.8rem',
-          color: 'inherit',
-          fontFamily: 'inherit',
-        }}>
-          Decline
-        </button>
-        <button onClick={accept} style={{
-          padding: '0.35rem 0.75rem',
-          border: 'none',
-          borderRadius: '6px',
-          background: '#2563eb',
-          color: '#fff',
-          cursor: 'pointer',
-          fontSize: '0.8rem',
-          fontFamily: 'inherit',
-        }}>
-          Accept
-        </button>
+    <div className="cookie-overlay">
+      <div className="cookie-banner">
+        <h3 className="cookie-banner-heading">Cookie Consent Request</h3>
+        <p>
+          I have set up PostHog event tracking to see how often LLMs scrape or access my content. I am not using your browsing data for anything else. Want a cookie?
+        </p>
+        <div className="cookie-banner-buttons">
+          <button onClick={decline} className="cookie-btn cookie-btn-decline">
+            Decline
+          </button>
+          <button onClick={accept} className="cookie-btn cookie-btn-accept">
+            Accept
+          </button>
+        </div>
       </div>
     </div>
   )
