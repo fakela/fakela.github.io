@@ -49,7 +49,7 @@ export default {
     type: 'page',
     theme: {
       sidebar: false,
-      toc: false
+      toc: true
     }
   }
 }
