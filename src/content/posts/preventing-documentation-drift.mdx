@@ -1,0 +1,183 @@
+---
+title: "Three Ways to Stop Your Documentation from Going Stale"
+---
+
+# Three Ways to Stop Your Documentation from Going Stale
+
+Every documentation team has experienced this. The product ships a new feature. The docs are perfect. Six months later, someone changes a default value, renames a parameter, or updates an error message, and the documentation doesn't move an inch.
+
+The documentation for a new feature gets attention. The documentation for an existing feature gets forgotten. When existing docs drift from reality, users lose trust faster than when documentation is missing entirely. At least missing docs are honestly missing. Stale docs actively mislead.
+
+The problem isn't negligence. Developers are focused on the code. Technical writers can't review every line of every commit. The problem is workflow friction.
+
+Here are three approaches I've used to catch documentation drift before it reaches production.
+
+## 1. The Pull Request Template
+
+This is the simplest guardrail and often the most effective. By modifying the PR template, you create a checkpoint where the developer has to consciously acknowledge the documentation impact before the code is merged.
+
+Create a `.github/pull_request_template.md` in your repository:
+
+```markdown
+## Description
+
+## Documentation Impact (Required)
+
+Select the option that best describes this PR:
+
+- [ ] **Internal/Refactor Only:** No visible change to the user,
+      API consumers, or configuration. No docs needed.
+- [ ] **New Feature:** Introduces new capabilities.
+      Documentation is required and attached/linked.
+- [ ] **Behavioral Change to Existing Feature:** Modifies how
+      an existing feature works.
+      Documentation update required.
+  - Which docs are affected?
+  - What precisely changed?
+
+## Documentation Checklist
+- [ ] I have reviewed the existing docs related to this change.
+- [ ] I have updated the relevant files in this PR (if applicable).
+- [ ] I have tagged the docs team for review.
+```
+
+The key is making the documentation section specific. Not a generic "did you update the docs?" checkbox that everyone ignores, but categories that force the developer to think about what type of change they made. A refactor doesn't need docs. A new default timeout value does.
+
+At Orbital, I embedded documentation into the development cycle through Jira-based planning. Every feature ticket had a documentation status field. But the PR template was the last line of defence for the changes that slipped through the planning process.
+
+## 2. LLM-Powered Diff Audits
+
+PR templates rely on human memory. Humans forget. The next layer is automated review using an LLM.
+
+The idea: every time a pull request is opened, a GitHub Action generates the diff, sends it to an LLM, and the LLM analyses whether the changes affect existing documentation. Not whether docs need to be written (that's a separate question), but whether existing docs are now inaccurate.
+
+The system prompt tells the LLM exactly what to look for:
+
+```
+You are a documentation auditor. Analyse the provided
+Git diff and determine if the changes render existing
+documentation inaccurate.
+
+IGNORE:
+- Variable renames not exposed in APIs
+- Logic optimisation that doesn't change behaviour
+- Test or comment updates
+- Whitespace changes
+
+FLAG:
+- API schema changes (endpoints, parameters, responses,
+  status codes)
+- CLI/Config changes (flags, env vars, config keys)
+- Default value changes (timeouts, limits, thresholds)
+- UI changes (error messages, labels, tooltips)
+- Validation changes (stricter or relaxed constraints)
+
+OUTPUT FORMAT:
+If behavioral change detected:
+  File: [filename]
+  Change Type: [e.g., API Response Parameter]
+  Impact: [plain English description]
+
+If only refactors found:
+  "No documentation impact detected."
+```
+
+The GitHub Action that runs this:
+
+```yaml
+name: Documentation Drift Check
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate PR Diff
+        run: |
+          git diff origin/${{ github.base_ref }}...HEAD > diff.txt
+
+      - name: Analyse with LLM
+        id: analysis
+        run: |
+          # Send diff to your LLM API of choice
+          # Claude, Gemini, or any API that accepts
+          # a system prompt + user content
+          RESULT=$(curl -s -X POST "$LLM_API_URL" \
+            -H "Authorization: Bearer $API_KEY" \
+            -d "{
+              \"system\": \"$(cat .github/doc-audit-prompt.txt)\",
+              \"user\": \"$(cat diff.txt)\"
+            }")
+          echo "result=$RESULT" >> $GITHUB_OUTPUT
+
+      - name: Post Comment if Drift Detected
+        if: |
+          !contains(steps.analysis.outputs.result,
+          'No documentation impact')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `${{ steps.analysis.outputs.result }}`
+            })
+```
+
+This catches the changes that humans miss. The developer who changes a timeout from 30 seconds to 60 seconds doesn't think of it as a documentation change. The LLM does, because you told it to.
+
+At Orbital, I configured GitHub Actions to sync the OpenAPI spec with ReadMe automatically. The LLM audit layer sits on top of that: the spec sync handles the API reference, and the LLM audit catches everything else.
+
+## 3. Code Ownership for Documentation-Critical Files
+
+Some files are documentation landmines. The OpenAPI spec. The CLI flag definitions. The configuration schema. The error message strings. When these files change, the docs team needs to know.
+
+GitHub's CODEOWNERS file lets you automatically add reviewers when specific files are modified:
+
+```
+# .github/CODEOWNERS
+
+# API spec changes always need docs review
+/api/openapi.json @docs-team
+/api/openapi.yaml @docs-team
+
+# Configuration and environment files
+/config/defaults.* @docs-team
+/.env.example @docs-team
+
+# Error messages and UI strings
+/src/errors/ @docs-team
+/src/locales/ @docs-team
+
+# The docs themselves
+/docs/ @docs-team
+```
+
+This is blunt but effective. You don't need the developer to remember to tag you. The system does it automatically. Every PR that touches a documentation-critical file puts you in the review queue.
+
+The benefit isn't just catching changes. It's being in the conversation early. When you're added as a reviewer on a PR that changes the error message format, you can suggest documentation-friendly wording before the PR is merged, not after.
+
+## Why These Work Together
+
+No single approach catches everything.
+
+- The **PR template** catches the changes developers are aware of.
+- The **LLM audit** catches the changes developers don't think of as documentation-relevant.
+- **CODEOWNERS** catches the changes to files that are always documentation-relevant.
+
+Together, they shift documentation from reactive (fixing stale docs after users complain) to proactive (catching drift before it reaches production).
+
+The goal isn't perfection. It's reducing the window between "the code changed" and "the docs changed" from months to hours. Because stale docs don't just confuse users. They erode the trust that accurate docs build.
+
+And trust, once lost, takes a lot more than a quick update to rebuild.

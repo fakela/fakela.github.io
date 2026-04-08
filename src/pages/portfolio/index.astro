@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { PortfolioFeed } from '../../components/PortfolioFeed'
+---
+
+<BaseLayout title="Portfolio">
+  <div class="content-wrapper">
+    <div style="max-width: 48rem; margin: 0 auto;">
+      <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">Portfolio</h1>
+      <p style="color: var(--text-muted); margin-bottom: 2rem; line-height: 1.7;">
+        Case studies from documentation projects across fintech, Web3, developer tooling, and open source. Each post tells the story of what the problem was, what I did, and what the impact was.
+      </p>
+    </div>
+    <PortfolioFeed client:load />
+  </div>
+</BaseLayout>

@@ -1,26 +1,20 @@
 {
   "name": "fakela-portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Favour Kelvin - Technical Writer Portfolio",
+  "type": "module",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "next": "^14.2.35",
-    "nextra": "^4.6.1",
-    "nextra-theme-docs": "^4.6.1",
-    "posthog-js": "^1.365.0",
-    "posthog-node": "^5.29.0",
+    "@astrojs/mdx": "^5.0.3",
+    "@astrojs/react": "^5.0.3",
+    "@astrojs/sitemap": "^3.7.2",
+    "astro": "^6.1.5",
+    "posthog-js": "^1.365.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "puppeteer": "^24.40.0"
   }
 }

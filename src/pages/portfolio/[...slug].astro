@@ -1,0 +1,21 @@
+---
+import { getCollection, render } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+
+export async function getStaticPaths() {
+  const entries = await getCollection('portfolio')
+  return entries.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+---
+
+<BaseLayout title={entry.data.title}>
+  <div class="content-wrapper prose portfolio-post">
+    <Content />
+  </div>
+</BaseLayout>

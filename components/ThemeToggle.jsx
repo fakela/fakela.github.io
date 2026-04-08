@@ -9,7 +9,10 @@ export function ThemeToggle() {
 
   useEffect(() => setMounted(true), [])
 
-  if (!mounted) return null
+  // Render invisible placeholder on server to prevent hydration dash
+  if (!mounted) {
+    return <div style={{ width: 28, height: 28 }} />
+  }
 
   return (
     <button

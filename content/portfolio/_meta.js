@@ -1,34 +1,34 @@
 export default {
   index: {
     title: 'Portfolio',
-    theme: { sidebar: false, toc: false, breadcrumb: false, pagination: false }
+    theme: { layout: 'full', sidebar: false, toc: false, breadcrumb: false, pagination: false }
   },
   'rebuilding-orbital-docs': {
     title: "Rebuilding Orbital's Documentation",
-    theme: { toc: true }
+    theme: { layout: 'full', sidebar: false, toc: true, breadcrumb: false }
   },
   'ai-documentation-workflow': {
     title: 'AI-Integrated Documentation Workflow',
-    theme: { toc: true }
+    theme: { layout: 'full', sidebar: false, toc: true, breadcrumb: false }
   },
   'building-genlayer-docs': {
     title: "Building GenLayer's Docs from a Whitepaper",
-    theme: { toc: true }
+    theme: { layout: 'full', sidebar: false, toc: true, breadcrumb: false }
   },
   'documentation-acquisition-bacalhau': {
     title: 'Documentation That Helped an Acquisition',
-    theme: { toc: true }
+    theme: { layout: 'full', sidebar: false, toc: true, breadcrumb: false }
   },
   '25-issues-30-days-mindee': {
     title: '25 Issues in 30 Days at Mindee',
-    theme: { toc: true }
+    theme: { layout: 'full', sidebar: false, toc: true, breadcrumb: false }
   },
   'documenting-product-pivot-calimero': {
     title: 'Documenting Through a Product Pivot',
-    theme: { toc: true }
+    theme: { layout: 'full', sidebar: false, toc: true, breadcrumb: false }
   },
   'cloud-native-docs-glueops': {
     title: 'Cloud-Native Docs for GlueOps',
-    theme: { toc: true }
+    theme: { layout: 'full', sidebar: false, toc: true, breadcrumb: false }
   }
 }

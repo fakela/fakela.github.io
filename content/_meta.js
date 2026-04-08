@@ -15,41 +15,55 @@ export default {
     title: 'About',
     type: 'page',
     theme: {
+      layout: 'full',
       sidebar: false,
       toc: false,
-      pagination: false
+      pagination: false,
+      breadcrumb: false
     }
   },
   portfolio: {
     title: 'Portfolio',
     type: 'page',
     theme: {
+      layout: 'full',
       sidebar: false,
-      toc: false
+      toc: false,
+      pagination: false,
+      breadcrumb: false
     }
   },
   'writing-samples': {
     title: 'Writing Samples',
     type: 'page',
     theme: {
+      layout: 'full',
       sidebar: false,
-      toc: false
+      toc: false,
+      pagination: false,
+      breadcrumb: false
     }
   },
   posts: {
     title: 'Posts',
     type: 'page',
     theme: {
+      layout: 'full',
       sidebar: false,
-      toc: false
+      toc: false,
+      pagination: false,
+      breadcrumb: false
     }
   },
   resume: {
     title: 'Resume',
     type: 'page',
     theme: {
+      layout: 'full',
       sidebar: false,
-      toc: true
+      toc: false,
+      pagination: false,
+      breadcrumb: false
     }
   }
 }

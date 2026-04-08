@@ -1,5 +1,5 @@
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
-import { Head, Search } from 'nextra/components'
+import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import { PostHogProvider } from '../components/PostHogProvider'
 import { CookieBanner } from '../components/CookieBanner'
@@ -45,9 +45,7 @@ const footer = (
 export default async function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head
-        backgroundColor={{ dark: '#111', light: '#fafafa' }}
-      >
+      <Head backgroundColor={{ dark: '#111', light: '#fafafa' }}>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -58,7 +56,9 @@ export default async function RootLayout({ children }) {
             navbar={navbar}
             footer={footer}
             pageMap={await getPageMap()}
-            search={<Search placeholder="Search portfolio..." />}
+            darkMode={false}
+            sidebar={{ toggleButton: false }}
+            search={null}
           >
             {children}
           </Layout>

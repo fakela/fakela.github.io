@@ -1,0 +1,53 @@
+---
+title: "What I've Learned from Interviewing as a Technical Writer in 2026"
+---
+
+# What I've Learned from Interviewing as a Technical Writer in 2026
+
+I've been interviewing recently. Different companies, different stages, different tech stacks. Cloud-native infrastructure, developer tools, fintech, AI platforms. The conversations are different from what they were even two years ago.
+
+Every company asks about AI now. But the way they ask tells you a lot about what they actually want.
+
+## The Two Types of Companies
+
+### The Cautious Ones
+
+Some companies are careful about AI. They've seen the headlines about proprietary code in training sets, hallucinated documentation that looked correct but wasn't, and the general wariness about letting AI anywhere near production content.
+
+When you're talking to these teams, they want to hear that you understand the risks. They're not looking for someone who's excited about AI. They're looking for someone who knows where the guardrails are.
+
+What works here: talk about your process for verifying AI output against the actual codebase. Talk about never putting proprietary API schemas into a public model. Talk about the difference between using AI to research and using AI to publish. The output of an AI tool is a draft, not documentation. The human review is where accuracy happens.
+
+At Orbital, we used Claude Code and Gemini, but with structured instruction files (`skills.md`, `agents.md`, `prompts.md`) that governed how the AI interacted with the project. I connected MCP servers so the AI could read the actual documentation rather than guessing about it. Everything still went through a human review process. AI made the drafts faster. Humans made them correct.
+
+### The Enthusiastic Ones
+
+Other companies have gone all in. They want to see that you've built real workflows, not just used ChatGPT to rephrase a paragraph.
+
+What works here: show the infrastructure. Talk about CI/CD pipelines with automated linting, format checks, and spec syncing. Talk about GitHub Actions that keep the OpenAPI spec in sync with the documentation platform. Talk about LLM-powered diff auditing that flags when code changes might make existing docs inaccurate.
+
+The distinction these companies care about: are you using AI as a search bar, or have you built it into a system? Anyone can ask an AI to "write a getting started guide." The interesting part is using it to audit 75 pages for consistency against a style guide, or to process a release tag and generate a list of documentation tasks.
+
+## What Every Interviewer Actually Wants to Hear
+
+Regardless of where a company falls on the AI spectrum, there's one thing that matters more than your tool stack: do you understand why documentation exists?
+
+AI can generate text quickly. It cannot determine whether that text is helpful. It doesn't know what a developer will struggle with. It doesn't know which onboarding step is the one where people drop off. It doesn't know that the error message in the API response is confusing because the engineer who wrote it was thinking about a different edge case.
+
+In every interview I've had, the conversation that lands best is the one about strategy, not tools. The information architecture decisions. The analytics that showed which pages users were bouncing from. The documentation roadmap I presented to product leadership. The decision to prioritise the getting started guide over the API reference because new merchants needed to integrate, not just read.
+
+## The Portfolio Conversation
+
+Having a portfolio site changes how interviews go. When an interviewer can read the case study before the call, the conversation starts at a different level. Instead of "tell me about a time you..." it's "I saw that you unified three products into one documentation experience. How did you decide on the information architecture?"
+
+That's a much better conversation. You skip the general answers and get to the specific decisions.
+
+The writing samples matter too, but differently. Interviewers don't read every sample. They scan. They want to see variety: API references next to getting started guides next to knowledge base articles. They want to see that you can write for different audiences and different content types. The thumbnail gives them enough to decide whether to click.
+
+## What's Changed
+
+Two years ago, most technical writing interviews were about writing quality and tools (Confluence, Jira, Git). Now they're about systems. How do you build a documentation system that stays accurate as the product changes? How do you make one writer (or a small team) cover the surface area of a large product? How do you measure whether the documentation is actually working?
+
+AI is part of the answer, but it's not the answer. The answer is the same as it's always been: understand the product deeply, understand the user clearly, build the infrastructure that keeps the docs alive, and write the thing.
+
+The tools have changed. The job hasn't.

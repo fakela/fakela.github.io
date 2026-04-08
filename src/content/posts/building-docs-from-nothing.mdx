@@ -1,0 +1,61 @@
+---
+title: "The Pattern Behind Building Documentation from Nothing"
+---
+
+# The Pattern Behind Building Documentation from Nothing
+
+I've built documentation systems at seven companies now. Different industries, different products, different stages. Fintech, Web3, developer tooling, distributed computing, cloud infrastructure. Some had existing docs that needed rebuilding. Some had nothing at all.
+
+After doing this enough times, I've noticed the pattern is always the same. The context changes, but the sequence doesn't.
+
+## Step 1: Figure Out What Exists (and What People Think Exists)
+
+The first week is always research. Not writing. Research.
+
+At Orbital, the docs were scattered across platforms and didn't reflect the current product. At GenLayer, there was a whitepaper but no developer documentation. At Bacalhau, docs existed but lacked structure. At GlueOps, everything was buried in GitHub repos.
+
+In every case, the first thing I did was map what existed, where it lived, and how far it had drifted from reality. This is unglamorous work, but it determines everything that follows. You can't design an information architecture for a product you don't understand, and you can't understand a product by reading the marketing page.
+
+## Step 2: Define the Architecture Before Writing a Word
+
+The temptation is to start writing immediately. Resist it.
+
+At Bacalhau, I applied the Diátaxis framework to structure everything into tutorials, how-to guides, conceptual docs, API references, and specifications. At Orbital, I defined the information architecture around three products that needed to feel like one documentation experience. At GenLayer, I had to decide what developer-friendly documentation even looked like for a protocol that only existed as an academic paper.
+
+The architecture is the skeleton. If the skeleton is wrong, you'll spend months rearranging organs.
+
+The questions I ask at this stage:
+- Who is the primary reader? (Developer? Merchant? Platform engineer?)
+- What is their first task? (Install? Integrate? Understand a concept?)
+- What is the shortest path from "I just found this product" to "I'm using it successfully"?
+- Where do the products overlap, and where should the documentation overlap?
+
+## Step 3: Build the Pipeline, Not Just the Pages
+
+Documentation that lives outside the development cycle will always go stale. This is a law of nature.
+
+At every company, I set up some version of a docs-as-code pipeline. At Orbital, that meant Jira-based planning, CI/CD with automated checks, and GitHub Actions syncing the OpenAPI spec with ReadMe. At Calimero, it was working within an Agile workflow to ship documentation alongside releases. At Mindee, it was embedding into the GitHub Issues workflow so documentation tracked product changes in real time.
+
+The specific tools don't matter as much as the principle: documentation should ship with the product, not after it.
+
+## Step 4: Write the Getting Started Path First
+
+The single highest-leverage piece of documentation you can write is the getting started guide. Everything else can wait.
+
+At Bacalhau, rewriting the getting started guides was the change that grew unique users from 200 to 6K. At GenLayer, the getting started guide was the first thing I wrote because nothing else matters if people can't install the thing and run their first command. At GlueOps, the entire engagement was essentially building the getting started path that didn't exist.
+
+A getting started guide is not a product tour. It's the shortest path from "I don't know what this does" to "I just did a thing with it and it worked." Every sentence that doesn't serve that path is a sentence that should be on a different page.
+
+## Step 5: Measure, Then Iterate
+
+At Orbital, I set up analytics with ReadMe and Google Analytics. At Bacalhau, I tracked documentation traffic and unique users. At Mindee, I used Google Analytics, ReadMe analytics, and Hotjar.
+
+The specific metrics matter less than having any feedback loop at all. Without measurement, you're guessing. With measurement, you know which pages people are reading, which ones they're bouncing from, and which ones don't exist yet but should.
+
+## Why the Pattern Works
+
+This pattern works because it addresses documentation as a system, not as a collection of pages. A system has architecture, infrastructure, feedback loops, and maintenance processes. Pages are just the visible output.
+
+Every company I've worked with thought they had a "documentation problem." What they actually had was a systems problem. Once the system is in place, the documentation takes care of itself.
+
+Well, mostly. You still have to write the thing.
