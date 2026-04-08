@@ -73,9 +73,17 @@ code, pre {
   display: none !important;
 }
 
-/* Hide the footer switchers row and its hr separator */
+/* Hide the entire footer switchers area (theme toggle + "Light"/"Dark" text) */
 .x\:bg-gray-100 > div:first-child,
 .x\:bg-gray-100 > hr.nextra-border {
+  display: none !important;
+}
+/* Hide the footer bar that contains the built-in theme switcher completely */
+.x\:bg-gray-100 .x\:flex.x\:gap-2 {
+  display: none !important;
+}
+/* Nuclear: hide any direct child of the footer area that isn't our custom footer */
+.x\:bg-gray-100 > div:not(:last-child) {
   display: none !important;
 }
 
