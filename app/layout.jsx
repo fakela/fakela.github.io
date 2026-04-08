@@ -3,7 +3,6 @@ import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import { PostHogProvider } from '../components/PostHogProvider'
 import { CookieBanner } from '../components/CookieBanner'
-import { ThemeToggle } from '../components/ThemeToggle'
 import 'nextra-theme-docs/style.css'
 import './globals.css'
 
@@ -23,9 +22,7 @@ const navbar = (
       </span>
     }
     projectLink="https://github.com/fakela"
-  >
-    <ThemeToggle />
-  </Navbar>
+  />
 )
 
 const footer = (
