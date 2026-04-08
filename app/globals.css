@@ -191,6 +191,12 @@ code, pre {
   background-color: var(--bg-dark, #111) !important;
 }
 
+@media (max-width: 1023px) {
+  .nextra-toc {
+    display: none !important;
+  }
+}
+
 /* ========================================
    HERO SECTION
    ======================================== */
