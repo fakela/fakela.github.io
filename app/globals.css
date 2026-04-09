@@ -844,3 +844,23 @@ code, pre {
   border: none;
   color: #fff;
 }
+
+/* Hide the hr separator that nextra renders above the footer */
+hr:has(+ footer) {
+  display: none !important;
+}
+
+/* Hide empty divs nextra renders for switchers (when darkMode is off) */
+div:has(> footer):not(body) > div:empty {
+  display: none !important;
+}
+
+/* Mobile footer stacking */
+@media (max-width: 640px) {
+  footer > div {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 0.75rem !important;
+  }
+}

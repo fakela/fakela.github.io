@@ -1,0 +1,138 @@
+---
+title: "How I Integrated AI into a Documentation Workflow and What It Actually Changed"
+---
+
+# How I Integrated AI into a Documentation Workflow and What It Actually Changed
+
+AI tools are everywhere in documentation conversations right now, but most of the discussion stays abstract. "Use AI to write faster." "AI will transform technical writing." That kind of thing.
+
+This is a concrete account of how I integrated AI into the documentation workflow at Orbital, a fintech payments company, where I was the sole technical writer managing three products, 40+ API endpoints, and a growing knowledge base on ReadMe.
+
+What I used it for. How I structured that use. What it measurably changed about how I worked.
+
+## The Starting Point
+
+When I joined Orbital, the documentation was fragmented across platforms, outdated, and didn't reflect the current product. I was rebuilding the entire system while the product team kept shipping. Three products (Merchant Payments API, Global Payments API, Client Portal), 75+ knowledge base pages to create, and 40+ API endpoints to migrate from Postman into ReadMe.
+
+The surface area was large and I was one person. The question wasn't whether AI could help. It was whether it could help in ways that were reliable enough to trust and repeatable enough to build a workflow around.
+
+## What I Used AI For
+
+### Codebase Exploration
+
+One of the hardest parts of documenting a payments API is understanding what the code actually does. I used Claude Code to explore the Orbital codebase, understand endpoint behaviour, and surface what I needed to write accurately about a feature before drafting anything.
+
+This wasn't about generating documentation from code. It was about compressing the research phase. When you're migrating 40+ endpoints from Postman into ReadMe, you need to understand every parameter, every response schema, every edge case. Claude helped me get to a working understanding of complex payment flows faster than reading the code alone.
+
+For example, when documenting the hosted payment page (HPP) integration, I used Claude to trace the full request lifecycle through the codebase, understand what headers were required, what the response object looked like at each stage, and where the error states were. That research would have taken a full day manually. With Claude, I had the technical foundation in a couple of hours, and I could spend the rest of the day writing the actual documentation.
+
+### Markdown Instruction Files
+
+I created structured markdown files that gave AI assistants context about the documentation project: `skills.md`, `agents.md`, `prompts.md`. These files described the tone, the architecture, the terminology, and the conventions for the Orbital documentation.
+
+This meant that every time I started a Claude Code session or worked with Gemini, the AI wasn't guessing. It had a shared understanding of what "good" looked like for this specific project. The ReadMe style conventions, the API documentation format, the way we structured knowledge base articles versus API reference pages.
+
+Together, these meant any AI session working on Orbital docs started from a shared foundation, and any future writer picking up these tools would get consistent results.
+
+### MCP Server Integration
+
+I connected MCP servers to give AI tools direct access to the live documentation. This was the real unlock.
+
+Instead of copying and pasting content into a chat window, the AI could read the actual published docs on ReadMe and generate content that was consistent with what was already there. When you're maintaining 75+ knowledge base pages across three products, consistency is the hard part. Not the writing itself, but making sure the webhooks guide doesn't contradict the authentication guide, and the Client Portal docs use the same terminology as the API docs.
+
+### Reusable Skills for Repeated Tasks
+
+For tasks I performed repeatedly, like auditing new endpoints against the existing documentation structure, or generating the initial scaffold for a new knowledge base article, I created reusable skills that codified the process.
+
+Rather than re-explaining the task each session, the skill carried the context, structure, and steps. This had a compounding effect: as I refined a skill, every future use of it got better. It also meant the workflow was transferable. If another writer joined the team, they wouldn't need to reverse-engineer my process.
+
+### Documentation Consistency Review
+
+I used AI to audit the existing documentation for consistency against our internal style guide. Claude could quickly flag terminology drift, formatting inconsistencies, and tone mismatches at a scale that would have taken weeks to do manually.
+
+When you're unifying three separate products into one documentation experience, consistency across every page matters. The Merchant Payments API docs needed to feel like they belonged on the same site as the Client Portal knowledge base. AI made it possible to audit the full doc set and catch the small inconsistencies that a human reviewer would miss on pass 47.
+
+### Embedded Payment Page Widget
+
+One of the features the documentation needed was an embedded payment page demo. Rather than waiting on engineering cycles, I used Claude Code to prototype the widget implementation, including the front-end integration and the documentation that would accompany it. The result was a working prototype that engineering could refine rather than build from the ground up, and documentation that was ready before the feature shipped.
+
+### Accessibility Audit
+
+I used Claude to audit the ReadMe documentation site for accessibility issues. This included identifying missing alt text, checking colour contrast ratios, verifying keyboard navigation paths, and flagging heading hierarchy problems across the documentation. The audit surfaced issues that would have taken weeks to find manually, and the fixes improved the experience for all users, not just those relying on assistive technology.
+
+### Information Architecture Overhaul
+
+The most ambitious project was the complete restructuring of how documentation was organised across the three products. When I joined, each product's documentation existed in isolation. The information architecture needed to unify them into a single coherent experience while still making it easy for a merchant integrating only one product to find what they needed.
+
+I used Claude throughout this project to evaluate structural options, pressure-test navigation logic, and draft the new architecture. With 75+ pages to organise, categorise, and cross-link, AI proved invaluable for exploring different approaches quickly and identifying gaps in coverage.
+
+## The CI/CD Pipeline
+
+Beyond AI-powered writing workflows, I built the infrastructure that kept the documentation accurate. I set up CI/CD pipelines with GitHub Actions that automated the repetitive checks:
+
+**Automated linting and formatting:**
+Every pull request ran through automated checks for markdown formatting, consistent heading styles, and proper link syntax. This caught the class of errors that neither humans nor AI are good at catching consistently.
+
+**Link checking:**
+Broken links erode trust. The pipeline checked every internal and external link on every PR, flagging anything that 404'd before it could reach production.
+
+**Spell checking:**
+With fintech-specific terminology (PSP, HPP, EPP, KYC, AML), the spell checker needed a custom dictionary. I configured it to understand Orbital's domain vocabulary without flagging every acronym as a typo.
+
+**OpenAPI spec sync with ReadMe:**
+This was the most impactful automation. I configured GitHub Actions to sync the OpenAPI specification with ReadMe so the API reference automatically regenerated whenever the spec file changed. This meant the API docs were never out of sync with the actual API. Before this, spec updates required manual re-uploading to ReadMe, and the docs were frequently stale.
+
+```yaml
+# Simplified version of the sync workflow
+name: Sync API Reference
+on:
+  push:
+    paths:
+      - 'openapi/**'
+    branches: [main]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync OpenAPI spec to ReadMe
+        uses: readmeio/rdme@v8
+        with:
+          rdme: openapi openapi/spec.json
+            --key=${{ secrets.README_API_KEY }}
+            --id=${{ secrets.API_DEFINITION_ID }}
+```
+
+When the engineering team updated the OpenAPI spec, the API reference on ReadMe updated automatically. No manual intervention. No drift.
+
+## What AI Changed
+
+The clearest measure: pull requests went from first draft to review-ready an average of **three days faster** after these workflows were in place.
+
+But the less quantifiable change mattered more. Working with AI allowed me to operate across a wider surface area than a single writer realistically could:
+
+- Deeper research into the codebase before writing
+- More consistent audits across 75+ pages
+- Faster turnaround on new features shipping
+- Infrastructure that kept the docs accurate without manual checking
+
+And all without sacrificing accuracy or quality. The AI handled the repetitive scaffolding and consistency checks. I handled the judgment calls: what to document, how to structure it, what the merchant actually needed to understand, and when to push back on product decisions that would confuse users.
+
+## What AI Didn't Change
+
+AI was useless for anything that required judgment about what to document. It couldn't tell me which features merchants would struggle with. It couldn't sit in product roadmap meetings and advocate for documentation being part of the release process. It couldn't present documentation strategies to leadership or embed docs into the development cycle through Jira.
+
+AI also couldn't replace the conversations. A significant part of my job was talking to engineers about how a feature actually worked, talking to product about what was coming next, and talking to support about what merchants were asking. Those conversations informed everything I wrote. AI just made the writing part faster.
+
+## What I'd Tell Someone Starting Out
+
+If you're a technical writer considering AI integration:
+
+- **Start with the repeated tasks.** The first thing to automate isn't writing. It's the research, auditing, and scaffolding you do over and over.
+- **Create context files.** Style guides, project conventions, terminology lists. Give the AI a foundation before asking it to produce anything.
+- **Connect it to the source of truth.** MCP servers, direct repo access, whatever works. AI that can read your actual docs is orders of magnitude more useful than AI you're copying and pasting to.
+- **Build the CI/CD pipeline.** AI catches some errors. Automated checks catch the rest. Together they catch almost everything.
+- **Own the output.** AI is a tool. The decisions, the architecture, the quality bar, those are yours.
+
+[View writing samples from this project →](/writing-samples)

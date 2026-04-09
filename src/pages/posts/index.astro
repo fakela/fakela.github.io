@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+---
+
+<BaseLayout title="Posts">
+  <div class="content-wrapper posts-page">
+    <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">Posts</h1>
+    <p style="color: var(--text-muted); margin-bottom: 2rem;">Thinking out loud about documentation, tooling, and the craft.</p>
+
+    <div class="posts-feed">
+      <div class="post-card">
+        <h3><a href="/posts/ai-augmented-documentation-workflow">What Actually Changes When You Add AI to a Documentation Workflow</a></h3>
+        <p class="post-card-excerpt">
+          There's a lot of noise about AI and technical writing. Most of it stays vague. Here's what actually happened when I integrated AI tools into a real documentation workflow at a fintech company.
+        </p>
+      </div>
+
+      <div class="post-card">
+        <h3><a href="/posts/preventing-documentation-drift">Three Ways to Stop Your Documentation from Going Stale</a></h3>
+        <p class="post-card-excerpt">
+          PR templates, LLM-powered diff audits, and code ownership. Three practical approaches to catching documentation drift before it reaches production.
+        </p>
+      </div>
+
+      <div class="post-card">
+        <h3><a href="/posts/building-docs-from-nothing">The Pattern Behind Building Documentation from Nothing</a></h3>
+        <p class="post-card-excerpt">
+          I've built documentation systems at seven companies now. Different industries, different products, different stages. After doing this enough times, I've noticed the pattern is always the same.
+        </p>
+      </div>
+
+      <div class="post-card">
+        <h3><a href="/posts/sole-technical-writer">What Nobody Tells You About Being the Sole Technical Writer</a></h3>
+        <p class="post-card-excerpt">
+          Startups often hire their first technical writer when the documentation situation has already gotten bad enough. By the time you walk in the door, there's usually a backlog and a vague expectation that you'll "handle the docs."
+        </p>
+      </div>
+
+      <div class="post-card">
+        <h3><a href="/posts/interviewing-as-a-technical-writer">What I've Learned from Interviewing as a Technical Writer in 2026</a></h3>
+        <p class="post-card-excerpt">
+          Every company asks about AI now. But the way they ask tells you a lot about what they actually want. Here's what I've learned from interviewing recently.
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
