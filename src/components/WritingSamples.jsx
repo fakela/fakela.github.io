@@ -329,6 +329,17 @@ const samples = [
     image: '/images/samples/orbital-onboarding-checklist.png'
   },
 
+  {
+    company: 'Orbital',
+    category: 'API references',
+    title: 'API Error Reference',
+    description: 'Complete reference for Orbital API error codes, error types, and troubleshooting guidance.',
+    context: 'Part of the Orbital API reference documentation',
+    portfolioLink: '/portfolio/rebuilding-orbital-docs',
+    pdf: '/downloads/pdf/Orbital API Error Reference.pdf',
+    image: '/images/samples/orbital-api-keys.png'
+  },
+
   // ── Orbital / Release notes ──────────────────────────────────────
   {
     company: 'Orbital',
