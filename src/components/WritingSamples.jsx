@@ -291,6 +291,16 @@ const samples = [
   {
     company: 'Orbital',
     category: 'Knowledge base',
+    title: 'Validate Payer for Binance Pay Deposit',
+    description: 'Guide for validating payer details before processing Binance Pay deposits in the Orbital platform.',
+    context: 'Merchant integration knowledge base article',
+    portfolioLink: '/portfolio/rebuilding-orbital-docs',
+    pdf: '/downloads/pdf/Validate Payer for Binance Pay Deposit.pdf',
+    image: '/images/samples/orbital-binance-pay.png'
+  },
+  {
+    company: 'Orbital',
+    category: 'Knowledge base',
     title: 'Send Payouts via Binance Pay',
     description: 'Guide for sending payouts through the Binance Pay integration in the Client Portal.',
     context: 'Client Portal knowledge base article',
