@@ -1,6 +1,6 @@
 # Favour Kelvin — Portfolio Site
 
-Personal portfolio site built with [Nextra v4](https://nextra.site) (Next.js 14) and deployed to Vercel.
+Personal portfolio site built with [Astro](https://astro.build) and deployed to Vercel.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the site.
+Open [http://localhost:4321](http://localhost:4321) to view the site.
 
 ## Build
 
@@ -25,20 +25,25 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 npm run build
 ```
 
-This generates a static export in the `out/` directory, ready for GitHub Pages deployment.
+This generates a static site in the `dist/` directory.
 
 ## Project Structure
 
 ```
-app/                  → Next.js App Router (layout + catch-all route)
-content/              → MDX pages and navigation config (_meta.js)
-  ├── index.mdx       → Home page
-  ├── about.mdx       → About page
-  ├── resume.mdx      → Resume/CV
-  ├── portfolio/       → Case study posts
-  ├── writing-samples/ → Filterable writing samples grid
-  └── posts/           → Blog posts
-components/           → React components (WritingSamples, PortfolioFeed, etc.)
+src/
+  components/          → Astro and React components (WritingSamples, PortfolioFeed, etc.)
+  content/
+    portfolio/         → Case study posts (.mdx)
+    posts/             → Blog posts (.mdx)
+  layouts/             → Base layout
+  pages/
+    ├── index.astro    → Home page
+    ├── about.astro    → About page
+    ├── resume.astro   → Resume/CV
+    ├── portfolio/     → Portfolio listing + dynamic routes
+    ├── writing-samples.astro → Filterable writing samples grid
+    └── posts/         → Blog listing + dynamic routes
+  styles/              → Global CSS
 public/
   ├── images/          → Screenshots and thumbnails
   └── downloads/       → PDF writing samples and resume
@@ -46,15 +51,15 @@ public/
 
 ## Adding Content
 
-**Portfolio posts:** Add an `.mdx` file in `content/portfolio/` and register it in `content/portfolio/_meta.js`.
+**Portfolio posts:** Add an `.mdx` file in `src/content/portfolio/`.
 
-**Writing samples:** Add entries to the `samples` array in `components/WritingSamples.jsx`. Place PDFs in `public/downloads/` and thumbnails in `public/images/samples/`.
+**Writing samples:** Add entries to the `samples` array in `src/components/WritingSamples.jsx`. Place PDFs in `public/downloads/` and thumbnails in `public/images/samples/`.
 
-**Blog posts:** Add `.mdx` files in `content/posts/` and register them in `content/posts/_meta.js`.
+**Blog posts:** Add `.mdx` files in `src/content/posts/`.
 
 ## Deployment
 
-Pushing to `main` triggers the GitHub Actions workflow (`.github/workflows/deploy.yml`) which builds and deploys to GitHub Pages automatically. Make sure GitHub Pages is configured to use "GitHub Actions" as the source in your repo settings.
+Pushing to `main` triggers automatic deployment on Vercel. Astro is auto-detected — no extra config needed.
 
 ## Placeholders
 
