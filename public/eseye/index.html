@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Favour Kelvin · Eseye Documentation V2</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<style>
+/* Layout: plain personal page, one family, one reading column, screenshots full column width */
+:root{
+  --bg:#FFFFFF; --text:#1B1B1B; --soft:#616161; --line:#E4E4E4; --link:#1B1B1B; --mark:#FFE9A8;
+  --font:"Public Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141414; --text:#ECECEC; --soft:#A3A3A3; --line:#2C2C2C; --link:#ECECEC; --mark:#5A4A12; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#141414; --text:#ECECEC; --soft:#A3A3A3; --line:#2C2C2C; --link:#ECECEC; --mark:#5A4A12; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:17px;line-height:1.65;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+main{max-width:760px;margin:0 auto;padding-block:64px 80px}
+a{color:var(--link);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,input:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+h1,h2,h3{margin:0;line-height:1.25;text-wrap:balance}
+p{margin:0}
+.soft{color:var(--soft)}
+.stack{display:grid;gap:16px}
+
+.intro{display:grid;gap:14px;padding-bottom:40px}
+.intro h1{font-size:clamp(36px,6vw,48px);font-weight:700;letter-spacing:-.02em}
+.intro .lead{font-size:19px;line-height:1.6}
+.intro .role{font-size:17px;color:var(--soft);margin-top:-8px}
+.intro .links{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:15.5px}
+.intro .links span{color:var(--soft)}
+
+section{padding-block:40px;border-top:1px solid var(--line);display:grid;gap:18px}
+h2{font-size:22px;font-weight:700}
+h2 small{display:block;font-size:15px;font-weight:400;color:var(--soft);margin-top:4px}
+
+/* before / after */
+.compare{position:relative;width:100%;max-width:100%;aspect-ratio:16/9.4;border:1px solid var(--line);overflow:hidden;background:#fff}
+.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top left;display:block}
+.compare .after{clip-path:inset(0 0 0 var(--pos,50%))}
+.compare .divider{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:#1B1B1B;transform:translateX(-1px);pointer-events:none}
+.compare .divider::after{content:"";position:absolute;top:50%;left:50%;width:14px;height:44px;border-radius:7px;background:#fff;border:2px solid #1B1B1B;transform:translate(-50%,-50%)}
+.compare .tag{position:absolute;bottom:10px;font-size:13px;font-weight:500;padding:2px 8px;background:#fff;color:#1B1B1B;border:1px solid #1B1B1B}
+.compare .tag.l{left:10px}.compare .tag.r{right:10px}
+.ptag{display:none}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.note{font-size:15px;color:var(--soft)}
+
+/* delivered */
+.done{margin:0;padding-left:1.2em;display:grid;gap:12px}
+.done li::marker{color:var(--soft)}
+.done b{font-weight:700}
+
+/* brands */
+.brands{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+figure{margin:0;display:grid;gap:6px;min-width:0}
+figure img{width:100%;border:1px solid var(--line);display:block;background:#fff}
+figcaption{font-size:14px;color:var(--soft)}
+
+/* samples */
+.samples{margin:0;padding:0;list-style:none;display:grid;gap:14px}
+.samples li{display:grid;gap:2px}
+.samples .src{font-size:14.5px;color:var(--soft)}
+
+
+@media print{
+  main{padding-block:0}
+  section,.intro{display:block;padding-block:20px}
+  section>*+*,.intro>*+*{margin-top:12px}
+  .compare{aspect-ratio:auto;border:0;display:block;overflow:visible;background:none}
+  .compare img{position:static;height:auto;border:1px solid var(--line);margin-bottom:12px}
+  .compare .after{clip-path:none}
+  .compare .divider,.compare input{display:none}
+  .compare .tag{display:none}
+  .ptag{display:block;font-size:14px;font-weight:700;margin-bottom:6px;break-after:avoid}
+  h2{break-after:avoid}
+  figure,.compare img,.done li,.samples li{break-inside:avoid}
+}
+@media (max-width:640px){
+  main{padding-block:40px 56px}
+  .brands{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+
+</head>
+<body>
+<main>
+  <div class="intro">
+    <h1>Favour Kelvin</h1>
+    <p class="role">Technical writer, London</p>
+    <p class="lead">I've spent six years writing documentation, guidelines and developer content for developer tooling, fintech and Web3 companies.</p>
+    <p class="lead">My most recent work is at <a href="https://www.eseye.com">Eseye</a>, an IoT connectivity company, where I led the move from MadCap Flare to GitBook and used it to democratise content production across the business. Subject matter experts (SMEs) in engineering, product and support now update the docs themselves instead of queuing for a writer. The content is AI-ready, so customers can ask a question and get an accurate answer drawn straight from the docs. One shared source also powers branded documentation for each of Eseye's partners, so an update is written once and reaches every site.</p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/favour-kelvin">LinkedIn</a>
+      <a href="https://fakela-github-io.vercel.app/">Portfolio</a>
+      <a href="https://fakela-github-io.vercel.app/writing-samples">Writing samples</a>
+      <span style="user-select:all">favourkelvin17@gmail.com</span>
+    </div>
+  </div>
+
+  <section>
+    <h2>Eseye Documentation V2<small>Most recent work · <a href="https://www.eseye.com">Eseye</a>, IoT connectivity · <a href="https://docs.eseye.com">docs.eseye.com</a> · 2026</small></h2>
+    <p>Eseye's documentation lived in MadCap Flare and a handful of other places, and only a specialist could change it. The brief was open-ended and the project spanned several brands, so the first job was turning that ambiguity into a clear plan. Over the last six months I moved all of it to GitBook and rebuilt how it's written, reviewed and published. Engineers, product and support staff can now suggest or make changes directly, AI assistants can answer from the content, and one source serves customers, internal staff and partner brands.</p>
+
+    <div class="compare" id="compare" style="--pos:50%">
+      <span class="ptag">Before</span>
+      <img src="/eseye/img/before.jpg" alt="The old Eseye documentation homepage, built in MadCap Flare, with a dark blue banner and four product category cards">
+      <span class="ptag">After</span>
+      <img class="after" src="/eseye/img/after.jpg" alt="The new Eseye documentation homepage in GitBook, with task-based cards such as I'm integrating with the API and I'm installing a router">
+      <span class="tag l">Before</span>
+      <span class="tag r">After</span>
+      <div class="divider" aria-hidden="true"></div>
+      <input id="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the old and new homepage">
+    </div>
+    <p class="note">Drag to compare. The old homepage was organised by product. The new one starts from what the reader is trying to do.</p>
+  </section>
+
+  <section>
+    <h2>What I delivered</h2>
+    <ul class="done">
+      <li><b>Chose the platform.</b> Evaluated Mintlify, Document360, Fern and GitBook, built proofs of concept and recommended GitBook.</li>
+      <li><b>Moved everything off MadCap Flare.</b> Migrated the full documentation set using a Python pipeline I wrote to convert pages, fix images and rebuild navigation. Every change now goes through Git sync and automated checks.</li>
+      <li><b>Launched public and internal sites.</b> <a href="https://docs.eseye.com">docs.eseye.com</a> for customers, and an internal site staff sign in to with their Microsoft accounts.</li>
+      <li><b>Set up partner sites from one source.</b> Shared content feeds separately branded sites for AT&amp;T, MTN and TELUS, so a change is written once and reaches every partner.</li>
+      <li><b>Made the docs AI-ready.</b> Used AI in drafting and review, and structured pages so the built-in AI assistant and external AI tools can find and quote accurate answers.</li>
+      <li><b>Opened the docs up to subject matter experts (SMEs).</b> Wrote guides and templates for people who contribute through a simple template, through GitHub or directly in GitBook, then trained colleagues so they can publish changes themselves instead of waiting on a writer.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Same structure, different brands</h2>
+    <p>Every partner site shares the page structure, content and card patterns. Only the logo, colours and illustrations change. Keeping that line clear is what lets a small team look after several sites.</p>
+    <div class="brands">
+      <figure><img src="/eseye/img/att.jpg" alt="AT&amp;T IoT documentation homepage preview in blue, with the same three task cards as the Eseye site"><figcaption>AT&amp;T (preview)</figcaption></figure>
+      <figure><img src="/eseye/img/telus.jpg" alt="TELUS IoT documentation homepage in purple and green, with the same three task cards"><figcaption>TELUS (preview)</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Other writing on AI and best practice</h2>
+    <ul class="samples">
+      <li><a href="https://fakela-github-io.vercel.app/downloads/pdf/Crafting%20Prompts%20for%20LLM%20and%20Web%20Browsing%20Interactions%20_%20Detailed%20GenLayer%20Documentation.pdf">Crafting prompts for LLM and web browsing</a><span class="src">GenLayer. How to write prompts that give consistent, checkable results.</span></li>
+      <li><a href="https://fakela-github-io.vercel.app/downloads/pdf/Prompt%20Injection%20_%20Detailed%20GenLayer%20Documentation.pdf">Prompt injection</a><span class="src">GenLayer. What it is, why it matters and how to reduce the risk.</span></li>
+      <li><a href="https://www.giskard.ai/knowledge/how-to-evaluate-and-load-a-pytorch-model-with-giskard">How to evaluate and load a PyTorch model with Giskard</a><span class="src">Giskard. Testing an AI model for quality and bias, step by step.</span></li>
+      <li><a href="https://web.archive.org/web/20230606231955/https://blog.coupler.io/looker-studio-best-practices/">Looker Studio best practices to follow</a><span class="src">Coupler.io. Practical rules for clear, consistent dashboards.</span></li>
+    </ul>
+    <p class="note">There are around 70 more on <a href="https://fakela-github-io.vercel.app/writing-samples">my writing samples page</a>.</p>
+  </section>
+
+  <section>
+    <p>If you'd like to talk through any of this, email me at <span style="user-select:all">favourkelvin17@gmail.com</span> or message me on <a href="https://www.linkedin.com/in/favour-kelvin">LinkedIn</a>.</p>
+  </section>
+</main>
+
+<script>
+(function(){
+  var c=document.getElementById('compare'), r=document.getElementById('compare-range');
+  if(!c||!r) return;
+  r.addEventListener('input',function(){ c.style.setProperty('--pos', r.value+'%'); });
+})();
+</script>
+
+</body>
+</html>
