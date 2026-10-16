@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eseye Documentation V2 · Favour Kelvin</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<style>
+/* Layout: plain personal case study, one family, one reading column, screenshots full column width */
+:root{
+  --bg:#FFFFFF; --text:#1B1B1B; --soft:#616161; --line:#E4E4E4; --link:#1B1B1B; --chip:#F3F3F3;
+  --font:"Public Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141414; --text:#ECECEC; --soft:#A3A3A3; --line:#2C2C2C; --link:#ECECEC; --chip:#1F1F1F; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#141414; --text:#ECECEC; --soft:#A3A3A3; --line:#2C2C2C; --link:#ECECEC; --chip:#1F1F1F; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:17px;line-height:1.65;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+main{max-width:760px;margin:0 auto;padding-block:40px 80px}
+a{color:var(--link);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,input:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+h1,h2,h3{margin:0;line-height:1.25;text-wrap:balance}
+p{margin:0}
+ol,ul{margin:0}
+
+.byline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 20px;font-size:15px;color:var(--soft);padding-bottom:28px}
+.byline b{color:var(--text);font-weight:700}
+.byline .links{display:flex;flex-wrap:wrap;gap:4px 16px}
+
+.intro{display:grid;gap:16px;padding-block:28px 40px;border-top:1px solid var(--line)}
+.intro h1{font-size:clamp(34px,6vw,46px);font-weight:700;letter-spacing:-.02em}
+.intro .standfirst{font-size:20px;line-height:1.5}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 20px;margin:4px 0 0;font-size:15px}
+.facts dt{color:var(--soft)}
+.facts dd{margin:0;font-weight:500}
+
+section{padding-block:40px;border-top:1px solid var(--line);display:grid;gap:16px}
+h2{font-size:24px;font-weight:700}
+h3{font-size:18px;font-weight:700;margin-top:8px}
+
+.goals{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 28px;counter-reset:g}
+.goals li{counter-increment:g;display:grid;gap:4px}
+.goals b::before{content:counter(g) ". "}
+.goals p{font-size:16px;color:var(--soft)}
+
+/* before / after */
+.compare{position:relative;width:100%;max-width:100%;aspect-ratio:16/9.4;border:1px solid var(--line);overflow:hidden;background:#fff}
+.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top left;display:block}
+.compare .after{clip-path:inset(0 0 0 var(--pos,50%))}
+.compare .divider{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:#1B1B1B;transform:translateX(-1px);pointer-events:none}
+.compare .divider::after{content:"";position:absolute;top:50%;left:50%;width:14px;height:44px;border-radius:7px;background:#fff;border:2px solid #1B1B1B;transform:translate(-50%,-50%)}
+.compare .tag{position:absolute;bottom:10px;font-size:13px;font-weight:500;padding:2px 8px;background:#fff;color:#1B1B1B;border:1px solid #1B1B1B}
+.compare .tag.l{left:10px}.compare .tag.r{right:10px}
+.ptag{display:none}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.note{font-size:15px;color:var(--soft)}
+
+/* workflow */
+.steps{padding-left:1.4em;display:grid;gap:6px}
+.flow{list-style:none;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 0;font-size:14.5px;font-weight:500}
+.flow li{display:flex;align-items:center}
+.flow span{background:var(--chip);border:1px solid var(--line);padding:6px 10px;white-space:nowrap}
+.flow li:not(:last-child)::after{content:"→";color:var(--soft);padding:0 8px}
+.flow li.ai span{border-color:var(--text)}
+
+/* brands */
+.brands{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+figure{margin:0;display:grid;gap:6px;min-width:0}
+figure img{width:100%;border:1px solid var(--line);display:block;background:#fff}
+figcaption{font-size:14px;color:var(--soft)}
+
+/* outcomes */
+.outcomes{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 28px}
+.outcomes li{display:grid;gap:4px;align-content:start}
+.outcomes p{font-size:16px;color:var(--soft)}
+.cta{font-weight:700}
+
+footer{border-top:1px solid var(--line);padding-top:28px;font-size:15.5px;color:var(--soft);display:grid;gap:6px}
+
+@media print{
+  main{padding-block:0}
+  section,.intro{display:block;padding-block:18px}
+  section>*+*,.intro>*+*{margin-top:12px}
+  .compare{aspect-ratio:auto;border:0;display:block;overflow:visible;background:none}
+  .compare img{position:static;height:auto;border:1px solid var(--line);margin-bottom:12px}
+  .compare .after{clip-path:none}
+  .compare .divider,.compare input,.compare .tag,.drag{display:none}
+  .ptag{display:block;font-size:14px;font-weight:700;margin-bottom:6px;break-after:avoid}
+  h2,h3{break-after:avoid}
+  figure,.compare img,.goals li,.outcomes li,.flow{break-inside:avoid}
+}
+@media (max-width:640px){
+  main{padding-block:28px 56px}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .goals,.outcomes,.brands{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+
+</head>
+<body>
+<main>
+  <div class="byline">
+    <span><b>Favour Kelvin</b> · Technical Writer &amp; Documentation Lead · London</span>
+    <span class="links">
+      <a href="https://www.linkedin.com/in/favour-kelvin">LinkedIn</a>
+      <a href="https://fakela-github-io.vercel.app/">Portfolio</a>
+      <a href="https://fakela-github-io.vercel.app/writing-samples">Writing samples</a>
+    </span>
+  </div>
+
+  <div class="intro">
+    <h1>Eseye Documentation V2</h1>
+    <p class="standfirst">Rebuilding how documentation is created, managed and shared across the business.</p>
+    <dl class="facts">
+      <div><dt>Role</dt><dd>Technical Writer &amp; Documentation Lead</dd></div>
+      <div><dt>Company</dt><dd><a href="https://www.eseye.com/">Eseye</a> · IoT connectivity</dd></div>
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Website</dt><dd><a href="https://docs.eseye.com/">docs.eseye.com</a></dd></div>
+    </dl>
+  </div>
+
+  <section>
+    <h2>Overview</h2>
+    <p>Eseye is a global IoT connectivity company that helps businesses connect, manage and monitor devices across networks worldwide. Its products and services support enterprise customers and telecommunications partners, making clear, accessible technical documentation an important part of the customer experience.</p>
+    <p>The company wanted to modernise its documentation, which was primarily maintained in MadCap Flare, with additional content spread across different systems and teams. The existing setup made updates difficult, limited contributions from subject matter experts and wasn't well suited to supporting documentation across multiple partner brands.</p>
+    <p>As Technical Writer and Documentation Lead, I took ownership of a six-month project to transform how documentation was organised, created, reviewed and published.</p>
+    <p>I led the migration to GitBook, established documentation standards and automated contribution workflows, trained employees across the business and designed a shared content architecture supporting Eseye and its partners, including AT&amp;T, MTN and TELUS.</p>
+    <p>The goal was to build more than a new documentation website: a sustainable system that made technical information easier to access and allowed teams across the business to contribute and maintain it consistently.</p>
+    <h3>The four main goals</h3>
+    <ol class="goals">
+      <li><b>Migrate from MadCap Flare to GitBook</b><p>Move the existing documentation into a modern, centralised platform, improve the information architecture and make content easier to find, update and maintain.</p></li>
+      <li><b>Build sustainable documentation processes</b><p>Establish writing guidelines, content templates, governance standards and automated workflows so documentation could be created, reviewed and published consistently.</p></li>
+      <li><b>Educate and empower teams across the business</b><p>Give subject matter experts (SMEs) in engineering, product, support and other departments a straightforward way to contribute, supported by practical guidance and training.</p></li>
+      <li><b>Build scalable documentation for partner brands</b><p>Create a shared content architecture for Eseye, AT&amp;T, MTN and TELUS, allowing each partner to have its own branded documentation experience while reusing common content and structures.</p></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>1. Moving from MadCap Flare to GitBook</h2>
+    <p>The first step was finding a platform that could support Eseye's documentation requirements, including collaboration, version control, multiple audiences and partner-specific sites.</p>
+    <p>I evaluated Mintlify, Document360, Fern and GitBook, building proofs of concept to compare their capabilities and suitability. I recommended GitBook and led the migration of the existing documentation from MadCap Flare and other sources.</p>
+    <p>To support the migration, I connected Claude to GitBook through MCP to help process and restructure content at scale. I also introduced GitHub Actions for validation and Git Sync to connect documentation changes with GitBook.</p>
+    <h3>Redesigning the documentation experience</h3>
+    <p>The migration was an opportunity to improve how readers found information, rather than simply reproduce the old website. Previously, the documentation homepage was organised around product categories. This assumed readers already knew which Eseye product contained the information they needed.</p>
+    <p>I redesigned the homepage around common user tasks, such as integrating with an API, installing a router or managing connectivity.</p>
+
+    <div class="compare" id="compare" style="--pos:50%">
+      <span class="ptag">Before</span>
+      <img src="/eseye/img/before.jpg" alt="The old Eseye documentation homepage, built in MadCap Flare, with a dark blue banner and four product category cards">
+      <span class="ptag">After</span>
+      <img class="after" src="/eseye/img/after.jpg" alt="The new Eseye documentation homepage in GitBook, with task-based cards such as I'm integrating with the API and I'm installing a router">
+      <span class="tag l">Before</span>
+      <span class="tag r">After</span>
+      <div class="divider" aria-hidden="true"></div>
+      <input id="compare-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the old and new homepage">
+    </div>
+    <p class="note"><span class="drag">Drag to compare. </span>The new experience gives readers a clearer starting point and helps them navigate based on what they want to accomplish.</p>
+    <p>I also launched separate public and internal documentation experiences, with Microsoft sign-in for internal users and access controls to distinguish public and internal content.</p>
+  </section>
+
+  <section>
+    <h2>2. Building documentation standards and publishing processes</h2>
+    <p>Moving to GitBook addressed the platform limitations, but the documentation also needed a consistent way to be created, reviewed and maintained.</p>
+    <p>I established documentation standards and governance covering writing conventions, terminology, content structure, templates and review requirements. These standards gave contributors a common framework to follow, regardless of their department or technical writing experience.</p>
+    <h3>Automating content contributions</h3>
+    <p>One of the most important parts of the project was removing the technical barriers that prevented employees from contributing. Not everyone needed to learn GitHub, Markdown or GitBook just to share product knowledge.</p>
+    <p>I designed an automated contribution workflow using tools employees were already familiar with: Word and SharePoint.</p>
+    <ul class="flow" aria-label="Contribution workflow">
+      <li><span>Word template</span></li>
+      <li><span>SharePoint</span></li>
+      <li><span>Power Automate</span></li>
+      <li><span>GitHub</span></li>
+      <li class="ai"><span>Claude agent</span></li>
+      <li><span>Pull request review</span></li>
+      <li><span>GitBook</span></li>
+    </ul>
+    <ol class="steps">
+      <li>A subject matter expert completes a structured Word template and submits it through SharePoint.</li>
+      <li>Power Automate transfers the submission into GitHub.</li>
+      <li>A scheduled Claude agent processes the content, applies the documentation structure and prepares the GitBook files.</li>
+      <li>A pull request is created for review.</li>
+      <li>The content is checked against the documentation standards before publication.</li>
+      <li>The contributor receives an email with the outcome.</li>
+    </ol>
+    <p>The process separates content creation from the technical work of preparing and publishing documentation. Contributors can focus on sharing accurate information, while the workflow provides structure, version history and a review step before publication. For employees who prefer working directly in GitHub or GitBook, those options remain available.</p>
+  </section>
+
+  <section>
+    <h2>3. Educating and enabling teams across Eseye</h2>
+    <p>A new platform and publishing workflow would only be useful if employees understood how to use them. I worked on making documentation more accessible to the people who knew Eseye's products best, particularly teams in engineering, product and support.</p>
+    <p>I created contributor guides, Word templates and training materials explaining how to submit documentation, follow the writing standards and participate in the review process. I also delivered training sessions to introduce the new system and show employees how they could contribute without needing specialist documentation tools.</p>
+    <p>This was an important part of changing the way documentation was managed. Instead of treating documentation as something handled exclusively by a technical writer, the new approach gave subject matter experts a defined role in keeping information accurate and up to date. The standards, training and automated workflows work together to make contributing easier without sacrificing editorial oversight.</p>
+  </section>
+
+  <section>
+    <h2>4. Building documentation for multiple partner brands</h2>
+    <p>Eseye also needed documentation experiences for its partners, including AT&amp;T, MTN and TELUS. Maintaining separate copies of shared content would have introduced unnecessary duplication and made updates harder to coordinate.</p>
+    <p>I designed a single-source content architecture that could support multiple branded documentation sites while keeping common information centralised. The sites share navigation patterns, page structures and reusable content, with flexibility for partner-specific terminology, information and branding.</p>
+    <h3>Same structure, different brands</h3>
+    <p>Each partner has its own visual identity, but the underlying documentation follows a consistent approach.</p>
+    <div class="brands">
+      <figure><img src="/eseye/img/att.jpg" alt="AT&amp;T IoT documentation homepage preview in blue, with the same task cards as the Eseye site"><figcaption>AT&amp;T documentation</figcaption></figure>
+      <figure><img src="/eseye/img/telus.jpg" alt="TELUS IoT documentation homepage in purple and green, with the same task cards"><figcaption>TELUS documentation</figcaption></figure>
+    </div>
+    <p>By separating shared content from brand-specific presentation and information, the documentation can support different partners without requiring every page to be maintained independently. This also provides a foundation for additional partner documentation sites as the business grows.</p>
+  </section>
+
+  <section>
+    <h2>5. Making documentation AI-ready</h2>
+    <p>Alongside the four main goals, I worked on making the documentation easier for AI tools to retrieve and use. GitBook's AI assistant allows readers to ask questions and receive answers grounded in the documentation.</p>
+    <p>I structured pages with descriptive headings, focused content, consistent terminology and clear information hierarchies to support both human readers and AI-powered retrieval.</p>
+    <p>I also developed an approach to using AI assistant interactions as documentation feedback. Questions that cannot be answered adequately, together with user feedback, can highlight missing information or content that needs improvement. This creates a feedback loop between the questions customers ask and the documentation the business maintains, helping teams identify where additional guidance is needed.</p>
+  </section>
+
+  <section>
+    <h2>What this project achieved</h2>
+    <p>Over six months, I delivered more than a new documentation website. I established the platform, content architecture, standards and workflows needed to support documentation across multiple teams and brands.</p>
+    <ul class="outcomes">
+      <li><b>A centralised documentation platform</b><p>Migrated the documentation from MadCap Flare and fragmented sources into GitBook, with GitHub-backed version control and publishing workflows.</p></li>
+      <li><b>A clearer experience for readers</b><p>Reorganised the documentation around user tasks and established separate public and internal experiences.</p></li>
+      <li><b>Consistent documentation standards</b><p>Created contributor guidelines, templates and review processes to maintain quality across content produced by different teams.</p></li>
+      <li><b>A more accessible contribution process</b><p>Built an AI-assisted workflow that allows subject matter experts to submit documentation through Word and SharePoint, without needing to learn GitHub or GitBook.</p></li>
+      <li><b>A shared system for multiple brands</b><p>Established reusable content structures supporting Eseye and its partner documentation sites for AT&amp;T, MTN and TELUS.</p></li>
+      <li><b>Documentation designed for AI-powered retrieval</b><p>Structured content for AI-assisted answers and introduced a way to use reader questions to identify documentation gaps.</p></li>
+    </ul>
+    <p>The result is a documentation system designed not only for publishing information, but for helping the wider business create, maintain and improve it.</p>
+    <p class="cta"><a href="https://docs.eseye.com/">Explore the live Eseye documentation →</a></p>
+  </section>
+
+  <footer>
+    <p>Favour Kelvin · <span style="user-select:all">favourkelvin17@gmail.com</span> · <a href="https://www.linkedin.com/in/favour-kelvin">LinkedIn</a></p>
+    <p>More case studies and around 70 writing samples on <a href="https://fakela-github-io.vercel.app/">my portfolio</a>.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var c=document.getElementById('compare'), r=document.getElementById('compare-range');
+  if(!c||!r) return;
+  r.addEventListener('input',function(){ c.style.setProperty('--pos', r.value+'%'); });
+})();
+</script>
+
+</body>
+</html>
