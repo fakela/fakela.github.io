@@ -30,9 +30,19 @@ const tagColors = {
   'Docker': 'tag-teal',
   'Terraform': 'tag-purple',
   'Information Architecture': 'tag-teal',
+  'GitBook': 'tag-green',
+  'Content Migration': 'tag-orange',
+  'Multi-brand': 'tag-purple',
+  'IoT': 'tag-red',
 }
 
 const portfolioItems = [
+  {
+    title: 'Democratising Documentation at Eseye',
+    slug: '/eseye/',
+    tags: ['GitBook', 'Content Migration', 'Multi-brand', 'AI', 'Docs-as-Code', 'IoT'],
+    excerpt: "Led the move from MadCap Flare to GitBook for an IoT connectivity company. Opened content production up to subject matter experts (SMEs), made the docs AI-ready, and powered branded partner sites for AT&T, MTN and TELUS from one source."
+  },
   {
     title: "Rebuilding Orbital's Documentation",
     slug: '/portfolio/rebuilding-orbital-docs',
